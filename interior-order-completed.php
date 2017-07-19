@@ -472,6 +472,8 @@ switch ($result->selectedArea)
                         <input type="hidden" name="redirect_url" value="http://www.dezinebox.io/thankyou.php"/>
                         <input type="hidden" name="cancel_url" value="http://www.dezinebox.io/index.php"/>
                         <input type="hidden" name="language" value="EN"/>
+						
+						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />
                         <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->
