@@ -1,0 +1,367 @@
+@media (max-width: 1199px) {
+  /* 991px */
+  .c-content-accordion-1 .c-accordion {
+    margin: 0;
+    padding: 0; } }
+
+.c-content-login-form .modal-dialog {
+  width: 450px; }
+  .c-content-login-form .modal-dialog .modal-content {
+    margin-top: 125px; }
+    .c-content-login-form .modal-dialog .modal-content .modal-body {
+      padding: 10px 40px 30px 40px; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .form-group {
+        margin: 20px 0; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .c-btn-login {
+        padding-left: 10px;
+        padding-right: 10px; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .c-btn-forgot {
+        margin-top: 8px;
+        float: right;
+        display: inline-block; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .c-content-list-adjusted {
+        margin-top: 30px; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .c-content-divider {
+        text-align: center; }
+        .c-content-login-form .modal-dialog .modal-content .modal-body .c-content-divider > span {
+          display: inline-block;
+          background: #fff;
+          padding: 5px 8px;
+          position: relative;
+          top: -1.05em;
+          margin: auto; }
+    .c-content-login-form .modal-dialog .modal-content .modal-footer {
+      background: #f7f7f7;
+      padding: 20px 40px;
+      text-align: left; }
+      .c-content-login-form .modal-dialog .modal-content .modal-footer .c-text-account {
+        display: inline-block;
+        margin-top: 5px; }
+      .c-content-login-form .modal-dialog .modal-content .modal-footer .c-btn-signup {
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px; }
+
+@media (max-width: 1390px) {
+  .c-content-login-form .modal-dialog .modal-content {
+    margin-top: 85px; } }
+
+@media (max-width: 991px) {
+  /* 991px */
+  .c-content-login-form {
+    top: 0px; }
+    .c-content-login-form .modal-dialog .modal-content .modal-body {
+      padding: 10px 20px 10px 20px; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .form-group {
+        margin: 15px 0; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .c-btn-login {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .c-content-login-form .modal-dialog .modal-content .modal-body .c-content-list-adjusted > li {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 5px 0 0 0; } }
+
+@media (max-width: 768px) {
+  /* 768px */
+  .c-content-login-form {
+    top: 0px; }
+    .c-content-login-form .modal-dialog {
+      width: auto; } }
+.c-content-list-adjusted {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .c-content-list-adjusted > li {
+    display: table-cell;
+    width: 1%;
+    padding-right: 5px; }
+    .c-content-list-adjusted > li:last-child {
+      padding-right: 0; }
+      .fa-facebook{
+
+  color: #fff;
+
+  font-weight: 400;
+  padding: 0.5em 0.65em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-facebook:hover{
+   background:12px 9px #0E387C;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-facebook:{
+   background:12px 9px #0E387C;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-twitter{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-twitter:hover{
+   background:12px 9px #1DA1F3;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-twitter-icon{
+
+  color: #000;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-twitter-icon:hover{
+   background:12px 9px #1DA1F3;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-linkedin{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-linkedin:hover{
+   background:12px 9px #007BB6;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-dribbble{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-dribbble:hover{
+   background:12px 9px #C12361;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.fa-instagram{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-instagram:hover{
+   background:12px 9px #E0196A;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-google-plus{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-google-plus:hover{
+   background:12px 9px #D51615;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-youtube{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-youtube:hover{
+   background:12px 9px #CF1F21;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.fa-youtube-play{
+
+  color: #FFF;
+
+  font-weight: 400;
+  padding: 0.5em 0.5em;
+
+  text-align: left;
+ 
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  border-radius:1px;
+
+}
+.fa-youtube-play:hover{
+   background:12px 9px #CF1F21;
+   transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.sec-heading{
+  margin-top: 5%;
+}
+.c-content-login-form .form-control {
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 22px;
+    letter-spacing: .5px;
+    -webkit-transition: border-color 0.5s;
+    transition: border-color 0.5s;
+}
+.c-content-login-form .modal-header {
+    height: 15px;
+ }
+.c-content-login-form h3 {
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    color: #111;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    letter-spacing: 3.5px;
+}
+
+.c-content-login-form .form-group label {
+    font-size: .8em;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: #111;
+}
+.c-content-login-form .btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 38px;
+    background: #111;
+    color: #ececec;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.c-content-login-form .modal-dialog .modal-content .modal-body .c-btn-forgot {
+    margin-top: 8px;
+    float: right;
+    display: inline-block;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+}
+.c-content-login-form .modal-dialog .modal-content .modal-body .c-content-divider > span {
+  display: inline-block;
+    background: #fff;
+    padding: 5px 8px;
+    position: relative;
+    top: -1.05em;
+    margin: auto;
+    color: #fff;
+}

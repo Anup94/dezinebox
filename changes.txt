@@ -1,0 +1,10 @@
+line 565 & 570 Index.php
+
+main.css - line 122  line 2378
+
+authentication-includes.php - 83
+
+interioir-choose-box   -- 152 153
+get-your-box  -- 110 
+interior.html  -- 106 107
+architecture.html -- 110

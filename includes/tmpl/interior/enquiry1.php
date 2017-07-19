@@ -1,0 +1,104 @@
+<style type="text/css">
+.divSeparator {
+  display: none;
+}
+.gray-bg {
+  background-color: #FFF !important;
+}
+</style>
+<form action="validate.php?task=submit_interior_enquiry" name="interiorEnqForm" method="post" enctype="multipart/form-data">
+
+            
+
+
+                     
+            
+            <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-lg-5">
+              <div class="form-group">
+                  <label for="file-form">Site Address</label>
+                      <input type="name" class="form-control" name="siteLocation" placeholder="Input your site full address" required>    
+        
+                </div>  
+            
+               <!-- <div class="form-group" style="font-size: 1.3em;">
+                <label for="txt-forms">Tell Us more</label>
+                  <textarea class="form-control" name="moreDetails" id="txt-forms" rows="3" placeholder="City , Country" maxlength="500" required></textarea>
+                  
+                </div>  --> 
+
+                 <div class="form-group">
+                 <label for="select-form">Area (Sq-feet)</label>
+                  <select class="form-control" name="selectedArea" required>
+                    <option>0-250</option>
+                    <option>250-500</option>
+                    <option>500-1000</option>
+                    <option>1000-1500</option>
+                    <option>1500-2000</option>
+                    <option>2000+</option>
+                  </select>
+                  
+                </div>
+
+                 <div class="form-group">
+                 <label for="select-form">Budget</label>
+                  <select class="form-control" name="budget" required>
+                     <option>0 - Rs 50,000</option>
+                    <option>Rs.50,000-Rs.1 Lakh</option>
+                    <option>Rs. 1 Lakh-Rs. 5 Lakh</option>
+                    <option>Rs. 5 Lakh-10 Lakh</option>
+                    <option>Rs. 10 Lakh-15 Lakh</option>
+                    <option>Rs. 15 Lakh-25 Lakh</option>
+                    <option>Rs. 25 Lakh AND ABOVE</option>
+                  </select>
+                  
+                </div>
+                                     
+                <!-- File Input -->
+               <div class="form-group">
+                  <label for="file-form">File input (max 5 MB  - prefered zip file)</label>
+                  <input class="form-control" type="file" id="file-form" accept=".jpg , .TIF , .jpeg , .png , .pdf , .cad, .zip">
+        
+                </div>    
+               
+
+                 <div class="form-group">
+               
+                   <label for="select-form">Share Drive Link</label>
+                  <input type="name" class="form-control" name="driveLink" placeholder="Share your drive link with public access">                  
+                </div>
+                <div class="form-group">
+                <label for="inpt-name-forms">Any Specific Details (max 1000 characters)</label>
+                 <textarea class="form-control" name="specificDetails" id="txt-forms" rows="3" placeholder="Colors , Fabrics , Textures , Patterns  preferences . " maxlength="500" required></textarea>               
+                </div>
+
+                
+                <button type="submit" class="btn-ghost">NEXT</button>       <!-- <button class="btn-ghost" type="submit" style="margin: 5%;">Download Sample</button>        --> 
+              </div><!-- / .col-md-4 -->
+
+                
+            </div>
+
+
+            <div class="row ws-m">
+              
+
+              <div class="col-md-12">
+             
+                <!-- <div class="form-group">
+                <label for="txt-forms">Please mention any specific details if you have:</label>
+                  <textarea class="form-control" name="textarea" id="txt-forms" rows="9" placeholder="Your Message"></textarea>
+                  
+                </div>  -->
+              </div>
+             
+                  
+            </div><!-- / .row -->
+             <?php 
+              $array=array("categoryId","constTypeId","categoryOption","subCategoryOption");
+              foreach ($array as $key) {
+
+               echo '<input type="hidden" name="'.$key.'" value="'.$_GET[$key].'"/>';
+              }
+              ?>
+          </form>
