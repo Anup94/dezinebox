@@ -55,30 +55,39 @@
 
 
 <!-- ========== Services ========== -->
- <div class="gray-bg">
-          <section id="services" class="container ft-cards">
-            <div class="row section">
+<div class="gray-bg">
+<section id="services" class="container ft-cards">
+<div class="row section">
+<!--
+<header class="sec-heading">
+<h2>Select your box</h2>
+<span class="subheading">Lorem ipsum dolor sit amet, consectetur</span>
+</header> -->
 
-              <header class="sec-heading">
-                <h2>Payment Successful</h2>
-              
-              </header>
-              
-              <!-- Item 1 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50" style="left: 33%;">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                  <span class="linea-basic-cards-diamonds"></span>
-                  <h4>DeZineBox.io will contact you shortly.</h4>
-                 
-                  <a href="index.html"> <span class="linea-arrows-slim-right"></span></a>
-                </div>
-              </div>
-              <!-- Item 2 -->
-              
+<!-- Item 1 --><br><br><br><br><br><br>
+<div class="col-lg-6 col-md-6 mb-sm-50">
+<div class="ft-item wow fadeInUp" data-wow-duration="1s">
 
-            </div><!-- / .row --><br><br><br><br><br><br><br><br>  <br><br><br>
-          </section>
-        </div><!-- / .gray-bg -->
+<h3 style="text-align: center;">Dezine Partner</h3>
+<p style="color: #777">While deZinebox offers online services, our customers often request face to face consultations or conversations to address any implementation challenges. To facilitate this, we tie-up with a number ofdeZine partners who can engage with our customers offline in order to seamlessly complete their project. Since the deZine partner acts as a representative of deZinebox, we are very particular about the quality and commitment levels of our partners. We are always on the lookout for trustworthy partners who can help us serve our customers better. </p> <br>
+<a href="designer.php" style="color: #FF5100"> Join us as a dezine partner</a>
+</div>
+</div>
+
+<!-- Item 3 -->
+<div class="col-lg-6 col-md-6 mb-sm-50">
+<div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+
+<h3 style="text-align: center;">Product Partner</h3>
+<p style="color: #777">An important part of our offering is the design elements that we recommend to your customers, to bring their spaces to life. To deliver the very best recommendations for our customers, we’re always on the lookout for trusted product partners who can supply great quality home design and décor products online, so that our customers can purchase them from the comfort of their home.<br>
+On our part, we help our partners extend their reach by recommending their products to our customers as appropriate. </p>
+<a href="productpartner.php" style="color: #FF5100"> Join us as a product partner</a>
+</div>
+</div>
+
+</div><!-- / .row --><br><br><br><br><br><br><br><br><br>
+</section>
+</div><!-- / .gray-bg -->
 
 
 

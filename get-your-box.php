@@ -60,7 +60,7 @@ if(empty($constTypeArr[$constTypeId])) {
 
 
         <!-- Definity CSS -->
-        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/main3.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
 
         <!-- JS -->
