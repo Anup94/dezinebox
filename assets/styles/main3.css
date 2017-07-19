@@ -8488,9 +8488,9 @@ form .input-error-2:focus {
 .hover-default .p-hover .p-content, .hover-light .p-hover .p-content {
   text-align: justify;
   position: absolute;
-  left: 40px;
-  right: 40px;
-  bottom: 25px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s;
 }
@@ -10333,5 +10333,20 @@ form .input-error-2:focus {
 @media only screen and (min-width: 1199px) {
     .tenmargin {
         left: 10%;
+    }
+}
+@media only screen and (min-width: 1199px) {
+    .fifteenmargin {
+        margin-left: 10%;
+    }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) { 
+    .fifteen1 {
+      left: 10%;
+    }
+}
+@media screen and (min-device-width: 400px) and (max-device-width: 767px) { 
+    .trial {
+      width: 262px !important ;
     }
 }
