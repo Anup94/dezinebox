@@ -8,11 +8,10 @@
 <?php include('crypto.php');
 	error_reporting(0);
 include ('config-payment.php');
-$PGConfig = new PGConfig();
 	
 	$merchant_data='';
-	$working_key=$PGConfig->working_key;//Shared by CCAVENUES
-	$access_code=$PGConfig->access_code;//Shared by CCAVENUES
+	$working_key='FD31F459452C6C94CDCE55A44E071F38';//Shared by CCAVENUES
+	$access_code='AVUC70EE68AU36CUUA'	;//Shared by CCAVENUES
 	
 	foreach ($_POST as $key => $value){
 		$merchant_data.=$key.'='.urlencode($value).'&';

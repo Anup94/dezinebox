@@ -10,7 +10,7 @@ Class PGConfig {
 		$this->working_key='6B36B0A00F773F509E0364195F998BAF';
 		$this->access_code='AVUC70EE68AU36CUUA';
 		if(empty($section)) {
-			$this->success_url = $serverUrl.'payment-response.php?status=success';
+			$this->success_url = $serverUrl.'thankyou.php';
 			$this->cancel_url = $serverUrl.'payment-response.php?status=cancel';
 		}
    }

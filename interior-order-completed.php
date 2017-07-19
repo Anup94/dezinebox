@@ -438,7 +438,9 @@ switch ($result->selectedArea)
                 <div class="subtotal-group" style="color: #000;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                   <h6>Net Total</h6>
                   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                 <label > <?php echo $pricee+$pricee*0.18;
+                 <label > <?php 
+                 $finalPrice = $pricee+$pricee*0.18;
+                 echo $finalPrice;
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    
@@ -462,14 +464,14 @@ switch ($result->selectedArea)
                 <div class="subtotal-group">
                    <div class="checkout-btn-wrapper" style="margin-top: -50px;">
                    <form method="POST" name="customerData" action="ccavRequestHandler.php">
-                        <input type="hidden" name="tid" id="tid" value="<?php echo time();?>" readonly />
-                        <input type="hidden" name="merchant_id" value="<?php echo $PGConfig->merchant_id;?>"/>
-                        <input type="hidden" name="order_id" value="INTE_<?php echo $result->enqId;?>"/>
-                        <input type="hidden" name="amount" value="<?php echo $totalWithTax;?>"/>
-                        <input type="hidden" name="currency" value="<?php echo $PGConfig->currency;?>"/>
-                        <input type="hidden" name="redirect_url" value="<?php echo $PGConfig->success_url;?>"/>
-                        <input type="hidden" name="cancel_url" value="<?php echo $PGConfig->cancel_url;?>"/>
-                        <input type="hidden" name="language" value="<?php echo $PGConfig->language;?>"/>
+                        
+                        <input type="hidden" name="merchant_id" value="133278"/>
+                        <input type="hidden" name="order_id" value="000<?php echo $result->enqId;?>"/>
+                        <input type="hidden" name="amount" value="<?php echo $finalPrice; ?>"/>
+                        <input type="hidden" name="currency" value="INR"/>
+                        <input type="hidden" name="redirect_url" value="http://www.dezinebox.io/thankyou.php"/>
+                        <input type="hidden" name="cancel_url" value="http://www.dezinebox.io/index.php"/>
+                        <input type="hidden" name="language" value="EN"/>
                         <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->
