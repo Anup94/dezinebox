@@ -525,7 +525,7 @@ if($_GET['oauth_token']){
 		$projectLinkedin=isset($input->projectLinkedin)?$input->projectLinkedin:'';
 
 		$imgsUploaded=array();
-		$target_dir = "uploads/";
+		$target_dir = $_SERVER['DOCUMENT_ROOT']."classes/uploads/";
 		if(isset($_FILES['file'])){
 
 			$file = $_FILES['file'];
@@ -537,7 +537,7 @@ if($_GET['oauth_token']){
 
 			$key = md5(uniqid());
 			$tmp_file_name = "{$key}.{$extension}";
-			$tmp_file_path = "classes/upload/{$tmp_file_name}";
+			$tmp_file_path = $_SERVER['DOCUMENT_ROOT']."/classes/uploads/{$tmp_file_name}";
 
 			move_uploaded_file($tmp_name, $tmp_file_path);
 			$s3 = S3Client::factory([
@@ -668,7 +668,7 @@ if($_GET['oauth_token']){
 
 			$key = md5(uniqid());
 			$tmp_file_name = "{$key}.{$extension}";
-			$tmp_file_path = "classes/upload/{$tmp_file_name}";
+			$tmp_file_path = $_SERVER['DOCUMENT_ROOT']."/classes/uploads/{$tmp_file_name}";
 
 			move_uploaded_file($tmp_name, $tmp_file_path);
 			$s3 = S3Client::factory([
