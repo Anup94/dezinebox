@@ -73,7 +73,7 @@ class validateClass extends dbConnect {
 	$client->setClientId('688774722159-rjhbdfuit4n3cb9a0bfo3tq920g0lkkn.apps.googleusercontent.com');
 	$client->setClientSecret('w71q5kBlps_QeOiDeVoNEZ4x');
 
-	$client->setRedirectUri('http://geomics.in/validate.php?task=google-login');
+	$client->setRedirectUri('http://dezinebox.io/validate.php?task=google-login');
 
 	
 	$client->addScope("email");
@@ -146,7 +146,7 @@ class validateClass extends dbConnect {
 		//require_once 'autoload.php';
 	  FacebookSession::setDefaultApplication('1571301269586732','7ddb33639eec1ec4066cb4af701653c1');
 
-	  $helper = new FacebookRedirectLoginHelper('http://geomics.in/validate.php?task=facebook-login');
+	  $helper = new FacebookRedirectLoginHelper('http://dezinebox.io/validate.php?task=facebook-login');
 	  echo('hey');
 
 	  if(!isset($_GET['code'])){
@@ -157,7 +157,7 @@ class validateClass extends dbConnect {
 	  //echo '<a href="' . $loginUrl . '">Login with Facebook</a>';
 	 // 
 	 else{
-	  $helper = new FacebookRedirectLoginHelper("http://geomics.in/validate.php?task=facebook-login");
+	  $helper = new FacebookRedirectLoginHelper("http://dezinebox.io/validate.php?task=facebook-login");
 	  try{
 	  $session = $helper->getSessionFromRedirect();
 		// var_dump($helper);
@@ -271,7 +271,7 @@ if($_GET['oauth_token']){
   //this code will return your valid url which u can use in iframe src to popup or can directly view the page as its happening in this example
 
   $connection = new TwitterOAuth($consumer_key, $consumer_secret);
-  $temporary_credentials = $connection->oauth('oauth/request_token', array("oauth_callback" =>'http://geomics.in/validate.php?task=twitter-login'));
+  $temporary_credentials = $connection->oauth('oauth/request_token', array("oauth_callback" =>'http://dezinebox.io/validate.php?task=twitter-login'));
   $_SESSION['oauth_token']=$temporary_credentials['oauth_token'];       $_SESSION['oauth_token_secret']=$temporary_credentials['oauth_token_secret'];$url = $connection->url("oauth/authorize", array("oauth_token" => $temporary_credentials['oauth_token']));
 // REDIRECTING TO THE URL
   header('Location: ' . $url); 
