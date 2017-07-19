@@ -66,7 +66,50 @@ if(empty($constTypeArr[$constTypeId])) {
         <!-- JS -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
+<script>
+  window.userInteractionTimeout = null;
+  window.userInteractionInHTMLArea = false;
+  window.onBrowserHistoryButtonClicked = null; // This will be your event handler for browser navigation buttons clicked
 
+  $(document).ready(function() {
+    $(document).mousedown(function() {
+      clearTimeout(window.userInteractionTimeout);
+      window.userInteractionInHTMLArea = true;
+      window.userInteractionTimeout = setTimeout(function() {
+        window.userInteractionInHTMLArea = false;
+      }, 500);
+    });
+
+    $(document).keydown(function() {
+      clearTimeout(window.userInteractionTimeout);
+      window.userInteractionInHTMLArea = true;
+      window.userInteractionTimeout = setTimeout(function() {
+        window.userInteractionInHTMLArea = false;
+      }, 500);
+    });
+
+    if (window.history && window.history.pushState) {
+      $(window).on('popstate', function() {
+        if (!window.userInteractionInHTMLArea) {
+          //document.location.href = "logOff.htm";
+          setTimeout(function(){  var answer = confirm("Are you Sure?? This will expire your session");
+          if(answer == true)
+            {
+            document.location.href = "logOff.htm";  
+            }
+          },100 );
+          
+          
+          //alert('Browser Back or Forward button was pressed.');
+        }
+        if (window.onBrowserHistoryButtonClicked) {
+          
+          window.onBrowserHistoryButtonClicked();
+        }
+      });
+    }
+  });
+}</script>
 
     </head>
     <style>
@@ -78,6 +121,7 @@ if(empty($constTypeArr[$constTypeId])) {
 
 
         <!-- ========== Preloader ========== -->
+<body onload="window.onBrowserHistoryButtonClicked()">
 
         <div class="preloader">
           <img src="assets/images/loader.svg" alt="Loading...">

@@ -40,6 +40,11 @@
     margin-left: 22.3%;
   }
 }
+@media (min-width: 1200px) {
+  .alignment3{
+    margin-left: 27%;
+  }
+}
 </style>
 
     </head>
@@ -61,7 +66,7 @@
 
 
 <div style='clear:both'></div>
-<div class='fav-pop'></div>
+
 
 <section id=''>
 <form id="productPartnerForm" name="productPartnerForm" action="validate.php?task=product_partner_submit" enctype="multipart/form-data" method="post">
@@ -70,14 +75,15 @@
 <div class='col-xs-12'></div>
 <!-- end col-6 -->
 
-<div class='col-md-5 col-xs-5' style="margin-left: 25%; margin-right:auto;">
+<div class='col-lg-8 col-md-8 col-sm-10 col-xl-12 col-xm-9 col-xs-7' style="margin-left: 15%; margin-right:auto;">
 
 <div class='form-group'>
 <div class='input-group'
 >
-<label class='label-strik pull-left'>
-Type of Product
-</label>
+<div class='oth_business_tp pull-left'>
+<input type="hidden" name="productType[]" id="user_other_professionals_attributes_0_business_type" value="Furniture" />
+<span><strong>Type of Partner: </strong></span>
+</div>
 <div class='oth_business_tp pull-left'>
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_0_business_type" value="Furniture" />
 <span>Furniture</span>
@@ -86,7 +92,7 @@ Type of Product
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Furnishing" />
 <span>Furnishing</span>
 </div>
-<div class='oth_business_tp pull-left'>
+<div class='oth_business_tp pull-left '>
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Kitchen Appliances" />
 <span>Electrical</span>
 </div>
@@ -98,15 +104,15 @@ Type of Product
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Hardware" />
 <span>Hardware</span>
 </div>
-<div class='oth_business_tp pull-left' style="margin-left: 27%;">
+<div class='oth_business_tp pull-left ' style="">
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Renewable product" />
 <span>Renewable product</span>
 </div>
 <div class='oth_business_tp pull-left' >
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Security and fire" />
-<span>Decor  &nbsp &nbsp </span>
+<span>Decor  </span>
 </div>
-<div class='oth_business_tp pull-left' style="margin-left: 27%;">
+<div class='oth_business_tp pull-left ' >
 <input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Decor" />
 <span>Security & fire</span>
 </div>
