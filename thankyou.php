@@ -91,23 +91,6 @@
         <!-- ========== Services ========== -->
 
      
-            <div class="row section">
-
-              <header class="sec-heading">
-              <img src="img/tick.png" style="width:230px;">
-                <h2>Payment Successful</h2>
-               <h4>DeZineBox.io will contact you shortly.</h4>
-              </header>
-              
-              <!-- Item 1 -->
-        <br><br> <br><br>
-                </div>
-              </div>
-              <!-- Item 2 -->
-              
-
-            </div>
-
 
 <?php
 include('crypto.php')
@@ -126,10 +109,50 @@ include('crypto.php')
     {
         $information=explode('=',$decryptValues[$i]);
         if($i==3)   $order_status=$information[1];
+		
     }
  
-   
+    if($order_status==="Success")
+    {
+		
+		
+		?>
+		
+            <div class="row section">
+
+              <header class="sec-heading">
+              <img src="img/tick.png" style="width:230px;">
+                <h2>Payment Successful</h2>
+               <h4>DeZineBox.io will contact you shortly.</h4>
+              </header>
+              
+              <!-- Item 1 -->
+        <br><br> <br><br>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              
+
+            </div>
+
+
+		
+        <?php
+    }
  
+ 
+ 
+  else if($order_status==="Failure")
+    {
+		
+		?>
+        Thank you for shopping with us.However,the transaction has been declined
+		
+		<?php
+    }
+	
+	
+	
     echo "<br><br>";
  
     echo "<table cellspacing=4 cellpadding=4>";
