@@ -62,25 +62,59 @@
 </tr>
 </thead>
 <tbody>
-<?php foreach ($users as $row) {
-    ?>
-<tr>
-<td><?php echo $row['enqId'];?></td>
-<td><?php echo $row['name'];?></td>
-<td><?php echo $row['email'];?></td>
-<td><?php echo $row['mobile'];?></td>
-<?php foreach ($formEle as $key => $value) {
-  if($value == "Payment Doc"){
+<?php foreach ($users as $row)
+	                    		if($row['Paid'] == "YES"){
+								?>
+								
+	                    		<tr style="background-color:#7fdd7f;">
+	                    			<td><?php echo $row['enqId'];?></td>
+	                    			<td><?php echo $row['name'];?></td>
+	                    			<td><?php echo $row['email'];?></td>
+	                    			<td><?php echo $row['mobile'];?></td>
+	                    			 <?php foreach ($formEle as $key => $value) {
+										 if($value == "Payment Doc"){
 											 echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
 											 
 										 }else{
 		                            	echo "<td>".$row[$key]."</td>";
 										 }
-}
-    ?>
-</tr>
-<?php
-    }
+		                            }
+		                            ?>
+	                    		</tr>
+								
+								
+	                    		<?php
+								}else{
+									?>
+									
+									
+									<tr>
+	                    			<td><?php echo $row['enqId'];?></td>
+	                    			<td><?php echo $row['name'];?></td>
+	                    			<td><?php echo $row['email'];?></td>
+	                    			<td><?php echo $row['mobile'];?></td>
+	                    			 <?php foreach ($formEle as $key => $value) {
+										 if($value == "Payment Doc"){
+											 if($row[$key]){
+											 echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+											 }else{
+												 echo "<td></td>";
+												 
+											 }
+										 }else{
+		                            	echo "<td>".$row[$key]."</td>";
+										 }
+		                            }
+		                            ?>
+	                    		</tr>
+								
+									
+									
+									<?php
+									
+								}
+	                    	
+							
     ?>
 </tbody>
 </table>

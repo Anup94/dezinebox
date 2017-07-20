@@ -54,7 +54,7 @@ $query='';
 
 
 
-$con=mysqli_connect("localhost","root","root","dezine_box");
+$con=mysqli_connect("localhost","root","","dezine");
 // Check connection
 if (mysqli_connect_errno())
   {
