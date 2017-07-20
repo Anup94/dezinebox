@@ -61,7 +61,14 @@ if(mysqli_num_rows($result)>0) {
 
         <!-- JS -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+         <script type="text/javascript" src="backfix.min.js"></script>
 
+<script type="text/javascript">
+  bajb_backdetect.OnBack = function()
+  {
+    alert('If you go back all your changes might be lost..!');
+  }
+  </script>
         <style type="text/css">
         .myTable {
           color: #333;
