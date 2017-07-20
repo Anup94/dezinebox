@@ -23,7 +23,10 @@
                    "zone"=>"Zone",
                    "requirement"=>"Requirement",
                    "details"=>"Details",
-                   "price"=>"Price"
+                   "price"=>"Price",
+				   "Paid"=>"Paid",
+					  "status"=>"Status",
+					  "payment_doc"=>"Payment Doc"
                    );
     ?>
 <!DOCTYPE html>
@@ -67,7 +70,12 @@
 <td><?php echo $row['email'];?></td>
 <td><?php echo $row['mobile'];?></td>
 <?php foreach ($formEle as $key => $value) {
-    echo "<td>".$row[$key]."</td>";
+  if($value == "Payment Doc"){
+											 echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+											 
+										 }else{
+		                            	echo "<td>".$row[$key]."</td>";
+										 }
 }
     ?>
 </tr>

@@ -38,7 +38,7 @@ function mailOrder($result,$constTypeArr,$boxTypeArr) {
   }
   $message .= "</table>";
   $message .= "</body></html>";
-  $result=mail($to, $subject, $message, $headers);
+  //$result=mail($to, $subject, $message, $headers);
   if(!$result) {
     return 'Message could not be sent.';
     return 'Mailer Error: ' . $mail->ErrorInfo;
@@ -440,6 +440,7 @@ switch ($result->selectedArea)
                         <input type="hidden" name="language" value="EN"/>
 						
 						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />
+						<input type="hidden" name ="merchant_param2" value="a" />
                         <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->

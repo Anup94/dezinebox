@@ -343,7 +343,7 @@ if($_GET['oauth_token']){
 
 		$name = $user->name;
 		$email_address = $user->email;
-		$link = "http://geomics.in/resetform.php?email=$email_address";
+		$link = "http://dezinebox.io/resetform.php?email=$email_address";
 		$message = "Thank you for registering, welcome to deZine Box! We are really happy to have you here. deZine Box is an online architectural and interior design solution that transforms the way you design your spaces. It is one-of-a-kind solution to provide you with design execution capabilities";
 		$mail->Subject ='Password Reset';
 		$mail->Body ="Dear $name, click on the link below to reset yout password <br> $link";

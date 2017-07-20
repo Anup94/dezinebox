@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once $_SERVER["DOCUMENT_ROOT"].'/login-check.php';
-require_once($_SERVER['DOCUMENT_ROOT']."/classes/db.class.php");
+
 require_once($_SERVER['DOCUMENT_ROOT']."/config-payment.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/PHPMailer/PHPMailerAutoload.php");
 
@@ -36,7 +36,7 @@ function mailOrder($result,$constTypeArr,$boxTypeArr) {
   }
   $message .= "</table>";
   $message .= "</body></html>";
-  $result=mail($to, $subject, $message, $headers);
+  //$result=mail($to, $subject, $message, $headers);
   if(!$result) {
     return 'Message could not be sent.';
     return 'Mailer Error: ' . $mail->ErrorInfo;
@@ -466,7 +466,7 @@ switch ($result->selectedArea)
                    <form method="POST" name="customerData" action="ccavRequestHandler.php">
                         
                         <input type="hidden" name="merchant_id" value="133278"/>
-                        <input type="hidden" name="order_id" value="000<?php echo $result->enqId;?>"/>
+                        <input type="hidden" name="order_id" value="<?php echo $result->enqId;?>"/>
                         <input type="hidden" name="amount" value="<?php echo $finalPrice; ?>"/>
                         <input type="hidden" name="currency" value="INR"/>
                         <input type="hidden" name="redirect_url" value="http://www.dezinebox.io/thankyou.php"/>
@@ -474,6 +474,7 @@ switch ($result->selectedArea)
                         <input type="hidden" name="language" value="EN"/>
 						
 						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />
+						<input type="hidden" name ="merchant_param2" value="i" />
                         <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->
