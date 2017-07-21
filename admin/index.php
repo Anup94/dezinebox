@@ -14,14 +14,14 @@
         $users=$result;
     }
     $formEle=array(
-                   "categoryOption"=>"Category Option",
+					"constTypeId"=>"Category",
+                   "categoryOption"=>"Sub Category",
+				   "subCategoryOption"=>"Theme",
                    "selectedArea"=>"AREA (SQ-FEET)",
-                   "projectType"=>"Project Name",
+                   //"projectType"=>"File",
                    "plotArea"=>" Plot Area",
                    "siteLocation"=>"Site Location",
-                   "fsiAvailable"=>"FSI Available",
-                   "zone"=>"Zone",
-                   "requirement"=>"Requirement",
+                  
                    "details"=>"Details",
                    "price"=>"Price",
 				   "Paid"=>"Paid",
@@ -75,6 +75,11 @@
 										 if($value == "Payment Doc"){
 											 echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
 											 
+										 }else if($value == "Category"){
+											 if($row[$key] == '1')echo "<td>Residential</td>";
+											 if($row[$key] == '2')echo "<td>Commercial</td>";
+											 if($row[$key] == '3')echo "<td>Hospitality</td>";
+											 if($row[$key] == '4')echo "<td>Institutional</td>";
 										 }else{
 		                            	echo "<td>".$row[$key]."</td>";
 										 }
@@ -101,6 +106,11 @@
 												 echo "<td></td>";
 												 
 											 }
+										 }else if($value == "Category"){
+											 if($row[$key] == '1')echo "<td>Residential</td>";
+											 if($row[$key] == '2')echo "<td>Commercial</td>";
+											 if($row[$key] == '3')echo "<td>Hospitality</td>";
+											 if($row[$key] == '4')echo "<td>Institutional</td>";
 										 }else{
 		                            	echo "<td>".$row[$key]."</td>";
 										 }

@@ -57,7 +57,7 @@
                 <!-- File Input -->
                <div class="form-group">
                   <label for="file-form">File input (max 5 MB  - prefered zip file)</label>
-                  <input class="form-control" type="file" id="file-form" accept=".jpg , .TIF , .jpeg , .png , .pdf , .cad, .zip">
+                  <input class="form-control" name="file" type="file" id="file-form" accept=".jpg , .TIF , .jpeg , .png , .pdf , .cad, .zip">
         
                 </div>    
                

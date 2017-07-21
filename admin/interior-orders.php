@@ -14,10 +14,11 @@ if(mysqli_num_rows($result)>0) {
 	$users=$result;
 }
 $formEle=array(
-                    "categoryOption"=>"Category Option",
-                    "subCategoryOption"=>"Sub Category",
+					"constTypeId"=>"category",
+                    "categoryOption"=>"Sub Category",
+                    "subCategoryOption"=>"Theme",
                     "selectedArea"=>"AREA (SQ-FEET)",
-      "moreDetails"=>"Tell Us More",
+      "moreDetails"=>"File",
       "budget"=>"Budget",
       "siteLocation"=>"Site Location",
       "driveLink"=>"Drive Link",
@@ -74,6 +75,15 @@ $formEle=array(
 										 if($value == "Payment Doc"){
 											 echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
 											 
+										 }else if($value == "File"){
+											if($row[$key]) echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+											else echo "<td>Not uploaded</td>";
+										 }else if($value == "category"){
+											  if($row[$key] == '1')echo "<td>Residential</td>";
+											 if($row[$key] == '2')echo "<td>Commercial</td>";
+											 if($row[$key] == '3')echo "<td>Hospitality</td>";
+											 if($row[$key] == '4')echo "<td>Institutional</td>";
+											 
 										 }else{
 		                            	echo "<td>".$row[$key]."</td>";
 										 }
@@ -100,6 +110,16 @@ $formEle=array(
 												 echo "<td></td>";
 												 
 											 }
+										 }else if($value == "File"){
+											 
+											if($row[$key]) echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+											else echo "<td>Not uploaded</td>";
+										 }else if($value == "category"){
+											  if($row[$key] == '1')echo "<td>Residential</td>";
+											 if($row[$key] == '2')echo "<td>Commercial</td>";
+											 if($row[$key] == '3')echo "<td>Hospitality</td>";
+											 if($row[$key] == '4')echo "<td>Institutional</td>";
+											 
 										 }else{
 		                            	echo "<td>".$row[$key]."</td>";
 										 }

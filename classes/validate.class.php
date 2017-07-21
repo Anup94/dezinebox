@@ -768,6 +768,49 @@ if($_GET['oauth_token']){
 		return $enqId;
 	}
 	function submit_interior_enquiry($input) {
+		
+		if($_FILES['file'][size] > 0){
+
+			$file = $_FILES['file'];
+
+			$name = $file['name'];
+			$tmp_name = $file['tmp_name'];
+			$extension = explode('.', $name);
+			$extension = strtolower(end($extension));
+
+			$key = md5(uniqid());
+			$tmp_file_name = "{$key}.{$extension}";
+			$tmp_file_path = $_SERVER['DOCUMENT_ROOT']."/classes/uploads/{$tmp_file_name}";
+
+			move_uploaded_file($tmp_name, $tmp_file_path);
+			$s3 = S3Client::factory([
+    		'version'=>'latest',
+			'region' => "ap-south-1",
+			'credentials' => [
+        'key'    => 'AKIAI3DLLJVA7SQSAIPQ',
+        'secret' => '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',
+			],
+		'endpoint' => 'https://s3.ap-south-1.amazonaws.com',
+		'signature' => 'v4'
+    
+			]);		
+			
+			$link = 'https://s3.ap-south-1.amazonaws.com/dezinebox/uploads/'.$tmp_file_name;
+			
+				$s3->putObject(array(
+					
+					'Bucket'=> 'dezinebox',
+					'Key'=> "uploads/{$tmp_file_name}",
+					'Body' => fopen($tmp_file_path, "rb"),
+					'ACL' => 'public-read'
+				));
+				//$s3->setEnd
+				unlink($tmp_file_path);
+
+				//$newPartner->catalog=isset($link)?$link:NULL;
+			
+		}
+		
 		$formEle=array("selectedArea",
 			"moreDetails",
 			"siteLocation",
@@ -787,6 +830,7 @@ if($_GET['oauth_token']){
 		//return $newEntry;
 		$userSession=$_SESSION['userSession'];
 		$newEntry->userId=$userSession->userId;
+		$newEntry->moreDetails=isset($link)?$link:NULL;
 		$enqId=$this->insertObject("interior_enquiries",$newEntry);
 		return $enqId;
 	}
