@@ -418,8 +418,39 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
                  &nbsp &nbsp &nbsp &nbsp &nbsp   
-                  <h6>&nbsp (-) Promo Code :</h6> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp <input>
+                  <h6>&nbsp (-) Promo Code :</h6> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp <input type="text" name="pcode" id="pcode"><button id="pcheck">check</button>
                 </div>
+				<script src="js/jquery.min.js"></script>
+				<script>
+				$('#pcheck').click(function(){
+					var code = $('#pcode').val();
+					if(!code){
+						return alert("Please enter the code!");
+					}else{
+						console.log(code);
+						$.post('/validate.php?task=validate-promo', {"code":code}, function(res){
+							//console.log(res);
+							if(res == "Invalid Code")alert ("The code is invalid!!");
+							else {
+								$('#pcheck').prop('disabled',true);
+								$('#pcode').prop('disabled',true);
+								console.log(res);
+								alert("Promo code applied");
+								var discount = parseInt(res);
+								var finalPrice = parseInt( $('#final-amt').val());
+								
+								var finalPriceAfterPromoCode = finalPrice - (finalPrice*discount)/100;
+								
+								console.log("Hi this is pranoy",finalPriceAfterPromoCode);
+								$('#final-amt').val(finalPriceAfterPromoCode);
+								$('#fp').html(finalPriceAfterPromoCode);
+								$('#mp3').val(code);
+							}
+						});
+					}
+					
+				})
+				</script>
                 </div>
               </div><!-- / .col-lg-5 -->
 
@@ -448,7 +479,7 @@ switch ($result->selectedArea)
                   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
                  <label > <?php 
                  $finalPrice = $pricee+$pricee*0.18;
-                 echo $finalPrice;
+                 echo "<p id='fp'>$finalPrice</p>";
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    
@@ -475,7 +506,7 @@ switch ($result->selectedArea)
                         
                         <input type="hidden" name="merchant_id" value="133278"/>
                         <input type="hidden" name="order_id" value="<?php echo $result->enqId;?>"/>
-                        <input type="hidden" name="amount" value="<?php echo $finalPrice; ?>"/>
+                        <input type="hidden" name="amount" id="final-amt" value="<?php echo $finalPrice; ?>"/>
                         <input type="hidden" name="currency" value="INR"/>
                         <input type="hidden" name="redirect_url" value="http://www.dezinebox.io/thankyou.php"/>
                         <input type="hidden" name="cancel_url" value="http://www.dezinebox.io/index.php"/>
@@ -483,6 +514,7 @@ switch ($result->selectedArea)
 						
 						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />
 						<input type="hidden" name ="merchant_param2" value="i" />
+						<input type="hidden" name ="merchant_param3" id="mp3" value="None"/>
                         <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->

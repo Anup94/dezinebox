@@ -37,7 +37,23 @@ require 'vendor/autoload.php';
 class validateClass extends dbConnect {
 
 	
-
+	function validatePromoCode($input){
+		$resp = new resp();
+		//$data = json_decode($input);
+		$code = $input->code;
+		$query = "SELECT * FROM coupons WHERE couponCode='$code'";
+		$this->setQuery($query);
+		$result=$this->conn->query($query);
+		if(mysqli_num_rows($result)==0){
+			$resp->msg="Invalid Code";
+		}else{
+			$code=$result->fetch_object();
+			$discount = $code->discount;
+			$resp->msg="Yes";
+			$resp->discount=$discount;
+		}
+		return $resp;
+	}
 
 	function login($input) {
 		$resp=new resp();

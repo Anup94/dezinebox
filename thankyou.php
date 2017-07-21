@@ -116,6 +116,7 @@ include('crypto.php')
         if($i==3)   $order_status=$information[1];
 		if($i == 26) $boxType = $information[1];
 		if($i == 27) $iora = $information[1];
+		if($i == 28) $promocode = $information[1];
 		if($i == 1) $tracking_id = $information[1];
 		if($i == 2) $bankRefNo = $information[1];
 		if($i == 5) $paymentMode = $information[1];
@@ -167,6 +168,7 @@ include('crypto.php')
 				   <tr><td>Order ID</td><td>$info[0]</td></tr>
                     <tr><td>Tracking ID</td><td>$info[1]</td></tr>
                     <tr><td>Bank Reference Number</td><td>$info[2]</td></tr>
+					<tr><td>Promo Code</td><td>$info[28]</td></tr>
                     <tr><td>Order Status</td><td>$info[3]</td></tr>
                     <tr><td>Failure Message</td><td>$info[4]</td></tr>
                     <tr><td>Payment Mode</td><td>$info[5]</td></tr>
@@ -247,9 +249,44 @@ include('crypto.php')
 					'ACL' => 'public-read'
 				));
 				//$s3->setEnd
-				//unlink($tmp_file_name);
+				unlink($tmp_file_name);
 				
-				if($iora == 'i'){
+				
+	
+	
+	
+	
+	
+	
+    if($order_status==="Success")
+    {	
+		
+		if($promocode != ""){
+		$query = "SELECT * FROM coupons WHERE couponCode= '$promocode'";
+		$result=$dbConnect->conn->query($query);
+		$result=$result->fetch_object();
+		
+		
+		if($result->usageTimes == 1){
+			echo "$promocode";
+			$query = "DELETE FROM coupons WHERE couponCode= '$promocode'";
+			$result=$dbConnect->conn->query($query);
+			
+		}else{
+			echo "$promocode";
+			$t = $result->usageTimes;
+			echo $t;
+			$t = $t-1;
+			echo $t;
+			$query = "UPDATE coupons SET usageTimes=$t WHERE couponCode= '$promocode'";
+			$result=$dbConnect->conn->query($query);
+		}
+		
+		
+		}
+		
+		
+		if($iora == 'i'){
 			$query = "UPDATE interior_enquiries SET Paid= 'YES', status='$order_status', payment_doc='$link' WHERE enqId='$id'";
 			$result=$dbConnect->conn->query($query);
 				}
@@ -258,15 +295,6 @@ include('crypto.php')
 			$result=$dbConnect->conn->query($query);
 					
 				}
-		
-	
-	
-	
-	
-	
-	
-    if($order_status==="Success")
-    {
 		
 		
 		?>
@@ -297,6 +325,19 @@ include('crypto.php')
  
   else if($order_status==="Failure")
     {
+		
+		
+			if($iora == 'i'){
+			$query = "UPDATE interior_enquiries SET Paid= 'NO', status='$order_status', payment_doc='$link' WHERE enqId='$id'";
+			$result=$dbConnect->conn->query($query);
+				}
+				if($iora == 'a'){
+					$query = "UPDATE architecture_enquiries SET Paid= 'NO', status='$order_status', payment_doc='$link' WHERE enqId='$id'";
+			$result=$dbConnect->conn->query($query);
+					
+				}
+		
+		
 		
 		?>
        <div class="row section">
@@ -337,7 +378,7 @@ include('crypto.php')
             <div class="row section">
  <br> <br> 
               <header class="sec-heading">
-                <h2>Bill SUMMARY</h2>
+                <h2>Bill Summary</h2>
         
               </header>
               
@@ -361,6 +402,7 @@ include('crypto.php')
                     <tr><td>Tracking ID</td><td>$tracking_id</td></tr>
                     <tr><td>Bank Reference Number</td><td>$bankRefNo</td></tr>
                     <tr><td>Order Status</td><td>$order_status</td></tr>
+					<tr><td>Promo Code</td><td>$promocode</td></tr>
                     <tr><td>Payment Mode</td><td>$paymentMode</td></tr>
                     <tr><td>Box Type</td><td>$boxType</td></tr>
                     <tr><td>Category</td><td>$category</td></tr>

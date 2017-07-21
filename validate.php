@@ -17,6 +17,19 @@ if(!empty(@$_GET['task'])) {
 	// echo $task;
 }
 
+if($task == "validate-promo"){
+	$resp = $validateClass->validatePromoCode($input);
+	if($resp->msg == "Yes"){
+		$msg = $resp->msg;
+		$discount = $resp->discount;
+		echo "$resp->discount";
+	}else 
+		echo "$resp->msg";
+	
+	
+	
+}
+
 if($task == "in_pass"){
 $resp = $validateClass->newPassword($input);
 return $resp;

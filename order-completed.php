@@ -386,8 +386,40 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
               <span class="spacing">   &nbsp &nbsp &nbsp &nbsp &nbsp  </span> 
-                  <h6>&nbsp &nbsp (-) Promo  Code:</h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp</span> <input>
+                  <h6>&nbsp &nbsp (-) Promo  Code:</h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp</span> <input type="text" name="pcode" id="pcode"><button id="pcheck">check</button>
                 </div>
+				
+				<script src="js/jquery.min.js"></script>
+				<script>
+				$('#pcheck').click(function(){
+					var code = $('#pcode').val();
+					if(!code){
+						return alert("Please enter the code!");
+					}else{
+						console.log(code);
+						$.post('/validate.php?task=validate-promo', {"code":code}, function(res){
+							//console.log(res);
+							if(res == "Invalid Code")alert ("The code is invalid!!");
+							else {
+								$('#pcheck').prop('disabled',true);
+								$('#pcode').prop('disabled',true);
+								console.log(res);
+								alert("Promo code applied");
+								var discount = parseInt(res);
+								var finalPrice = parseInt( $('#final-amt').val());
+								
+								var finalPriceAfterPromoCode = finalPrice - (finalPrice*discount)/100;
+								
+								console.log("Hi this is pranoy",finalPriceAfterPromoCode);
+								$('#final-amt').val(finalPriceAfterPromoCode);
+								$('#fp').html(finalPriceAfterPromoCode);
+								$('#mp3').val(code);
+							}
+						});
+					}
+					
+				})
+				</script>
                 </div>
               </div><!-- / .col-lg-5 -->
 
@@ -449,6 +481,7 @@ switch ($result->selectedArea)
 						
 						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />
 						<input type="hidden" name ="merchant_param2" value="a" />
+						<input type="hidden" name ="merchant_param3" id="mp3" value="None"/>
                         <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->
