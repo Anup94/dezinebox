@@ -17,11 +17,11 @@ $(document).ready(function() {
 			$(form).addClass("loading").ajaxSubmit(function(data) {
 				$(form).removeClass("loading");
 				console.log(data);
-				debugger;
+				
 				if(data && data["status"]=="1") {
 					toastr["success"](data["msg"]);
 					$(form).resetForm();
-					debugger;
+					
 					location.reload();
 				} else {
 					toastr["error"](data["msg"]);

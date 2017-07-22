@@ -44,6 +44,7 @@ if(mysqli_num_rows($result)>0) {
 				                            <th>Code</th>
 				                            <th>Usage Times</th>
 				                            <th>Discount %</th>
+											<th>options</th>
 				                        </tr>
 				                    </thead>
 				                    <tbody>
@@ -53,7 +54,9 @@ if(mysqli_num_rows($result)>0) {
 				                    			<td><?php echo $row['couponId'];?></td>
 				                    			<td><?php echo $row['couponCode'];?></td>
 				                    			<td><?php echo $row['usageTimes'];?></td>
-				                    			<td><?php echo $row['discount'];?></td>
+												<td><?php echo $row['discount'];?></td>
+				                    			<input type="hidden" id="<?php echo $row['couponId'];?>" value="<?php echo $row['couponCode'];?>">
+												<td><button id="delete" onclick="deleteThis('<?php echo $row['couponId'];?>')">Delete</button></td>
 				                    		</tr>
 				                    		<?php
 				                    	}
@@ -67,6 +70,24 @@ if(mysqli_num_rows($result)>0) {
 			</div>
 		</section>
 	</div>
+	<script src="js\thirdparty\0_jquery.min.js"></script>
+	<script>
+	
+	
+	function deleteThis(id){
+		
+		
+		var r = confirm("Do you really want to delete this coupon??");
+if (r == true) {
+   var cId = $('#'+id).val();
+   console.log(cId);
+		$.post('/admin/validate.php?task=deleteCoupon', {"code":cId}, function(res){
+			$("#vendorsTable").load(location.href + " #vendorsTable");
+		});
+}
+}
+	</script>
+	
 	<form name="couponForm" id="couponForm" class="modal fade" tabindex="-1" role="dialog" method="post" action="validate.php?task=add_coupon">
 		<div class="modal-dialog modal-sm" role="document">
 			<div class="modal-content">

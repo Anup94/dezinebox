@@ -36,7 +36,15 @@ require 'vendor/autoload.php';
 
 class validateClass extends dbConnect {
 
-	
+	function deleteCoupon($input){
+		$resp = new resp();
+		$code = $input->code;
+		$query = "DELETE FROM coupons WHERE couponCode='$code'";
+		$this->setQuery($query);
+		$result=$this->conn->query($query);
+		$resp->msg="Yes";
+		return $resp;
+	}
 	function validatePromoCode($input){
 		$resp = new resp();
 		//$data = json_decode($input);

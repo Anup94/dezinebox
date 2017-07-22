@@ -17,6 +17,8 @@ if(!empty(@$_GET['task'])) {
 	// echo $task;
 }
 
+
+
 if($task == "validate-promo"){
 	$resp = $validateClass->validatePromoCode($input);
 	if($resp->msg == "Yes"){

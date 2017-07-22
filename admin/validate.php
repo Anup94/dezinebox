@@ -26,6 +26,12 @@ if($task=="login") {
 	$resp=$validateClass->add_coupon($input);
 	$validateClass->send_as_json($resp,true);
 }
+
+if($task == "deleteCoupon"){
+	
+	$resp = $validateClass->deleteCoupon($input);
+	echo "done";
+}
  
 
 
