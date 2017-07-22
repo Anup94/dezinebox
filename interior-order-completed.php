@@ -145,11 +145,11 @@ if(!empty($result->boxTypeId) && !empty($result->constTypeId) && !empty($result-
          <script type="text/javascript" src="backfix.min.js"></script>
 
 <script type="text/javascript">
-  bajb_backdetect.OnBack = function()
-  {
-    alert('If you go back all your changes might be lost..!');
-  }
-  </script>
+	bajb_backdetect.OnBack = function()
+	{
+		alert("Press the back button once again to go back .\nIf you go back all your changes might be lost..!");
+	}
+	</script>
 
        <!--  <style type="text/css">
         .myTable {
@@ -178,17 +178,15 @@ if(!empty($result->boxTypeId) && !empty($result->constTypeId) && !empty($result-
     color: #000;
     border: 1px solid #000;
 }
+p{
+	text-align: left ;
+	padding: 1px;
+}
 </style>
     </head>
     <body id="page-top">
         <!-- Google Tag Manager -->
-        <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MH7TSF"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MH7TSF');</script>
+     
        
 
 
@@ -418,7 +416,9 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
                  &nbsp &nbsp &nbsp &nbsp &nbsp   
-                  <h6>&nbsp (-) Promo Code :</h6> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp <input type="text" name="pcode" id="pcode"><button id="pcheck">check</button>
+                  <h6>&nbsp (-) Promo Code :</h6> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp <input type="text" name="pcode" id="pcode">
+                  <div class="col-lg-9"></div>&nbsp<div class="col-lg-2">
+                  <br><button id="pcheck" class="btn checkout-btn" style="padding: 5px;">&nbsp Apply &nbsp </button></div><br><br>
                 </div>
 				<script src="js/jquery.min.js"></script>
 				<script>
@@ -477,9 +477,7 @@ switch ($result->selectedArea)
                 <div class="subtotal-group" style="color: #000;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                   <h6>Net Total</h6>
                   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                 <label > <?php 
-                 $finalPrice = $pricee+$pricee*0.18;
-                 echo "<p id='fp'>$finalPrice</p>";
+             <label id='fp' >      <?php  $finalPrice = $pricee+$pricee*0.18; echo "$finalPrice";
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    

@@ -71,10 +71,9 @@ if(mysqli_num_rows($result)>0) {
 <script type="text/javascript">
   bajb_backdetect.OnBack = function()
   {
-    alert('If you go back all your changes might be lost..!');
+    alert("Press the back button once again to go back .\nIf you go back all your changes might be lost..!");
   }
   </script>
-
   <style type="text/css">
   .myTable {
     color: #333;

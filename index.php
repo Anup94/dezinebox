@@ -1327,7 +1327,7 @@ $(document).on('ready', function() {
 <td><a href="theme.php" style="color: #fff">Theme</a></td>
 <td> <a href="#" style="color: #fff"> Media </a></td></tr>
 <tr>
-<td><a href="conditions.html" style="color: #fff">Terms & Conditions</a></td>
+<td><a href="conditions.php" style="color: #fff">Terms & Conditions</a></td>
 <td>  <a href="#" style="color: #fff"> Career </a></td></tr>
 </table>
 </div><!-- / .widget -->

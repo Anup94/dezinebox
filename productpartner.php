@@ -210,9 +210,9 @@
 <div class='form-group margin-bottom'>
 <div class='checkbox check-agree'>
 <label>
-<input name="user[term_condition]" type="hidden" value="0" /><input class="form_group_data check-agree-trm-cdn" mandatory="true" error_message="Please select terms &amp; conditions" type="checkbox" value="1" name="user[term_condition]" id="user_term_condition" />
+<input name="user[term_condition]" type="hidden" value="0" /><input class="form_group_data check-agree-trm-cdn" mandatory="true" error_message="Please select terms &amp; conditions" type="checkbox" value="1" name="user[term_condition]" id="user_term_condition" required/>
 I agree
-<a target="_blank" href="#">Terms &amp; Conditions</a>
+<a target="_blank" href="conditions.php">Terms &amp; Conditions</a>
 </label>
 <label class='control-label lbl tm_cond_errmessage'></label>
 </div>

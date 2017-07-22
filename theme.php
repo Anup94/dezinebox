@@ -36,13 +36,7 @@
     </head>
     <body id="page-top">
         <!-- Google Tag Manager -->
-        <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MH7TSF"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MH7TSF');</script>
+    
        
 
 
@@ -72,7 +66,7 @@
       
               </header>
          
-                <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 15%"><h4>Ethnic</h4> <br> <a href="interior-residential.html">
+                <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 15%"><h4>Ethnic</h4> <br> 
 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/ethnic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                  <br><br><br><br><br><br><br>
@@ -83,10 +77,10 @@
                    
                     </div>
                   </div>
-                </div></a>
+                </div>
               </div>
               <!-- Item 2 -->
-              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item"> <h4>Contemporary</h4> <br> <a href="interior-residential.html">
+              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item"> <h4>Contemporary</h4> <br> 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/contemporary.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                   <br><br><br><br><br><br><br>
                  <div class="p-hover">
@@ -95,10 +89,10 @@
                      
                     </div>
                   </div>
-                </div></a>
+                </div>
               </div>
               <!-- Item 3 -->
-              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item">   <h4>Bohemian</h4> <br> <a href="interior-residential.html">
+              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item">   <h4>Bohemian</h4> <br> 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/bohemian.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                   <br><br><br><br><br><br><br>
                  <div class="p-hover">
@@ -107,11 +101,11 @@
                   
                     </div>
                   </div>
-                </div></a>
+                </div>
               </div>
  
               <!-- Item 4 -->
-              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 15%"> <br>  <h4>Rustic</h4> <br> <a href="interior-residential.html">
+              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 15%"> <br>  <h4>Rustic</h4> <br> 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".6s" style="background-image: url('images/rustic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                   <br><br><br><br><br><br><br>
                  <div class="p-hover">
@@ -120,9 +114,9 @@
                  
                     </div>
                   </div>
-                </div></a>
+                </div>
               </div>
-              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item"><br><h4>Eclectic</h4> <br> <a href="interior-residential.html">
+              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item"><br><h4>Eclectic</h4> <br> 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/eclectic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                   <br><br><br><br><br><br><br>
                  <div class="p-hover">
@@ -131,9 +125,9 @@
                   
                     </div>
                   </div>
-                </div></a>
+                </div>
               </div>
-              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item"><br><h4>ShabbyChic</h4> <br> <a href="interior-residential.html">
+              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item"><br><h4>ShabbyChic</h4> <br> 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/shabbychic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                  <br><br><br><br><br><br><br>
                  <div class="p-hover">
@@ -142,7 +136,7 @@
                   
                     </div>
                   </div>
-                </div></a> <br><br>
+                </div> <br><br>
               </div>
             </div><!-- / .row -->
           </section>
@@ -192,7 +186,7 @@
                     <li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://plus.google.com/101485144759189925017"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><i class="fa fa-youtube"></i></a></li>
                   </ul>
                 </div><!-- / .widget -->
       
