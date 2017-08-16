@@ -66,17 +66,17 @@
 
 <!-- Item 1 --><br><br><br><br><br><br>
 <div class="col-lg-6 col-md-6 mb-sm-50">
-<div class="ft-item wow fadeInUp" data-wow-duration="1s">
+<div class="ft-item wow fadeInUp" data-wow-duration="1s" style="height: 412px;">
 
 <h3 style="text-align: center;">Dezine Partner</h3>
-<p style="color: #777">While deZinebox offers online services, our customers often request face to face consultations or conversations to address any implementation challenges. To facilitate this, we tie-up with a number ofdeZine partners who can engage with our customers offline in order to seamlessly complete their project. Since the deZine partner acts as a representative of deZinebox, we are very particular about the quality and commitment levels of our partners. We are always on the lookout for trustworthy partners who can help us serve our customers better. </p> <br>
+<p style="color: #777">While deZinebox offers online services, our customers often request face to face consultations or conversations to address any implementation challenges. To facilitate this, we tie-up with a number ofdeZine partners who can engage with our customers offline in order to seamlessly complete their project. Since the deZine partner acts as a representative of deZinebox, we are very particular about the quality and commitment levels of our partners. We are always on the lookout for trustworthy partners who can help us serve our customers better. </p> 
 <a href="designer.php" style="color: #FF5100"> Join us as a dezine partner</a>
 </div>
 </div>
 
 <!-- Item 3 -->
 <div class="col-lg-6 col-md-6 mb-sm-50">
-<div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+<div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="height: 412px;">
 
 <h3 style="text-align: center;">Product Partner</h3>
 <p style="color: #777">An important part of our offering is the design elements that we recommend to your customers, to bring their spaces to life. To deliver the very best recommendations for our customers, we’re always on the lookout for trusted product partners who can supply great quality home design and décor products online, so that our customers can purchase them from the comfort of their home.<br>

@@ -172,6 +172,10 @@ if(!empty($result->boxTypeId) && !empty($result->constTypeId) && !empty($result-
     color: #000;
     border: 1px solid #000;
 }
+p{
+  text-align: left ;
+  padding: 1px;
+}
 @media only screen and (max-width: 500px) {
     .spacing {
        display: none;
@@ -236,7 +240,7 @@ switch ($result->boxTypeId)
     case 4:echo "<img src='images/space2.png'>" ; break;
     case 5:echo "<img src='images/earth2.png'>" ; break;
 }?>  </div>  <div class="col-lg-5"></div>
-<div class="col-lg-7" style="color: #000;">
+<div class="col-lg-8" style="color: #000;">
 <p style="font-size: 1.3em"><strong><?php echo empty($boxTypeArr[$result->boxTypeId])?'':$boxTypeArr[$result->boxTypeId]['boxType'];?></strong><BR> </p><p>
 |Architecture | <?php echo empty($constTypeArr[$result->constTypeId])?'':$constTypeArr[$result->constTypeId]['constType'];?> |  <?php 
                   $formEle=array("categoryOption"=>"");
@@ -276,11 +280,11 @@ switch ($result->boxTypeId)
             
 
             <!-- Totals Table -->
-               <div class="col-lg-5 totals-group">
+               <div class="col-lg-4 totals-group">
              
                <div class="totals-content">
                 <div class="subtotal-group">
-                 &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <h6 style="color: #000">INR <font color="#FF5100"> 
+                <h6 style="color: #000">INR <font color="#FF5100"> 
 
 
  <?php echo ($result->price);
@@ -298,9 +302,9 @@ switch ($result->selectedArea)
        case '4000-5000':echo "5 " ; break;
         case '5000+': header('location : /free.php') ; break;
 }?> 
-                </font> = </h6>
+                </font>  </h6>
                   <!-- <input type="text" style="width:100px;"  readonly; > -->
-                  <label> <?php 
+                  <label style="float: right"> <?php 
                 //  $formEle=array("price"=>" ");
                   //foreach ($formEle as $key => $value) {
                    
@@ -340,11 +344,11 @@ switch ($result->selectedArea)
                 <h3 style="color: #000">Order No - <?php echo $result->enqId;?> </h3><br><br><br>
                 <p style="color: #000;">GST Registration No:- 27AETPA2229J1ZE</p>
               </div><!-- / .col-lg-7 -->
-              <div class="col-lg-4 totals-group">
+              <div class="col-lg-4 col-md-12 totals-group">
                 <div class="totals-content">
                 <div class="subtotal-group">
-                  <h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp </span>  Total <small>( before  taxes )</small>&nbsp </h6>
-                <span class="spacing"></span>   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <label for="male"> <?php 
+                  <h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp  </span>&nbsp &nbsp &nbsp   Total <small>( before  taxes )</small>&nbsp </h6>
+                <span class="spacing"></span>   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <label style="float: right"> <?php 
                    echo   $pricee  ;
                   // $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $pricee) {
@@ -359,11 +363,11 @@ switch ($result->selectedArea)
 // }
 //                   }
                   
-                ?></label>
+                ?></label><div><div class="subtotal-group">
                   <h6><span class="spacing">  &nbsp &nbsp &nbsp &nbsp &nbsp </span>  (+) Taxes <small> ( GST @18%)</small></small>
 
-                 &nbsp &nbsp &nbsp  </h6>
-                   &nbsp &nbsp   <label for="male"> <?php echo $pricee*0.18;
+                 &nbsp &nbsp  </h6>
+                   &nbsp &nbsp &nbsp <label style="float: right"> <?php echo $pricee*0.18;
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    
@@ -379,8 +383,8 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
               <span class="spacing">   &nbsp &nbsp &nbsp &nbsp &nbsp  </span> 
-                  <h6>&nbsp &nbsp (-) Promo  Code:</h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp</span> <input type="text" name="pcode" id="pcode"><div class="col-lg-9"></div>&nbsp<div class="col-lg-2">
-                  <br><button id="pcheck" class="btn checkout-btn" style="padding: 5px;">&nbsp Apply &nbsp </button></div><br><br>
+                  <h6>&nbsp &nbsp (-) Promo  Code:</h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp</span> <input type="text" name="pcode" id="pcode" style="float: right"><div class="col-lg-10"></div>&nbsp<div class="col-lg-1">
+                  <br><button id="pcheck" class="btn checkout-btn" style="padding: 5px;">&nbsp Apply &nbsp </button></div><br>
                 </div>
 				
 				<script src="js/jquery.min.js"></script>
@@ -439,8 +443,8 @@ switch ($result->selectedArea)
                 <div class="totals-content">
                 <div class="subtotal-group" style="color: #000;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                   <h6>Net Total</h6>
-                  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                 <label id='fp' > <?php   $finalPrice = $pricee+$pricee*0.18; echo "$finalPrice";
+                  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                 <label id='fp' style="float: right" > <?php   $finalPrice = $pricee+$pricee*0.18; echo "$finalPrice";
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    

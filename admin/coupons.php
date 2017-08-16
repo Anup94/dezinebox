@@ -56,7 +56,7 @@ if(mysqli_num_rows($result)>0) {
 				                    			<td><?php echo $row['usageTimes'];?></td>
 												<td><?php echo $row['discount'];?></td>
 				                    			<input type="hidden" id="<?php echo $row['couponId'];?>" value="<?php echo $row['couponCode'];?>">
-												<td><button id="delete" onclick="deleteThis('<?php echo $row['couponId'];?>')">Delete</button></td>
+												<td><button type="button" class="btn btn-info btn-xs" id="delete" onclick="deleteThis('<?php echo $row['couponId'];?>')">Delete</button></td>
 				                    		</tr>
 				                    		<?php
 				                    	}

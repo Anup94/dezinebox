@@ -81,10 +81,10 @@ body {
 .top-head {
 /*    height: 50px;*/
     line-height: 36px;
-    padding-top: 7px;
-    background: #e3bd79;
+    padding: 7px;
+    background: #3fbfcc;
     position: absolute;
-    left: 100px;
+    left: 0px;
     right: 0;
     top: 0px;
     color: #ffffff;
@@ -137,6 +137,7 @@ td.min-td,th.min-td {
 }
 @media (min-width: 768px) {
   .sidebar-nav .navbar {
+    z-index: 1;
     border-radius: 0px;
     height: 100%;
   }

@@ -11,6 +11,20 @@ $users=array();
 if(mysqli_num_rows($result)>0) {
 	$users=$result;
 }
+if(isset($_GET['delpost'])){ 
+	define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','dezine');
+
+$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
+
+	$stmt = $db->prepare('DELETE FROM users WHERE userId = :userId') ;
+	$stmt->execute(array(':userId' => $_GET['delpost']));
+
+	header('Location: users.php?action=deleted');
+	exit;
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +37,15 @@ if(mysqli_num_rows($result)>0) {
 	<title>Dashboard - <?php echo SITE_TITLE;?></title>
 	<?php include_once $_SERVER['DOCUMENT_ROOT']."/includes/css.php";?>
 	<link rel="stylesheet" type="text/css" href="css/users.css?<?php echo RANDOM_NO;?>">
+	  <script language="JavaScript" type="text/javascript">
+  function delpost(id, title)
+  {
+	  if (confirm("Are you sure you want to delete '" + name + "'"))
+	  {
+	  	window.location.href = 'users.php?delpost=' + id;
+	  }
+  }
+  </script>
 </head>
 <body>
 	<div class="site-content">
@@ -30,6 +53,7 @@ if(mysqli_num_rows($result)>0) {
 			<?php include_once $_SERVER['DOCUMENT_ROOT']."/includes/navs.php";?>
 			<div class="wrapper container-fluid">
 				<div class="fit-main-content">
+				<div class="table-responsive">
 	                <table class="table table-bordered" id="vendorsTable">
 	                    <thead>
 	                        <tr class="text-uppercase text-nowrap">
@@ -37,6 +61,7 @@ if(mysqli_num_rows($result)>0) {
 	                            <th>Email</th>
 	                            <th>Mobile</th>
 	                            <th>Username</th>
+	                            <th>Action</th>
 	                        </tr>
 	                    </thead>
 	                    <tbody>
@@ -47,16 +72,20 @@ if(mysqli_num_rows($result)>0) {
 	                    			<td><?php echo $row['email'];?></td>
 	                    			<td><?php echo $row['mobile'];?></td>
 	                    			<td><?php echo $row['username'];?></td>
+	                    		<td>	<a href="javascript:delpost('<?php echo $row['userId'];?>')"><button type="button" class="btn btn-info btn-xs">Delete</button></a></td>
+
 	                    		</tr>
 	                    		<?php
 	                    	}
 	                    	?>
 	                    </tbody>
 	                </table>
+	                </div>
 	            </div>
 			</div>
 		</section>
 	</div>
 	<?php include_once $_SERVER['DOCUMENT_ROOT']."/includes/scripts.php";?>
+
 </body>
 </html>

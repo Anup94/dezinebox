@@ -9688,7 +9688,7 @@ form .input-error-2:focus {
 }
 
 .totals-content .subtotal-group, .totals-content .shipping-group {
-  padding: 25px 30px;
+  padding: 25px 0px 25px 30px;
 }
 
 .totals-content .subtotal-group h6, .totals-content .shipping-group h6, .totals-content .subtotal-group .progress-group .progress-title, .progress-group .totals-content .subtotal-group .progress-title,

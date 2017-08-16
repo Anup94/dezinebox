@@ -6,7 +6,7 @@
     $query="SELECT * FROM architecture_enquiries aq
     LEFT JOIN users u ON aq.userId=u.userId
     LEFT JOIN construction_types ct ON ct.constTypeId=aq.constTypeId
-    ORDER BY aq.enqId
+    ORDER BY aq.entryTime DESC
     ";
     $result=$dbConnect->conn->query($query);
     $users=array();
@@ -28,7 +28,23 @@
 					  "status"=>"Status",
 					  "payment_doc"=>"Payment Doc"
                    );
-    ?>
+   if(isset($_GET['delpost'])){ 
+	define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','dezine');
+
+$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
+
+	$stmt = $db->prepare('DELETE FROM architecture_enquiries WHERE enqId = :enqId') ;
+	$stmt->execute(array(':enqId' => $_GET['delpost']));
+
+	header('Location: index.php?action=deleted');
+	exit;
+} 
+
+?>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +56,15 @@
 <title>Dashboard - <?php echo SITE_TITLE;?></title>
 <?php include_once $_SERVER['DOCUMENT_ROOT']."/includes/css.php";?>
 <link rel="stylesheet" type="text/css" href="/css/home.css?<?php echo RANDOM_NO;?>">
+		  <script language="JavaScript" type="text/javascript">
+  function delpost(id, title)
+  {
+	  if (confirm("Are you sure you want to delete "))
+	  {
+	  	window.location.href = 'index.php?delpost=' + id;
+	  }
+  }
+  </script>
 </head>
 <body>
 <div class="site-content">
@@ -51,6 +76,8 @@
 <table class="table table-bordered" id="vendorsTable">
 <thead>
 <tr class="text-uppercase text-nowrap">
+  <th>Action</th>
+<th>Date</th>
 <th>Order Id</th>
 <th>Name</th>
 <th>Email</th>
@@ -67,6 +94,8 @@
 								?>
 								
 	                    		<tr style="background-color:#7fdd7f;">
+	                    		<td>	<a href="javascript:delpost('<?php echo $row['userId'];?>')"><button type="button" class="btn btn-info btn-xs">Delete</button></a></td>
+	                    			<td><?php echo $row['entryTime'];?></td>
 	                    			<td><?php echo $row['enqId'];?></td>
 	                    			<td><?php echo $row['name'];?></td>
 	                    			<td><?php echo $row['email'];?></td>
@@ -94,6 +123,8 @@
 									
 									
 									<tr>
+										<td><a href="javascript:delpost('<?php echo $row['enqId'];?>')"><button type="button" class="btn btn-info btn-xs">Delete</button></a></td>
+									<td><?php echo $row['entryTime'];?></td>
 	                    			<td><?php echo $row['enqId'];?></td>
 	                    			<td><?php echo $row['name'];?></td>
 	                    			<td><?php echo $row['email'];?></td>

@@ -309,9 +309,9 @@ switch ($result->selectedArea)
 }?> 
 
 
-                </font> = </h6>
+                </font> </h6>
                   <!-- <input type="text" style="width:100px;"  readonly; > -->
-                  <label > <?php 
+                  <label style="float: right"> <?php 
                                 if($result->constTypeId == 1 )
                 {echo ($pricee=$result->price*$ele) ;}
 else{
@@ -377,11 +377,11 @@ switch ($result->selectedArea)
                 <h3 style="color: #000">Order No - <?php echo $result->enqId;?> </h3><br><br><br>
                 <p style="color: #000;">GST Registration No:- 27AETPA2229J1ZE</p>
               </div><!-- / .col-lg-7 -->
-              <div class="col-lg-4 totals-group">
+              <div class="col-lg-4 col-md-12 totals-group">
                 <div class="totals-content">
                 <div class="subtotal-group">
                   <h6> &nbsp &nbsp &nbsp &nbsp &nbsp  Total <small>( before  taxes )</small>&nbsp </h6>
-                   &nbsp &nbsp &nbsp &nbsp &nbsp   <label for="male"> <?php 
+                   &nbsp &nbsp &nbsp &nbsp &nbsp   <label style="float: right"> <?php 
                    echo   $pricee  ;
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $pricee) {
@@ -396,11 +396,11 @@ switch ($result->selectedArea)
 // }
 //                   }
                   
-                ?></label>
+                ?></label></div><div class="subtotal-group">
                   <h6>  &nbsp &nbsp &nbsp &nbsp &nbsp  (+) Taxes <small> (GST @18%) </small></small>
 
                  &nbsp &nbsp  </h6>
-                   &nbsp &nbsp &nbsp  <label for="male"> <?php echo $pricee*0.18;
+                   &nbsp &nbsp &nbsp  <label style="float: right"> <?php echo $pricee*0.18;
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    
@@ -416,9 +416,9 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
                  &nbsp &nbsp &nbsp &nbsp &nbsp   
-                  <h6>&nbsp (-) Promo Code :</h6> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp <input type="text" name="pcode" id="pcode">
-                  <div class="col-lg-9"></div>&nbsp<div class="col-lg-2">
-                  <br><button id="pcheck" class="btn checkout-btn" style="padding: 5px;">&nbsp Apply &nbsp </button></div><br><br>
+                  <h6>&nbsp (-) Promo Code :</h6> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp <input type="text" name="pcode" id="pcode" style="float: right;">
+                  <div class="col-lg-10"></div>&nbsp<div class="col-lg-1">
+                  <br><button id="pcheck" class="btn checkout-btn" style="padding: 5px; flo">&nbsp Apply &nbsp </button></div><br><br>
                 </div>
 				<script src="js/jquery.min.js"></script>
 				<script>
@@ -477,7 +477,7 @@ switch ($result->selectedArea)
                 <div class="subtotal-group" style="color: #000;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                   <h6>Net Total</h6>
                   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-             <label id='fp' >      <?php  $finalPrice = $pricee+$pricee*0.18; echo "$finalPrice";
+             <label id='fp' style="float: right" >      <?php  $finalPrice = $pricee+$pricee*0.18; echo "$finalPrice";
 //                   $formEle=array("price"=>"");
 //                   foreach ($formEle as $key => $value) {
                    
