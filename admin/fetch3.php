@@ -1,22 +1,19 @@
-<?php
-ini_set('display_errors', 'Off');
-$connect = mysqli_connect("localhost", "root", "", "dezine") or die('error');
 
-$query = "SELECT * FROM interior_enquiries WHERE 8!=1 ";
+<?php
+//fetch.php
+$connect = mysqli_connect("localhost", "root", "", "dezine");
+$columns = array('enqId', 'userId', 'selectedArea', 'moreDetails','budget','siteLocation','driveLink','specificDetails','constTypeId', 'categoryOption', 'subCategoryOption', 'boxTypeID','details', 'price', 'entryTime','Paid', 'status', 'payment_doc');
+
+$query = "SELECT * FROM interior_enquiries WHERE ";
 
 if($_POST["is_date_search"] == "yes")
 {
- $query .= ' AND order_date BETWEEN "'.$_POST["start_date"].'" AND "'.$_POST["end_date"].'" AND ';
+ $query .= 'entryTime BETWEEN "'.$_POST["start_entryTime"].'" AND "'.$_POST["end_entryTime"].'" AND ';
 }
 
 if(isset($_POST["search"]["value"]))
 {
- $query .= ' AND 
-  (enqId LIKE "%'.$_POST["search"]["value"].'%" 
-  OR selectedArea LIKE "%'.$_POST["search"]["value"].'%" 
-  OR budget LIKE "%'.$_POST["search"]["value"].'%" 
-  OR categoryOption LIKE "%'.$_POST["search"]["value"].'%")
- ';
+ $query .= '(enqId LIKE "%'.$_POST["search"]["value"].'%" )';
 }
 
 if(isset($_POST["order"]))
@@ -28,34 +25,13 @@ else
 {
  $query .= 'ORDER BY enqId DESC ';
 }
+
 $query1 = '';
-
-
-if($_POST['start']=='')
-{
-
-  $_POST['start']=1;
-}
-
-
-if($_POST['length']=='')
-{
-
-  $_POST['length']=10;
-}
-
 
 if($_POST["length"] != -1)
 {
  $query1 = 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
 }
-
-
-$demo=$query.$query1;
-
-//echo $demo;
-$result = mysqli_query($connect, $demo);
-$number_filter_row = mysqli_num_rows(mysqli_query($connect, $query));
 
 $number_filter_row = mysqli_num_rows(mysqli_query($connect, $query));
 
@@ -66,17 +42,30 @@ $data = array();
 while($row = mysqli_fetch_assoc($result))
 {
  $sub_array = array();
- $sub_array[] = $row["order_id"];
- $sub_array[] = $row["order_customer_name"];
- $sub_array[] = $row["order_item"];
- $sub_array[] = $row["order_value"];
- $sub_array[] = $row["order_date"];
+ $sub_array[] = $row["enqId"];
+ $sub_array[] = $row["userId"];
+ $sub_array[] = $row["selectedArea"];
+ $sub_array[] = $row["moreDetails"];
+ $sub_array[] = $row["budget"];
+ $sub_array[] = $row["siteLocation"];
+ $sub_array[] = $row["driveLink"];
+ $sub_array[] = $row["specificDetails"];
+ $sub_array[] = $row["constTypeId"];
+ $sub_array[] = $row["categoryOption"];
+ $sub_array[] = $row["subCategoryOption"];
+ $sub_array[] = $row["boxTypeID"];
+ $sub_array[] = $row["details"];
+ $sub_array[] = $row["price"];
+ $sub_array[] = $row["entryTime"];
+ $sub_array[] = $row["Paid"];
+ $sub_array[] = $row["status"];
+ $sub_array[] = $row["payment_doc"];
  $data[] = $sub_array;
 }
 
 function get_all_data($connect)
 {
- $query = "SELECT * FROM tbl_order";
+ $query = "SELECT * FROM interior_enquiries";
  $result = mysqli_query($connect, $query);
  return mysqli_num_rows($result);
 }
