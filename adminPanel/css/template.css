@@ -1,0 +1,243 @@
+@import "bootstrap-overwrite.css";
+@import "select2.min.css";
+@import "select2-overwrite.css";
+@import "navs.css";
+@import "font-awesome.min.css";
+@import "datatable-overwrite.css";
+/*1.SITE STYLES*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('Open-Sans'), url(../fonts/open-sans.woff2) format('woff2');
+}
+body {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  /*background: #f0f0f0;*/
+  background: #FEFEFE;
+}
+.loading::before {
+  background: rgba(0, 0, 0, 0) url("../images/ajax-loader.gif") no-repeat scroll center center;
+  content: " ";
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  z-index: 10;
+}
+.loading:after {
+  background-color: #ffffff;
+  bottom: 0;
+  content: " ";
+  display: block;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.loading {
+  position: relative;
+}
+.loading::before {
+  background: rgba(0, 0, 0, 0) url("../images/ajax-loader.gif") no-repeat scroll center center;
+  content: " ";
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  z-index: 10;
+}
+.loading:after {
+  background-color: #ffffff;
+  bottom: 0;
+  content: " ";
+  display: block;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.loading {
+  position: relative;
+}
+.main-content {
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
+    padding-top: 70px;
+    position: relative;
+    min-height: 800px;
+}
+.top-head {
+/*    height: 50px;*/
+    line-height: 36px;
+    padding: 7px;
+    background: #3fbfcc;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 0px;
+    color: #ffffff;
+}
+.fit-main-content {
+  margin :-20px -15px;
+}
+.fit-main-content.with-padding {
+    padding: 20px 15px;
+}
+tr.text-center > td, tr.text-center > th {
+    text-align: center;
+}
+td.min-td,th.min-td {
+  width: 10px;
+}
+.btn-list .btn:not(:last-child) {
+  margin-right: 10px;
+}
+.no-margin {
+    margin:0px !important;
+}
+
+/*2. MENU STYLES*/
+.sidebar-nav {
+  font-size: 12px;
+}
+.sidebar-nav .navbar {
+  margin-bottom: 0px;
+}
+.sidebar-nav  .navbar-nav>li>a {
+    color: rgba(255,255,255,0.75);
+}
+.navbar-profile {
+    padding: 10px 15px;
+}
+.navbar-profile  img {
+  max-width: 100%;
+}
+.navbar-profile, .navbar-logout {
+    margin-bottom: 10px;
+}
+.navbar-logout a, .navbar-logout a:hover, .navbar-logout a:active {
+    color: #FFF;
+    display: block;
+    text-align: center;
+}
+.navbar-logout a:hover,.navbar-logout a:active {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .sidebar-nav .navbar {
+    z-index: 1;
+    border-radius: 0px;
+    height: 100%;
+  }
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    margin-top: 15px;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  #sidebar-nav {
+    position: absolute;
+    width: 100px;
+    left: 0px;
+    height: 100%;
+    bottom: 0;
+  }
+  .sidebar-nav .navbar-nav > li > a {
+    text-align: center;
+  }
+  .sidebar-nav .navbar-nav > li > a > i { 
+    display: block;
+    font-size: 33px;
+  }
+  .sidebar-nav .navbar-nav > li > a > span { 
+    display: block;
+    padding-top: 5px;
+  }
+
+  .main-content {
+        margin-left: 0px;
+    padding-left: 100px;
+  }
+}
+
+/*3. BOOTSTRAP OVERWRITE*/
+th,label {
+  font-weight: normal;
+}
+.usrName{
+    color:#ffffff;
+    text-align:center;
+    font-size:14px;
+    margin-top:5px;
+}
+.subusr{
+    color:#FEFEFE;
+    text-align:center;
+    font-size:10px;
+}
+.customPagination {
+  padding: 10px 0;
+  background:#770F56;
+  color:#FFF;
+}
+.customPagination .pagination {
+  margin: 0;
+  vertical-align: middle;
+}
+.customPagination .pagination a,
+.customPagination .pagination span {
+  background: transparent;
+  border: none;
+  color:inherit;
+  margin-right:5px;
+}
+.customPagination .pagination > li.active > a,
+.customPagination .pagination > li.active > a:hover {
+  background:#FFF;
+  color:#01375B;
+  border-radius:100px;
+}
+.customPagination .pagination > li > a:hover, .customPagination .pagination > li > span:hover, .customPagination .pagination > li > a:focus, .customPagination .pagination > li > span:focus {
+    background-color:transparent;
+    color:#FFF;
+}
+.customPagination .pagination > li.disabled span,
+.customPagination .pagination > li.disabled a {
+    background-color:transparent;
+    color:#a7a7a7;
+}
+.entriesInfo > div {
+  font-size: 13px;
+  line-height: 32px;
+}
+.no-padding {
+  padding:0px !important;
+}
+.navbar-logout {
+  margin-top: 50px;
+}

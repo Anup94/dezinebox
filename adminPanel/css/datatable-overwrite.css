@@ -1,0 +1,13 @@
+td.details-control {
+    background: url('/images/details_open_circle.png') no-repeat center 10px;
+    background-size: 25px 25px;
+    cursor: pointer;
+    width: 40px;
+}
+tr.shown td.details-control {
+    background-image: url('/images/details_close_circle.png');
+}
+table.dataTable thead > tr > th {
+   padding-left: 8px; 
+   padding-right: 8px; 
+}
