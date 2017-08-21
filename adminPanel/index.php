@@ -2,8 +2,18 @@
     require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
     require_once $_SERVER["DOCUMENT_ROOT"].'/admin/login-check.php';
     require_once $_SERVER["DOCUMENT_ROOT"].'/classes/db.class.php';
- 
+	require_once $_SERVER["DOCUMENT_ROOT"].'/phpblog/includes/config.php'; 
     
+
+
+if(isset($_GET['delpost'])){ 
+
+	$stmt = $db->prepare('DELETE FROM blog_posts WHERE postID = :postID') ;
+	$stmt->execute(array(':postID' => $_GET['delpost']));
+
+	header('Location: index.php?action=deleted');
+	exit;
+} 
 
 ?>
 
@@ -39,6 +49,15 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+      <script language="JavaScript" type="text/javascript">
+  function delpost(id, title)
+  {
+	  if (confirm("Are you sure you want to delete '" + title + "'"))
+	  {
+	  	window.location.href = 'index.php?delpost=' + id;
+	  }
+  }
+  </script>
   </head>
 
   <body class="nav-md">
@@ -59,9 +78,32 @@
               <span class="count_bottom"><i class="green">4% </i> From last Week</span>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-clock-o"></i> Average Time</span>
-              <div class="count">123.50</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
+              <span class="count_top blue"><i class="fa fa-twitter"></i> Followers</span>
+              <div class="count blue"><?php 
+require_once('TwitterAPIExchange.php'); //get it from https://github.com/J7mbo/twitter-api-php
+
+/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+$settings = array(
+'oauth_access_token' => "808916059763998721-48fmzNRyxA63IESzhZSGqFBis2De4Cx",
+'oauth_access_token_secret' => "TuUGBhWpy6DSW6iWShB6EjWbatAvY1XfAAdzpOaLD5tyO",
+'consumer_key' => "gLKwyLuL7kdWSEXy5vIFF1rJe",
+'consumer_secret' => "leIkOyWCdeaDepegSwb9ojceFNWF5ug1kWtPaELW4U1GQI8yDM"
+);
+
+$ta_url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+$getfield = '?screen_name=DezineBox';
+$requestMethod = 'GET';
+$twitter = new TwitterAPIExchange($settings);
+$follow_count=$twitter->setGetfield($getfield)
+->buildOauth($ta_url, $requestMethod)
+->performRequest();
+$data = json_decode($follow_count, true);
+$followers_count=$data[0]['user']['followers_count'];
+
+echo $followers_count;
+?></div>
+
+              <span class="count_bottom"><i class="red">DEZINEBOX</i></span>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
@@ -160,7 +202,7 @@
           <div class="row">
 
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="x_panel tile fixed_height_320">
                 <div class="x_title">
                   <h2>App Versions</h2>
@@ -267,9 +309,9 @@
 
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="x_panel tile fixed_height_320 overflow_hidden">
                 <div class="x_title">
                   <h2>Device Usage</h2>
@@ -347,10 +389,10 @@
                   </table>
                 </div>
               </div>
-            </div>
+            </div> -->
 
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+           <!--  <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="x_panel tile fixed_height_320">
                 <div class="x_title">
                   <h2>Quick Settings</h2>
@@ -400,239 +442,14 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
 
 
           <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Recent Activities <small>Sessions</small></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <div class="dashboard-widget-content">
-
-                    <ul class="list-unstyled timeline widget">
-                      <li>
-                        <div class="block">
-                          <div class="block_content">
-                            <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                          </h2>
-                            <div class="byline">
-                              <span>13 hours ago</span> by <a>Jane Smith</a>
-                            </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="block">
-                          <div class="block_content">
-                            <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                          </h2>
-                            <div class="byline">
-                              <span>13 hours ago</span> by <a>Jane Smith</a>
-                            </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="block">
-                          <div class="block_content">
-                            <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                          </h2>
-                            <div class="byline">
-                              <span>13 hours ago</span> by <a>Jane Smith</a>
-                            </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="block">
-                          <div class="block_content">
-                            <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                          </h2>
-                            <div class="byline">
-                              <span>13 hours ago</span> by <a>Jane Smith</a>
-                            </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-8 col-sm-8 col-xs-12">
-
-
-
-              <div class="row">
-
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="x_panel">
-                    <div class="x_title">
-                      <h2>Visitors location <small>geo-presentation</small></h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings 1</a>
-                            </li>
-                            <li><a href="#">Settings 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                      <div class="dashboard-widget-content">
-                        <div class="col-md-4 hidden-small">
-                          <h2 class="line_30">125.7k Views from 60 countries</h2>
-
-                          <table class="countries_list">
-                            <tbody>
-                              <tr>
-                                <td>United States</td>
-                                <td class="fs15 fw700 text-right">33%</td>
-                              </tr>
-                              <tr>
-                                <td>France</td>
-                                <td class="fs15 fw700 text-right">27%</td>
-                              </tr>
-                              <tr>
-                                <td>Germany</td>
-                                <td class="fs15 fw700 text-right">16%</td>
-                              </tr>
-                              <tr>
-                                <td>Spain</td>
-                                <td class="fs15 fw700 text-right">11%</td>
-                              </tr>
-                              <tr>
-                                <td>Britain</td>
-                                <td class="fs15 fw700 text-right">10%</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div id="world-map-gdp" class="col-md-8 col-sm-12 col-xs-12" style="height:230px;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="row">
-
-
-                <!-- Start to do list -->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <div class="x_panel">
-                    <div class="x_title">
-                      <h2>To Do List <small>Sample tasks</small></h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings 1</a>
-                            </li>
-                            <li><a href="#">Settings 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-
-                      <div class="">
-                        <ul class="to_do">
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Schedule meeting with new client </p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Create email address for new intern</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Have IT fix the network printer</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Copy backups to offsite location</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Create email address for new intern</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Have IT fix the network printer</p>
-                          </li>
-                          <li>
-                            <p>
-                              <input type="checkbox" class="flat"> Copy backups to offsite location</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End to do list -->
-                
-                <!-- start of weather widget -->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <div class="x_panel">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="x_panel"  style="height: 403px;">
                     <div class="x_title">
                       <h2>Daily active users <small>Sessions</small></h2>
                       <ul class="nav navbar-right panel_toolbox">
@@ -736,17 +553,171 @@
                   </div>
 
                 </div>
+            
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+
+
+              <div class="row">
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel"  style="height: 403px;">
+                    <div class="x_title">
+                      <h2>Visitors location <small>geo-presentation</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Settings 1</a>
+                            </li>
+                            <li><a href="#">Settings 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="dashboard-widget-content">
+            
+                        <div class="col-md-4 col-sm-6 col-xs-12 hidden-small">
+                          <h2 class="line_30">125.7k Views from 60 countries</h2>
+
+                          <table class="countries_list">
+                            <tbody>
+                              <tr>
+                                <td>United States</td>
+                                <td class="fs15 fw700 text-right">33%</td>
+                              </tr>
+                              <tr>
+                                <td>France</td>
+                                <td class="fs15 fw700 text-right">27%</td>
+                              </tr>
+                              <tr>
+                                <td>Germany</td>
+                                <td class="fs15 fw700 text-right">16%</td>
+                              </tr>
+                              <tr>
+                                <td>Spain</td>
+                                <td class="fs15 fw700 text-right">11%</td>
+                              </tr>
+                              <tr>
+                                <td>Britain</td>
+                                <td class="fs15 fw700 text-right">10%</td>
+                              </tr>
+                        
+                            </tbody>
+                          </table>
+                        </div>
+                        <div id="world-map-gdp" class="col-md-8 col-sm-6 col-xs-12 hidden-small" style="height:230px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+
+
+                <!-- Start to do list -->
+               
+                    
+                    
+                
+                <!-- start of weather widget -->
+                
                 <!-- end of weather widget -->
+              </div>
+
+     </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_content">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                     <div class="x_title">
+                      <h2>Your Blogs</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a href="add-post.php"><button type="button" class="btn btn-primary btn-xs">
+                                <i class="fa fa-user"> </i> Add blog
+                              </button></a>
+                        </li>
+                        
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <?php
+		try {
+
+			$stmt = $db->query('SELECT postID, postTitle, postDate, postImage FROM blog_posts ORDER BY postID DESC');
+			while($row = $stmt->fetch()){ 
+
+                 echo'<div class="col-md-4 col-sm-4 col-xs-12 profile_details">';
+                    echo '<div class="well profile_view">';
+                      echo '<div class="col-sm-12">';
+                            echo '<h4 class="brief"><i></i></h4>';
+                           echo '<div class="left col-xs-7">';
+                           echo'<h2>'.$row['postTitle'].'</h2>' ;
+                           echo'<p><strong>Date: </strong> '.date('jS M Y', strtotime($row['postDate'])).' </p>';
+                             
+                          echo '</div>';
+                            echo '<div class="right col-xs-5 text-center">';
+                          echo '<img src="images/'.$row['postImage'].'" alt="" class="img-circle img-responsive" style="height:130px; width:130px">';
+                          echo '</div>';
+                          echo '</div>';
+                          echo '<div class="col-xs-12 bottom ">'; ?>
+                        
+                            <div class="col-xs-12 col-sm-12 emphasis">
+                           <a href="edit-post.php?id=<?php echo $row['postID'];?>">   <button type="button" class="btn btn-success btn-xs">
+                                 <i class="fa fa-edit"></i>  Edit </button></a>
+                            <a href="javascript:delpost('<?php echo $row['postID'];?>','<?php echo $row['postTitle'];?>')"">  <button type="button" class="btn btn-danger btn-xs">
+                                <i class="fa fa-user"> </i> Delete
+                              </button></a>
+                            </div>
+                        
+                       
+                        <?php echo'</div></div></div>'; ?>
+                        		<?php 
+			
+
+			}
+
+		} catch(PDOException $e) {
+		    echo $e->getMessage();
+		}
+	?>
+
+                      
+
+                     
+                   
+
+                      
+
+                   
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <!-- /page content -->
 
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com/">Colorlib</a>
+           Designed by <a href="Qleverlabs.com">Qleverlabs</a>
           </div>
           <div class="clearfix"></div>
         </footer>
