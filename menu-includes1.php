@@ -36,7 +36,7 @@
 
       <?php if(empty($userSession)):?>
       <li>
-        <a data-toggle="modal" data-target="#login-form" class="dropdown mega-fw" style="cursor: pointer; letter-spacing: 6px;">
+        <a href="login.php" style="cursor: pointer; letter-spacing: 6px;">
            Sign In / up
         </a>
       </li>

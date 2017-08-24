@@ -1,291 +1,205 @@
 <?php include_once 'site-initial.php';?>
-<!doctype html>
-<html class="no-js" lang="en">
- 
+<html>
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dezinebox – “your dream space, at your own pace” | a unique online architectural and Interior Design service provider empowering you to decor your own space | Get your Box today|</title>
-        <meta name="description" content="We are world’s first online Architectural and Interior Design Solution provider which empowers you with ‘execution capabilities’ to décor your residential & commercial spaces, at your convenience & at affordable rates. We also provide an ‘Opportunity Platform’ to ‘Product' Providers’, ‘Interior Designers’ & ‘Architects’ to showcase their skills & aim to create a comprehensive ‘Design Ecosystem’ across Geographies.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
-        <!-- Bootstrap -->
-    
-        <!-- Fonts -->
-        <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
-        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
-        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-      
+
+<meta name="HandheldFriendly" content="true" />
+<title>Product Partner</title>
+<link type="text/css" rel="stylesheet" href="form.css" />
+<link type="text/css" rel="stylesheet" href="nova.css" />
+<link type="text/css" rel="stylesheet" href="theme.css"/>
+
+<link rel="stylesheet" href="bootstrap.min.css">  <!-- nav -->
+<link rel="stylesheet" href="main.css"> <!-- nav -->
 
 
- <script src="assets/js/main.js"></script>
-       
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" media="screen" href="assets/application-ee1be3c34f3c2adf169963162a22ba0caf59d40762d1a94217cad37133705ba0.css" />
-<link rel="stylesheet" media="screen" href="assets/typehead-style-5cfaee749ceced04290b1392387c7194c9f4b4f1542140ebff306bb5c1264382.css" />
-<script src="assets/js/main.js"></script>
-<style>
-	
-	@media (min-width: 1200px) {
-  .alignment{
-    margin-left: 22.3%;
-  }
-}
-@media (min-width: 350px) and  (max-width: 686px) {
-  .alignment .alignment2{
-    margin-left: 22.3%;
-  }
-}
-@media (min-width: 1200px) {
-  .alignment3{
-    margin-left: 27%;
-  }
-}
-</style>
-
-    </head>
-    <body id="page-top" >
-      
 
 
-        <!-- ========== Preloader ========== -->
 
-        <div class="preloader">
-          <img src="assets/images/loader.svg" alt="Loading...">
+</head>
+<body class="supernova">
+<?php include_once 'menu-includes.php';?>
+<form class="jotform-form" id="productPartnerForm" name="productPartnerForm" action="validate.php?task=product_partner_submit" enctype="multipart/form-data" method="post">
+
+  <div class="form-all col-xs-12">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group ">
+          <div class="header-text httal htvam">
+            <h1   class="form-header" >
+              Product Partner
+            </h1>
+          </div>
         </div>
-
-
-        
-        <!-- ========== Navigation ========== -->
-
-        <?php include_once 'menu-includes1.php';?>
-
-
-<div style='clear:both'></div>
-
-
-<section id=''>
-<form id="productPartnerForm" name="productPartnerForm" action="validate.php?task=product_partner_submit" enctype="multipart/form-data" method="post">
-<div class='container  register-con' style="margin-left: 10%; width: 100%;">
-<h3 style="margin-left: 26%;">Product Partner </h3>
-<div class='col-xs-12'></div>
-<!-- end col-6 -->
-
-<div class='col-lg-8 col-md-8 col-sm-10 col-xl-12 col-xm-9 col-xs-7' style="margin-left: 15%; margin-right:auto;">
-
-<div class='form-group'>
-<div class='input-group'
->
-<div class='oth_business_tp pull-left'>
-<input type="hidden" name="productType[]" id="user_other_professionals_attributes_0_business_type" value="Furniture" />
-<span><strong>Type of Partner: </strong></span>
-</div>
-<div class='oth_business_tp pull-left'>
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_0_business_type" value="Furniture" />
-<span>Furniture</span>
-</div>
-<div class='oth_business_tp pull-left'>
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Furnishing" />
-<span>Furnishing</span>
-</div>
-<div class='oth_business_tp pull-left '>
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Kitchen Appliances" />
-<span>Electrical</span>
-</div>
-<div class='oth_business_tp pull-left alignment2'>
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Electrical" />
-<span>Kitchen Appliances</span>
-</div>
-<div class='oth_business_tp pull-left'>
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Hardware" />
-<span>Hardware</span>
-</div>
-<div class='oth_business_tp pull-left ' style="">
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Renewable product" />
-<span>Renewable product</span>
-</div>
-<div class='oth_business_tp pull-left' >
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Security and fire" />
-<span>Decor  </span>
-</div>
-<div class='oth_business_tp pull-left ' >
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_1_business_type" value="Decor" />
-<span>Security & fire</span>
-</div>
-<div class='oth_business_tp pull-left'>
-<input type="checkbox" name="productType[]" id="user_other_professionals_attributes_2_business_type" value="Others" />
-<span>Others</span>
-</div>
-</div>
-</div>
-<br>
-<div class='form-group h-form-group'>
-<div class='input-group'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-user'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder=" Name of the Enterprise" mandatory="true" error_message="Please enter first name" no_space="true" only_char="true" type="text" name="entName" id="user_first_name" />
-</div>
-</div>
-<div class='form-group h-form-group'>
-<div class='input-group'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-envelope-o'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="Email" mandatory="true" error_message="Please enter correct email" no_space="true" email_validator="true" type="email" value="" name="email" id="user_email"  required/>
-</div>
-</div>
-<div class='form-group h-form-group'>
-<div class='input-group'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-mobile'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="Contact" mandatory="true" error_message="Please enter contact number" no_space="true" only_number="true" min_length="10" maxlength="10" size="10" type="text" name="mobile" id="user_primary_contact" required />
-</div>
-</div>
-<div class="form-group h-form-group">
-<div class="input-group">
-<span class="input-group-addon input-addon">
-<i aria-hidden="true" class="fa fa-globe"></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="LinkedIn Profile" mandatory="true" error_message="Please enter linked link" no_space="true" only_char="true" type="text" name="linkedInProfile" id="user_first_name" required>
-</div>
-</div>
-<div class='form-group h-form-group'>
-<div class='input-group'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-user'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="Years of Experience" mandatory="true" error_message="Please enter firm name" no_space="true" only_char="true" type="text" name="experience" id="user_first_name"  required/>
-</div>
-</div>
-
-
-<div class='form-group h-form-group'>
-<div class='input-group' id='locationField'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-map-marker'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="Address" mandatory="true" error_message="Please enter firm Address" no_space="true" only_char="true" type="text" name="address" id="user_first_name" required />
-
-</div>
-</div>
-
-<div class='form-group h-form-group'>
-<div class='input-group'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-globe'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="Website URL" mandatory="true" error_message="Please enter Website URL" no_space="true" only_char="true" type="text" name="website" id="user_first_name" required/>
-</div>
-</div>
-
-
-<h6 style="font-size: 1.2em;
-    font-family: 'Open Sans';
-    color: #5c5c5c;
-    margin-bottom: 1em;"> Product Catalog</h6>
-<div class='form-group h-form-group'>
-
-<div class='input-group' id='locationField'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-eye'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder=" Upload a portfolio " mandatory="true" error_message="Please enter firm Address" no_space="true" only_char="true" type="file" name="catalog" id="user_first_name" />
-
-</div>
-</div>
-<div class='form-group h-form-group'>
-<div class='input-group'>
-<span class='input-group-addon input-addon'>
-<i aria-hidden='true' class='fa fa-google'></i>
-</span>
-<input class="form-control text-height form_group_data" placeholder="Share your drive" mandatory="true" error_message="Please enter Website URL" no_space="true" only_char="true" type="text" name="googleDrive" id="user_first_name"  />
-</div>
-</div>
-<div class='form-group margin-bottom'>
-<div class='checkbox check-agree'>
-<label>
-<input name="user[term_condition]" type="hidden" value="0" /><input class="form_group_data check-agree-trm-cdn" mandatory="true" error_message="Please select terms &amp; conditions" type="checkbox" value="1" name="user[term_condition]" id="user_term_condition" required/>
-I agree
-<a target="_blank" href="conditions.php">Terms &amp; Conditions</a>
-</label>
-<label class='control-label lbl tm_cond_errmessage'></label>
-</div>
-</div>
-<div class='form-group h-form-group'>
-<div class='input-group'>
-
-</div>
-
-<div class='form-group clearfix'>
-<h4 class='-new'>
-<span>All above fields are Mandatory*</span>
-</h4>
-</div>
-</div>
-<!-- end col-6 -->
-
-<div class='form-group margin-top'>
-<!-- = f.submit "Sign up", class: "btn btn-primary btn-lg btn-block btn-yellow" -->
-<button class='btn btn-primary btn-lg btn-block btn-yellow' data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;Processing" id='getlistedbtn' style='padding:10px 15px; width: 200px;margin-left: auto; margin-right: auto;' type='submit'>Submit</button>
-</div>
-</form>
-</section>
-<script src="/js/jquery.validate.js"></script>
-<script src="/js/jquery.form.js"></script>
-<script src="/js/z_additional-methods.js"></script>
-<script src="/js/toaster.js"></script>
-<link rel="stylesheet" type="text/css" href="css/toaster.css">
-<script type="text/javascript" src="js/productpartner.js"></script>
-
-<script>
- /*var placeSearch, autocomplete;
-  var componentForm = {
-    street_number: 'short_name',
-    route: 'long_name',
-    locality: 'long_name',
-    administrative_area_level_1: 'long_name',
-    country: 'long_name',
-    postal_code: 'short_name'
-  };
-  
-  function initAutocomplete() {
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+        Name of the Enterprise
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="text"  name="entName" class="form-textbox " size="30" value="" required>
+        </div>
+      </li>
+       <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+          E-mail
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="email" id="input_5" name="email" class="form-textbox validate[required, Email]" size="30" value="" placeholder="ex: myname@example.com" data-component="email" required />
+        </div>
+      </li>
+            <li class="form-line" data-type="control_phone" id="id_6">
+        <label class="form-label form-label-top" id="label_6" for="input_6_area"> Phone Number </label>
+        <div id="cid_6" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="tel" id="input_6_area" name="mobilepre" class="form-textbox" size="3" value="" data-component="areaCode" />
+              <span class="phone-separate">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_6_area" id="sublabel_area" style="min-height:13px;"> Area Code </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="8" value="" data-component="phone" required="" />
+              <label class="form-sub-label" for="input_6_phone" id="sublabel_phone" style="min-height:13px;"> Phone Number </label>
+            </span>
+          </div>
+        </div>
+      </li>
+         <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+        LinkedIn
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="text"  name="linkedInProfile" class="form-textbox " size="30" value="" required="" >
+        </div>
+      </li>
+         <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+        Years of Experience
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="text"  name="experience" class="form-textbox" size="30" value="" required="" >
+        </div>
+      </li>
+        <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+        Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="text"  name="address" class="form-textbox" size="200" value="" required="" >
+        </div>
+      </li>
+         <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+        Website URL
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div  class="form-input-wide jf-required">
+          <input type="text"  name="website" class="form-textbox" required="" >
+        </div>
+      </li>
+         <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+       Share your drive
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="text"  name="googleDrive" class="form-textbox validate[required, Email]" size="30" value="" >
+        </div>
+      </li>
+     
+      <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+        Product Catalog
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="file"  name="catalog" class="form-textbox" size="30" value="" >
+        </div>
+      </li>
+          <li class="form-line jf-required" >
+    
+        <div id="cid_5" class="form-input-wide jf-required">
+          <input type="checkbox" required="">I Agree &nbsp <a target="_blank" href="conditions.php">Terms &amp; Conditions</a>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align:left;" class="form-buttons-wrapper">
+            <button id="input_2" type="submit" class="form-submit-button" data-component="button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
  
-    autocomplete = new google.maps.places.Autocomplete(
-       (document.getElementById('autocomplete')),
-        {types: ['geocode']});
-  
-    autocomplete.addListener('place_changed', fillInAddress);
-  }*/
-  
-</script>
-<!-- <script async='' defer='defer' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCl3-hglJwajsgeO5dGePOgQqrQ-viOwSY&amp;libraries=places&amp;callback=initAutocomplete'></script> -->
-<script>
-  $(document).ready(function(){
-    select_bustype = $('#user_professionals_attributes_0_business_type').val();
-    selector = $("input[type='checkbox'][value="+select_bustype+"]");
-    selector.parent('.oth_business_tp').hide();
-  
-    $(document).on('change', "#user_professionals_attributes_0_business_type", function(){
-      $('.oth_business_tp').removeClass('hide');
-      $('.oth_business_tp').show();
-      select_bustype = $('#user_professionals_attributes_0_business_type').val();
-      selector = $("input[type='checkbox'][value="+select_bustype+"]");
-      selector.parent('.oth_business_tp').hide();
-    });
-  
-  });
-</script>
-<noscript>
-<img height='1' src='https://www.facebook.com/tr?id=718085835013431&amp;ev=PageView&amp;noscript=1' style='display:none' width='1'>
-</noscript>
+ 
+
+</form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+<footer class="footer-widgets">
 
 
+
+<!-- Copyright -->
+<div class="copyright">
+<div class="container">
+<div class="row">
+
+
+
+
+<div class="widget about-widget">
+
+<ul class="social-links">
+<li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook" style="color: "></i></a></li>
+<li><a href="https://twitter.com/DezineBox"><i class="fa fa-twitter" style="color: #fff"></i></a></li>
+<li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin" style="color: #fff"></i></a></li>
+<li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram" style="color: #fff"></i></a></li>
+<li><a href="https://plus.google.com/101485144759189925017"><i class="fa fa-google-plus" style="color: #fff"></i></a></li>
+<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+</ul>
+</div><!-- / .widget -->
+
+
+
+
+
+</div><!-- / .row -->
+</div><!-- / .container -->
+</div><!-- / .copyright -->
+
+</footer><!-- / .footer-widgets -->
+</div>
 </body>
 
+<!-- Mirrored from form.jotform.co/72333260344852 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Aug 2017 06:03:15 GMT -->
 </html>
