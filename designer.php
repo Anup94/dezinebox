@@ -15,14 +15,7 @@
 
         <link href="assets/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
 
-<style>
-  .footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
 
-}
 </style>
 </head>
 <body class="supernova">
@@ -36,12 +29,12 @@
                         <div class="tab-content" role="tabpanel">
                            
                                     <div class="form-all col-xs-12 tab-pane fade in active" id="tab-1">
-                                        <ul class=" c-tab-items form-section page-section">
+                                        <ul class=" c-tab-items form-section page-section" style="background: #fff">
                                           <li  class="form-input-wide" data-type="control_head">
                                             <div class="form-header-group ">
                                               <div class="header-text httal htvam">
                                                 <h1   class="form-header" >
-                                                  Dezine Partner
+                                                     <font style="color: #000">Dezine</font> <font style="color: #FF5100"> Partner</font>
                                                 </h1>
                                               </div>
                                             </div>
@@ -159,9 +152,9 @@
                                               <div style="text-align:left;" class="form-buttons-wrapper">
 
                                 <a href="#tab-2" role="tab" data-toggle="tab">
-                                                <button  class="form-submit-button">
-                                                  Next
-                                                </button></a>
+
+<button class="btn-ghost" style="display: block; margin: 0 auto;">Next</button></a><br>
+                                              
                                               </div>
                                             </div>
                                           </li>
@@ -174,7 +167,7 @@
                                             <div class="form-header-group ">
                                               <div class="header-text httal htvam">
                                                 <h2   class="form-header" >
-                                                  Proffessional Experience
+                                               <font style="color: #000">Proffessional</font> <font style="color: #FF5100"> Experience </font>
                                                 </h2>
                                               </div>
                                             </div>
@@ -261,14 +254,12 @@
                                                 <div class="col-lg-6">
 
                                 <a href="#tab-1" role="tab" data-toggle="tab">
-                                                    <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-                                                  Back
-                                                </button></a></div>
+                                                    
+                                      <button class="btn-ghost" style="display: block; margin: 0 auto;">Back</button></a></div>
                                                  <div class="col-lg-6">
-                                                <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-                                                  Submit
-                                                </button></div>
+                                      <button class="btn-ghost" style="display: block; margin: 0 auto;">Submit</button></div>
                                               </div>
+                                              <br><br>
                                             </div>
                                           </li>
                                 </ul>
@@ -281,7 +272,42 @@
                          </div>
          
 
-</form><!-- / .footer-widgets -->
+</form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+<footer class="footer-widgets">
+
+
+
+<!-- Copyright -->
+<div class="copyright">
+<div class="container">
+<div class="row">
+
+
+
+
+<div class="widget about-widget">
+
+<ul class="social-links">
+<li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook" style="color: "></i></a></li>
+<li><a href="https://twitter.com/DezineBox"><i class="fa fa-twitter" style="color: #fff"></i></a></li>
+<li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin" style="color: #fff"></i></a></li>
+<li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram" style="color: #fff"></i></a></li>
+<li><a href="https://plus.google.com/101485144759189925017"><i class="fa fa-google-plus" style="color: #fff"></i></a></li>
+<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+</ul>
+</div><!-- / .widget -->
+
+
+
+
+
+</div><!-- / .row -->
+</div><!-- / .container -->
+</div><!-- / .copyright -->
+
+</footer><!-- / .footer-widgets --><!-- / .footer-widgets -->
 
         <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
         <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>

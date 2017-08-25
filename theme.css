@@ -47,8 +47,7 @@
   font-weight: normal;
 }
 .supernova {
-  background-color: #5bab55;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .supernova body {
   background-color: transparent;
@@ -105,7 +104,7 @@
 /* | */
 .supernova .form-all,
 .form-all {
-  background-color: #5bab55;
+  background-color: #fff;
   border: 1px solid transparent;
 }
 .form-header-group {
@@ -127,13 +126,13 @@
   color: #ffffff;
 }
 .form-sub-label {
-  color: #ffffff;
+  color: #ff5100;
 }
 .form-label-top,
 .form-label-left,
 .form-label-right,
 .form-html {
-  color: #ffffff;
+  color: #000;
 }
 .form-checkbox-item label,
 .form-radio-item label {
@@ -285,11 +284,10 @@ h2 ~ .form-subHeader {
   color: #51944b;
 }
 .form-header-group {
-  background-color: #76c570;
+  background-color: #fff;
 }
 .form-textbox,
 .form-textarea {
-  border-color: #458b40;
   padding: 8px 12px 6px 12px;
 }
 [data-type="control_dropdown"] .form-input,
@@ -456,7 +454,7 @@ li[data-type="control_image"] img {
 }
 
 .form-sub-label {
-    color : #6dc565;
+    color : #FF5100
     font-size : 12px;
 }
 
@@ -465,8 +463,9 @@ li[data-type="control_image"] img {
 }
 
 .form-input-wide {
-    border-bottom : 1px solid #6dc565;
+    border-bottom : 1px solid #d3d3d3;
     padding-bottom : 12px;
+    color: #FF5100
 }
 
 .form-input-wide[data-type="control_head"],
@@ -478,6 +477,7 @@ li[data-type="control_image"] img {
 
 .form-header-group {
     margin : 0 48px 0 -54px;
+    border :1px solid rgba(222, 218, 218, 0.95);
 }
 
 .form-header {
@@ -514,7 +514,9 @@ td .form-sub-label-container .form-textbox {
 }
 
 .form-label {
-    font-weight : 300;
+    font-weight : 400;
+    letter-spacing: 3px;
+    font-size: 15px;
 }
 
 .phone-separate {
@@ -568,7 +570,7 @@ td .form-sub-label-container .form-textbox {
     width : 40%;
     height : 100%;
     float : right;
-    background : #5bab55;
+    background : #fff;
     padding : 12% 0;
     box-shadow : -3px 0px 9px rgba(0, 0, 0, 0.4);
 }

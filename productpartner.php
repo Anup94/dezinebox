@@ -26,7 +26,7 @@
         <div class="form-header-group ">
           <div class="header-text httal htvam">
             <h1   class="form-header" >
-              Product Partner
+              <font style="color: #000">Product</font> <font style="color: #FF5100"> Partner</font>
             </h1>
           </div>
         </div>
@@ -147,16 +147,13 @@
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide">
           <div style="text-align:left;" class="form-buttons-wrapper">
-            <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-              Submit
-            </button>
+       
+
+<button class="btn-ghost" type="submit" style="display: block; margin: 0 auto;">Submit</button><br>
           </div>
         </div>
       </li>
-      <li style="display:none">
-        Should be Empty:
-        <input type="text" name="website" value="" />
-      </li>
+
     </ul>
   </div>
  
