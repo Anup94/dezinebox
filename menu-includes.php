@@ -11,7 +11,7 @@
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 30px;">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -27,9 +27,16 @@
       <ul class="nav navbar-nav navbar-right">
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>
-       <li class="dropdown mega-fw"><a href="/#box">Get your box</a></li>
+       <li class="dropdown mega-fw"><a href="get-your-box.php">Get your box</a></li>
 
-       <li class="dropdown mega-fw" ><a href="partners.php">Be our Partner</a></li><!-- / Pages -->
+     <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Be our Partner<span class="caret"></span></a>
+         <ul class="dropdown-menu">
+         
+            <li><a href="designer.php">Design Partner</a></li>
+            <li><a href="productpartner.php">Product Partner</a></li>
+          </ul>
+          </li>
        <!-- / Elements -->
        <li class="dropdown mega-fw"><a href="/#contact">Contact Us</a></a></li><!-- / Pages -->
 

@@ -107,7 +107,7 @@ if(empty($constTypeArr[$constTypeId])) {
 
         <!-- ========== Services ========== -->
 
-        <div class="gray-bg">
+        <div class="">
           <section id="services" class="container ft-cards">
             <div class="row section">
 

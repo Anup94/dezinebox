@@ -20,9 +20,9 @@ if(!empty($_SESSION['userSession'])) {
 		}
 	} else {
 		unset($_SESSION['userSession']);
-		header("Location:index.php?task=ask_login");
+		header("Location:login.php");
 	}
 } else {
-	header("Location:index.php?task=ask_login");
+	header("Location:login.php");
 }
 ?>

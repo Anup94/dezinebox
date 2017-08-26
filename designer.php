@@ -6,14 +6,16 @@
 <title>Designer Partner</title>
 <link type="text/css" rel="stylesheet" href="form.css" />
 <link type="text/css" rel="stylesheet" href="nova.css" />
-<link type="text/css" rel="stylesheet" href="theme.css"/>
+<link type="text/css" rel="stylesheet" href="theme.css"/> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="bootstrap.min.css">  <!-- nav -->
+
+<link rel="stylesheet" href="page-scroll-effects/css/bootstrap.min.css">  <!-- nav -->
 <link rel="stylesheet" href="main.css"> <!-- nav -->
 
 
 
-        <link href="assets/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
 
 
 </style>
@@ -309,9 +311,6 @@
 
 </footer><!-- / .footer-widgets --><!-- / .footer-widgets -->
 
-        <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
 </body>
 

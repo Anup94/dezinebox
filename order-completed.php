@@ -118,7 +118,7 @@ if(!empty($result->boxTypeId) && !empty($result->constTypeId) && !empty($result-
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico">
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/styles/interior-bootstrap.css">
         <!-- Fonts -->
         <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
         <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">

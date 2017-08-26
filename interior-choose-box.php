@@ -42,8 +42,8 @@ if(mysqli_num_rows($result)>0) {
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico">
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
-        <!-- Fonts -->
+        
+ <link rel="stylesheet" href="page-scroll-effects/css/bootstrap.min.css">        <!-- Fonts -->
         <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
         <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
         <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">

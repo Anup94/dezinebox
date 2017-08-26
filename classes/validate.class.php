@@ -85,7 +85,9 @@ class validateClass extends dbConnect {
 		$resp->user=$user;
 		$resp->msg="Login successful";
 		$resp->status="1";
-		return $resp;
+	
+			header('Location:index.php');
+				return $resp;
 	}
 	function google_login(){
 		$resp=new resp();
@@ -143,6 +145,7 @@ class validateClass extends dbConnect {
 		$resp->msg="Login successful";
 		$resp->status="1";
 		return $resp;
+			header('Location:index.php');
 		}
 		else{
 		$query = "SELECT * FROM users WHERE username='".$this->conn->real_escape_string($g_user->id)."'";
@@ -154,6 +157,7 @@ class validateClass extends dbConnect {
 		$resp->msg="Login successful";
 		$resp->status="1";
 		return $resp;
+			header('Location:index.php');
 		}
 
 	
@@ -221,6 +225,7 @@ class validateClass extends dbConnect {
 		$resp->msg="Login successful";
 		$resp->status="1";
 		return $resp;
+			header('Location:index.php');
 		}
 		else{
 		$user=$result->fetch_object();
@@ -229,6 +234,7 @@ class validateClass extends dbConnect {
 		$resp->msg="Login successful";
 		$resp->status="1";
 		return $resp;
+			header('Location:index.php');
 		}
 
 
@@ -277,6 +283,7 @@ if($_GET['oauth_token']){
 		$resp->msg="Login successful";
 		$resp->status="1";
 		return $resp;
+		header('Location:index.php');
 		}
 		else{
 		$user=$result->fetch_object();
@@ -285,6 +292,7 @@ if($_GET['oauth_token']){
 		$resp->msg="Login successful";
 		$resp->status="1";
 		return $resp;
+			header('Location:index.php');
 		}
 
 

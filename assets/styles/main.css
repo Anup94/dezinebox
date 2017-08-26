@@ -1302,7 +1302,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 
 /* ---- 2.2 Ghost Buttons ---- */
 .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light {
-  background: #000;
+  background: #FF5100;
   color: #fff;
   border: none;
   overflow: hidden;
@@ -1312,7 +1312,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
   content: '';
   position: absolute;
-  background: #FF7A3C;
+  background: #FF5100;
   left: 0;
   top: 100%;
   width: 100%;
@@ -2362,7 +2362,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar .navbar-header {
-  width: 27%;
+
   margin-top: 6px;
 }
 
@@ -2383,6 +2383,7 @@ fieldset[disabled] .form-control:hover {
   color: #000;
   -webkit-transition: color 0.5s;
           transition: color 0.5s;
+  background: #FFF
 }
 
 .navbar .navbar-nav li a:focus {

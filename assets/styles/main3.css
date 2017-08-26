@@ -2362,7 +2362,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar .navbar-header {
-  width: 27%;
+
   margin-top: 6px;
 }
 
@@ -2383,6 +2383,7 @@ fieldset[disabled] .form-control:hover {
   color: #000;
   -webkit-transition: color 0.5s;
           transition: color 0.5s;
+  background: #fff;
 }
 
 .navbar .navbar-nav li a:focus {
