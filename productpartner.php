@@ -4,15 +4,13 @@
 
 <meta name="HandheldFriendly" content="true" />
 <title>Product Partner</title>
-<link type="text/css" rel="stylesheet" href="form.css" />
-<link type="text/css" rel="stylesheet" href="nova.css" />
-<link type="text/css" rel="stylesheet" href="theme.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link type="text/css"  rel="stylesheet" href="assets/styles/form.css" />
+<link type="text/css"  rel="stylesheet" href="assets/styles/nova.css" />
+<link type="text/css"  rel="stylesheet" href="assets/styles/theme.css"/> 
 
 
-<link rel="stylesheet" href="page-scroll-effects/css/bootstrap.min.css">  <!-- nav -->
-<link rel="stylesheet" href="main.css"> <!-- nav -->
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
+<link rel="stylesheet" href="assets/styles/main.css"> <!-- nav -->
 
 
 
@@ -199,7 +197,8 @@
 
 </footer><!-- / .footer-widgets -->
 </div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
 </body>
 
-<!-- Mirrored from form.jotform.co/72333260344852 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Aug 2017 06:03:15 GMT -->
 </html>

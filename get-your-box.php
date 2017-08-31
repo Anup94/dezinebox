@@ -1,4 +1,4 @@
-<?php
+s<?php
 session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/login-check.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/classes/db.class.php");

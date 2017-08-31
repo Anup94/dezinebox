@@ -2,7 +2,7 @@
     require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
     require_once $_SERVER["DOCUMENT_ROOT"].'/admin/login-check.php';
     require_once $_SERVER["DOCUMENT_ROOT"].'/classes/db.class.php';
-	require_once $_SERVER["DOCUMENT_ROOT"].'/phpblog/includes/config.php'; 
+	require_once $_SERVER["DOCUMENT_ROOT"].'/adminpanel/config.php'; 
     
 
 

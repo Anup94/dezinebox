@@ -8,7 +8,7 @@
   ga('send', 'pageview');
 
 </script>
-<nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
+<nav class="navbar navbar-default navbar-fixed-top mega navbar-trans ">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 30px;">
@@ -24,7 +24,7 @@
 
     <!-- Navbar Links -->
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav ">
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>
        <li class="dropdown mega-fw"><a href="get-your-box.php">Get your box</a></li>
@@ -51,7 +51,7 @@
         <li class="dropdown">
        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false" style="color:#FF5100;">
         <div style="max-width:100px;overflow:hidden;text-overflow:ellipsis;" title="<?php echo $userSession->name;?>">
-          <?php echo $userSession->name;?>
+          <?php echo $userSession->username;?>
         </div>
        </a>
           <ul class="dropdown-menu" >
@@ -64,11 +64,5 @@
     </div>
   </div>
 </nav>
-<!-- END: MEGA MENU -->
-<!-- END: LAYOUT/HEADERS/MEGA-MENU -->
-<!-- END: HOR NAV -->
 
-<!-- END: HEADER -->
-<!-- END: LAYOUT/HEADERS/HEADER-1 -->
-<!-- BEGIN: CONTENT/USER/FORGET-PASSWORD-FORM -->
 <?php include_once 'authentication-includes.php';?>

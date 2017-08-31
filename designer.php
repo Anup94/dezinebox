@@ -4,15 +4,12 @@
 
 <meta name="HandheldFriendly" content="true" />
 <title>Designer Partner</title>
-<link type="text/css" rel="stylesheet" href="form.css" />
-<link type="text/css" rel="stylesheet" href="nova.css" />
-<link type="text/css" rel="stylesheet" href="theme.css"/> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link type="text/css"  rel="stylesheet" href="assets/styles/form.css" />
+<link type="text/css"  rel="stylesheet" href="assets/styles/nova.css" />
+<link type="text/css"  rel="stylesheet" href="assets/styles/theme.css"/> 
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
+<link rel="stylesheet" href="assets/styles/main.css"> <!-- nav -->
 
-
-<link rel="stylesheet" href="page-scroll-effects/css/bootstrap.min.css">  <!-- nav -->
-<link rel="stylesheet" href="main.css"> <!-- nav -->
 
 
 
@@ -253,13 +250,13 @@
                                           <li class="form-line" data-type="control_button" id="id_2">
                                             <div id="cid_2" class="form-input-wide">
                                               <div style="text-align:left;" class="form-buttons-wrapper">
-                                                <div class="col-lg-6">
+                                              
 
                                 <a href="#tab-1" role="tab" data-toggle="tab">
                                                     
-                                      <button class="btn-ghost" style="display: block; margin: 0 auto;">Back</button></a></div>
+                                      <button class="btn-ghost" style="display: block; margin: 0 auto; float: left;">Back &nbsp</button></a></div>
                                                  <div class="col-lg-6">
-                                      <button class="btn-ghost" style="display: block; margin: 0 auto;">Submit</button></div>
+                                      <button class="btn-ghost" style="display: block; margin: 0 auto;float: right">Submit</button></div>
                                               </div>
                                               <br><br>
                                             </div>
@@ -311,7 +308,8 @@
 
 </footer><!-- / .footer-widgets --><!-- / .footer-widgets -->
 
-
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
 </body>
 
 <!-- Mirrored from form.jotform.co/72333260344852 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Aug 2017 06:03:15 GMT -->

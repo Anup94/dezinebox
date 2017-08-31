@@ -175,7 +175,7 @@ class validateClass extends dbConnect {
 	  FacebookSession::setDefaultApplication('1571301269586732','7ddb33639eec1ec4066cb4af701653c1');
 
 	  $helper = new FacebookRedirectLoginHelper('http://dezinebox.io/validate.php?task=facebook-login');
-	  echo('hey');
+	  echo('hey1');
 
 	  if(!isset($_GET['code'])){
 	  $loginUrl = $helper->getLoginUrl();
@@ -190,16 +190,16 @@ class validateClass extends dbConnect {
 	  $session = $helper->getSessionFromRedirect();
 		// var_dump($helper);
 	  }catch( FacebookRequestException $ex ){
-		echo('hey');
+		echo('hey2');
 	  }catch(Exception $ex){
-		echo('hey');
+		echo('hey3');
 	  }
 	 // echo($session);
-	  echo('hey');
+	  echo('hey5');
 	  if(isset($session)){
 		$request = new FacebookRequest($session, 'GET', '/me' );
 		$response = $request->execute();
-		echo('hey');
+		echo('hey6');
 		$graphObject = $response->getGraphObject();
 		$fbid = $graphObject->getProperty('id');           // To Get Facebook ID
 		$fbfullname = $graphObject->getProperty('name');   // To Get Facebook full name
@@ -408,7 +408,7 @@ if($_GET['oauth_token']){
 
 	function submit_signup($input) {
 		$resp=new resp();
-		if(empty($input) || !isset($input->username) || !isset($input->password) || !isset($input->mobile) || !isset($input->name) || !isset($input->email)) {
+		if(empty($input) || !isset($input->username) || !isset($input->password) || !isset($input->email)) {
 			$resp->msg="Enter all the mandatory fields.";
 			return $resp;
 		}
@@ -435,9 +435,9 @@ if($_GET['oauth_token']){
 		}
 		$newUser = new stdClass();
 		$newUser->username=$input->username;
-		$newUser->name=$input->name;
+		// $newUser->name=$input->name;
 		$newUser->email=$input->email;
-		$newUser->mobile=$input->mobile;
+		// $newUser->mobile=$input->mobile;
 		$newUser->tempResetPass="no";
 		//$resp->msg="SignUp successful";
 		//$resp->status="1";
@@ -465,7 +465,7 @@ if($_GET['oauth_token']){
 		$mail->Port = 465;                                 // TCP port to connect to
 
 		$mail->setFrom('srinath.chinchole@qleverlabs.com', 'DeZinebox');
-		$mail->addReplyTo($input->email, $input->name);
+		$mail->addReplyTo($input->email, $input->username);
 		$mail->addAddress($input->email);   // Add a recipient
 		//$mail->addCC('cc@example.com');
 		//$mail->addBCC('bcc@example.com');
@@ -473,7 +473,7 @@ if($_GET['oauth_token']){
 		$mail->isHTML(true);  // Set email format to HTML
 
 
-		$name = $input->name;
+		$name = $input->username;
 		$email_address = $input->email; 
 		$message = "Thank you for registering, welcome to deZine Box! We are really happy to have you here. deZine Box is an online architectural and interior design solution that transforms the way you design your spaces. It is one-of-a-kind solution to provide you with design execution capabilities";
 		$mail->Subject = 'New SignUp';
@@ -502,7 +502,7 @@ if($_GET['oauth_token']){
 		$resp->status='1';
 
 
-		$resp->msg="Sign up Successful";
+			header('Location:login.php');
 		return $resp;
 	}
 	function submit_design_partner($input) {
