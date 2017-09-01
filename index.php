@@ -26,97 +26,42 @@
 	<section class="cd-section visible">
 	<?php include_once 'menu-includes.php';?>
 	<div id="wrapper" style="height: 700px;">
-  <a href="btnclick.php#dezinepage">
-  <figure><img class="topbtn" src="assets/images/cube/design-partner.png"></figure></a>
+
+  <a class="topbtn" href="btnclick.php#customerspage">Customers</a>
 
 
 
    <br>
     
   <div class="viewport viewportstyle">
-    <div class="cube"  >
-      <div class="side">
-        <div class="cube-image">Product Partner</div>
-      </div>
-      <div class="side">
-        <div class="cube-image">Customers</div>
-      </div>
-      <div class="side">
-        <div class="cube-image">Dezine Partner</div>
-      </div>
-      <div class="side">
-        <div class="cube-image active">Customers</div>
-      </div>
-      <div class="side">
-        <div class="cube-image active">Dezine Partner</div>
-      </div>
-      <div class="side">
-        <div class="cube-image active">Product Partner</div>
-      </div>
-    </div><br><br><br><br><br><br><br><br>
- <!--    <a href="get-your-box.php">  <button class="btn btn-ghost btn-round" style="float: right;margin-right: -70%; margin-top: -50%; "><i class="fa fa-hand-o-up" aria-hidden="true"></i></button></a> -->
-  </div>
+<img src="assets/images/dezineboxbox.png">
+    </div>
+
   <br> <br> <br>
-  <a href="btnclick.php#customerspage"><img class="leftbtn" src="assets/images/cube/customer.png"></a>
-  <a href="btnclick.php#productpage"><img class="rightbtn" src="assets/images/cube/product-partner.png"></a>
+  <a class="leftbtn"  href="btnclick.php#dezinepage">Dezine Partner</a>
+  <a class="rightbtn" href="btnclick.php#productpage">Product Partner</a>
 
- 
-      
-
+  <br> <br><br><br>
+    <a class="centerbtn" href="get-your-box.php"  style="font-size: 1.0em"><button class="btn-ghost ">Buy your box</button></a>
 
 </div>
 
 	</section>
 
-  <section class="cd-section visible">
+ <section class="cd-section visible">
   <?php include_once 'menu-includes.php';?>
   <div id="wrapper" style="height: 700px;">
- <a href="btnclick.php#dezinepage">
-  <figure><img class="topbtn" src="assets/images/cube/design-partner.png"></figure></a>
+
+  <a class="topbtn2" href="boxclick.php#ether">Ether</a>
    <br>
     
-  <div class="viewport viewportstyle">
-    <div class="cube2 cube"  >
-      <div class="side">
-        <div class="cube-image">Product Partner</div>
-      </div>
-      <div class="side">
-        <div class="cube-image">Customers</div>
-      </div>
-      <div class="side">
-        <div class="cube-image">Dezine Partner</div>
-      </div>
-      <div class="side">
-        <div class="cube-image active">Customers</div>
-      </div>
-      <div class="side">
-        <div class="cube-image active">Dezine Partner</div>
-      </div>
-      <div class="side">
-        <div class="cube-image active">Product Partner</div>
-      </div>
-    </div><br><br><br><br><br><br><br><br>
- <!--    <a href="get-your-box.php">  <button class="btn btn-ghost btn-round" style="float: right;margin-right: -70%; margin-top: -50%; "><i class="fa fa-hand-o-up" aria-hidden="true"></i></button></a> -->
-  </div>
+  <div class="viewport viewportstyle2">
+<img src="assets/images/dezineboxbox.png">
+    </div>
+
   <br> <br> <br>
-  <a href="btnclick.php#customerspage"><img class="leftbtn" src="assets/images/cube/customer.png"></a>
-  <a href="btnclick.php#productpage"><img class="rightbtn" src="assets/images/cube/product-partner.png"></a>
- 
-      
 
-
-</div>
-
-  </section>
-
-	 <section class="cd-section visible">
-  <?php include_once 'menu-includes.php';?>
-  <div id="wrapper" style="height: 700px;">
-   <a href="btnclick.php#dezinepage">
-  <figure><img class="topbtn" src="assets/images/cube/design-partner.png"></figure></a>
-   <br>
-    
-    <div class="viewport viewportstyle">
+<!--     <div class="viewport viewportstyle">
     <div class="cube3 cube"  >
       <div class="side">
         <div class="cube-image">Product Partner</div>
@@ -137,15 +82,14 @@
         <div class="cube-image active">Product Partner</div>
       </div>
     </div><br><br><br><br><br><br><br><br>
- <!--    <a href="get-your-box.php">  <button class="btn btn-ghost btn-round" style="float: right;margin-right: -70%; margin-top: -50%; "><i class="fa fa-hand-o-up" aria-hidden="true"></i></button></a> -->
-  </div>
-  <br> <br> <br>
-  <a href="btnclick.php#customerspage"><img class="leftbtn" src="assets/images/cube/customer.png"></a>
-  <a href="btnclick.php#productpage"><img class="rightbtn" src="assets/images/cube/product-partner.png"></a>
- 
- 
-      
 
+  </div>
+  <br> <br> <br> -->
+   <a class="leftbtn1"  href="boxclick.php#terra">Terra</a>
+  <a class="rightbtn1" href="boxclick.php#zephyr">Zephyr</a>
+
+  <br> <br><br><br>
+    <a class="centerbtn3" href="get-your-box.php" style="font-size: 1.0em"><button class="btn-ghost ">Buy your box</button></a>
 
 </div>
 
@@ -154,8 +98,51 @@
 	 <section class="cd-section visible">
   <?php include_once 'menu-includes.php';?>
   <div id="wrapper" style="height: 700px;">
-  <a href="btnclick.php#dezinepage">
-  <figure><img class="topbtn" src="assets/images/cube/design-partner.png"></figure></a>
+
+  <a class="topbtn" href="#">Sample Drawing</a>
+   <br>
+     <div class="viewport viewportstyle1">
+<img src="assets/images/dezineboxbox.png" s>
+    </div>
+
+  <br> <br> 
+    
+<!--     <div class="viewport viewportstyle">
+    <div class="cube3 cube"  >
+      <div class="side">
+        <div class="cube-image">Product Partner</div>
+      </div>
+      <div class="side">
+        <div class="cube-image">Customers</div>
+      </div>
+      <div class="side">
+        <div class="cube-image">Dezine Partner</div>
+      </div>
+      <div class="side">
+        <div class="cube-image active">Customers</div>
+      </div>
+      <div class="side">
+        <div class="cube-image active">Dezine Partner</div>
+      </div>
+      <div class="side">
+        <div class="cube-image active">Product Partner</div>
+      </div>
+    </div><br><br><br><br><br><br><br><br>
+  </div>
+  <br> <br> <br> -->
+    <a class="leftbtn2"  href="Architecture.pdf">Architecture <br> Sample</a>
+  <a class="rightbtn2" href="Interior.pdf">Interior <br> Sample</a>
+  <br> <br><br><br>
+    <a class="centerbtn1" href="get-your-box.php" style="font-size: 1.0em"><button class="btn-ghost ">Buy your box</button></a>
+</div>
+
+
+  </section>
+<!-- 
+	 <section class="cd-section visible">
+
+  <div id="wrapper" style="height: 700px;">
+  <a class="topbtn" href="btnclick.php#dezinepage">Dezine Partner</a>
    <br>
     
    <div class="viewport viewportstyle">
@@ -178,19 +165,18 @@
       <div class="side">
         <div class="cube-image active">Product Partner</div>
       </div>
-    </div><br><br><br><br><br><br><br><br>
- <!--    <a href="get-your-box.php">  <button class="btn btn-ghost btn-round" style="float: right;margin-right: -70%; margin-top: -50%; "><i class="fa fa-hand-o-up" aria-hidden="true"></i></button></a> -->
+    </div><br><br><br>
+      <a class="leftbtn"  href="btnclick.php#customerspage">Customers</a>
+  <a class="rightbtn" href="btnclick.php#productpage">Product Partner</a>
   </div>
-  <br> <br> <br>
-  <a href="btnclick.php#customerspage"><img class="leftbtn" src="assets/images/cube/customer.png"></a>
-  <a href="btnclick.php#productpage"><img class="rightbtn" src="assets/images/cube/product-partner.png"></a>
+
  
       
 
 
 </div>
 
-  </section>
+  </section> -->
 <!-- 	<section class="cd-section">
 	<div id="wrapper" style="height: 700px;">
   <div class="viewport" style="float: right; margin: 10%;">

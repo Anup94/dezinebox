@@ -27,7 +27,7 @@
       <ul class="nav navbar-nav ">
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>
-       <li class="dropdown mega-fw"><a href="get-your-box.php">Get your box</a></li>
+       <li class="dropdown mega-fw"><a href="get-your-box.php">Get your box1</a></li>
 
      <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Be our Partner<span class="caret"></span></a>
@@ -64,5 +64,4 @@
     </div>
   </div>
 </nav>
-
 <?php include_once 'authentication-includes.php';?>

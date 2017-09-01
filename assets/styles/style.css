@@ -1,24 +1,4 @@
-/* -------------------------------- 
 
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  background-color: #22283f;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
@@ -32,8 +12,10 @@ body::before {
 }
 
 a {
-  color: #267481;
-  text-decoration: none;
+  color: #FF5100;
+  text-decoration: underline;
+  font-size: 2.0em
+
 }
 
 /* -------------------------------- 
@@ -80,10 +62,10 @@ Main Components
   background-image: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(255,255,255,1.0) 80%), url("../images/2.jpg")*/
 }
 .cd-section:nth-of-type(3) > div {
-   background-image: url("../images/cube/newshade3.jpg");
+   background-image: url("../images/cube/newshade4.jpg");
 }
 .cd-section:nth-of-type(4) > div {
-   background-image: url("../images/cube/newshade4.jpg");
+   background-image: url("../images/cube/newshade3.jpg");
 }
 /*.cd-section:nth-of-type(5) > div {
    background-image: url("../images/bg1.jpeg");*/
@@ -210,17 +192,6 @@ Main Components
   box-sizing: border-box;
 }
 
-body {
-  background: #1b1b1b;
-  font-family: 'HelveticaNeue-Light',
-    'Helvetica Neue Light',
-    'Helvetica Neue',
-    Helvetica,
-    Arial,
-    'Lucida Grande',
-    sans-serif;
-  font-weight: 300;
-}
 
 
 .viewport {
