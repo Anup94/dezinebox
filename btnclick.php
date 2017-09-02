@@ -67,7 +67,8 @@
 <br><br><br><br><br><br>
 <div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Customers</h3>
+<h1 style="text-align: center;">Customers</h1><br><br>
+
 <p style="color: #777">A well &amp; self-created space brings a peace and harmony in one’s life and also a deep sense
 of pride&amp; joy. <br><br>
 Dezinebox is backed by an architectural firm with more than decade of experience in the
@@ -80,7 +81,7 @@ through a process. This process is simple, convenient, affordable &amp; transpar
 
 <div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Product Partner</h3>
+<h1 style="text-align: center;">Product Partner</h1><br>
 <p style="color: #777">“If you have a product to SHOW, we have a platform to SHOWCASE it”<br><br>
 An important part of our offering is the design elements that we recommend to your customers, to
 bring their spaces to life.<br><br>
@@ -97,7 +98,7 @@ products. </p>
 
 <div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Dezine Partner</h3>
+<h1 style="text-align: center;">Dezine Partner</h1><br><br>
 <p style="color: #777">DeZinebox although offers online services, but we can’t oversight our customers ‘offline’ needs for
 a traditional face to face consultations to address their implementation challenges &amp; execution
 requirements.<br><br>

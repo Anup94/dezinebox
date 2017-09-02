@@ -67,9 +67,9 @@
 <br><br><br><br><br><br>
 <div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Terra</h3>
+<h1 style="text-align: center;">Terra</h1>
 <p style="color: #777">
-<br><br>
+<br><br><br>
 Terra represents founding Earth elements. This box provides two dimensional
 drawings along with material specifications. It also suggests estimated cost for that
 project. Every element in the box is tagged that explains its brand, quality, cost,
@@ -82,8 +82,8 @@ their own with minimal efforts.</p>
 
 <div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Ether</h3>
-<p style="color: #777"><br><br>Ether represents the boundless space elements. This box provides offline &
+<h1 style="text-align: center;">Ether</h1>
+<p style="color: #777"><br><br><br>Ether represents the boundless space elements. This box provides offline &
 traditional consultancy services to the end user. If you wish to have the personalize
 experience of getting your home designed by the professional, then this box is for
 you. Our professional Design Partners will personally execute your project
@@ -95,8 +95,8 @@ glides you through this otherwise tedious process effortlessly.</p>
 
 <div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Zephyr</h3>
-<p style="color: #777"><br><br>Zephyr represents the air elements. This box additionally provides a three
+<h1 style="text-align: center;">Zephyr</h1>
+<p style="color: #777"><br><br><br>Zephyr represents the air elements. This box additionally provides a three
 dimensional (3D) images along with two dimensional drawings. Every element in
 this box is tagged and it explains the brand, quality, cost, availability at online store
 or shop. Ether Box is self-explanatory because of its 3D images apart from technical

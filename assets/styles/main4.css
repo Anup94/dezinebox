@@ -83,7 +83,7 @@ hr {
 }
 
 .gray-bg {
-  background: #F5F1ED;
+  background: #fff;
 }
 
 .bg-white {
@@ -1267,15 +1267,16 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn, .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light, .btn-text, .btn-text-light, .btn-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light {
   position: relative;
   display: inline-block;
-  padding: 12px 50px;
+  padding: 10px 15px;
   background: #111;
   color: #ececec;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-size: 0.9em;
+  font-size: 13px;
   line-height: 1.8em;
   border-radius: 0;
+
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
 }

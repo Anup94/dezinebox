@@ -65,23 +65,12 @@
 </header> -->
 <div></div>
 <br><br><br><br><br>
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
 
-<h3 style="text-align: center;">Terra</h3>
-<p style="color: #777">
-<br><br>
-Terra represents founding Earth elements. This box provides two dimensional
-drawings along with material specifications. It also suggests estimated cost for that
-project. Every element in the box is tagged that explains its brand, quality, cost,
-availability at particular online store or shop of our Product Partners. Terra Box gives
-a fair understanding about the design and customer can themselves execute it on
-their own with minimal efforts.</p> 
+
+<h1 style="text-align: center;">Sample Drawing</h1>
+<img src="assets/images/sampledrawing.jpg">
 </div>
 
-
-<br><br><br>
-
-</div>
 </section>
 </div><!-- / .gray-bg -->
 
@@ -91,10 +80,7 @@ their own with minimal efforts.</p>
 
 <!-- ========== Footer Widgets ========== -->
 <footer class="footer-widgets">
-
-
-
-<!-- Copyright -->
+ 
 <div class="copyright">
 <div class="container">
 <div class="row">

@@ -13,8 +13,13 @@ body::before {
 
 a {
   color: #FF5100;
-  text-decoration: underline;
-  font-size: 2.0em
+  font-size: 1.5em
+
+}
+
+a:hover {
+  color: #FF5100;
+  font-size: 1.5em
 
 }
 
@@ -38,7 +43,7 @@ Main Components
   font-size: 2.4rem;
 }
 .cd-section:first-of-type > div {
-     background-image: url("../images/cube/newshade.jpg");
+     background: #fff;
 /*  background-image: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(255,255,255,1.0) 80%), url("../images/1.jpg")*/
 
 } 
@@ -57,12 +62,12 @@ Main Components
   color: #6a7083;
 }
 .cd-section:nth-of-type(2) > div {
-     background-image: url("../images/cube/newshade2.jpg");
+background: #fff;
 /*
   background-image: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(255,255,255,1.0) 80%), url("../images/2.jpg")*/
 }
 .cd-section:nth-of-type(3) > div {
-   background-image: url("../images/cube/newshade4.jpg");
+   background: #fff;
 }
 .cd-section:nth-of-type(4) > div {
    background-image: url("../images/cube/newshade3.jpg");
@@ -157,6 +162,7 @@ Main Components
   display: none;
 }
 .cd-vertical-nav a {
+  margin-left: 50%;
   display: block;
   height: 40px;
   width: 40px;
