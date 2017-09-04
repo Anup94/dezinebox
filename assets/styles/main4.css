@@ -9878,3 +9878,22 @@ form .input-error-2:focus {
   margin-top: 29%;
   margin-right: -22%;
 }
+
+.spanbutton {
+  margin-top: 30px; 
+  margin-right: -15%;
+}
+
+@media (max-width: 768px) {
+  .spanbutton {
+  margin-top: 30px; 
+  margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+   .spanbutton {
+  margin-top: 30px; 
+  margin-right: 10%;
+    }
+}
