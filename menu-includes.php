@@ -12,8 +12,8 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 20px; margin-right: -15%;">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
+        <span class="sr-only" style="color: #FF5100">Toggle navigation</span>
+        <span class="icon-bar" ></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
@@ -27,7 +27,7 @@
       <ul class="nav navbar-nav ">
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>
-       <li class="dropdown mega-fw"><a href="get-your-box.php">Get your box</a></li>
+       <li class="dropdown mega-fw"><a href="get-your-box.php">Buy your box</a></li>
 
      <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Be our Partner<span class="caret"></span></a>

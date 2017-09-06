@@ -38,7 +38,7 @@
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 <script src="js/imageMapResizer.js"></script>
 <!--<script src="js/imageMapResizer.map"></script>-->
-<script src="js/imageMapResizer.min.js"></script>
+<script src="js/imageMapResizer.min.js"></script>                   
 <script src="js/imageMapResizer.min.js"></script>
 <script src="js/jquery.rwdImageMaps.js"></script>
 <script src="js/jquery.rwdImageMaps.min.js"></script>
