@@ -11,7 +11,7 @@
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans ">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 20px; margin-right: -15%;">
+      <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 20px; margin-right: -6%;">
         <span class="sr-only" style="color: #FF5100">Toggle navigation</span>
         <span class="icon-bar" ></span>
         <span class="icon-bar"></span>

@@ -23,6 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.vidback
+{
+	padding:0;
+	margin:-5% 0 7% 0;	
+}
+
 .et-adjustments:before {
 	content: "\e600";
 }

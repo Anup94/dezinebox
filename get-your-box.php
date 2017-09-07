@@ -97,10 +97,6 @@ if(empty($constTypeArr[$constTypeId])) {
 
        <?php include_once 'menu-includes.php';?>
 
-
-
-
-
         <!-- ========== Hero Cover ========== -->
 
 
@@ -224,28 +220,6 @@ if(empty($constTypeArr[$constTypeId])) {
             <div class="clearfix divSeparator" style="height:250px"></div>
           </section>
         </div><!-- / .gray-bg -->
-
-
-
-        
-
-
-        
-       
-
-
-        
-        
-
-
-        
-
-        
-
-
-
-       
-       
 
 
         <!-- ========== Footer ========== -->

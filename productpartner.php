@@ -17,7 +17,7 @@
 
 
 </head>
-<body class="supernova">
+<body class="supernova" style="background-image:url(images/Product-Partner.jpg)">
 <?php include_once 'menu-includes.php';?>
 <form class="jotform-form" id="productPartnerForm" name="productPartnerForm" action="validate.php?task=product_partner_submit" enctype="multipart/form-data" method="post">
 

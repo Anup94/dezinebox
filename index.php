@@ -9,6 +9,7 @@
 <meta name="description" content="We are world’s first online Architectural and Interior Design Solution provider which empowers you with ‘execution capabilities’ to décor your residential & commercial spaces, at your convenience & at affordable rates. We also provide an ‘Opportunity Platform’ to ‘Product' Providers’, ‘Interior Designers’ & ‘Architects’ to showcase their skills & aim to create a comprehensive ‘Design Ecosystem’ across Geographies.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link href="css/vidbck.css" rel="stylesheet" type="text/css">
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico">
 <!-- Bootstrap -->
@@ -80,57 +81,9 @@ body, html {
     height: 100%;
     margin: 0;
 }
-
-.bg1 {
-    /* The image used */
-    background-image: url("assets/images/home/1.png");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.bg2 {
-    /* The image used */
-    background-image: url("assets/images/home/2.png");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.bg3 {
-    /* The image used */
-    background-image: url("assets/images/home/3.png");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.bg4 {
-    /* The image used */
-    background-image: url("assets/images/home/4.png");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 </style>
 <link rel="stylesheet" href="components2.css">
+
 </head>
 <body id="page-top">
 
@@ -158,17 +111,56 @@ body, html {
 <!-- Dropdown menu toggle on mobile: c-toggler class can be applied to the link arrow or link itself depending on toggle mode -->
 <?php include_once 'menu-includes.php';?>
 
-<div class="bg1"></div><br>
-<div class="bg2"></div><br>
-<div class="bg3"></div><br>
-<div class="bg4"></div><br>
 
-
-
-
-
-
-
+	<div class="col-md-12 col-xs-12 vidback">
+            	<img src="assets/images/home/1.png" style="width:100%;">
+				
+                	<div class="polina">
+						
+					</div>
+	 </div>
+     
+     	<div class="col-md-12 col-xs-12 vidback">
+            	<img src="assets/images/home/2.jpg" style="width:100%;">
+				
+                	<div class="polina">
+						<a href="#"> <p>Know more..</p> </a>
+					</div>
+                    <div class="polina1">
+						<a href="designer.php"> <p>Know more..</p> </a>
+					</div>
+                    <div class="polina2">
+						<a href="productpartner.php"> <p>Know more..</p> </a>
+					</div>
+	 </div>
+     
+     	<div class="col-md-12 col-xs-12 vidback">
+            	<img src="assets/images/home/3.jpg" style="width:100%;">
+				
+                	<div class="polina3">
+						<a href="#"> <p>Know more..</p> </a>
+					</div>
+                    <div class="polina4">
+						<a href="#"> <p>Know more..</p> </a>
+					</div>
+                    <div class="polina5">
+						<a href="#"> <p>Know more..</p> </a>
+					</div>
+	 </div>
+     
+     	<div class="col-md-12 col-xs-12 vidback">
+            	<img src="assets/images/home/4.jpg" style="width:100%;">
+				
+                	<div class="polina6">
+						<a href="productpartner.php"> <p>refer sample..</p> </a>
+					</div>
+                    <div class="polina7">
+						<a href="#"> <p>refer sample..</p> </a>
+					</div>
+                    <div class="polina8">
+						<a href="#"> <p>refer sample..</p> </a>
+					</div>
+	 </div>
 
 
 
