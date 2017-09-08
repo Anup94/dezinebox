@@ -1,38 +1,42 @@
-<?php
-require 'PHPMailer/PHPMailerAutoload.php';
 
-$mail = new PHPMailer;
+<?php 
+$errors = '';
+$myemail = 'contact@dezinebox.io';//<-----Put Your email address here.
 
-$mail->isSMTP();                                   // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                            // Enable SMTP authentication
-$mail->Username = 'srinath.chinchole@qleverlabs.com';          // SMTP username
-$mail->Password = '9867613282'; // SMTP password
-$mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                 // TCP port to connect to
-
-$mail->setFrom('srinath.chinchole@qleverlabs.com', 'shrinath');
-$mail->addReplyTo('shrinath598@gmail.com', 'Rishab Sahay');
-$mail->addAddress('shrinath598@gmail.com');   // Add a recipient
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-
-$mail->isHTML(true);  // Set email format to HTML
-
-$bodyContent = '<h1>Enquiry from dEZINEbOX Website</h1>';
-$bodyContent .= '<p>Finaly Now I can send mail <b>offline</b></p>';
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
+$number = $_POST['number'];
 $message = $_POST['message']; 
-$mail->Subject = 'Enquiry from Qleverlabs Website';
-$mail->Body    = 	" Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Message: \n $message"; 
 
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    
-    header('Location: index.php');
 
-}
+
+if( empty($errors))
+{
+	$to = $myemail; 
+	$email_subject = "Contact form submission: $name";
+	$email_body = "You have received a new message. ".
+	" Here are the details:\n Name: $name \n Email: $email_address \n Number: $number \n Message: $message"; 
+	
+	$headers = "From: $myemail\n"; 
+	$headers .= "Reply-To: $email_address";
+	
+	mail($to,$email_subject,$email_body,$headers);
+	//redirect to the 'thank you' page
+	//header('Location: index.php');
+} 
 ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<title>Contact form handler</title>
+</head>
+
+<body>
+<!-- This page is displayed only if there is some error -->
+<?php
+echo nl2br($errors);
+?>
+
+
+</body>
+</html>

@@ -8,7 +8,7 @@
 <title>Dezinebox – “your dream space, at your own pace” | a unique online architectural and Interior Design service provider empowering you to decor your own space | Get your Box today|</title>
 <meta name="description" content="We are world’s first online Architectural and Interior Design Solution provider which empowers you with ‘execution capabilities’ to décor your residential & commercial spaces, at your convenience & at affordable rates. We also provide an ‘Opportunity Platform’ to ‘Product' Providers’, ‘Interior Designers’ & ‘Architects’ to showcase their skills & aim to create a comprehensive ‘Design Ecosystem’ across Geographies.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link href="css/vidbck.css" rel="stylesheet" type="text/css">
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico">
@@ -92,7 +92,7 @@ body, html {
 <!-- ========== Preloader ========== -->
 
 <div class="preloader">
-<img src="assets/images/ZGIF.gif" alt="Loading...">
+	<img src="assets/images/pnglogo.png" alt="Loading...">
 </div>
 
 
@@ -121,51 +121,47 @@ body, html {
 	 </div>
      
      	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/2.jpg" style="width:100%;">
+            	<img src="assets/images/home/2.png" style="width:100%;">
 				
                 	<div class="polina">
-						<a href="#"> <p>Know more..</p> </a>
+						<a href="btnclick.php"> <p>Know more..</p> </a>
 					</div>
+                    
                     <div class="polina1">
-						<a href="designer.php"> <p>Know more..</p> </a>
+						<a href="login.php"> <p>Interested? Buy Your Box..</p> </a>
+					</div>
+	 </div>
+     
+     	<div class="col-md-12 col-xs-12 vidback">
+            	<img src="assets/images/home/3.png" style="width:100%;">
+				
+                	
+                    <div class="polina5">
+						<a href="boxclick.php"> <p>Know more..</p> </a>
 					</div>
                     <div class="polina2">
-						<a href="productpartner.php"> <p>Know more..</p> </a>
+						<a href="boxclick.php"> <p>Intrigude? Get Your Box..</p> </a>
 					</div>
 	 </div>
      
      	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/3.jpg" style="width:100%;">
-				
-                	<div class="polina3">
-						<a href="#"> <p>Know more..</p> </a>
-					</div>
-                    <div class="polina4">
-						<a href="#"> <p>Know more..</p> </a>
-					</div>
-                    <div class="polina5">
-						<a href="#"> <p>Know more..</p> </a>
-					</div>
-	 </div>
-     
-     	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/4.jpg" style="width:100%;">
+            	<img src="assets/images/home/4.png" style="width:100%;">
 				
                 	<div class="polina6">
-						<a href="productpartner.php"> <p>refer sample..</p> </a>
+						<a href="#"> <p>refer sample..</p> </a>
 					</div>
                     <div class="polina7">
-						<a href="#"> <p>refer sample..</p> </a>
+						<a href="Architecture.pdf"> <p>refer sample..</p> </a>
 					</div>
                     <div class="polina8">
-						<a href="#"> <p>refer sample..</p> </a>
+						<a href="Interior.pdf"> <p>refer sample..</p> </a>
 					</div>
 	 </div>
 
 
 
 <header class="sec-heading">
-<h2>Partners</h2>
+<h2 style="font-family: 'Poppins', sans-serif;">Partners</h2>
 
 </header><br><br>
 <section class="responsive1 slider">
@@ -197,7 +193,7 @@ body, html {
 <div class="gray-bg">
 <header class="sec-heading" style="text-align: center;">
 <br><br>
-<h2 >Customers</h2>
+<h2 style="font-family: 'Poppins', sans-serif;">Customers</h2>
 <span class="subheading">Read some of the testimonials from our amazing clients</span>
 </header>
 <section class="responsive slider" >
@@ -516,7 +512,7 @@ $(document).on('ready', function() {
 <section class="container testimonials-3col">
 <div class="row section">
 <header class="sec-heading">
-<h2>Contact Us</h2>
+<h2 style="font-family: 'Poppins', sans-serif;">Contact Us</h2>
 <span class="subheading"></span>
 </header>
 
@@ -541,7 +537,7 @@ $(document).on('ready', function() {
 </div>
 <div class="form-group">
 <label for="name-contact-1">Number</label>
-<input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your number" required>
+<input type="text" name="number" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your number" required>
 
 <span class="pull-right alert-error"></span>
 </div>
@@ -552,7 +548,7 @@ $(document).on('ready', function() {
 <!-- Message -->
 <div class="form-group">
 <label for="message-contact-1">Message</label>
-<textarea name="message" id="message-contact-1" class="form-control" rows="9" placeholder="Your Message"></textarea>
+<textarea name="message" id="message-contact-1" class="form-control" rows="9" placeholder="Your Message" required></textarea>
 
 </div>
 <div>
@@ -633,7 +629,7 @@ $(document).on('ready', function() {
 <td><a href="About.php" style="color: #fff">About Us</a></td> </tr>
 <tr>
 <td><a href="Whatweoffer.php" style="color: #fff">What we offer</a></td>
-<td><a href="#" style="color: #fff"> Privacy Policy </a></td>
+<td><a href="privacy.php" style="color: #fff"> Privacy Policy </a></td>
 
 </tr>
 <tr>
