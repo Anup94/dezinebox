@@ -6,15 +6,6 @@ $dbConnect=new dbConnect();
 
 ?>
 
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html class="no-js" lang="en">
  
@@ -26,7 +17,7 @@ $dbConnect=new dbConnect();
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favbox.png">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
         <!-- Fonts -->

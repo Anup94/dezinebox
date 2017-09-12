@@ -212,6 +212,7 @@
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
+		background-color:#f8f8f8;
     }
     .navbar-collapse.collapse {
         display: none!important;

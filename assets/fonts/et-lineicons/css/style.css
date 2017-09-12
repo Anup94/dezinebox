@@ -28,6 +28,32 @@
 	padding:0;
 	margin:-5% 0 7% 0;	
 }
+.link1
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:block;
+}
+.link2
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:block;	
+}
+.navbar-toggle
+ {
+    margin-top: 20px;
+    margin-right: -27%;
+	display:block;
+}
+
+
 
 .et-adjustments:before {
 	content: "\e600";
@@ -427,5 +453,34 @@
 
 .et-wine:before {
 	content: "\e663";
+}
+
+@media only screen and (max-width:400px)
+{
+	.link1
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:none;
+}
+.link2
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:none;	
+}
+
+.navbar-toggle
+ {
+    margin-top: 20px;
+    margin-right: 0%;
+	display:block;
+}
 }
 

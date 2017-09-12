@@ -45,7 +45,7 @@ if(mysqli_num_rows($result)>0) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favbox.png">
   <!-- Bootstrap -->
   
  <link rel="stylesheet" href="assets/styles/bootstrap.min.css">

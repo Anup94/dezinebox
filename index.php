@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link href="css/vidbck.css" rel="stylesheet" type="text/css">
 <!-- Favicon -->
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="images/favbox.png">
 <!-- Bootstrap -->
 <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
 <!-- Fonts -->
@@ -140,7 +140,7 @@ body, html {
 						<a href="boxclick.php"> <p>Know more..</p> </a>
 					</div>
                     <div class="polina2">
-						<a href="boxclick.php"> <p>Intrigude? Get Your Box..</p> </a>
+						<a href="login.php"> <p>Intrigude? Get Your Box..</p> </a>
 					</div>
 	 </div>
      
@@ -148,13 +148,21 @@ body, html {
             	<img src="assets/images/home/4.png" style="width:100%;">
 				
                 	<div class="polina6">
-						<a href="#"> <p>refer sample..</p> </a>
+						<a href="input.pdf"> <p>refer sample..</p> </a>
 					</div>
                     <div class="polina7">
 						<a href="Architecture.pdf"> <p>refer sample..</p> </a>
 					</div>
                     <div class="polina8">
 						<a href="Interior.pdf"> <p>refer sample..</p> </a>
+					</div>
+	 </div>
+     
+     <div class="col-md-12 col-xs-12 vidback">
+            	<img src="assets/images/home/5.png" style="width:100%;">
+				
+                	<div class="polina">
+						
 					</div>
 	 </div>
 
@@ -208,7 +216,7 @@ body, html {
 <cite style="color: #CCC; text-align: justify;">Rupali Deshmukh<span><br>Director,Connecticus Technologies, Pune.</span></cite>
 <blockquote>
 <p>deZinebox helped us to convert irregular office area into stylish and energizing work space by converting disturbing angles into modern design features. Design detailing did wonders to our cozywork space to perform at its best.</p>
-<img src="images/fire.png" style="width: 50px; height: 50px; margin-left: 45%; "><span><p style="color: #FF5100;"> Terra </p>    </span>
+<img src="images/tera.jpg" style="width: 50px; height: 50px; margin-left: 45%; "><span><p style="color: #FF5100;"> Terra </p>    </span>
 </blockquote>
 
 </div><!-- / .t-item -->
@@ -284,7 +292,7 @@ body, html {
 <cite style="color: #CCC; text-align: justify;">Sudhakar Raghupathy<span><br>Director, Shreelakshya Ventures Pvt. Ltd. Pudducherry</span></cite>
 <blockquote>
 <p>Services provided by deZinebox were innovative and satisfactory. DeZine for multiplex & Mall made by deZinebox was one of its kind. We were very happy to have work with this team and defiantly recommend them.</p>
-<img src="images/fire.png" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Terra </p>
+<img src="images/tera.jpg" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Terra </p>
 </blockquote>
 
 </div><!-- / .t-item -->

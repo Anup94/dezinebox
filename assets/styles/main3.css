@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 hr {
   margin-top: 0;
   margin-bottom: 0;
@@ -1112,6 +1112,7 @@ h1, .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer {
 h2 {
   font-size: 1.5em;
   letter-spacing: 4px;
+  font-family: 'Poppins', sans-serif;
 }
 
 h3, .page-title .subheading {
