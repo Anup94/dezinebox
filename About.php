@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favbox.png">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
         <!-- Fonts -->
@@ -80,19 +80,24 @@
               <div class="col-lg-12 col-md-12 mb-sm-50" >
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s">
                 
-                  <h4>About Us</h4>
+                  <h4 style="font-size: 1.5em;">About Us</h4>
                   <p style="color: #777"><blockquote style="color: #000;">
-                  deZinebox is a labour of love for its co-founders Shweta and Abhijeet Deshmukh. <br><br>
+                  deZinebox is a labour of love for Shweta Deshmukh & Abhijeet Deshmukh <br><br>
+<strong>Shweta Deshmukh</strong><br>
+Shweta Deshmukh is an accomplished architect with over 16 years of experience in the field. She is the Chief Architect at Mumbai-based Architecture and Interior Design firm Shweta Deshmukh and Associates. Throughout her career, Shweta has worked on a variety of projects ranging from Weekend homes and luxury villas to schools, resorts, townships etc. She holds a Bachelor’s degree in Architecture as well as a PGPCM (Construction management) from NICMAR, Pune. <br><br>
 
-Shweta Deshmukh is an accomplished architect with over 16 years of experience in the field. She is the Chief Architect at Mumbai-based Architecture and Interior Design firm Shweta Deshmukh and Associates. Throughout her career, Shweta has worked on a variety of projects ranging from homes and luxury villas to schools, resorts, townships etc. She holds a Bachelor’s degree in Architecture as well as a PGPCM (Construction management) from NICMAR, Pune. <br><br>
+Her team of qualified and experienced practicing architects and interior designers is well-equipped to handle projects of every scope and type. <br><br>
 
-Her team of qualified and experienced practicing architects and interior designersis well-equipped to handle projects of every scope and type. <br><br>
+She is conferred with an “Exceptional Woman of the Excellence 2017” award by Women Economic Forum & All Ladies League. Shweta is on the Jury Panel of Designwall & Grand Stand Awards of ACEtech powered by The Economic Times. She has received a special mention as “Young Architects of India “ in “Interior & Décor” magazine for Aug-Sep 2017 issue. She was recognized as “Young Woman Entrepreneur” on the occasion of Women’s Day in March,2014 by Young Biz Times.
+She was recognized as “Young Turk” by Zing Homes in August 2014. <br><br>
 
-Abhijeet Deshmukh is a serial entrepreneur with several interesting ventures to his credit. He is also a faculty member at the Amity Business School in Mumbai. <br><br>
+<strong>Abhijeet Deshmukh</strong><br>
 
-In 2014, Abhijeet started Monday Mantras, a weekly newsletter with array of informative articles on topics such as health, spirituality, technology etc. In 2016, he founded Startup Navi Mumbai, an initiative to raise the profile of Navi Mumbai as the start-up strategy capital of India, and ZoomStart India, a community networking space in Mumbai. Prior to this, Abhijeet worked in the financial sector for several years with companies such as Citicorp and IDBI. <br><br>
+Abhijeet Deshmukh is a startup evangelist with several interesting ventures to his credit. He is also a faculty member at the Amity Business School in Mumbai. <br><br>
 
-Abhijeet is a Certified Treasury Manager from ICFAI, Hyderabad and holds an MBA (Finance and Marketing) from Nagpur University. <br></blockquote>
+In 2014, Abhijeet started Monday Mantras, a weekly newsletter with array of informative articles on topics such as health, spirituality, technology etc. In 2016, as co-founder of a co-working space ZoomStart India, he founded ‘Startup Navi Mumbai’, an initiative to raise the profile of Navi Mumbai as the start-up strategy capital of India. Prior to this, Abhijeet worked in the Banking sector for over a decade with companies such as Citi and IDBI in Treasury and Risk domain. <br><br>
+
+Abhijeet is a Certified Treasury Manager from ICFAI, Hyderabad and holds an MBA (Finance and Marketing) from Nagpur University.<br></blockquote>
 
      
                 </div>

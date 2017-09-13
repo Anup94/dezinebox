@@ -1,4 +1,4 @@
-s<?php
+<?php
 session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/login-check.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/classes/db.class.php");
@@ -44,7 +44,7 @@ if(empty($constTypeArr[$constTypeId])) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favbox.png">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
         <!-- Fonts -->
@@ -97,10 +97,6 @@ if(empty($constTypeArr[$constTypeId])) {
 
        <?php include_once 'menu-includes.php';?>
 
-
-
-
-
         <!-- ========== Hero Cover ========== -->
 
 
@@ -119,18 +115,18 @@ if(empty($constTypeArr[$constTypeId])) {
 		             echo "<h2>Select A Theme Of Your Choice </h2> <br>";
 		         }
 		         else if((!empty($categoryId=='2')) && !empty($constTypeId=='1')) { 
-		             echo "<h2>Select your  Room/s </h2> <br>";
+		             echo "<h2>Select Your  Room/s </h2> <br>";
 		         }
 		         
 		           else if((!empty($categoryId)) && !empty($constTypeId)) { 
-		             echo "<h2>Select your Sub Category </h2> <br>";
+		             echo "<h2>Select Your Sub Category </h2> <br>";
 		         }
 		           else if(!empty($categoryId)) { 
-		             echo "<h2>Select your  Category </h2> <br>";
+		             echo "<h2>Select Your  Category </h2> <br>";
 		         }
 		         else
 		         {
-		         	 echo "<h2>Get your Box</h2><br>";
+		         	 echo "<h2>Get Your Box</h2><br>";
 
 		         }
 
@@ -224,28 +220,6 @@ if(empty($constTypeArr[$constTypeId])) {
             <div class="clearfix divSeparator" style="height:250px"></div>
           </section>
         </div><!-- / .gray-bg -->
-
-
-
-        
-
-
-        
-       
-
-
-        
-        
-
-
-        
-
-        
-
-
-
-       
-       
 
 
         <!-- ========== Footer ========== -->

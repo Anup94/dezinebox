@@ -10,8 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="favicon.ico">
-<!-- Bootstrap -->
+<link rel="shortcut icon" href="favbox.png"><!-- Bootstrap -->
 <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
 <!-- Fonts -->
 <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">

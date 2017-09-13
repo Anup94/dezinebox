@@ -23,16 +23,17 @@ $bodyContent = '<h1>Enquiry from dEZINEbOX Website</h1>';
 $bodyContent .= '<p>Finaly Now I can send mail <b>offline</b></p>';
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
+$number = $_POST['number'];
 $message = $_POST['message']; 
 $mail->Subject = 'Enquiry from Qleverlabs Website';
-$mail->Body    = 	" Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Message: \n $message"; 
+$mail->Body    =     " Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Message: \n $message";
 
 if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+   echo 'Message could not be sent.';
+   echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    
-    header('Location: index.php');
+   
+   header('Location: index.php');
 
 }
 ?>

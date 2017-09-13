@@ -40,7 +40,7 @@ if(mysqli_num_rows($result)>0) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favbox.png">
         <!-- Bootstrap -->
         
  <link rel="stylesheet" href="assets/styles/bootstrap.min.css">        <!-- Fonts -->
@@ -116,7 +116,7 @@ if(mysqli_num_rows($result)>0) {
             <div class="row section">
 
               <header class="sec-heading"><br>
-                <h2>Select your Box</h2><br><br>
+                <h2>Select Your Box</h2><br><br>
                  <form name="archChooseBox" action="free.php" method="post">
             <input type="hidden" name="enqId" value="<?php echo $enqId;?>"/>
             <!-- Item 1 -->

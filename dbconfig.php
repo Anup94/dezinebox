@@ -29,7 +29,7 @@ class dbConfig
 	public $hostname="localhost:3306";
 	public $username="root";
 	public $password="";
-	public $dbName="dezine";
+	public $dbName="dezinebox";
 
 }
 ?>

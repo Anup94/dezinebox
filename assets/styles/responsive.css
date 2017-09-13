@@ -114,6 +114,12 @@
     text-align: left;
   }
 }
+@media (max-width:400px)
+{
+	  .navbar .navbar-header .navbar-brand {
+    margin-left: -11%;
+  }	
+}
 
 /* ---- Footers ---- */
 @media (max-width: 992px) {

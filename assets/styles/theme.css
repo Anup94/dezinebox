@@ -181,7 +181,7 @@
 }
 .supernova {
   background-image: none;
-  background-image: url("../images/form-background.png");
+  background-image:url("../../images/Design-partners.jpg");
 }
 #stage {
   background-image: none;
@@ -525,7 +525,7 @@ td .form-sub-label-container .form-textbox {
 
 .form-line {
     margin-top : 18px;
-    margin-bottom : 12px;
+    margin-bottom : 21px;
 }
 
 .form-line[data-type="control_fullname"] .form-input-wide,

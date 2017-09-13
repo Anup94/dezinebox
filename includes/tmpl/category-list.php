@@ -2,7 +2,7 @@
 body{
 
 
-	 background-image: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(255,255,255,1.0) 80%), url("assets/images/bg1.jpg");
+	 background-image: 0%,rgba(255,255,255,1.0) 80%), url("assets/images/bg.jpg");
     background-size: 100% 95%; }
 </style>
                 <body>

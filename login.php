@@ -20,15 +20,8 @@
 </head>
 
 <body>
-  
 
-
-
-
-
-
-
-<div class="form" style="margin-top:4%;">
+<div class="form" style="margin-top:9%; float:right; right:4%;">
   <div class="thumbnail"><img src="http://dezinebox.io/assets/images/logo.png"/></div>
   <form class="register-form" action="validate.php?task=submit_signup" method="post" >
     <input type="text" name="username" placeholder="Username"/>

@@ -1,3 +1,27 @@
+.link1
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:block;
+}
+.link2
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:block;
+}
+.navbar-toggle
+ {
+    margin-top: 20px;
+    margin-right: -27%;
+	display:block;
+}
 .form-all {
 	font-size:14px;
 	color:#000;
@@ -558,4 +582,32 @@ h3.form-header {
 	input[id*="_donation"] {
     width: 25% !important;
 	}
+}
+
+@media only screen and (max-width:400px)
+{
+	.link1
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:none;
+}
+.link2
+{
+	width:11%;
+	float:right;
+	margin:2% 0 0 0;
+	font-size:1.2em;
+	text-align:center;
+	display:none;	
+}
+.navbar-toggle
+ {
+    margin-top: 20px;
+    margin-right: 0%;
+	display:block;
+}	
 }

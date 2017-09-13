@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favbox.png">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
         <!-- Fonts -->
@@ -59,37 +59,7 @@
 
         
         <!-- ========== Navigation ========== -->
-    <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <!-- Logo -->
-              <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"  alt="Definity - Logo"></a>
-            </div><!-- / .navbar-header -->
-
-            <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-
-                <!-- Home -->
-                <li class="dropdown mega-fw"><a href="index.html">Home</a></li>
-                <li class="dropdown mega-fw"><a href="index.html#box">Get your box</a></li>
-                
-                <li class="dropdown mega-fw" ><a href="partners.html">Be our Partners</a></li><!-- / Pages -->
-                <!-- / Elements -->
-                <li class="dropdown mega-fw"><a href="index.html#contact">Contact Us</a></a></li><!-- / Pages -->
-                       <li class="dropdown mega-fw"><a href="loginform.html">Sign In/ Up</a></a></li><!-- / Pages -->
-                  <!-- / .nav .navbar-nav .navbar-right -->
-
-            </div><!--/.navbar-collapse -->
-          </div><!-- / .container -->
-        </nav><!-- / .navbar -->
+    <?php include_once 'menu-includes.php';?>
 
 
 

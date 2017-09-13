@@ -8,10 +8,23 @@
   ga('send', 'pageview');
 
 </script>
+<style>
+
+</style>
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans ">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 20px; margin-right: -15%;">
+   
+   <div class="link1">
+		<a href="btnclick.php">Be our Partner</a> 
+    </div>
+    <div class="link2">
+		<a href="get-your-box.php">Get your box</a> 
+    </div>
+    
+    
+    
+   
+<button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only" style="color: #FF5100">Toggle navigation</span>
         <span class="icon-bar" ></span>
         <span class="icon-bar"></span>
@@ -33,7 +46,7 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Be our Partner<span class="caret"></span></a>
          <ul class="dropdown-menu">
          
-            <li><a href="designer.php">Design Partner</a></li>
+            <li><a href="designer.php">DeZigne Partner</a></li>
             <li><a href="productpartner.php">Product Partner</a></li>
           </ul>
           </li>
