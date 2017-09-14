@@ -14,14 +14,7 @@
         <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
         <!-- Fonts -->
         <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
-        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
-        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-        <!-- Slider -->
-        <link rel="stylesheet" href="assets/styles/vendor/slick.css">
-        <!-- Lightbox -->
-        <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="assets/styles/vendor/animate.css">
+
 
 
         <!-- Definity CSS -->
@@ -32,18 +25,15 @@
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
-
+<style>
+.navbar-trans {
+  border-bottom: none;
+  background: #fff;
+}
+</style>
     </head>
     <body id="page-top">
-        <!-- Google Tag Manager -->
-        <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MH7TSF"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MH7TSF');</script>
-       
+
 
 
         <!-- ========== Preloader ========== -->

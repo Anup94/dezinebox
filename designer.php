@@ -244,7 +244,7 @@
                                               <li class="form-line jf-required" >
                                         
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                              <input type="checkbox" required="">I Agree &nbsp <a target="_blank" href="conditions.php">Terms &amp; Conditions</a>
+                                                     <input type="checkbox" required="">I Agree &nbsp <a target="_blank" href="conditions.php">Terms &amp; Conditions</a> | <a target="_blank" href="privacy.php">Privacy Policy</a> 
                                             </div>
                                           </li>
                                           <li class="form-line" data-type="control_button" id="id_2">

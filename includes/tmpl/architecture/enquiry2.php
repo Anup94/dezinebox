@@ -50,6 +50,11 @@
                   </select>
                   
                 </div>
+                 <div class="form-group">
+                  <label for="file-form">File input (max 5 MB  - prefered zip file)</label>
+                  <input class="form-control" name="file" type="file" id="file-form" accept=".jpg , .TIF , .jpeg , .png , .pdf , .cad, .zip" required>
+        
+                </div>    
                 <div class="form-group">
                    <label for="select-form">Share Drive Link</label>
                   <input type="name" name="driveLink" class="form-control" id="inpt-name-forms"  placeholder="Share your drive link with public access">                 

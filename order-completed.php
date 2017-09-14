@@ -383,7 +383,7 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
               <span class="spacing">   &nbsp &nbsp &nbsp &nbsp &nbsp  </span> 
-                  <h6>&nbsp &nbsp (-) Promo  Code:</h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp</span> <input type="text" name="pcode" id="pcode" style="float: right"><div class="col-lg-10"></div>&nbsp<div class="col-lg-1">
+                  <h6>&nbsp  (-) Promo  Code:</h6><span class="spacing"> &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp</span> <input type="text" name="pcode" id="pcode" style="float: right"><div class="col-lg-10"></div>&nbsp<div class="col-lg-1">
                   <br><button id="pcheck" class="btn checkout-btn" style="padding: 5px;">&nbsp Apply &nbsp </button></div><br>
                 </div>
 				

@@ -37,7 +37,7 @@
   text-align: left;
 }
 .form-all {
-  font-size: 18px;
+  font-size: 14px;
 }
 .form-label {
   font-weight: bold;
@@ -182,14 +182,16 @@
 .supernova {
   background-image: none;
   background-image:url("../../images/Design-partners.jpg");
+    background-repeat: repeat;
+
 }
 #stage {
   background-image: none;
   background-image: url("../images/form-background.png");
+    background-repeat: repeat;
 }
 /* | */
 .form-all {
-  background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
   background-repeat: repeat;

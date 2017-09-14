@@ -78,6 +78,9 @@ if(mysqli_num_rows($result)>0) {
         .myTable td {
           text-align: left;
         }
+        .ft-cards .ft-item {
+    box-shadow: 10px 10px 5px #D3D3D3;  
+  }
         </style>
 
     </head>

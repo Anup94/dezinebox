@@ -545,7 +545,7 @@ $(document).on('ready', function() {
 </div>
 <div class="form-group">
 <label for="name-contact-1">Number</label>
-<input type="text" name="number" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your number" required>
+<input type="number" name="number" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your number" max-length="10" required>
 
 <span class="pull-right alert-error"></span>
 </div>

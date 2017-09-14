@@ -84,6 +84,9 @@ if(mysqli_num_rows($result)>0) {
   .myTable td {
     text-align: left;
   }
+.ft-cards .ft-item {
+    box-shadow: 10px 10px 5px #D3D3D3;  
+  }
   </style>
 
 </head>
@@ -220,7 +223,7 @@ if(mysqli_num_rows($result)>0) {
             <input type="hidden" name="enqId" value="<?php echo $enqId;?>"/>
             <!-- Item 1 -->
 <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:8%; margin-right:2%">     <h4>Terra</h4> <br><div href="payment.html">
-                <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" >
+                <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s">
                   <img src="images/fire.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;"> <br><br><br><br><br><br>
               
                   <div class="p-hover">
