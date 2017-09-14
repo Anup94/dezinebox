@@ -26,7 +26,7 @@ $email_address = $_POST['email'];
 $number = $_POST['number'];
 $message = $_POST['message']; 
 $mail->Subject = 'Enquiry from Qleverlabs Website';
-$mail->Body    =     " Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Message: \n $message";
+$mail->Body    =     " Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Number: $number \n Message: \n $message";
 
 if(!$mail->send()) {
    echo 'Message could not be sent.';
