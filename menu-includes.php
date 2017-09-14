@@ -36,7 +36,7 @@
     </div><!-- / .navbar-header -->
 
     <!-- Navbar Links -->
-    <div id="navbar" class="navbar-collapse collapse">
+    <div id="navbar" class="navbar-collapse collapse" style=" width: 300px; float: right; margin-right: 10%;">
       <ul class="nav navbar-nav ">
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>
@@ -46,7 +46,7 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Be our Partner<span class="caret"></span></a>
          <ul class="dropdown-menu">
          
-            <li><a href="designer.php">DeZigne Partner</a></li>
+            <li><a href="designer.php">DeZine Partner</a></li>
             <li><a href="productpartner.php">Product Partner</a></li>
           </ul>
           </li>

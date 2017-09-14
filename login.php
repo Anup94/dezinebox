@@ -9,6 +9,8 @@
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/login-form.css">
+<link rel="stylesheet" href="assets/styles/pnotify.custom.min.css">
+
 <style>
 .position { margin-top:9%; float:right; right:4%;} 
 @media only screen and (max-width: 800px) {
@@ -24,20 +26,22 @@
 
 <div class="form position" style="">
   <div class="thumbnail"><img src="http://dezinebox.io/assets/images/logo.png"/></div>
-  <form class="register-form" action="validate.php?task=submit_signup" method="post" >
+  <form  class="register-form" action="validate.php?task=submit_signup" method="post" >
     <input type="text" name="username" placeholder="Username"/>
     <input type="password" name="password" placeholder="password"/>
     <input type="text" name="email" placeholder="email address"/>
     <button>create</button>
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>
-  <form class="login-form" action="validate.php?task=login" method="post">
+  <form id="login-form" class="login-form" action="validate.php?task=login" method="post">
     <input type="text" name="username" placeholder="Username"/>
     <input type="password" name="password" placeholder="password"/>
     <button>login</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
 
 <br><br></form>
+
+
 <form method="post" action="validate.php?task=facebook-login" style="display: inline-block;">
 <button  class="social-signin facebook"> <i class="fa fa-facebook"></i></button></form>
 <form method="post" action="validate.php?task=google-login" style="display: inline-block;"> <a href="validate.php?task=google-login"  ><button class="social-signin google"><i class="fa fa-google-plus"></i></button></a></form>
@@ -50,7 +54,34 @@
 </div></div>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="assets/js/pnotify.custom.min.js"></script>
+<script>
+$('#login-form').submit(function(e){
+  console.log("inside");
+  e.preventDefault();
+  $.post('validate.php?task=login', $('#login-form').serialize(), function(res) {
+    console.log(res);
+    if(res.status == 0){
+      new PNotify({
+       title: 'Error!',
+       text: res.msg,
+       type: 'error'          
+   });
 
+
+    }else {
+      new PNotify({
+       title: 'Success!',
+       text: res.msg,
+       type: 'success'          
+   });
+      setTimeout(function(){
+        window.location.href = 'get-your-box.php';
+      },1000);
+    }
+  });
+});
+</script>
     <script src="js/index.js"></script>
 
 </body>

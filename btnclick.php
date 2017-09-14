@@ -91,7 +91,7 @@ We would love to recommend them to our esteem customers so that they can purchas
 the comfort of their home defying geographical barriers. Thus we will like to act as a growth
 catalyst by providing a global online platform and a strong recommendation to your creative
 products. </p> 
-<a href="designer.php" style="color: #FF5100"> Join us as a dezine partner</a>
+<a href="designer.php" style="color: #FF5100"> Join us as a product partner</a>
 </div>
 <div id="dezinepage"></div>
 <br><br><br><br><br>

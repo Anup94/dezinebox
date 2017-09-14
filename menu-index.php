@@ -23,8 +23,8 @@
     </div><!-- / .navbar-header -->
 
     <!-- Navbar Links -->
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav ">
+
+      <ul class="nav navbar-nav " style=" width: 300px; float: right; margin-right: 10%;" >
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>
        <li class="dropdown mega-fw"><a href="get-your-box.php">Get your box</a></li>

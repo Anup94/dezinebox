@@ -79,6 +79,7 @@ class validateClass extends dbConnect {
 		// $resp["query"]=$query;
 		if(mysqli_num_rows($result)==0) {
 			$resp->msg="Invalid login.";
+			
 			return $resp;
 		}
 		$user=$result->fetch_object();
@@ -86,7 +87,7 @@ class validateClass extends dbConnect {
 		$resp->msg="Login successful";
 		$resp->status="1";
 	
-			header('Location:index.php');
+			//header('Location:get-your-box.php');
 				return $resp;
 	}
 	function google_login(){
@@ -146,6 +147,7 @@ class validateClass extends dbConnect {
 		$resp->status="1";
 		return $resp;
 			header('Location:index.php');
+
 		}
 		else{
 		$query = "SELECT * FROM users WHERE username='".$this->conn->real_escape_string($g_user->id)."'";
