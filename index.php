@@ -126,7 +126,7 @@ body, html {
                 	<div class="polina">
 						<a href="btnclick.php"> <p>Know more..</p> </a>
 					</div>
-                    
+                    	
                     <div class="polina1">
 						<a href="login.php"> <p>Interested? Buy Your Box..</p> </a>
 					</div>
