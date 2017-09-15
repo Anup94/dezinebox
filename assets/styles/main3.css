@@ -8209,6 +8209,7 @@ form .input-error-2:focus {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: 2.5px;
   color: #FF5100;
+  text-align:center;
 }
 
 .hover-default .p-hover:hover, .hover-light .p-hover:hover {

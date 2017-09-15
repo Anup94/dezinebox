@@ -340,10 +340,15 @@ switch ($result->selectedArea)
              
 
               <!-- Shop Product -->
-              <div class="col-lg-8" >
+              <div class="col-lg-8">
                 <h3 style="color: #000">Order No - <?php echo $result->enqId;?> </h3><br><br><br>
-                <p style="color: #000;">GST Registration No:- 27AETPA2229J1ZE</p>
-              </div><!-- / .col-lg-7 -->
+                
+              </div>
+             
+              
+              
+              <!-- / .col-lg-7 -->
+              
               <div class="col-lg-4 col-md-12 totals-group">
                 <div class="totals-content">
                 <div class="subtotal-group">
@@ -435,10 +440,12 @@ switch ($result->selectedArea)
 
               <!-- Shop Product -->
               <div class="col-lg-8"><br><br><br>
+              <p style="color: #000;">GST Registration No:- 27AETPA2229J1ZE</p>
              <p style="color: #000;" >  Need Help? Contact on <font color="#b76ea1"> <u>contact@dezinebox.io</u> </font>  </p>
-               <p style="color: #000;"><font color="#000">  Click to know </font><a "><u>PRICE MULTIPYER</u> </a></p>
-            
-              </div><!-- / .col-lg-8 -->
+               <p style="color: #000;"><font color="#000">  Click to know </font><a href="dpm.pdf"><u>PRICE MULTIPYER</u> </a></p>
+            	</div><!-- / .col-lg-8 -->
+                
+                
               <div class="col-lg-4 totals-group">
                 <div class="totals-content">
                 <div class="subtotal-group" style="color: #000;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
@@ -536,28 +543,6 @@ switch ($result->selectedArea)
             </div><!-- / .row -->
           </section>
         </div><!-- / .gray-bg -->
-
-
-
-        
-
-
-        
-       
-
-
-        
-        
-
-
-        
-
-        
-
-
-
-       
-       
 
 
         <!-- ========== Footer ========== -->

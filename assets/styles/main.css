@@ -1146,6 +1146,8 @@ h6, .progress-group .progress-title,
 a {
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
+		  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		  color:#19476f;
 }
 
 a:hover {
