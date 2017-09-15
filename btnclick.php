@@ -65,7 +65,7 @@
 </header> -->
 <div id="customerspage"></div>
 <br><br><br><br><br><br>
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
+<div class="ft-item wow fadeInUp"  data-wow-duration="1s">
 
 <h1 style="text-align: center;">Customers</h1><br><br>
 
@@ -79,7 +79,7 @@ through a process. This process is simple, convenient, affordable &amp; transpar
 <div id="productpage"></div>
 <br><br><br><br><br>
 
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
+<div class="ft-item wow fadeInUp"  data-wow-duration="1s">
 
 <h1 style="text-align: center;">Product Partner</h1><br>
 <p style="color: #777">“If you have a product to SHOW, we have a platform to SHOWCASE it”<br><br>
@@ -91,12 +91,12 @@ We would love to recommend them to our esteem customers so that they can purchas
 the comfort of their home defying geographical barriers. Thus we will like to act as a growth
 catalyst by providing a global online platform and a strong recommendation to your creative
 products. </p> 
-<a href="designer.php" style="color: #FF5100"> Join us as a product partner</a>
+<a href="productpartner.php" style="color: #FF5100"> Join us as a product partner</a>
 </div>
 <div id="dezinepage"></div>
 <br><br><br><br><br>
 
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
+<div class="ft-item wow fadeInUp"  data-wow-duration="1s">
 
 <h1 style="text-align: center;">Dezine Partner</h1><br><br>
 <p style="color: #777">DeZinebox although offers online services, but we can’t oversight our customers ‘offline’ needs for
