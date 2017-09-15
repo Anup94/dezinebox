@@ -138,9 +138,9 @@ if(mysqli_num_rows($result)>0) {
               
                   <div class="p-hover">
                     <div class="p-content">
-                   <h5 style="color: #FF5100;">
+                   <h5 style="color: #FF5100; text-align:left;">
 
-      • Detailed Drawings <br>
+      •    Detailed Drawings <br>
       •    3D Drawing <br>
       •    e-Shopping list  <br>
       •    Estimate <br>
@@ -164,7 +164,7 @@ if(mysqli_num_rows($result)>0) {
                     <br><br><br><br><br><br>
             <div class="p-hover">
                     <div class="p-content">
-<h5 style="color: #FF5100;">
+<h5 style="color: #FF5100; text-align:left;">
 
       •    Detailed Drawings <br>
       •    3D Drawing <br>
@@ -172,7 +172,7 @@ if(mysqli_num_rows($result)>0) {
       •    Estimate <br>
       •    Project Map <br>
       •    Design Checklist<br>
-      •    Design Tips <BR>
+      •    Design Tips <br>
 
       <font color="#FFF">•  One Revision </font>
 </h5>
@@ -192,8 +192,8 @@ if(mysqli_num_rows($result)>0) {
                    <br><br><br><br><br><br>
                    <div class="p-hover">
                     <div class="p-content">
-                     <h5 style="color: #FF5100;">•  Traditional & <br> &nbsp  Personalized <br> &nbsp Consultancy<br> &nbsp Services<br>
-•         Consultation from <br> &nbsp DeZine Partners <br> <br><br>
+                     <h5 style="color: #FF5100; text-align:left;">•  Traditional & <br> &nbsp  Personalized <br> &nbsp Consultancy<br> &nbsp Services<br>
+•         Consultation from <br> DeZine Partners <br> <br><br>
 
 
 </h5>
@@ -222,15 +222,15 @@ if(mysqli_num_rows($result)>0) {
           <form name="archChooseBox" action="validate.php?task=submit_arch_box" method="post">
             <input type="hidden" name="enqId" value="<?php echo $enqId;?>"/>
             <!-- Item 1 -->
-<label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:8%; margin-right:2%">     <h4>Terra</h4> <br><div href="payment.html">
+<label class="col-lg-4 col-md-6 col-xs-12 portfolio-item">     <h4>Terra</h4> <br><div href="payment.html">
                 <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s">
                   <img src="images/fire.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;"> <br><br><br><br><br><br>
               
                   <div class="p-hover">
                     <div class="p-content">
-                   <h5 style="color: #FF5100;">
+                   <h5 style="color: #FF5100; text-align:left;">
 
-      • Detailed Drawings <br>
+      •    Detailed Drawings <br>
       •    3D Drawing <br>
       •    e-Shopping list  <br>
       •    Estimate <br>
@@ -247,7 +247,7 @@ if(mysqli_num_rows($result)>0) {
               </label>
 
               <!-- Item 2 -->
-              <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:2%; margin-right:2%">  <h4>Zephyr</h4><br> <div>
+              <label class="col-lg-4 col-md-6 col-xs-12 portfolio-item">  <h4>Zephyr</h4><br> <div>
                 <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".6s">
                  <img src="images/space.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;">
                  
@@ -274,7 +274,7 @@ if(mysqli_num_rows($result)>0) {
               </label>
 
               <!-- Item 3 -->
-              <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:2%; margin-right:2%"> <h4>Ether</h4><br><div>
+              <label class="col-lg-4 col-md-6 col-xs-12 portfolio-item"> <h4>Ether</h4><br><div>
                  <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s">
                   <img src="images/earth.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;">
                   
