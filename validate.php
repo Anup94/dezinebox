@@ -87,7 +87,7 @@ else if($task=="submit_signup") {
 		$_SESSION["userSession"]=$resp->user;
 		unset($resp->user);
 	}
-	$validateClass->send_as_json($resp);
+	$validateClass->send_as_json($resp, true);
 }
 else if($task=="submit_design_partner") {
 	$resp=$validateClass->submit_design_partner($input);

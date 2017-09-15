@@ -504,7 +504,7 @@ if($_GET['oauth_token']){
 		$resp->status='1';
 
 
-			header('Location:login.php');
+			//header('Location:login.php');
 		return $resp;
 	}
 	function submit_design_partner($input) {

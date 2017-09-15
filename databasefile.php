@@ -24,7 +24,7 @@ echo "Connected successfully";
 
 require_once "EXCEL/classes/PHPExcel.php";
 
-	$tmpfname = "SECOND.csv" ;
+	$tmpfname = "2019.csv" ;
 	$excelReader = PHPExcel_IOFactory::createReaderForFile($tmpfname);
 	$excelObj = $excelReader->load($tmpfname);
 	$worksheet = $excelObj->getActiveSheet();
@@ -54,9 +54,12 @@ echo $club;
 	$college =  $worksheet->getCell('E'.$row)->getValue();
 	echo   $college ;
 
+		echo "</td><td>";
+	$division =  $worksheet->getCell('F'.$row)->getValue();
+	echo   $division ;
 
 		echo "</td><td>";
-$position =  $worksheet->getCell('D'.$row)->getValue();
+$position =  $worksheet->getCell('G'.$row)->getValue();
 echo $position;
 	
 
@@ -65,8 +68,8 @@ echo $position;
 
 	
 
-	$sql = "INSERT INTO commitment (name ,highschool , state ,club ,college , position,  division , year , gender) values('$name' , 
-	'$highschool' , '$state','$club', '$college' , '$position' , '1'  ,  '2019' , 'boys')  ";
+	$sql = 'INSERT INTO commitment (name ,highschool , state ,club ,college , division, position , year , gender) values("'.$name.'" , 
+	"'.$highschool.'" , "'.$state.'","'.$club.'", "'.$college.'" , "'.$division.'" , "'.$position.'"  ,  "2019" , "boys") ';
 	if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {

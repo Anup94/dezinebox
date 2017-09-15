@@ -19,6 +19,7 @@
 </head>
 <body class="supernova">
 <?php include_once 'menu-includes.php';?>
+<div class="col-md-6">
 <form class="jotform-form" id="productPartnerForm" name="productPartnerForm" action="validate.php?task=submit_design_partner" enctype="multipart/form-data" method="post">
  
 
@@ -272,7 +273,7 @@
          
 
 </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+</div>
 <div class="footer">
 <footer class="footer-widgets">
 

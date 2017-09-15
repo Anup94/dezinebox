@@ -26,17 +26,17 @@
 
 <div class="form position" style="">
   <div class="thumbnail"><img src="http://dezinebox.io/assets/images/logo.png"/></div>
-  <form  class="register-form" action="validate.php?task=submit_signup" method="post" >
+  <form id="register-form" class="register-form" action="validate.php?task=submit_signup" method="post" >
     <input type="text" name="username" placeholder="Username"/>
     <input type="password" name="password" placeholder="password"/>
     <input type="text" name="email" placeholder="email address"/>
-    <button>create</button>
+    <button id="reg">create</button>
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>
   <form id="login-form" class="login-form" action="validate.php?task=login" method="post">
     <input type="text" name="username" placeholder="Username"/>
     <input type="password" name="password" placeholder="password"/>
-    <button>login</button>
+    <button >login</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
 
 <br><br></form>
@@ -56,7 +56,36 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="assets/js/pnotify.custom.min.js"></script>
 <script>
-$('#login-form').submit(function(e){
+
+  $('#register-form').submit(function(e){
+  console.log("inside");
+  e.preventDefault();
+  $.post('validate.php?task=submit_signup', $('#register-form').serialize(), function(res) {
+    console.log(res);
+    if(res.status == 0){
+      new PNotify({
+       title: 'Error!',
+       text: res.msg,
+       type: 'error'          
+   });
+    }else {
+      new PNotify({
+       title: 'Success!',
+       text: res.msg,
+       type: 'success'          
+   });
+
+      setTimeout(function(){
+        window.location.href = 'get-your-box.php';
+      },10);
+    }
+  });
+});
+
+
+
+
+  $('#login-form').submit(function(e){
   console.log("inside");
   e.preventDefault();
   $.post('validate.php?task=login', $('#login-form').serialize(), function(res) {
