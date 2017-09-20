@@ -92,10 +92,12 @@ else if($task=="submit_signup") {
 else if($task=="submit_design_partner") {
 	$resp=$validateClass->submit_design_partner($input);
 	$validateClass->send_as_json($resp);
+		header("Location:index.php");	
 }
 else if($task=="product_partner_submit") {
 	$resp=$validateClass->product_partner_submit($input);
-	$validateClass->send_as_json($resp);	
+	$validateClass->send_as_json($resp);
+	header("Location:index.php");	
 } else if($task=="submit_architecture_enquiry") {
 	$enqId=$validateClass->submit_architecture_enquiry($input);
 	header("Location:architecture-choose-box.php?id=".$enqId);
