@@ -124,11 +124,15 @@ body, html {
             	<img src="assets/images/home/2.png" style="width:100%;">
 				
                 	<div class="polina">
-						<a href="btnclick.php"> <p>Know more..</p> </a>
+						<a href="btnclick.php"> <p style="font-family: 'Poppins', sans-serif;">Know more..</p> </a>
+					</div>
+                    
+                    <div class="polina1be">
+						<a href="btnclick.php"> <p style="font-family: 'Poppins', sans-serif;">Be Our Partner Now..</p> </a>
 					</div>
                     	
                     <div class="polina1">
-						<a href="login.php"> <p>Interested? Buy Your Box..</p> </a>
+						<a href="login.php"> <p style="font-family: 'Poppins', sans-serif;">Interested? Buy Your Box..</p> </a>
 					</div>
 	 </div>
      
@@ -137,10 +141,10 @@ body, html {
 				
                 	
                     <div class="polina5">
-						<a href="boxclick.php"> <p>Know more..</p> </a>
+						<a href="boxclick.php"> <p style="font-family: 'Poppins', sans-serif;">Know more..</p> </a>
 					</div>
                     <div class="polina2">
-						<a href="login.php"> <p>Intrigude? Get Your Box..</p> </a>
+						<a href="login.php"> <p style="font-family: 'Poppins', sans-serif;">Intrigude? Get Your Box..</p> </a>
 					</div>
 	 </div>
      
@@ -148,14 +152,17 @@ body, html {
             	<img src="assets/images/home/4.png" style="width:100%;">
 				
                 	<div class="polina6">
-						<a href="input.pdf"> <p>refer sample..</p> </a>
+						<a href="input.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
 					</div>
                     <div class="polina7">
-						<a href="Architecture.pdf"> <p>refer sample..</p> </a>
+						<a href="Architecture.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
 					</div>
                     <div class="polina8">
-						<a href="Interior.pdf"> <p>refer sample..</p> </a>
+						<a href="Interior.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
 					</div>
+          <div class="polina9">
+            <a href="get-your-box.php" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">Get Your Dream Space Designed Now..</p> </a>
+          </div>
 	 </div>
      
      <div class="col-md-12 col-xs-12 vidback">
