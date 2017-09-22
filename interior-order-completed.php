@@ -237,9 +237,9 @@ p{
 <?php
 switch ($result->boxTypeId)
 {
-    case 3:echo "<img src='images/fire2.png'>" ; break;
-    case 4:echo "<img src='images/space2.png'>" ; break;
-    case 5:echo "<img src='images/earth2.png'>" ; break;
+    case 3:echo "<img src='images/fire2.png' width='75px' height='75px'>" ; break;
+    case 4:echo "<img src='images/space2.png'  width='75px' height='75px'>" ; break;
+    case 5:echo "<img src='images/earth2.png'  width='75px' height='75px'>" ; break;
 }?>  </div>  <div class="col-lg-5"></div>
 <div class="col-lg-8" style="color: #000;">
 <p style="font-size: 1.3em"><strong><?php echo empty($boxTypeArr[$result->boxTypeId])?'':$boxTypeArr[$result->boxTypeId]['boxType'];?></strong> </p><p>

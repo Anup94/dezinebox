@@ -8,13 +8,38 @@
 <link type="text/css"  rel="stylesheet" href="assets/styles/nova.css" />
 <link type="text/css"  rel="stylesheet" href="assets/styles/theme.css"/> 
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
-<link rel="stylesheet" href="assets/styles/main.css"> <!-- nav -->
+<link rel="stylesheet" href="assets/styles/main22.css"> <!-- nav -->
 
 
 
 
+<style>
+.black{
+  position:fixed;
+  top:0;
+  background:#333;
+  width:100%;
+  height:50px;
+  
+}
+.black ul{
+  list-style-type:none;
+  padding:0;
+}
 
+.black ul li{
+  display:inline-block;
+  width:100px;
+  color:red;
+}
 
+.blue{
+  position:fixed;
+  top:0;
+  background:blue;
+  width:100%;
+  height:50px;
+}
 </style>
 </head>
 <body class="supernova">
@@ -39,14 +64,14 @@
                                               </div>
                                             </div>
                                           </li>
-                                          <li class="form-line jf-required" data-type="control_email">
+                                          <li class="form-line" data-type="control_email">
                                             <label class="form-label form-label-top">
                                             Name 
                                               <span class="form-required">
                                                 *
                                               </span>
                                             </label>
-                                            <div id="cid_5" class="form-input-wide jf-required">
+                                            <div  class="form-input-wide">
                                               <input type="text"  name="name" class="form-textbox " size="30" value="" required>
                                             </div>
                                           </li>
@@ -57,13 +82,13 @@
                                                 *
                                               </span>
                                             </label>
-                                            <div id="cid_5" class="form-input-wide jf-required">
+                                            <div  class="form-input-wide jf-required">
                                               <input type="email" id="input_5" name="email" class="form-textbox validate[required, Email]" size="30" value="" placeholder="ex: myname@example.com" data-component="email" required />
                                             </div>
                                           </li>
                                             <li class="form-line" data-type="control_phone" id="id_6">
                                             <label class="form-label form-label-top" id="label_6" for="input_6_area"> Phone Number </label>
-                                            <div id="cid_6" class="form-input-wide jf-required">
+                                            <div  class="form-input-wide jf-required">
                                               <div data-wrapper-react="true">
                                                 <span class="form-sub-label-container" style="vertical-align:top;">
                                                   <input type="tel" id="input_6_area" name="mobilepre" class="form-textbox" size="3" value="" data-component="areaCode" />
@@ -73,13 +98,13 @@
                                                   <label class="form-sub-label" for="input_6_area" id="sublabel_area" style="min-height:13px;"> Area Code </label>
                                                 </span>
                                                 <span class="form-sub-label-container" style="vertical-align:top;">
-                                                  <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="8" value="" data-component="phone" required="" />
+                                                  <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="8" value="" data-component="phone" required />
                                                   <label class="form-sub-label" for="input_6_phone" id="sublabel_phone" style="min-height:13px;"> Phone Number </label>
                                                 </span>
                                               </div>
                                             </div>
                                           </li>
-                                             <li class="form-line jf-required" data-type="control_email" id="id_5">
+                                             <li class="form-line " data-type="control_email" id="id_5">
                                             <label class="form-label form-label-top" id="label_5" for="input_5">
                                             Firms Name
                                               <span class="form-required">
@@ -87,10 +112,10 @@
                                               </span>
                                             </label>
                                             <div  class="form-input-wide">
-                                              <input type="text"  name="companyName" class="form-textbox"  required="" >
+                                              <input type="text"  name="companyName" class="form-textbox"  required >
                                             </div>
                                           </li>
-                                             <li class="form-line jf-required" >
+                                             <li class="form-line " >
                                             <label class="form-label form-label-top">
                                             Address
                                               <span class="form-required">
@@ -98,7 +123,7 @@
                                               </span>
                                             </label>
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                              <input type="text"  name="companyAddress" class="form-textbox" size="30" value="" required="" >
+                                              <input type="text"  name="companyAddress" class="form-textbox" size="30" value="" required >
                                             </div>
                                           </li>
                                         
@@ -111,7 +136,7 @@
                                               </span>
                                             </label>
                                             <div  class="form-input-wide jf-required">
-                                              <input type="text"  name="website" class="form-textbox" required="" >
+                                              <input type="text"  name="website" class="form-textbox" required>
                                             </div>
                                           </li>
                                              <li class="form-line jf-required" data-type="control_email" id="id_5">
@@ -175,7 +200,7 @@
                                              <li class="form-line jf-required" >
                                         
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                        <select class="form-control text-height form_group_data" mandatory="true" error_message="Please select" name="hearFrom" id="user_profession"><option value="">Profession</option>
+                                        <select class="form-control text-height form_group_data" mandatory="true" error_message="Please select" name="hearFrom" id="user_profession" required><option value="">Profession</option>
                                               <option value="Architect">Architect</option>
                                               <option value="Structural Consultant">Structural Consultant</option>
                                               <option value="MEP Consultant">MEP Consultant</option>
@@ -271,7 +296,7 @@
                                                     
                                       <button class="btn-ghost" style="display: block; margin: 0 auto; float: left;">Back &nbsp</button></a></div>
                                                  <div class="col-lg-6">
-                                      <button class="btn-ghost" style="display: block; margin: 0 auto;float: right">Submit</button></div>
+                                      <button type="submit" value="submit" class="btn-ghost" style="display: block; margin: 0 auto;float: right;">Submit</button></div>
                                         <br><br>    <br><br>    <br><br> <BR>
                                 
                               
@@ -327,6 +352,30 @@
 
 </footer><!-- / .footer-widgets --><!-- / .footer-widgets -->
 
+<script>
+  
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 300) {
+      $(".black").css("background" , "blue");
+    }
+
+    else{
+      $(".black").css("background" , "#333");   
+    }
+  })
+})
+  
+</script>
+<script>function validateForm() {
+  var isValid = true;
+  $('.form-field').each(function() {
+    if ( $(this).val() === '' )
+        isValid = false;
+  });
+  return isValid;
+}</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
 </body>
