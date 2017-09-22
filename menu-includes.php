@@ -15,7 +15,7 @@
   <div class="container">
    
    <div class="link1">
-		<a href="btnclick.php">Be our Partner</a> 
+		<a href="ecosystem.php">Be our Partner</a> 
     </div>
     <div class="link2">
 		<a href="get-your-box.php">Get your box</a> 

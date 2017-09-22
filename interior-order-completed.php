@@ -507,7 +507,7 @@ switch ($result->selectedArea)
                         <input type="hidden" name="amount" id="final-amt" value="<?php echo $finalPrice; ?>"/>
                         <input type="hidden" name="currency" value="INR"/>
                         <input type="hidden" name="redirect_url" value="http://www.dezinebox.io/thankyou.php"/>
-                        <input type="hidden" name="cancel_url" value="http://www.dezinebox.io/index.php"/>
+                        <input type="hidden" name="cancel_url" value="http://www.dezinebox.io/home.php"/>
                         <input type="hidden" name="language" value="EN"/>
 						
 						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />

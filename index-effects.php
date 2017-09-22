@@ -23,10 +23,10 @@
 	<div id="wrapper" style="height: 720px;">
 <div class="col-lg-3 col-md-6 col-xs-12 portfolio-item" style="float: right;">
   <div class=" " style="margin-top: 170px;" >
-    <div style="text-align: center"><a href="btnclick.php#customerspage">Customers</a></div><br><br>
+    <div style="text-align: center"><a href="ecosystem.php#customerspage">Customers</a></div><br><br>
     <img src="assets/images/dezineboxbox.png" class="img-responsive" style="margin-left:90px;margin-right: auto"><br><br><br>
-<div class="col-md-6" style="text-align: center ; float: left; margin-left: 50px;" ><a href="btnclick.php#dezinepage">Dezine <br>Partner</a></div>
-<div class="col-md-6" style="text-align: center; float: right; margin-right: 10px;"><a href="btnclick.php#productpage">Product <br> Partner</a></div>
+<div class="col-md-6" style="text-align: center ; float: left; margin-left: 50px;" ><a href="ecosystem.php#dezinepage">Dezine <br>Partner</a></div>
+<div class="col-md-6" style="text-align: center; float: right; margin-right: 10px;"><a href="ecosystem.php#productpage">Product <br> Partner</a></div>
 <br><br><br>
 <br><br><br>
 <a href="get-your-box.php">
@@ -47,10 +47,10 @@
   <div id="wrapper" style="height: 720px;">
 <div class="col-lg-3 col-md-6 col-xs-12 portfolio-item" style="float: left;">
 <div class=" " style="margin-top: 170px;margin-left: 50px;" >
-<div style="text-align: center;margin-left: 50px;"><a href="boxclick.php#ether">Ether</a></div><br><br>
+<div style="text-align: center;margin-left: 50px;"><a href="boxes.php#ether">Ether</a></div><br><br>
 <img src="assets/images/dezineboxbox.png" style="margin-left:90px;margin-right: auto"><br><br>
-<div class="col-md-6" style="text-align: center ; float: left; margin-left: 100px;" ><a href="boxclick.php#terra">Terra</a></div>
-<div class="col-md-6" style="text-align: center; float: right; margin-right: 10px;"><a href="boxclick.php#zephyr">Zephyr</a></div>
+<div class="col-md-6" style="text-align: center ; float: left; margin-left: 100px;" ><a href="boxes.php#terra">Terra</a></div>
+<div class="col-md-6" style="text-align: center; float: right; margin-right: 10px;"><a href="boxes.php#zephyr">Zephyr</a></div>
 <br><br><br>
 <br><br><br>
 <a href="get-your-box.php">
@@ -148,7 +148,7 @@
 <table style="width:100%">
 
 <tr>
-<td> <a href="index.php" style="color: #fff">Home</a></td>
+<td> <a href="home.php" style="color: #fff">Home</a></td>
 <td><a href="FAQ.php" style="color: #fff">FAQ</a></td></tr>
 <tr>
 <td><a href="partners.php" style="color: #fff">Partners</a></td>

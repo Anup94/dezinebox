@@ -75,7 +75,7 @@
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s">
                 
              
-        <p><a href="index.php">Home </a> </p>
+        <p><a href="home.php">Home </a> </p>
         
         <p> <a href="login.php">Login </a></p>  
         <p> <a href="theme.php">Themes </a> </p>

@@ -630,7 +630,7 @@ $(document).on('ready', function() {
 <table style="width:100%">
 
 <tr>
-<td> <a href="index.php" style="color: #fff">Home</a></td>
+<td> <a href="home.php" style="color: #fff">Home</a></td>
 <td><a href="FAQ.php" style="color: #fff">FAQ</a></td></tr>
 <tr>
 <td><a href="partners.php" style="color: #fff">Partners</a></td>

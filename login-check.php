@@ -14,7 +14,7 @@ if(!empty($_SESSION['userSession'])) {
 		$result=$dbConnect->conn->query($query);
 		if(mysqli_num_rows($result)==0) {
 			unset($_SESSION['userSession']);
-			header("Location:index.php?task=ask_login");
+			header("Location:home.php?task=ask_login");
 		} else {
 			$_SESSION["userSession"]=$result->fetch_object();
 		}

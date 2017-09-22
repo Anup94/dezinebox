@@ -67,7 +67,7 @@
               </button>
 
               <!-- Logo -->
-              <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"  alt="DeZinebox"></a>
+              <a class="navbar-brand" href="home.php"><img src="assets/images/logo.png"  alt="DeZinebox"></a>
             </div><!-- / .navbar-header -->
 
             <!-- Navbar Links -->
@@ -75,7 +75,7 @@
               <ul class="nav navbar-nav navbar-right">
 
                 <!-- Home -->
-         <li class="dropdown mega-fw"><a href="index.php"><span class="linea-arrows-slim-left"></span> &nbsp    Go to the Home page</a></li>
+         <li class="dropdown mega-fw"><a href="home.php"><span class="linea-arrows-slim-left"></span> &nbsp    Go to the Home page</a></li>
        
 
 

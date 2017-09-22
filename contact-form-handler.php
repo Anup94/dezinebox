@@ -12,8 +12,8 @@ $mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ss
 $mail->Port = 465;                                 // TCP port to connect to
 
 $mail->setFrom('srinath.chinchole@qleverlabs.com', 'shrinath');
-$mail->addReplyTo('shrinath598@gmail.com', 'Rishab Sahay');
-$mail->addAddress('shrinath598@gmail.com');   // Add a recipient
+$mail->addReplyTo('contact@dezinebox.io', 'Rishab Sahay');
+$mail->addAddress('contact@dezinebox.io');   // Add a recipient
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 
@@ -25,7 +25,7 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $number = $_POST['number'];
 $message = $_POST['message']; 
-$mail->Subject = 'Enquiry from Qleverlabs Website';
+$mail->Subject = 'Enquiry from Dezinebox Website';
 $mail->Body    =     " Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Number: $number \n Message: \n $message";
 
 if(!$mail->send()) {
@@ -33,7 +33,7 @@ if(!$mail->send()) {
    echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
    
-   header('Location: index.php');
+   header('Location: home.php');
 
 }
 ?>
