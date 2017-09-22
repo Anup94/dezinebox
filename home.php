@@ -90,10 +90,12 @@ body, html {
 
 
 <!-- ========== Preloader ========== -->
-
 <div class="preloader">
+          <img src="assets/images/loader.svg" alt="Loading...">
+        </div>
+<!-- <div class="preloader">
 	<img src="assets/images/pnglogo.png" alt="Loading...">
-</div>
+</div> -->
 
 
 
@@ -124,13 +126,18 @@ body, html {
             	<img src="assets/images/home/2.png" style="width:100%;">
 				
                 	<div class="polina">
-						<a href="ecosystem.php"> <p>Know more..</p> </a>
+						<a href="ecosystem.php"> <p style="font-family: 'Poppins', sans-serif;">Know more..</p> </a>
+					</div>
+                    
+                    <div class="polina1be">
+						<a href="ecosystem.php"> <p style="font-family: 'Poppins', sans-serif;">Be Our Partner Now..</p> </a>
 					</div>
                     	
                     <div class="polina1">
-						<a href="login.php"> <p>Interested? Buy Your Box..</p> </a>
+						<a href="login.php"> <p style="font-family: 'Poppins', sans-serif;">Interested? Buy Your Box..</p> </a>
 					</div>
 	 </div>
+     
      
      	<div class="col-md-12 col-xs-12 vidback">
             	<img src="assets/images/home/3.png" style="width:100%;">
@@ -144,18 +151,21 @@ body, html {
 					</div>
 	 </div>
      
-     	<div class="col-md-12 col-xs-12 vidback">
+       	<div class="col-md-12 col-xs-12 vidback">
             	<img src="assets/images/home/4.png" style="width:100%;">
 				
                 	<div class="polina6">
-						<a href="input.pdf"> <p>refer sample..</p> </a>
+						<a href="input.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
 					</div>
                     <div class="polina7">
-						<a href="Architecture.pdf"> <p>refer sample..</p> </a>
+						<a href="Architecture.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
 					</div>
                     <div class="polina8">
-						<a href="Interior.pdf"> <p>refer sample..</p> </a>
+						<a href="Interior.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
 					</div>
+          <div class="polina9">
+            <a href="get-your-box.php" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">Get Your Dream Space Designed Now..</p> </a>
+          </div>
 	 </div>
      
      <div class="col-md-12 col-xs-12 vidback">
@@ -545,10 +555,10 @@ $(document).on('ready', function() {
 </div>
 <div class="form-group">
 <label for="name-contact-1">Number</label>
-<input type="number" name="number" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your number" max-length="10" required>
-
-<span class="pull-right alert-error"></span>
+ <input type="text" name="number" maxlength="10" placeholder="Enter your number" class="form-control validate-locally" required>
 </div>
+  
+
 </div>
 
 <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">

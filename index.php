@@ -90,10 +90,12 @@ body, html {
 
 
 <!-- ========== Preloader ========== -->
-
 <div class="preloader">
-	<img src="assets/images/pnglogo.png" alt="Loading...">
-</div>
+          <img src="assets/images/loader.svg" alt="Loading...">
+        </div>
+<!-- <div class="preloader">
+  <img src="assets/images/pnglogo.png" alt="Loading...">
+</div> -->
 
 
 
@@ -112,66 +114,67 @@ body, html {
 <?php include_once 'menu-includes.php';?>
 
 
-	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/1.png" style="width:100%;">
-				
-                	<div class="polina">
-						
-					</div>
-	 </div>
+  <div class="col-md-12 col-xs-12 vidback">
+              <img src="assets/images/home/1.png" style="width:100%;">
+        
+                  <div class="polina">
+            
+          </div>
+   </div>
      
-     	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/2.png" style="width:100%;">
-				
-                	<div class="polina">
-						<a href="btnclick.php"> <p style="font-family: 'Poppins', sans-serif;">Know more..</p> </a>
-					</div>
+      <div class="col-md-12 col-xs-12 vidback">
+              <img src="assets/images/home/2.png" style="width:100%;">
+        
+                  <div class="polina">
+            <a href="ecosystem.php"> <p style="font-family: 'Poppins', sans-serif;">Know more..</p> </a>
+          </div>
                     
                     <div class="polina1be">
-						<a href="btnclick.php"> <p style="font-family: 'Poppins', sans-serif;">Be Our Partner Now..</p> </a>
-					</div>
-                    	
+            <a href="ecosystem.php"> <p style="font-family: 'Poppins', sans-serif;">Be Our Partner Now..</p> </a>
+          </div>
+                      
                     <div class="polina1">
-						<a href="login.php"> <p style="font-family: 'Poppins', sans-serif;">Interested? Buy Your Box..</p> </a>
-					</div>
-	 </div>
+            <a href="login.php"> <p style="font-family: 'Poppins', sans-serif;">Interested? Buy Your Box..</p> </a>
+          </div>
+   </div>
      
-     	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/3.png" style="width:100%;">
-				
-                	
+     
+      <div class="col-md-12 col-xs-12 vidback">
+              <img src="assets/images/home/3.png" style="width:100%;">
+        
+                  
                     <div class="polina5">
-						<a href="boxclick.php"> <p style="font-family: 'Poppins', sans-serif;">Know more..</p> </a>
-					</div>
+            <a href="boxes.php"> <p>Know more..</p> </a>
+          </div>
                     <div class="polina2">
-						<a href="login.php"> <p style="font-family: 'Poppins', sans-serif;">Intrigude? Get Your Box..</p> </a>
-					</div>
-	 </div>
+            <a href="login.php"> <p>Intrigude? Get Your Box..</p> </a>
+          </div>
+   </div>
      
-     	<div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/4.png" style="width:100%;">
-				
-                	<div class="polina6">
-						<a href="input.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
-					</div>
+        <div class="col-md-12 col-xs-12 vidback">
+              <img src="assets/images/home/4.png" style="width:100%;">
+        
+                  <div class="polina6">
+            <a href="input.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
+          </div>
                     <div class="polina7">
-						<a href="Architecture.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
-					</div>
+            <a href="Architecture.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
+          </div>
                     <div class="polina8">
-						<a href="Interior.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
-					</div>
+            <a href="Interior.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
+          </div>
           <div class="polina9">
             <a href="get-your-box.php" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">Get Your Dream Space Designed Now..</p> </a>
           </div>
-	 </div>
+   </div>
      
      <div class="col-md-12 col-xs-12 vidback">
-            	<img src="assets/images/home/5.png" style="width:100%;">
-				
-                	<div class="polina">
-						
-					</div>
-	 </div>
+              <img src="assets/images/home/5.png" style="width:100%;">
+        
+                  <div class="polina">
+            
+          </div>
+   </div>
 
 
 
@@ -552,10 +555,10 @@ $(document).on('ready', function() {
 </div>
 <div class="form-group">
 <label for="name-contact-1">Number</label>
-<input type="number" name="number" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your number" max-length="10" required>
-
-<span class="pull-right alert-error"></span>
+ <input type="text" name="number" maxlength="10" placeholder="Enter your number" class="form-control validate-locally" required>
 </div>
+  
+
 </div>
 
 <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
@@ -640,22 +643,22 @@ $(document).on('ready', function() {
 <td> <a href="home.php" style="color: #fff">Home</a></td>
 <td><a href="FAQ.php" style="color: #fff">FAQ</a></td></tr>
 <tr>
-<td><a href="partners.php" style="color: #fff">Partners</a></td>
+<td><a href="ecosystem.php" style="color: #fff">Partners</a></td>
 <td><a href="About.php" style="color: #fff">About Us</a></td> </tr>
 <tr>
-<td><a href="Whatweoffer.php" style="color: #fff">What we offer</a></td>
+<td><a href="boxes.php" style="color: #fff">What we offer</a></td>
 <td><a href="privacy.php" style="color: #fff"> Privacy Policy </a></td>
 
 </tr>
 <tr>
 <td> <a href="Why.php" style="color: #fff">Why Us</a></td>
-<td><a href="#" style="color: #fff"> Legal </a></td></tr>
+<td><a href="Pricing.php" style="color: #fff"> Legal </a></td></tr>
 <tr>
 <td><a href="theme.php" style="color: #fff">Theme</a></td>
-<td> <a href="#" style="color: #fff"> Media </a></td></tr>
+<td> <a href="Media.php" style="color: #fff"> Media </a></td></tr>
 <tr>
 <td><a href="conditions.php" style="color: #fff">Terms & Conditions</a></td>
-<td>  <a href="#" style="color: #fff"> Career </a></td></tr>
+<td>  <a href="Career.php" style="color: #fff"> Career </a></td></tr>
 </table>
 </div><!-- / .widget -->
 

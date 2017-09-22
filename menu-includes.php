@@ -32,7 +32,7 @@
       </button>
 
       <!-- Logo -->
-      <a class="navbar-brand" href="/"><img src="assets/images/logo.png" style="margin-top: -20px"  alt="DeZinebox"></a>
+      <a class="navbar-brand" href="/home.php"><img src="assets/images/logo.png" style="margin-top: -20px"  alt="DeZinebox"></a>
     </div><!-- / .navbar-header -->
 
     <!-- Navbar Links -->

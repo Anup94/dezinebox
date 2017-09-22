@@ -75,7 +75,7 @@
 <h1 style="text-align: center;">Together at Dezinebox</h1><br><br>
 
 <p style="color: #777">No global movement springs from individuals. It takes an entire team united behind something big. Together ,we work hard , we laugh a lot , we brainstorm nonstop , we use hundreds of Post-Its a week , and we give  the best high-fives in town. <br><br>
-	<h2 style="text-align: center;"><u>career@dezinebox.io</u></h2><br><br>
+	<h2 style="text-align: center;"><u><a href="mailto:career@dezinebox.io?Subject=DezineBox%20Career" target="_top">career@dezinebox.io</a></u></h2><br><br>
 
 
 </p> 

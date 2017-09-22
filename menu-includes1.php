@@ -19,7 +19,7 @@
       </button>
 
       <!-- Logo -->
-      <a class="navbar-brand" href="/"><img src="assets/images/logo.png"  alt="DeZinebox"></a>
+      <a class="navbar-brand" href="/home.php"><img src="assets/images/logo.png"  alt="DeZinebox"></a>
     </div><!-- / .navbar-header -->
 
     <!-- Navbar Links -->
