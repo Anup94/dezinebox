@@ -63,7 +63,8 @@ $position =  $worksheet->getCell('G'.$row)->getValue();
 echo $position;
 	
 
-
+$sql = "INSERT INTO job (school, city, state,otherLocation,team,position,level,deadline,jobDescription,availability,salary,duration,date,contactName,contactTitle,contactAddress1,contactAddress2,contactCity,contactPhone,contactFax,contactEmail,schoolWeb,jobWeb,submitName,submitTitle,submitNumber,submitEmail,jobTitle,organisationName,userid,username,logoImage)
+VALUES ("'.$school.'" , "'.$city.'" , "'.$state.'" , "'.$otherLocation.'" ,"'.$team.'" ,"'.$position.'" ,"'.$level.'" ,"'.$deadline.'" ,"'.$jobDescription.'" ,"'.$availability.'" ,"'.$salary.'" ,"'.$duration.'" ,"'.$date.'" ,"'.$contactName.'" ,"'.$contactTitle.'" ,"'.$contactAddress1.'" ,"'.$contactAddress2.'" ,"'.$contactCity.'" ,"'.$contactPhone.'" ,"'.$contactFax.'" ,"'.$contactEmail.'" ,"'.$schoolWeb.'" ,"'.$jobWeb.'" ,"'.$submitName.'" ,"'.$submitTitle.'" ,"'.$submitNumber.'" ,"'.$submitEmail.'" ,"'.$jobTitle.'" ,"'.$organisationName.'" ,"'.$userid.'" ,"'.$username.'" ,"'.$logoImage.'" )";
 	
 
 	
