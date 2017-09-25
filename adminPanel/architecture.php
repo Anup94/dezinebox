@@ -18,10 +18,11 @@
                    "categoryOption"=>"Sub Category",
            "subCategoryOption"=>"Theme",
                    "selectedArea"=>"AREA (SQ-FEET)",
-                   //"projectType"=>"File",
+                         "moreDetails"=>"File",
+                            "budget"=>"Budget",
                    "plotArea"=>" Plot Area",
                    "siteLocation"=>"Site Location",
-                  
+                        "driveLink"=>"Drive Link",
                    "details"=>"Details",
                    "price"=>"Price",
            "Paid"=>"Paid",
@@ -128,13 +129,14 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                   </div>
                   <div class="x_content">
              
-                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap">
+                       <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
 
                       <thead>
 <tr class="text-uppercase text-nowrap">
 
 <th>Date</th>
 <th>Order Id</th>
+<th>Box Type</th>
 <th>Name</th>
 <th>Email</th>
 <th>Mobile</th>
@@ -157,6 +159,13 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                          
                             <td><?php echo $row['entryTime'];?></td>
                             <td><?php echo $row['enqId'];?></td>
+                               <td><?php
+switch ($row['boxTypeId'])
+{
+    case 3:echo "TERRA" ; break;
+    case 4:echo "ZEPHYR" ; break;
+    case 5:echo "ETHER" ; break;
+}?></td>
                             <td><?php echo $row['name'];?></td>
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>
@@ -169,7 +178,11 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                        if($row[$key] == '2')echo "<td>Commercial</td>";
                        if($row[$key] == '3')echo "<td>Hospitality</td>";
                        if($row[$key] == '4')echo "<td>Institutional</td>";
-                     }else{
+                     }else if($value == "File"){
+                                            if($row[$key]) echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+                                            else echo "<td>Not uploaded</td>";
+                                         }
+                     else{
                                   echo "<td>".$row[$key]."</td>";
                      }
                                 }
@@ -187,6 +200,13 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                     
                   <td><?php echo $row['entryTime'];?></td>
                             <td><?php echo $row['enqId'];?></td>
+                             <td><?php
+switch ($row['boxTypeId'])
+{
+    case 3:echo "TERRA" ; break;
+    case 4:echo "ZEPHYR" ; break;
+    case 5:echo "ETHER" ; break;
+}?></td>
                             <td><?php echo $row['name'];?></td>
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>
@@ -198,12 +218,18 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                          echo "<td></td>";
                          
                        }
+                       
                      }else if($value == "Category"){
                        if($row[$key] == '1')echo "<td>Residential</td>";
                        if($row[$key] == '2')echo "<td>Commercial</td>";
                        if($row[$key] == '3')echo "<td>Hospitality</td>";
                        if($row[$key] == '4')echo "<td>Institutional</td>";
-                     }else{
+                     }else if($value == "File"){
+                                            if($row[$key]) echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+                                            else echo "<td>Not uploaded</td>";
+                                         }
+
+                     else{
                                   echo "<td>".$row[$key]."</td>";
                      }
                                 }

@@ -13,34 +13,6 @@
 
 
 
-<style>
-.black{
-  position:fixed;
-  top:0;
-  background:#333;
-  width:100%;
-  height:50px;
-  
-}
-.black ul{
-  list-style-type:none;
-  padding:0;
-}
-
-.black ul li{
-  display:inline-block;
-  width:100px;
-  color:red;
-}
-
-.blue{
-  position:fixed;
-  top:0;
-  background:blue;
-  width:100%;
-  height:50px;
-}
-</style>
 </head>
 <body class="supernova">
 <?php include_once 'menu-includes.php';?>
@@ -200,7 +172,7 @@
                                              <li class="form-line jf-required" >
                                         
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                        <select class="form-control text-height form_group_data" mandatory="true" error_message="Please select" name="hearFrom" id="user_profession" required><option value="">Profession</option>
+                                        <select class="form-control text-height form_group_data" mandatory="true" error_message="Please select" name="profession" id="user_profession" required><option value="">Profession</option>
                                               <option value="Architect">Architect</option>
                                               <option value="Structural Consultant">Structural Consultant</option>
                                               <option value="MEP Consultant">MEP Consultant</option>
@@ -352,30 +324,7 @@
 
 </footer><!-- / .footer-widgets --><!-- / .footer-widgets -->
 
-<script>
-  
-$(document).ready(function(){
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 300) {
-      $(".black").css("background" , "blue");
-    }
 
-    else{
-      $(".black").css("background" , "#333");   
-    }
-  })
-})
-  
-</script>
-<script>function validateForm() {
-  var isValid = true;
-  $('.form-field').each(function() {
-    if ( $(this).val() === '' )
-        isValid = false;
-  });
-  return isValid;
-}</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
 </body>

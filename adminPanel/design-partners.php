@@ -47,11 +47,12 @@ if(mysqli_num_rows($result)>0) {
     <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
     <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
     <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+  <link href="../admin/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
       <script type="text/javascript">
-  var projects=<?php echo json_encode($projects);?>
+  var projects= <?php echo json_encode($projects);?>
   </script>
   </head>
 
@@ -124,11 +125,28 @@ if(mysqli_num_rows($result)>0) {
                             <td><?php echo $row['hearFrom'];?></td>
                             <td>
                               <?php if(!empty($projects[$row['userId']])):?>
-                                <button type="button" onclick="showProjects(this)" class="btn btn-sm btn-info">Show Projects</button>
+                              
+                              <button type="button" onclick="show(<?php echo $row['userId'] ?>)" class="btn btn-sm btn-info">Show Projects</button>
+
+
+
+
+
+
+
+
+
                               <?php endif;?>
                             </td>
                           </tr>
+
+
+
                           <?php
+
+
+
+
                         }
                         ?>
                       </tbody>
@@ -138,7 +156,31 @@ if(mysqli_num_rows($result)>0) {
                 </div>
               </div>
    
-              <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModal">
+      
+
+             
+
+             
+
+          
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+
+                  
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Designed by <a href="http://qleverlabs.com/">Qleverlabs</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -146,7 +188,7 @@ if(mysqli_num_rows($result)>0) {
             <h4 class="modal-title">Projects</h4>
           </div>
           <div class="modal-body no-padding">
-            <table class="table table-striped ">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -166,27 +208,8 @@ if(mysqli_num_rows($result)>0) {
         </div>
       </div>
     </div>
+  </div>
 
-             
-
-             
-
-          
-            </div>
-          </div>
-        </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Designed by <a href="http://qleverlabs.com/">Qleverlabs</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-      </div>
-    </div>
 
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
@@ -214,11 +237,41 @@ if(mysqli_num_rows($result)>0) {
     <script src="../vendors/jszip/dist/jszip.min.js"></script>
     <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
-
+  <script type="text/javascript" src="js/design-partners.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
 <!-- Google Analytics -->
 
+
+<script>
+  function show(ele) {
+  console.log(projects);
+  console.log("this is the data->", ele);
+  //var userId=$(ele).closest("tr").data("user");
+  var target=$("#projectModal");
+  var tmpTarget=target.find("table tbody").empty();
+  if(projects && projects[ele]) {
+    $.each(projects[ele],function(i,info) {
+      console.log(info);
+      var link='';
+      if($.trim(info['projectPortFolio'])!='' && info['projectPortFolio']) {
+        var link=['<a href=',info['projectPortFolio'],' target="_blank">Check Portfolio</a>'].join("");
+      }
+      tmpTarget.append([
+        '<tr>',
+        '<td>',info['projectName'],'</td>',
+        '<td>',info['projectArea'],'</td>',
+        '<td>',info['projectHighLight'],'</td>',
+        '<td>',info['projectDesc'],'</td>',
+        '<td>',link,'</td>',
+        '<td>',info['projectLinkedin'],'</td>',
+        '</tr>'
+      ].join(""))
+    });
+  }
+  target.modal("show");
+}
+</script>
 
   </body>
 

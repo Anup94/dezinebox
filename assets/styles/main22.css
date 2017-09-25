@@ -2370,7 +2370,7 @@ fieldset[disabled] .form-control:hover {
 
 .navbar-trans {
   border-bottom: none;
-  background: transparent;
+  background: #fff;
 }
 
 

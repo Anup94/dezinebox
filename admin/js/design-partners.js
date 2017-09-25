@@ -1,4 +1,5 @@
 function showProjects(ele) {
+	console.log("this is the data->", ele);
 	var userId=$(ele).closest("tr").data("user");
 	var target=$("#projectModal");
 	var tmpTarget=target.find("table tbody").empty();

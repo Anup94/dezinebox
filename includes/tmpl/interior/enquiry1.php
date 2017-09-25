@@ -73,27 +73,14 @@
                 </div>
 
                 
-                <button type="submit" class="btn-ghost">NEXT</button>       <!-- <button class="btn-ghost" type="submit" style="margin: 5%;">Download Sample</button>        --> 
+                <button type="submit" class="btn-ghost">NEXT</button>    
               </div><!-- / .col-md-4 -->
 
                 
             </div>
 
 
-            <div class="row ws-m">
-              
-
-              <div class="col-md-12">
-             
-                <!-- <div class="form-group">
-                <label for="txt-forms">Please mention any specific details if you have:</label>
-                  <textarea class="form-control" name="textarea" id="txt-forms" rows="9" placeholder="Your Message"></textarea>
-                  
-                </div>  -->
-              </div>
-             
-                  
-            </div><!-- / .row -->
+   
              <?php 
               $array=array("categoryId","constTypeId","categoryOption","subCategoryOption");
               foreach ($array as $key) {
@@ -101,4 +88,5 @@
                echo '<input type="hidden" name="'.$key.'" value="'.$_GET[$key].'"/>';
               }
               ?>
+              
           </form>

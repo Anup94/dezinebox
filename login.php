@@ -27,9 +27,12 @@
 <div class="form position" style="">
   <div class="thumbnail"><img src="http://dezinebox.io/assets/images/logo.png"/></div>
   <form id="register-form" class="register-form" action="validate.php?task=submit_signup" method="post" >
+    <input type="text" name="name" placeholder="Name"/>
     <input type="text" name="username" placeholder="Username"/>
+    <input type="email" name="email" placeholder="email address"/>
+     <input type="text" name="mobile" placeholder="number"/>
     <input type="password" name="password" placeholder="password"/>
-    <input type="text" name="email" placeholder="email address"/>
+    
     <button id="reg">create</button>
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>

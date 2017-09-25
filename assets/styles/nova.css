@@ -16,12 +16,7 @@
 	text-align:center;
 	display:block;
 }
-.navbar-toggle
- {
-    margin-top: 20px;
-    margin-right: -27%;
-	display:block;
-}
+
 .form-all {
 	font-size:14px;
 	color:#000;
@@ -604,10 +599,5 @@ h3.form-header {
 	text-align:center;
 	display:none;	
 }
-.navbar-toggle
- {
-    margin-top: 20px;
-    margin-right: 0%;
-	display:block;
-}	
+
 }

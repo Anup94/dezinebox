@@ -3,9 +3,8 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
 require_once $_SERVER["DOCUMENT_ROOT"].'/admin/login-check.php';
 require_once $_SERVER["DOCUMENT_ROOT"].'/classes/db.class.php';
 $dbConnect = new dbConnect();
-$query="SELECT * FROM users
-LEFT JOIN users_type_map utm ON users.userId=utm.userId
-WHERE utm.userTypeId='".$dbConnect->const->userTypeId->customer."'";
+$query="SELECT * FROM users LEFT JOIN users_type_map utm ON users.userId=utm.userId WHERE utm.userTypeId='".$dbConnect->const->userTypeId->customer."'ORDER BY utm.id ASC";
+
 $result=$dbConnect->conn->query($query);
 $users=array();
 if(mysqli_num_rows($result)>0) {
@@ -108,6 +107,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                       <thead>
                      <tr class="text-uppercase text-nowrap">
+                              <th>Id</th>
                               <th>Name</th>
                               <th>Email</th>
                               <th>Mobile</th>
@@ -121,6 +121,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                         <?php foreach ($users as $row) {
                           ?>
                           <tr>
+                            <td><?php echo $row['id'];?></td>
                             <td><?php echo $row['name'];?></td>
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>

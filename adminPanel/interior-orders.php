@@ -153,6 +153,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
 
 <th>Date</th>
 <th>Order Id</th>
+<th>Box Type</th>
 <th>Name</th>
 <th>Email</th>
 <th>Mobile</th>
@@ -175,6 +176,13 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                               
                                      <td><?php echo $row['entryTime'];?></td>
                                     <td><?php echo $row['enqId'];?></td>
+                                       <td><?php
+switch ($row['boxTypeId'])
+{
+    case 3:echo "TERRA" ; break;
+    case 4:echo "ZEPHYR" ; break;
+    case 5:echo "ETHER" ; break;
+}?></td>
                                     <td><?php echo $row['name'];?></td>
                                     <td><?php echo $row['email'];?></td>
                                     <td><?php echo $row['mobile'];?></td>
@@ -208,6 +216,13 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                                     <tr>
                                     <td><?php echo $row['entryTime'];?></td>
                                     <td><?php echo $row['enqId'];?></td>
+                                       <td><?php
+switch ($row['boxTypeId'])
+{
+    case 3:echo "TERRA" ; break;
+    case 4:echo "ZEPHYR" ; break;
+    case 5:echo "ETHER" ; break;
+}?></td>
                                     <td><?php echo $row['name'];?></td>
                                     <td><?php echo $row['email'];?></td>
                                     <td><?php echo $row['mobile'];?></td>
