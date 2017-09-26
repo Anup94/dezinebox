@@ -124,10 +124,10 @@ if(mysqli_num_rows($result)>0) {
                             <td><?php echo $row['mobile'];?></td>
                             <td><?php echo $row['experience'];?></td>
                             <td><?php echo implode(", ",explode(",", $row['profession']));?></td>
-                            <td><?php echo $row['driveLink'];?></td>
+                            <td><a href="//<?php echo $row['driveLink'] ?>"> &nbsp &nbsp<?php echo $row['driveLink'];?></a></td>
                             <td><?php echo $row['companyName'];?></td>
                             <td><?php echo $row['companyAddress'];?></td>
-                            <td><?php echo $row['website'];?></td>
+                            <td><a href="//<?php echo $row['website'] ?>"> &nbsp &nbsp<?php echo $row['website'];?></a></td>
                             <td><?php echo $row['hearFrom'];?></td>
                             <td>
                               <?php if(!empty($projects[$row['userId']])):?>
@@ -197,7 +197,7 @@ if(mysqli_num_rows($result)>0) {
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>Date</th>
+              
                   <th>Name</th>
                   <th>Area</th>
                   <th>Highlight</th>

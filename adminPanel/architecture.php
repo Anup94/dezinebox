@@ -182,6 +182,11 @@ switch ($row['boxTypeId'])
                                             if($row[$key]) echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
                                             else echo "<td>Not uploaded</td>";
                                          }
+                       else if($value == "Drive Link"){
+                                            if($row[$key]) echo "<td><a href='//".$row[$key]."' target='_blank'>$row[$key]</a></td>";
+                                            else echo "<td>Not uploaded</td>";
+                                         }
+
                      else{
                                   echo "<td>".$row[$key]."</td>";
                      }
@@ -226,6 +231,10 @@ switch ($row['boxTypeId'])
                        if($row[$key] == '4')echo "<td>Institutional</td>";
                      }else if($value == "File"){
                                             if($row[$key]) echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
+                                            else echo "<td>Not uploaded</td>";
+                                         }
+                      else if($value == "Drive Link"){
+                                            if($row[$key]) echo "<td><a href='//".$row[$key]."' target='_blank'>$row[$key]</a></td>";
                                             else echo "<td>Not uploaded</td>";
                                          }
 

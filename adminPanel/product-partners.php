@@ -110,12 +110,13 @@ if(mysqli_num_rows($result)>0) {
                             <td><?php echo $row['entName'];?></td>
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>
-                            <td><?php echo $row['linkedInProfile'];?></td>
+                                  <td><a href="//<?php echo $row['linkedInProfile'] ?>"> &nbsp &nbsp<?php echo $row['linkedInProfile'];?></a></td>
                             <td><?php echo $row['productType'];?></td>
            
                             <td><?php echo $row['experience'];?></td>
                             <td><?php echo $row['address'];?></td>
-                            <td><?php echo $row['website'];?></td>
+                             <td><a href="//<?php echo $row['website'] ?>"> &nbsp &nbsp<?php echo $row['website'];?></a></td>
+                      
                             <td>
                               <?php if(!empty($row['catalog'])):?>
                                 <a href=<?php echo $row['catalog'];?> target="_blank">View Catalog</a>
