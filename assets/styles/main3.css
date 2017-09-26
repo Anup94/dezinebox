@@ -7951,9 +7951,9 @@ form .input-error-2:focus {
 .hover-default .p-hover .p-content, .hover-light .p-hover .p-content {
   text-align: justify;
   position: absolute;
-  left: 20px;
+ /* left: 20px;
   right: 20px;
-  bottom: 20px;
+  bottom: 20px;*/
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s;
 }
@@ -8217,7 +8217,7 @@ form .input-error-2:focus {
 }
 
 .hover-default .p-hover:hover .p-content, .hover-light .p-hover:hover .p-content {
-  bottom: 45px;
+  /*bottom: 45px;*/
 }
 
 .hover-default .p-hover:hover .open-btn, .hover-light .p-hover:hover .open-btn {

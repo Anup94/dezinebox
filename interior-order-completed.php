@@ -469,7 +469,7 @@ switch ($result->selectedArea)
               <!-- Shop Product -->
               <div class="col-lg-8"><br><br><br>
              <p style="color: #000;" >  Need Help? Contact on <font color="#b76ea1"> <u>contact@dezinebox.io</u> </font>  </p>
-               <p style="color: #000;"><font color="#000">  Click to know </font><a "><u>PRICE MULTIPLYER</u> </a></p>
+               <p style="color: #000;"><font color="#000">  Click to know </font><a "><a href="Pricing.php"><u>PRICE MULTIPLYER</u> </a></p>
             
               </div><!-- / .col-lg-8 -->
               <div class="col-lg-4 totals-group">

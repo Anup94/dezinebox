@@ -7955,8 +7955,8 @@ form .input-error-2:focus {
 .hover-default .p-hover .p-content, .hover-light .p-hover .p-content {
   text-align: justify;
   position: absolute;
-  left: 40px;
-  right: 40px;
+ /* left: 40px;
+  right: 40px;*/
   bottom: 25px;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s;

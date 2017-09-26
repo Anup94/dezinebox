@@ -43,9 +43,10 @@ if(empty($constTypeArr[$constTypeId])) {
 <link type="text/css"  rel="stylesheet" href="assets/styles/nova.css" />
 <link type="text/css"  rel="stylesheet" href="assets/styles/theme.css"/> 
 
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
-<link rel="stylesheet" href="assets/styles/main.css"> <!-- nav -->
+<link rel="stylesheet" href="assets/styles/main22.css"> <!-- nav -->
 
 
 
@@ -94,14 +95,14 @@ if(empty($constTypeArr[$constTypeId])) {
         <div id="cid_6" class="form-input-wide jf-required">
           <div data-wrapper-react="true">
             <span class="form-sub-label-container" style="vertical-align:top;">
-              <input type="tel" id="input_6_area" name="mobilepre" class="form-textbox" size="3" value="" data-component="areaCode" />
+              <input type="tel" id="input_6_area" name="mobilepre" class="form-textbox" size="3" maxlength="3" minlength="3" value="" data-component="areaCode" />
               <span class="phone-separate">
                  -
               </span>
               <label class="form-sub-label" for="input_6_area" id="sublabel_area" style="min-height:13px;"> Area Code </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top;">
-              <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="8" value="" data-component="phone" required="" />
+              <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="10" value="" data-component="phone" maxlength="10" minlength="8" required="" />
               <label class="form-sub-label" for="input_6_phone" id="sublabel_phone" style="min-height:13px;"> Phone Number </label>
             </span>
           </div>
@@ -148,7 +149,7 @@ if(empty($constTypeArr[$constTypeId])) {
           </span>
         </label>
         <div  class="form-input-wide jf-required">
-          <input type="text"  name="website" class="form-textbox" required="" >
+          <input type="url"  name="website" class="form-textbox" required="" >
         </div>
       </li>
          <li class="form-line jf-required" data-type="control_email" id="id_5">
@@ -214,7 +215,7 @@ if(empty($constTypeArr[$constTypeId])) {
 <div class="widget about-widget">
 
 <ul class="social-links">
-<li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook" style="color: "></i></a></li>
+<li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook" style="color: #fff;"></i></a></li>
 <li><a href="https://twitter.com/DezineBox"><i class="fa fa-twitter" style="color: #fff"></i></a></li>
 <li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin" style="color: #fff"></i></a></li>
 <li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram" style="color: #fff"></i></a></li>

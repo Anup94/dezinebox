@@ -50,6 +50,7 @@ include_once 'site-initial.php';?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
 
 
 
@@ -104,14 +105,14 @@ include_once 'site-initial.php';?>
                                             <div  class="form-input-wide jf-required">
                                               <div data-wrapper-react="true">
                                                 <span class="form-sub-label-container" style="vertical-align:top;">
-                                                  <input type="tel" id="input_6_area" name="mobilepre" class="form-textbox" size="3" value="" data-component="areaCode" />
+                                                  <input type="tel" id="input_6_area" name="mobilepre" class="form-textbox" size="3" maxlength="3" minlength="3" value="" data-component="areaCode" />
                                                   <span class="phone-separate">
                                                      -
                                                   </span>
                                                   <label class="form-sub-label" for="input_6_area" id="sublabel_area" style="min-height:13px;"> Area Code </label>
                                                 </span>
                                                 <span class="form-sub-label-container" style="vertical-align:top;">
-                                                  <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="8" value="" data-component="phone" required />
+                                                  <input type="tel" id="input_6_phone" name="mobile" class="form-textbox" size="10" value="" data-component="phone" maxlength="10" minlength="8" required="" />
                                                   <label class="form-sub-label" for="input_6_phone" id="sublabel_phone" style="min-height:13px;"> Phone Number </label>
                                                 </span>
                                               </div>
@@ -149,7 +150,7 @@ include_once 'site-initial.php';?>
                                               </span>
                                             </label>
                                             <div  class="form-input-wide jf-required">
-                                              <input type="text"  name="website" class="form-textbox" required>
+                                              <input type="url" name="website" class="form-textbox" required>
                                             </div>
                                           </li>
                                              <li class="form-line jf-required" data-type="control_email" id="id_5">
