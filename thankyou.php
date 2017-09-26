@@ -27,6 +27,7 @@
         <!-- Definity CSS -->
         <link rel="stylesheet" href="assets/styles/main.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
+        <link href="css/vidbck.css" rel="stylesheet" type="text/css">
 
         <!-- JS -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -56,35 +57,7 @@
         
         <!-- ========== Navigation ========== -->
 
-       <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <!-- Logo -->
-              <a class="navbar-brand" href="home.php"><img src="assets/images/logo.png"  alt="DeZinebox"></a>
-            </div><!-- / .navbar-header -->
-
-            <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-
-                <!-- Home -->
-         <li class="dropdown mega-fw"><a href="home.php"><span class="linea-arrows-slim-left"></span> &nbsp    Go to the Home page</a></li>
-       
-
-
-      
-                  <!-- / .nav .navbar-nav .navbar-right -->
-
-            </div><!--/.navbar-collapse -->
-          </div><!-- / .container -->
-        </nav><!-- / .navbar -->
+       <?php include_once 'menu-includes.php';?><!-- / .navbar -->
 
 
 
@@ -213,15 +186,7 @@ include('crypto.php')
 </html>
 			
 			";
-			
-			
-			
-			
-			
-	
-	
-	
-	
+      
 			fwrite($myfile, $txt);
 			fclose($myfile);
 
@@ -379,12 +344,12 @@ include('crypto.php')
  <br> <br> 
               <header class="sec-heading">
                 <h2>Bill Summary</h2>
-        
+        <br>
               </header>
               
               <!-- Item 1 -->
               <div class="col-lg-2"></div>
-              <div class="col-lg-8 col-md-6 mb-sm-50" style="margin:auto;">
+              <div class="thnqholder">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                  <div class="table-responsive">
                 <table class="table" style= "color: black";>
@@ -421,6 +386,9 @@ include('crypto.php')
                 </table><!-- / .table -->
               </div><!-- / .table-responsive -->
                 </div>
+                <br>
+                <center><a href="home.php"><input type="submit" class="btn" value="Go Home"></a></center>
+
               </div>
               <!-- Item 2 -->
               
@@ -429,26 +397,6 @@ include('crypto.php')
           </section>
         </div><!-- / .gray-bg -->
         
-
-
-        
-       
-
-
-        
-        
-
-
-        
-
-        
-
-
-
-       
-       
-
-
         <!-- ========== Footer ========== -->
         
       <footer class="footer-widgets">

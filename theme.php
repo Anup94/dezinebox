@@ -62,11 +62,11 @@
             <div class="row section">
 
               <header class="sec-heading">
-                <h2>Select your Theme</h2>
+                <h2>Our Theme</h2>
       
               </header>
          
-                <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 15%"><h4>Ethnic</h4> <br> 
+                <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 13%"><h4>Ethnic</h4> <br> 
 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/ethnic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                  <br><br><br><br><br><br><br>
