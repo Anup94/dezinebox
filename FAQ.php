@@ -96,7 +96,7 @@
                   </div>
                   <div id="faq-1-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-1">
                     <div class="panel-body">
-                     <p> We’re open to designing spaces as small as10 sft. Our Terra and Zephyr boxes cater to areas upto 2000sqft. For larger areas,you need to submit your requirements and details and we will get in touch with you. </p>
+                     <p> We’re open to designing spaces as small as100 sq ft. Our Terra and Zephyr boxes cater to areas up to 2000 sqft for interior spaces & 4000 sqft for architecture spaces. For larger areas,you need to submit your requirements and details and we will get in touch with you </p>
                     </div>
                   </div>
                 </div><!-- / .panel -->
@@ -144,7 +144,7 @@
                   </div>
                   <div id="faq-1-collapse-31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-3">
                     <div class="panel-body">
-               <p>Once you’ve sent us the brief, we’ll send you the detailed design in about 7 working days.</p>
+               <p>Once you’ve sent us the brief, we’ll send you the detailed design in about 7 -15 working days depending on the nature of the work. </p>
                     </div>
                   </div>
                 </div><!-- / .panel -->
@@ -159,7 +159,7 @@
                   </div>
                   <div id="faq-1-collapse-32" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-32">
                     <div class="panel-body">
-               <p>Of course, you can! </p>
+               <p>Of course, you can! Please contact us on <a href="mailto:giftbox@dezinebox.io" target="_top"> giftbox@dezinebox.io </a> </p>
                     </div>
                   </div>
                 </div><!-- / .panel -->
@@ -191,10 +191,10 @@
                   </div>
                   <div id="faq-1-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-4">
                     <div class="panel-body">
-                      <p>We believe that you understand your requirements the best. Our role at deZinebox is to help you simplify the otherwise tedious process of execution a design. Under Terra & Zephyr, we provide detailed drawings that enable you to understand and execute the design. <br>
-
-For interiors, our product is self-explanatory and includes a guided project map showing the execution process, along with material specifications and estimate. We also provide all vendor information for you to purchase materials.
-</p>
+                      <p>We believe that you understand your requirements the best. Our role at deZinebox is to help you simplify the otherwise tedious process of execution a design. Under Terra & Zephyr, we provide detailed drawings that enable you to understand and execute the design.   <br>For interiors, our product is self-explanatory and includes a guided project map showing the execution process, along with material specifications and estimate. We also provide all vendor information for you to purchase materials.</p>  <br><br>
+                      <p>Please refer to:-  <br>
+                        <a href="http://dezinebox.io/Interior.pdf"> http://dezinebox.io/Interior.pdf </a>   <br>
+                    <a href="http://dezinebox.io/Architecture.pdf">  http://dezinebox.io/Architecture.pdf </a></p>
                     </div>
                   </div>
                 </div><!-- / .panel -->
@@ -264,7 +264,10 @@ For interiors, our product is self-explanatory and includes a guided project map
                   </div>
                   <div id="faq-2-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-3">
                     <div class="panel-body">
-                  <p>We will provide you with the entire list of products that are included in the package,and also the material specifications for each one of them. You will also get a list of vendors where you could make the purchase, along with costing.</p>
+                  <p>We will provide you with the entire list of products that are included in the package,and also the material specifications for each one of them. You will also get a list of vendors where you could make the purchase, along with costing.</p><br><br>
+                      <p>Please refer to:-  <br>
+                        <a href="http://dezinebox.io/Interior.pdf"> http://dezinebox.io/Interior.pdf </a>   <br>
+                    <a href="http://dezinebox.io/Architecture.pdf">  http://dezinebox.io/Architecture.pdf </a></p>
                     </div>
                   </div>
                 </div><!-- / .panel -->
@@ -279,7 +282,7 @@ For interiors, our product is self-explanatory and includes a guided project map
                   </div>
                   <div id="faq-2-collapse-311" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-3">
                     <div class="panel-body">
-                  <p>Terra box gives one time design solution with no revisions. If you wish to have multiple design options, then please consider Zephyr box as it provides two revisions.</p>
+                  <p>Terra box gives one time design solution with no revisions. If you wish to have multiple design options, then please consider Zephyr box as it provides One revision</p>
                     </div>
                   </div>
                 </div><!-- / .panel -->
@@ -295,7 +298,10 @@ For interiors, our product is self-explanatory and includes a guided project map
                   </div>
                   <div id="faq-2-collapse-322" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-3">
                     <div class="panel-body">
-                  <p>Absolutely, we certainly can take into consideration any existing furniture that you might have. You can tell us what you want to keep and buy only the other additional items that you like.</p>
+                  <p>Absolutely, we can take into consideration any existing furniture that you might have. You can tell us what you want to keep and buy only the other additional items that you like. You need to inform us about it in the inputs that you will be giving to us.</p>
+                  <br><br>
+                      <p>Please refer to:-  <br>
+                        <a href="http://dezinebox.io/input.pdf"> http://dezinebox.io/Input.pdf </a></p>
                     </div>
                   </div>
                 </div><!-- / .panel -->

@@ -14,7 +14,7 @@ $mail->Password = '9867613282'; // SMTP password
 $mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                 // TCP port to connect to
 
-$mail->setFrom('srinath.chinchole@qleverlabs.com', 'shrinath');
+$mail->setFrom('contact@dezinebox.io', 'shrinath');
 $mail->addReplyTo('contact@dezinebox.io', 'Rishab Sahay');
 $mail->addAddress('contact@dezinebox.io');   // Add a recipient
 //$mail->addCC('cc@example.com');
@@ -23,7 +23,6 @@ $mail->addAddress('contact@dezinebox.io');   // Add a recipient
 $mail->isHTML(true);  // Set email format to HTML
 
 $bodyContent = '<h1>Enquiry from dEZINEbOX Website</h1>';
-$bodyContent .= '<p>Finaly Now I can send mail <b>offline</b></p>';
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $number = $_POST['number'];

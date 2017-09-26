@@ -654,7 +654,7 @@ $(document).on('ready', function() {
 </tr>
 <tr>
 <td> <a href="Why.php" style="color: #fff">Why Us</a></td>
-<td><a href="Pricing.php" style="color: #fff"> Legal </a></td></tr>
+<td><a href="Pricing.php" style="color: #fff"> Pricing </a></td></tr>
 <tr>
 <td><a href="theme.php" style="color: #fff">Theme</a></td>
 <td> <a href="Media.php" style="color: #fff"> Media </a></td></tr>
