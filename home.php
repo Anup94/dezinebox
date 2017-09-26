@@ -18,10 +18,7 @@
 <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
 <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-<!-- Slider -->
 
-<!-- Lightbox -->
-<link rel="stylesheet" href="assets /styles/vendor/magnific-popup.css">
 <!-- Animate.css -->
 <link rel="stylesheet" href="assets/styles/vendor/animate.css">
 
@@ -41,6 +38,9 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <link rel="stylesheet" href="newcss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
 
 <style type="text/css">
@@ -535,7 +535,7 @@ $(document).on('ready', function() {
 </header>
 
 <div class="row">
-<form method="POST" name="contactform" action="contact-form-handler.php">
+<form method="POST" id="contactform" name="contactform" action="contact-form-handler.php">
 <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
 
 <!-- Name -->
@@ -570,7 +570,9 @@ $(document).on('ready', function() {
 
 </div>
 <div>
-<input type="submit" class="btn pull-right" value="Send Message">
+<input type="submit" id="submit" class="btn pull-right" value="Send Message">
+
+              <p id="loading" style="display: none;padding: 8px 25px;color: #FF5100"> Loading.. </p>
 </div>
 <br><br>  <br><br>
 <!-- Ajax Message -->
@@ -707,7 +709,50 @@ $(document).on('ready', function() {
 
 
 <?php include_once 'auth-scripts.php';?>
+<script type="text/javascript">
+  
+  $('#contactform').submit(function(e) {
+   e.preventDefault();
 
+   var form = $('#contactform')[0];
+   var data = new FormData(form);
+
+   $('#submit').css('display', 'none');
+   $('#loading').css('display', 'block');
+       $.ajax({
+           type: "POST",
+           enctype: 'multipart/form-data',
+           url: "contact-form-handler.php",
+           data: data,
+           processData: false,
+           contentType: false,
+           cache: false,
+           timeout: 600000,
+           success: function (res) {
+              console.log(res);
+              if(res == 1) {
+                swal("Thank You", "Your request have been saved", "success");
+                   $('#submit').css('display', 'block');
+                  $('#loading').css('display', 'none');
+                  $('#contactform')[0].reset()
+              }
+              else {
+                swal("Error", "Some Error occured !", "error");
+                  $('#submit').css('display', 'block');
+                  $('#loading').css('display', 'none');
+              }
+            },
+           error: function (e) {
+
+            console.log(e);
+
+
+           }
+       });
+
+});
+
+</script>
 <script src="assets/js/vendor/google-fonts.js"></script>
 <script src="assets/js/vendor/jquery.easing.js"></script>
 <script src="assets/js/vendor/jquery.waypoints.min.js"></script>

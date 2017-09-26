@@ -1,3 +1,38 @@
+<?php
+session_start();
+require_once($_SERVER["DOCUMENT_ROOT"]."/login-check.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/classes/db.class.php");
+$dbConnect=new dbConnect();
+$categoryArr=array();
+$constTypeArr=array();
+$query="SELECT * FROM design_categories";
+$result=$dbConnect->conn->query($query);
+if(mysqli_num_rows($result)>0) {
+  foreach ($result as $row) {
+    $categoryArr[$row['categoryId']]=$row;
+  }
+}
+
+$query="SELECT * FROM construction_types";
+$result=$dbConnect->conn->query($query);
+if(mysqli_num_rows($result)>0) {
+  foreach ($result as $row) {
+    $constTypeArr[$row['constTypeId']]=$row;
+  }
+}
+
+
+$categoryId=@$_GET['categoryId'];
+$constTypeId=@$_GET['constTypeId'];
+$categoryOption=@$_GET['categoryOption'];
+$subCategoryOption=@$_GET['subCategoryOption'];
+if(empty($categoryArr[$categoryId])) {
+  $categoryId=NULL;
+}
+if(empty($constTypeArr[$constTypeId])) {
+  $constTypeId=NULL;
+}
+?>
 <?php include_once 'site-initial.php';?>
 <html>
 <head>
@@ -150,7 +185,8 @@
           <div style="text-align:left;" class="form-buttons-wrapper">
        
 
-<button class="btn-ghost" type="submit" style="display: block; margin: 0 auto;">Submit</button><br>
+              <button id="submit" class="btn-ghost" type="submit" style="display: block; margin: 0 auto;">Submit</button><br>
+              <p id="loading" style="display: none;padding: 8px 25px;"> Loading.. </p>
           </div>
         </div>
       </li>
@@ -199,6 +235,53 @@
 </div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<script type="text/javascript">
+  
+  $('#productPartnerForm').submit(function(e) {
+   e.preventDefault();
+
+   var form = $('#productPartnerForm')[0];
+   var data = new FormData(form);
+
+   $('#submit').css('display', 'none');
+   $('#loading').css('display', 'block');
+       $.ajax({
+           type: "POST",
+           enctype: 'multipart/form-data',
+           url: "validate.php?task=product_partner_submit",
+           data: data,
+           processData: false,
+           contentType: false,
+           cache: false,
+           timeout: 600000,
+           success: function (res) {
+              console.log(res);
+              if(res.status == 1) {
+                swal("Thank You", "Your request have been saved", "success");
+                   $('#submit').css('display', 'block');
+                  $('#loading').css('display', 'none');
+                  $('#productPartnerForm')[0].reset()
+              }
+              else {
+                swal("Error", "Some Error occured !", "error");
+                  $('#submit').css('display', 'block');
+                  $('#loading').css('display', 'none');
+              }
+            },
+           error: function (e) {
+
+            console.log(e);
+
+
+           }
+       });
+
+});
+
+</script>
 </body>
 
 </html>

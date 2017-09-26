@@ -91,7 +91,7 @@ if(mysqli_num_rows($result)>0) {
                               <th>Email</th>
                               <th>Mobile</th>
                               <th>LinkedIn Profile </th>
-                              <th>Product Type</th>
+                     
                               <th>Experience</th>
                               <th>Address</th>
                               <th>Website</th>
@@ -108,7 +108,7 @@ if(mysqli_num_rows($result)>0) {
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>
                             <td><?php echo $row['linkedInProfile'];?></td>
-                            <td><?php echo implode(", ",explode(",", $row['productType']));?></td>
+           
                             <td><?php echo $row['experience'];?></td>
                             <td><?php echo $row['address'];?></td>
                             <td><?php echo $row['website'];?></td>
@@ -117,7 +117,7 @@ if(mysqli_num_rows($result)>0) {
                                 <a href=<?php echo $row['catalog'];?> target="_blank">View Catalog</a>
                               <?php endif;?>
                             </td>
-                            <td><?php echo $row['googleDrive'];?></td>
+                            <td><a href="//<?php echo $row['googleDrive'] ?>"> &nbsp &nbsp<?php echo $row['googleDrive'];?></a></td>
                           </tr>
                           <?php
                         }

@@ -1,6 +1,9 @@
 <?php
 require 'PHPMailer/PHPMailerAutoload.php';
 
+require_once $_SERVER['DOCUMENT_ROOT']."/classes/validate.class.php";
+$validateClass=new validateClass();
+
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                   // Set mailer to use SMTP
@@ -29,11 +32,13 @@ $mail->Subject = 'Enquiry from Dezinebox Website';
 $mail->Body    =     " Here are the details:\n Name: $name <br><br> \n Email: $email_address <br><br> \n Number: $number \n Message: \n $message";
 
 if(!$mail->send()) {
-   echo 'Message could not be sent.';
-   echo 'Mailer Error: ' . $mail->ErrorInfo;
+   // echo 'Message could not be sent.';
+   // echo 'Mailer Error: ' . $mail->ErrorInfo;
+	$validateClass->send_as_json("0");
 } else {
    
-   header('Location: home.php');
+   $validateClass->send_as_json("1");
+   //header('Location: home.php');
 
 }
 ?>
