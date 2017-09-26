@@ -147,7 +147,7 @@ body, html {
             <a href="boxes.php"> <p>Know more..</p> </a>
           </div>
                     <div class="polina2">
-            <a href="login.php"> <p>Intrigude? Get Your Box..</p> </a>
+            <a href="login.php"> <p>Intrigued? Get Your Box..</p> </a>
           </div>
    </div>
      
