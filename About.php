@@ -82,7 +82,7 @@
                 
                   <h4 style="font-size: 1.5em;">About Us</h4>
                   <p style="color: #777"><blockquote style="color: #000;">
-                  deZinebox is a labour of love for Shweta Deshmukh & Abhijeet Deshmukh <br><br>
+                  deZinebox is a labour of love for Founders Shweta Deshmukh & Abhijeet Deshmukh <br><br>
 <strong>Shweta Deshmukh</strong><br>
 Shweta Deshmukh is an accomplished architect with over 16 years of experience in the field. She is the Chief Architect at Mumbai-based Architecture and Interior Design firm Shweta Deshmukh and Associates. Throughout her career, Shweta has worked on a variety of projects ranging from Weekend homes and luxury villas to schools, resorts, townships etc. She holds a Bachelor’s degree in Architecture as well as a PGPCM (Construction management) from NICMAR, Pune. <br><br>
 

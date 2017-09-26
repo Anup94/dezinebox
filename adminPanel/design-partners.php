@@ -52,6 +52,7 @@ if(mysqli_num_rows($result)>0) {
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
       <script type="text/javascript">
+        var ids = [];
   var projects= <?php echo json_encode($projects);?>
   </script>
   </head>
@@ -95,6 +96,7 @@ if(mysqli_num_rows($result)>0) {
                 <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                    <thead>
                           <tr class="text-uppercase text-nowrap">
+                              <th>Date</th>
                               <th>Name</th>
                               <th>Email</th>
                               <th>Mobile</th>
@@ -113,6 +115,10 @@ if(mysqli_num_rows($result)>0) {
                         <?php foreach ($users as $row) {
                           ?>
                           <tr data-user="<?php echo $row['userId'];?>">
+                            <td id="shrinath<?php echo $row['userId'];?>"></td>
+                            <script> 
+                                          ids.push(<?php echo $row['userId'];?>);
+                            </script>
                             <td><?php echo $row['name'];?></td>
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>
@@ -191,6 +197,7 @@ if(mysqli_num_rows($result)>0) {
             <table class="table table-striped">
               <thead>
                 <tr>
+                  <th>Date</th>
                   <th>Name</th>
                   <th>Area</th>
                   <th>Highlight</th>
@@ -244,6 +251,20 @@ if(mysqli_num_rows($result)>0) {
 
 
 <script>
+
+  $(document).ready(function(){
+    if(projects) {
+      ids.forEach(function(id) {
+
+            $.each(projects[id],function(i,info) {
+            $("#shrinath"+info['userId']).html(info['entryTime']);
+            });
+      });
+
+  }
+
+  });
+
   function show(ele) {
   console.log(projects);
   console.log("this is the data->", ele);
@@ -252,13 +273,15 @@ if(mysqli_num_rows($result)>0) {
   var tmpTarget=target.find("table tbody").empty();
   if(projects && projects[ele]) {
     $.each(projects[ele],function(i,info) {
-      console.log(info);
+      console.log("the info", info);
       var link='';
       if($.trim(info['projectPortFolio'])!='' && info['projectPortFolio']) {
         var link=['<a href=',info['projectPortFolio'],' target="_blank">Check Portfolio</a>'].join("");
       }
+      $("#shrinath"+info['userId']).html(info['entryTime']);
       tmpTarget.append([
-        '<tr>',
+        // '<tr>',
+        // '<td>',info['entryTime'],'</td>',
         '<td>',info['projectName'],'</td>',
         '<td>',info['projectArea'],'</td>',
         '<td>',info['projectHighLight'],'</td>',
