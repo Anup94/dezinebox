@@ -79,6 +79,26 @@ if(empty($constTypeArr[$constTypeId])) {
           <input type="text"  name="entName" class="form-textbox " size="30" value="" required>
         </div>
       </li>
+       <li class="form-line jf-required" >
+                                        
+                                            <div id="cid_5" class="form-input-wide jf-required">
+                                              <input type="text" class="form-textbox" placeholder="Product" name="productType" list="cityname">
+<datalist id="cityname">
+   <option value="Décor & furnishes">Décor & furnishes</option>
+                                              <option value="Wall coverings & wall finishes">Wall coverings & wall finishes</option>
+                                              <option value="Security & safety">Security & safety</option>
+                                              <option value="Tiles, stones, other floorings/dado finishes"></option>
+                                              <option value="Hardware & fittings">Hardware & fittings</option>
+                                              <option value="Sanitary fixtures & fittings">Sanitary fixtures & fittings</option>
+                                              <option value="CP fittings">CP fittings</option>
+                                              <option value="Electrical fixtures, Lamps, Lightings">Electrical fixtures, Lamps, Lightings</option>
+                                              <option value="Landscapes & gardens"> </option>
+                                              <option value="Home Appliances">Home Appliances</option>
+                                              <option value="Office Appliances">Office Appliances</option>
+                                              <option >Other</option></datalist>
+                                       
+                                            </div>
+                                          </li>
        <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
           E-mail

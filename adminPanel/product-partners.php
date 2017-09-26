@@ -87,10 +87,12 @@ if(mysqli_num_rows($result)>0) {
                 <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                    <thead>
                            <tr class="text-uppercase text-nowrap">
+                             <th>Date</th>
                               <th>Enterprise Name</th>
                               <th>Email</th>
                               <th>Mobile</th>
                               <th>LinkedIn Profile </th>
+                              <th>Product Type </th>
                      
                               <th>Experience</th>
                               <th>Address</th>
@@ -104,10 +106,12 @@ if(mysqli_num_rows($result)>0) {
                         <?php foreach ($users as $row) {
                           ?>
                           <tr data-user="<?php echo $row['userId'];?>">
+                            <td><?php echo $row['date'];?></td>
                             <td><?php echo $row['entName'];?></td>
                             <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mobile'];?></td>
                             <td><?php echo $row['linkedInProfile'];?></td>
+                            <td><?php echo $row['productType'];?></td>
            
                             <td><?php echo $row['experience'];?></td>
                             <td><?php echo $row['address'];?></td>

@@ -22,7 +22,7 @@ $mail->addAddress('contact@dezinebox.io');   // Add a recipient
 
 $mail->isHTML(true);  // Set email format to HTML
 
-$bodyContent = '<h1>Enquiry from dEZINEbOX Website</h1>';
+$bodyContent = '<h1>Enquiry from dEZINEbOX Website</h1>';	
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $number = $_POST['number'];
