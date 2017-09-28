@@ -72,7 +72,7 @@
     padding-right: 15px;
   }
   .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
-    padding-top: 10px;
+    padding-top: 0px;
     height: 100%;
     border: none;
   }
@@ -119,6 +119,14 @@
 	  .navbar .navbar-header .navbar-brand {
     margin-left: -11%;
   }	
+  .navbar .navbar-collapse {
+    margin-top: 0px;
+    padding-left: 25px;
+    padding-right: 19px;
+    max-height: 100%;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 /* ---- Footers ---- */

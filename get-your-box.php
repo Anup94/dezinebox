@@ -42,6 +42,8 @@ if(empty($constTypeArr[$constTypeId])) {
         <title>Dezinebox – “your dream space, at your own pace” | a unique online architectural and Interior Design service provider empowering you to decor your own space | Get your Box today|</title>
                 <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/vidbck.css" rel="stylesheet" type="text/css">
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="favbox.png">
