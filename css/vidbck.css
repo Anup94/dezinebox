@@ -141,6 +141,12 @@
 	width: 70%;
 	margin: 0 auto;
 }
+.navbarcollapse
+{
+	width: 300px;
+	float: right; 
+	margin-right: 10%;
+}
 @media only screen and (max-width:400px)
 {
 	.polina
@@ -156,6 +162,21 @@
 	color:#e55d0c;
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	font-size:6px;
+	text-align:right;
+}
+.polina1be
+{
+	
+	position:absolute;
+	bottom:5%;
+	right:13%;
+	display:block;
+}
+.polina1be p
+{
+	color:#e55d0c;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size:7px;
 	text-align:right;
 }
 .polina1
@@ -249,9 +270,31 @@
 	font-size:6px;
 	text-align:right;
 }
+.polina9
+{
+	
+	position:absolute;
+	bottom:-1%;
+	right:4%;
+	display:block;
+}
+.polina9 p
+{
+	color:#e55d0c;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size:7px;
+	text-align:right;
+}
 .thnqholder
 {
 	width: 100%;
 	margin: 0 auto;
 }
+.navbarcollapse
+{
+	width: 300px;
+	float: right; 
+	margin-right: 0%;
+}
+
 }

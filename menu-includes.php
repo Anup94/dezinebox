@@ -32,11 +32,11 @@
       </button>
 
       <!-- Logo -->
-      <a class="navbar-brand" href="/home.php"><img src="assets/images/logo.png" style="margin-top: -20px"  alt="DeZinebox"></a>
+      <a class="navbar-brand" href="/home.php"><img src="assets/images/logo.png" style="margin-top: -20px; margin-left: -13%"  alt="DeZinebox"></a>
     </div><!-- / .navbar-header -->
 
     <!-- Navbar Links -->
-    <div id="navbar" class="navbar-collapse collapse black" style=" width: 300px; float: right; margin-right: 10%;">
+    <div id="navbar" class="navbar-collapse collapse black navbarcollapse">
       <ul class="nav navbar-nav ">
 
        <li class="dropdown mega-fw"><a href="/">Home</a></li>

@@ -130,6 +130,7 @@ if(!empty($result->boxTypeId) && !empty($result->constTypeId) && !empty($result-
         <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
         <!-- Slider -->
         <link rel="stylesheet" href="assets/styles/vendor/slick.css">
+        <link href="css/vidbck.css" rel="stylesheet" type="text/css">
         <!-- Lightbox -->
         <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
         <!-- Animate.css -->

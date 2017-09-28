@@ -7,12 +7,7 @@
 }
 </style>
 <form action="validate.php?task=submit_architecture_enquiry" method="post" name="archEnqForm" enctype="multipart/form-data">
-
-            
-
-
-                     
-            
+  
             <div class="row">
               <div class="col-md-offset-3 col-md-6 col-lg-5">
             
@@ -36,7 +31,7 @@
                 </div>
 
                  <div class="form-group">
-                <label for="inpt-name-forms">Permissible Built-up Area</label>
+                <label for="inpt-name-forms">Permissible Built-up Area (Sq-feet)</label>
                   <input type="number" class="form-control" name="plotArea" required id="inpt-name-forms" min="0" >                  
                 </div>
                 <div class="form-group">
@@ -57,7 +52,7 @@
                 </div>    
                 <div class="form-group">
                    <label for="select-form">Share Drive Link</label>
-                  <input type="name" name="driveLink" class="form-control" id="inpt-name-forms"  placeholder="Share your drive link with public access">                 
+                  <input type="url" name="driveLink" class="form-control" id="inpt-name-forms"  placeholder="Share your drive link with public access">                 
                 </div>
                 <div class="form-group" >
                 <label for="txt-forms">Any Specific Details (max 1000 characters)</label>

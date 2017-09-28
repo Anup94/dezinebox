@@ -112,5 +112,4 @@ else if($task=="product_partner_submit") {
 	$enqId=$validateClass->submit_interior_box($input);
 	header("Location:interior-order-completed.php?id=".$enqId);
 }
-
 ?>

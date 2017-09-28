@@ -189,11 +189,11 @@ include_once 'site-initial.php';?>
                                           <li class="form-line" data-type="control_button" id="id_2">
                                             <div id="cid_2" class="form-input-wide">
                                               <div style="text-align:left;" class="form-buttons-wrapper">
-
+                                                 
                                 <a href="#tab-2" role="tab" data-toggle="tab">
 
 <button class="btn-ghost" style="display: block; margin: 0 auto;">Next</button></a><br>
-                                              
+                                              <br><br><br><br>
                                               </div>
                                             </div>
                                           </li>
@@ -304,20 +304,20 @@ include_once 'site-initial.php';?>
                                           <li class="form-line" data-type="control_button" id="id_2">
                                             <div id="cid_2" class="form-input-wide">
                                               <div style="text-align:left;" class="form-buttons-wrapper">
-                                              
+                                            <br><br>  
 
                                 <a href="#tab-1" role="tab" data-toggle="tab">
                                                     
                                       <button class="btn-ghost" style="display: block; margin: 0 auto; float: left;">Back &nbsp</button></a></div>
                                                  <div class="col-lg-6">
                                       
-              <button id="submit" class="btn-ghost" type="submit" style="display: block; margin: 0 auto;">Submit</button><br>
+              <button id="submit" class="btn-ghost" type="submit" style="display: block; margin: 0 auto;">Submit</button><br><br><br><br>
               <p id="loading" style="display: none;padding: 8px 25px;"> Loading.. </p></div>
                                    
                                 
                               
                                               </div>
-                                              <br><br>
+                                              <br><br><br><br><br><br>
                                             </div>
                                           </li>
 
