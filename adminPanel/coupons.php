@@ -9,6 +9,22 @@ $coupons=array();
 if(mysqli_num_rows($result)>0) {
   $coupons=$result;
 }
+
+if(isset($_GET['delpost'])){ 
+  define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','dezine');
+
+$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
+
+  $stmt = $db->prepare('DELETE FROM coupons WHERE couponId = :couponId') ;
+  $stmt->execute(array(':couponId' => $_GET['delpost']));
+
+  header('Location: coupons.php?action=deleted');
+  exit;
+} 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +56,16 @@ if(mysqli_num_rows($result)>0) {
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+
+      <script language="JavaScript" type="text/javascript">
+  function delpost(id, title)
+  {
+    if (confirm("Are you sure you want to delete "))
+    {
+      window.location.href = 'coupons.php?delpost=' + id;
+    }
+  }
+  </script>
   </head>
 
   <body class="nav-md">
@@ -73,8 +99,7 @@ if(mysqli_num_rows($result)>0) {
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                    
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
+                      
                     </ul>
                     <div class="clearfix"></div>
                   </div>
@@ -101,7 +126,8 @@ if(mysqli_num_rows($result)>0) {
                                   <td><?php echo $row['usageTimes'];?></td>
                         <td><?php echo $row['discount'];?></td>
                                   <input type="hidden" id="<?php echo $row['couponId'];?>" value="<?php echo $row['couponCode'];?>">
-                        <td><button type="button" class="btn btn-info btn-xs" id="delete" onclick="deleteThis('<?php echo $row['couponId'];?>')">Delete</button></td>
+                     
+                               <td><a href="javascript:delpost('<?php echo $row['couponId'];?>')"><button type="button" class="btn btn-info btn-xs">Delete</button></a></td>
                                 </tr>
                                 <?php
                               }
@@ -172,7 +198,7 @@ if (r == true) {
           </div>
           <div class="form-group">
             <label>Discount %</label>
-            <input type="number" max="100" min="0.1" class="form-control" name="discount" required/>
+            <input type="number" max="100" min="1" class="form-control" name="discount" required/>
           </div>
         </div>
         <div class="modal-footer">
@@ -182,7 +208,7 @@ if (r == true) {
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
-  <?php include_once $_SERVER['DOCUMENT_ROOT']."/includes/scripts.php";?>
+
   <script type="text/javascript" src="js/coupons.js"></script>
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->

@@ -1,23 +1,22 @@
-
 <?php
 //fetch.php
-$connect = mysqli_connect("localhost", "root", "", "testing");
-$columns = array('order_id', 'order_customer_name', 'order_item', 'order_value', 'order_date');
+$connect = mysqli_connect("localhost", "root", "", "dezine");
+$columns = array('enqId', 'siteLocation', 'categoryOption', 'subCategoryOption', 'entryTime');
 
-$query = "SELECT * FROM tbl_order WHERE ";
+$query = "SELECT * FROM architecture_enquiries WHERE ";
 
 if($_POST["is_date_search"] == "yes")
 {
- $query .= 'order_date BETWEEN "'.$_POST["start_date"].'" AND "'.$_POST["end_date"].'" AND ';
+ $query .= 'entryTime BETWEEN "'.$_POST["start_date"].'" AND "'.$_POST["end_date"].'" AND ';
 }
 
 if(isset($_POST["search"]["value"]))
 {
  $query .= '
-  (order_id LIKE "%'.$_POST["search"]["value"].'%" 
-  OR order_customer_name LIKE "%'.$_POST["search"]["value"].'%" 
-  OR order_item LIKE "%'.$_POST["search"]["value"].'%" 
-  OR order_value LIKE "%'.$_POST["search"]["value"].'%")
+  (enqId LIKE "%'.$_POST["search"]["value"].'%" 
+  OR siteLocation LIKE "%'.$_POST["search"]["value"].'%" 
+  OR categoryOption LIKE "%'.$_POST["search"]["value"].'%" 
+  OR subCategoryOption LIKE "%'.$_POST["search"]["value"].'%")
  ';
 }
 
@@ -28,7 +27,7 @@ if(isset($_POST["order"]))
 }
 else
 {
- $query .= 'ORDER BY order_id DESC ';
+ $query .= 'ORDER BY enqId DESC ';
 }
 
 $query1 = '';
@@ -47,17 +46,17 @@ $data = array();
 while($row = mysqli_fetch_array($result))
 {
  $sub_array = array();
- $sub_array[] = $row["order_id"];
- $sub_array[] = $row["order_customer_name"];
- $sub_array[] = $row["order_item"];
- $sub_array[] = $row["order_value"];
- $sub_array[] = $row["order_date"];
+ $sub_array[] = $row["enqId"];
+ $sub_array[] = $row["siteLocation"];
+ $sub_array[] = $row["categoryOption"];
+ $sub_array[] = $row["subCategoryOption"];
+ $sub_array[] = $row["entryTime"];
  $data[] = $sub_array;
 }
 
 function get_all_data($connect)
 {
- $query = "SELECT * FROM tbl_order";
+ $query = "SELECT * FROM architecture_enquiries";
  $result = mysqli_query($connect, $query);
  return mysqli_num_rows($result);
 }
@@ -68,6 +67,7 @@ $output = array(
  "recordsFiltered" => $number_filter_row,
  "data"    => $data
 );
+
 echo json_encode($output);
 
 ?>

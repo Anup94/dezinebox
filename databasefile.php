@@ -24,7 +24,7 @@ echo "Connected successfully";
 
 require_once "EXCEL/classes/PHPExcel.php";
 
-	$tmpfname = "2019.csv" ;
+	$tmpfname = "girls-2020.csv" ;
 	$excelReader = PHPExcel_IOFactory::createReaderForFile($tmpfname);
 	$excelObj = $excelReader->load($tmpfname);
 	$worksheet = $excelObj->getActiveSheet();
@@ -51,26 +51,17 @@ echo $club;
 
 
 		echo "</td><td>";
-	$college =  $worksheet->getCell('E'.$row)->getValue();
+	$college =  $worksheet->getCell('G'.$row)->getValue();
 	echo   $college ;
 
-		echo "</td><td>";
-	$division =  $worksheet->getCell('F'.$row)->getValue();
-	echo   $division ;
 
-		echo "</td><td>";
-$position =  $worksheet->getCell('G'.$row)->getValue();
-echo $position;
-	
 
-$sql = "INSERT INTO job (school, city, state,otherLocation,team,position,level,deadline,jobDescription,availability,salary,duration,date,contactName,contactTitle,contactAddress1,contactAddress2,contactCity,contactPhone,contactFax,contactEmail,schoolWeb,jobWeb,submitName,submitTitle,submitNumber,submitEmail,jobTitle,organisationName,userid,username,logoImage)
-VALUES ("'.$school.'" , "'.$city.'" , "'.$state.'" , "'.$otherLocation.'" ,"'.$team.'" ,"'.$position.'" ,"'.$level.'" ,"'.$deadline.'" ,"'.$jobDescription.'" ,"'.$availability.'" ,"'.$salary.'" ,"'.$duration.'" ,"'.$date.'" ,"'.$contactName.'" ,"'.$contactTitle.'" ,"'.$contactAddress1.'" ,"'.$contactAddress2.'" ,"'.$contactCity.'" ,"'.$contactPhone.'" ,"'.$contactFax.'" ,"'.$contactEmail.'" ,"'.$schoolWeb.'" ,"'.$jobWeb.'" ,"'.$submitName.'" ,"'.$submitTitle.'" ,"'.$submitNumber.'" ,"'.$submitEmail.'" ,"'.$jobTitle.'" ,"'.$organisationName.'" ,"'.$userid.'" ,"'.$username.'" ,"'.$logoImage.'" )";
 	
 
 	
 
 	$sql = 'INSERT INTO commitment (name ,highschool , state ,club ,college , division, position , year , gender) values("'.$name.'" , 
-	"'.$highschool.'" , "'.$state.'","'.$club.'", "'.$college.'" , "'.$division.'" , "'.$position.'"  ,  "2019" , "boys") ';
+	"'.$highschool.'" , "'.$state.'","'.$club.'", "'.$college.'" , "1" , " "  ,  "2020" , "girls") ';
 	if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {

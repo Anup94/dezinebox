@@ -133,8 +133,8 @@ echo $followers_count;
 
               
 
-                <div class="col-md-7 col-sm-9 col-xs-12">
-                 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=918190397&amp;format=interactive"></iframe>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                 <iframe width="600" height="371" style="max-width: 100%;" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=918190397&amp;format=interactive"></iframe>
 
                 </div>
                 
@@ -145,128 +145,20 @@ echo $followers_count;
           <br />
 
           <div class="row">
-<div class="col-md-7">
- <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=675401131&amp;format=interactive"></iframe></div>
+<div class="col-md-12">
+ <iframe width="100%" height="371" style="max-width: 100%;" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=675401131&amp;format=interactive"></iframe></div>
 
           </div><br />
 
+          
 
-          <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-                  <div class="x_panel"  style="height: 403px;">
-                    <div class="x_title">
-                      <h2>Daily active users <small>Sessions</small></h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings 1</a>
-                            </li>
-                            <li><a href="#">Settings 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="temperature"><b>Monday</b>, 07:30 AM
-                            <span>F</span>
-                            <span><b>C</b></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="weather-icon">
-                            <canvas height="84" width="84" id="partly-cloudy-day"></canvas>
-                          </div>
-                        </div>
-                        <div class="col-sm-8">
-                          <div class="weather-text">
-                            <h2>Texas <br><i>Partly Cloudy Day</i></h2>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="weather-text pull-right">
-                          <h3 class="degrees">23</h3>
-                        </div>
-                      </div>
-
-                      <div class="clearfix"></div>
-
-                      <div class="row weather-days">
-                        <div class="col-sm-2">
-                          <div class="daily-weather">
-                            <h2 class="day">Mon</h2>
-                            <h3 class="degrees">25</h3>
-                            <canvas id="clear-day" width="32" height="32"></canvas>
-                            <h5>15 <i>km/h</i></h5>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="daily-weather">
-                            <h2 class="day">Tue</h2>
-                            <h3 class="degrees">25</h3>
-                            <canvas height="32" width="32" id="rain"></canvas>
-                            <h5>12 <i>km/h</i></h5>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="daily-weather">
-                            <h2 class="day">Wed</h2>
-                            <h3 class="degrees">27</h3>
-                            <canvas height="32" width="32" id="snow"></canvas>
-                            <h5>14 <i>km/h</i></h5>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="daily-weather">
-                            <h2 class="day">Thu</h2>
-                            <h3 class="degrees">28</h3>
-                            <canvas height="32" width="32" id="sleet"></canvas>
-                            <h5>15 <i>km/h</i></h5>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="daily-weather">
-                            <h2 class="day">Fri</h2>
-                            <h3 class="degrees">28</h3>
-                            <canvas height="32" width="32" id="wind"></canvas>
-                            <h5>11 <i>km/h</i></h5>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="daily-weather">
-                            <h2 class="day">Sat</h2>
-                            <h3 class="degrees">26</h3>
-                            <canvas height="32" width="32" id="cloudy"></canvas>
-                            <h5>10 <i>km/h</i></h5>
-                          </div>
-                        </div>
-                        <div class="clearfix"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-            
-
-            <div class="col-md-7 col-sm-8 col-xs-12">
 
 
 
               <div class="row">
 
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="x_panel"  style="height: 403px;">
+                  <div class="x_panel" >
                     <div class="x_title">
                       <h2>Visitors location <small>geo-presentation</small></h2>
                       <ul class="nav navbar-right panel_toolbox">
@@ -281,24 +173,12 @@ echo $followers_count;
                     <div class="x_content">
                       <div class="dashboard-widget-content">
             
-                        <iframe width="100%" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=1920767198&amp;format=interactive"></iframe>
+                        <iframe width="100%" height="371" style="max-width: 100%;" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=1920767198&amp;format=interactive"></iframe>
                     </div>
                   </div>
                 </div>
 
-              </div>
-              <div class="row">
-
-
-                <!-- Start to do list -->
-               
-                    
-                    
-                
-                <!-- start of weather widget -->
-                
-                <!-- end of weather widget -->
-              </div>
+            
 
      </div></div>
             <div class="row">

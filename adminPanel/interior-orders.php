@@ -129,7 +129,6 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
 
             <div class="clearfix"></div>
 
-            <form name="couponForm" method="post" action="validate.php?task=price_change" enctype="multipart/form-data">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
@@ -138,14 +137,25 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
-                    
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
                     </ul>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                 
+    <div class="row">
+     <div class="input-daterange">
+      <div class="col-md-4">
+       <input type="date"  id="start" class="form-control" />
+      </div>
+      <div class="col-md-4">
+       <input type="date"  id="end" class="form-control" />
+      </div>      
+     </div>
+     <div class="col-md-4">
+      <input type="button" id="save" onclick="checkTable()" value="Search" class="btn btn-info" />
+     </div>
+    </div>
+    <br />
+     
                     <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap">
 
                       <thead>
@@ -168,11 +178,13 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
 
 
                         <tbody>
-                            <?php foreach ($users as $row) {
+                          <?php $index=1; foreach ($users as $row)  {
                                 if($row['Paid'] == "YES"){
                                 ?>
                                 
-                                <tr style="background-color:#7fdd7f;">
+                            
+                        
+                          <tr id= "<?php echo $index++ ?>x" style="background-color:#7fdd7f;">
                               
                                      <td><?php echo $row['entryTime'];?></td>
                                     <td><?php echo $row['enqId'];?></td>
@@ -217,7 +229,7 @@ else{
                                     ?>
                                     
                                     
-                                    <tr>
+                                              <tr id= "<?php echo $index++ ?>x">
                                     <td><?php echo $row['entryTime'];?></td>
                                     <td><?php echo $row['enqId'];?></td>
                                        <td><?php
@@ -326,6 +338,7 @@ else{
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+        <script type="text/javascript" src="js/custom/date.js"></script>
 <!-- Google Analytics -->
 
 

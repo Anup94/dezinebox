@@ -1,21 +1,26 @@
 <?php
-ini_set('display_errors', 'Off');
-$connect = mysqli_connect("localhost", "root", "", "dezine") or die('error');
+//fetch.php
+$connect = mysqli_connect("localhost", "root", "", "dezine");
+$columns = array('enqId', 'siteLocation', 'categoryOption', 'subCategoryOption', 'entryTime');
 
-$query = "SELECT * FROM interior_enquiries WHERE 8!=1 ";
+   $query="SELECT * FROM architecture_enquiries aq
+    LEFT JOIN users u ON aq.userId=u.userId
+    LEFT JOIN construction_types ct ON ct.constTypeId=aq.constTypeId
+    ORDER BY aq.entryTime DESC
+    ";
 
 if($_POST["is_date_search"] == "yes")
 {
- $query .= ' AND order_date BETWEEN "'.$_POST["start_date"].'" AND "'.$_POST["end_date"].'" AND ';
+ $query .= 'entryTime BETWEEN "'.$_POST["start_date"].'" AND "'.$_POST["end_date"].'" AND ';
 }
 
 if(isset($_POST["search"]["value"]))
 {
- $query .= ' AND 
+ $query .= '
   (enqId LIKE "%'.$_POST["search"]["value"].'%" 
-  OR selectedArea LIKE "%'.$_POST["search"]["value"].'%" 
-  OR budget LIKE "%'.$_POST["search"]["value"].'%" 
-  OR categoryOption LIKE "%'.$_POST["search"]["value"].'%")
+  OR siteLocation LIKE "%'.$_POST["search"]["value"].'%" 
+  OR categoryOption LIKE "%'.$_POST["search"]["value"].'%" 
+  OR subCategoryOption LIKE "%'.$_POST["search"]["value"].'%")
  ';
 }
 
@@ -28,71 +33,42 @@ else
 {
  $query .= 'ORDER BY enqId DESC ';
 }
+
 $query1 = '';
-
-
-if($_POST['start']=='')
-{
-
-	$_POST['start']=1;
-}
-
-
-if($_POST['length']=='')
-{
-
-	$_POST['length']=10;
-}
-
 
 if($_POST["length"] != -1)
 {
  $query1 = 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
 }
 
-
-$demo=$query.$query1;
-
-//echo $demo;
-$result = mysqli_query($connect, $demo);
 $number_filter_row = mysqli_num_rows(mysqli_query($connect, $query));
 
-//echo $query.$query1;
+$result = mysqli_query($connect, $query . $query1);
 
-$data1 = array();
 $data = array();
- //$sub_array = array();
 
-while($row = mysqli_fetch_assoc($result))
+while($row = mysqli_fetch_array($result))
 {
-
-$data1[] = $row;
+ $sub_array = array();
+ $sub_array[] = $row["enqId"];
+ $sub_array[] = $row["siteLocation"];
+ $sub_array[] = $row["categoryOption"];
+ $sub_array[] = $row["subCategoryOption"];
+ $sub_array[] = $row["entryTime"];
+ $data[] = $sub_array;
 }
 
-
-foreach ($data1 as $key => $value) {
-	$data[]=$value;
-	echo $value;
-}
-
-
-
-var_dump($data);
 function get_all_data($connect)
 {
- $query1 = "SELECT * FROM interior_enquiries";
- $result1 = mysqli_query($connect, $query1);
- return mysqli_num_rows($result1);
+ $query = "SELECT * FROM architecture_enquiries";
+ $result = mysqli_query($connect, $query);
+ return mysqli_num_rows($result);
 }
 
-
-$max=get_all_data($connect);
-
-
 $output = array(
- "draw"    => intval($_REQUEST['draw']),
- "recordsTotal"  => intval($max) ,
- "recordsFiltered" => intval($number_filter_row),
+ "draw"    => intval($_POST["draw"]),
+ "recordsTotal"  =>  get_all_data($connect),
+ "recordsFiltered" => $number_filter_row,
  "data"    => $data
 );
 
