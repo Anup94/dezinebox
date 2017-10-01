@@ -30,21 +30,27 @@
 }
 .link1
 {
-	width:11%;
+	
 	float:right;
 	margin:2% 0 0 0;
-	font-size:1.2em;
+font-size:1.8em;
 	text-align:center;
 	display:block;
 }
 .link2
 {
-	width:11%;
+
 	float:right;
 	margin:2% 11px 0 0;
-	font-size:1.2em;
+	font-size:1.8em;
 	text-align:center;
 	display:block;	
+	list-style: none;
+	text-transform: none;
+
+}
+.link2 > .dropdown > .dropdown-menu> li> a {
+	padding: 10px 38px;
 }
 .navbar-toggle
  {

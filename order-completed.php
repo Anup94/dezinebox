@@ -116,6 +116,7 @@ if(!empty($result->boxTypeId) && !empty($result->constTypeId) && !empty($result-
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Favicon -->
+        <link href="css/vidbck.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favbox.png">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/styles/interior-bootstrap.css">

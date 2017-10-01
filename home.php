@@ -18,10 +18,7 @@
 <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
 <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-<!-- Slider -->
 
-<!-- Lightbox -->
-<link rel="stylesheet" href="assets /styles/vendor/magnific-popup.css">
 <!-- Animate.css -->
 <link rel="stylesheet" href="assets/styles/vendor/animate.css">
 
@@ -41,6 +38,9 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <link rel="stylesheet" href="newcss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
 
 <style type="text/css">
@@ -147,7 +147,7 @@ body, html {
             <a href="boxes.php"> <p>Know more..</p> </a>
           </div>
                     <div class="polina2">
-            <a href="login.php"> <p>Intrigued? Get Your Box..</p> </a>
+            <a href="login.php"> <p>Intrigude? Get Your Box..</p> </a>
           </div>
    </div>
      
@@ -223,7 +223,7 @@ body, html {
 <div class="col-lg-4 col-md-6 col-xs-12" >
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/1.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color: #515151; text-align: justify;">Rupali Deshmukh<span><br>Director,Connecticus Technologies, Pune.</span></cite>
+<cite style="color: #CCC; text-align: justify;">Rupali Deshmukh<span><br>Director,Connecticus Technologies, Pune.</span></cite>
 <blockquote>
 <p>deZinebox helped us to convert irregular office area into stylish and energizing work space by converting disturbing angles into modern design features. Design detailing did wonders to our cozywork space to perform at its best.</p>
 <img src="images/tera.jpg" style="width: 50px; height: 50px; margin-left: 45%; "><span><p style="color: #FF5100;"> Terra </p>    </span>
@@ -245,7 +245,7 @@ body, html {
 <div class="col-md-4 mb-sm-50">
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/2.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color: #515151; text-align: justify;">Hardik Patel<span><br>Co-founder & Patner</span></cite><br>
+<cite style="color: #CCC; text-align: justify;">Hardik Patel<span><br>Co-founder & Patner</span></cite><br>
 <blockquote>
 <p>Just Bing’g’eis absolutely a treat to sit-for-a-while and grab your sandwich or sip your coffee kindadeli and café in NaviMumbai. We are delighted to have worked with deZinebox the work is a tribute to its imagination, colors, aesthetics and design.</p>
 <img src="images/space.png"  style="width: 50px; height: 50px; margin-left: 45%; " > <p style="color: #FF5100;">Zephyr </p>
@@ -264,7 +264,7 @@ body, html {
 <div class="col-md-4 mb-sm-50">
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/3.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color: #515151; text-align: justify;">Sachin and Trupti Bhosale<span><br>Navi Mumbai</span></cite>
+<cite style="color: #CCC; text-align: justify;">Sachin and Trupti Bhosale<span><br>Navi Mumbai</span></cite>
 <blockquote>
 <p>deZinebox is reliable, professional and creative. Its team was easy to work with and was very receptive to all our suggestions and design ideas. My family is thrilled with the result, and would heartily recommend team deZinebox.</p>
 <img src="images/earth.png" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Ether </p>
@@ -282,7 +282,7 @@ body, html {
 <div class="col-md-4 mb-sm-50">
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/4.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color:#515151; text-align: justify;">MohanShri & Priya<span><br>Bangalore</span></cite>
+<cite style="color: #CCC; text-align: justify;">MohanShri & Priya<span><br>Bangalore</span></cite>
 <blockquote>
 <p>Our house is wonderfully done by deZinebox and it deserves appreciation. Indeed our house has been done up so well and even though some of the furniture are yet to be done, one can’t helped but be impressed with the quality and professionalism.</p>
 <img src="images/earth.png" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Ether </p>
@@ -299,7 +299,7 @@ body, html {
 <div class="col-md-4 mb-sm-50">
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/5.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color: #515151; text-align: justify;">Sudhakar Raghupathy<span><br>Director, Shreelakshya Ventures Pvt. Ltd. Pudducherry</span></cite>
+<cite style="color: #CCC; text-align: justify;">Sudhakar Raghupathy<span><br>Director, Shreelakshya Ventures Pvt. Ltd. Pudducherry</span></cite>
 <blockquote>
 <p>Services provided by deZinebox were innovative and satisfactory. DeZine for multiplex & Mall made by deZinebox was one of its kind. We were very happy to have work with this team and defiantly recommend them.</p>
 <img src="images/tera.jpg" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Terra </p>
@@ -317,7 +317,7 @@ body, html {
 <div class="col-md-4 mb-sm-50">
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/6.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color: #515151; text-align: justify;">Shreeji vending Services<span><br>Mumbai</span></cite>
+<cite style="color: #CCC; text-align: justify;">Shreeji vending Services<span><br>Mumbai</span></cite>
 <blockquote>
 <p>It was a delight to work with deZinebox. You have truly given us an office that is practical to all needs, interesting & different from other vending offices. deZinebox understands clients needs & imagination & give it a twist of your own creativity is beautiful!</p>
 <img src="images/space.png" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Zephyr </p>
@@ -335,7 +335,7 @@ body, html {
 <div class="col-md-4 mb-sm-50">
 <div class="t-item wow fadeIn" data-wow-duration="1s">
 <img src="assets/images/7.png" style="width: 91px; height: 91px; margin-left: 33%;" alt="Testimonial">
-<cite style="color: #515151; text-align: justify;">Zoomstart Co-working Space<span><br>Navi Mumbai</span></cite>
+<cite style="color: #CCC; text-align: justify;">Zoomstart Co-working Space<span><br>Navi Mumbai</span></cite>
 <blockquote>
 <p>Zoomstartwas designed in a very unique Bohemian concept by team deZinebox. This place has already carved a niche as a happening co-working spaces for its creative designs. deZinebox has transformed an old villa into vivacious work space.</p>
 <img src="images/earth.png" style="width: 50px; height: 50px; margin-left: 45%; "><p style="color: #FF5100;"> Ether </p>
@@ -351,6 +351,11 @@ body, html {
 </div>
 </section>
 </div>
+
+
+
+
+
 
 
 
@@ -427,100 +432,6 @@ $(document).on('ready', function() {
 </script>
 
 
-<!-- ========== CTA - Contact Link ========== -->
-
-<!--  <div class="cta-link">
-<div class="bg-overlay">
-
-<div class="cta-wrapper">
-<h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">See what we can do for you</h3>
-<a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
-</div>
-
-</div>
-</div><!-- / .dark-bg .cta-link -->
-
-
-<!-- ========== Testimonials ========== -->
-
-
-
-<!-- Client Slider -->
-
-
-
-<!-- ========== Footer ========== -->
-
-<!--   <section class="container section ft-x">
-<div class="row">
-
-<header class="sec-heading">
-<h2>Startup Box</h2>
-<span class="subheading">Created to work on all mobile devices</span>
-</header> -->
-
-<!-- Feature 1 -->
-<!--    <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".8s"> -->
-
-<!-- white space -->
-<!--       <div class="ws-m"></div> -->
-
-<!-- Material right aligned - Item 1 -->
-<!--   <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
-<div class="ft-content">
-<h5>Easily Adjusti</h5>
-<p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius.</p>
-</div>
-<div class="ft-icon">
-<i class="fa fa-hand-peace-o"></i>
-</div>
-</div> --><!-- / .ft-item -->
-
-<!-- Material right aligned - Item 2 -->
-<!--  <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
-<div class="ft-content">
-<h5>100% Responsive</h5>
-<p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius.</p>
-</div>
-<div class="ft-icon">
-<i class="fa fa-tv"></i>
-</div>
-</div> --><!-- / .ft-item -->
-
-<!--         </div> --><!-- / .col-lg-4 -->
-
-<!-- Center Image -->
-<!--  <div class="col-lg-4">
-<img src="assets/images/ipad-cover-red.png" alt="iPad cover" class="img-responsive center-block wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-</div> -->
-
-<!-- Features Left -->
-<!--      <div class="col-lg-4 wow fadeInRight"  data-wow-duration=".8s"> -->
-
-<!-- white space -->
-<!--  <div class="ws-m"></div> -->
-
-<!-- Item 3 -->
-<!--  <div class="col-md-12 no-gap ws-s ft-item ft-material">
-<i class="fa fa-cogs"></i>
-<h5>Modular Design</h5>
-<p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
-</div> --><!-- / .ft-item -->
-
-<!-- Item 4 -->
-<!--  <div class="col-md-12 no-gap ws-s ft-item ft-material">
-<i class="fa fa-star"></i>
-<h5>Lots of features</h5>
-<p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
-</div> --><!-- / .ft-item -->
-
-<!--        </div> --><!-- / .col-lg-4 -->
-
-<!--  </div> --><!-- / .row -->
-<!--  </section --><!-- / .container -->
-
-<!-- <hr> -->
-<!-- ==========Contact Us ========== -->
 <div id="contact">
 <section class="container testimonials-3col">
 <div class="row section">
@@ -530,7 +441,7 @@ $(document).on('ready', function() {
 </header>
 
 <div class="row">
-<form method="POST" name="contactform" action="contact-form-handler.php">
+<form method="POST" id="contactform" name="contactform" action="contact-form-handler.php">
 <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
 
 <!-- Name -->
@@ -542,18 +453,15 @@ $(document).on('ready', function() {
 </div>
 
 <!-- Email -->
-
-
 <div class="form-group">
-<label for="email-contact-1" class="control-label">Email</label>
-<input type="email" name="email" id="email-contact-1 regexpEmailForm" class="form-control form-horizontal validate-locally" placeholder="Enter your email" required>
-
+<label for="email-contact-1">Email</label>
+<input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email" required>
 
 <span class="pull-right alert-error"></span>
 </div>
 <div class="form-group">
 <label for="name-contact-1">Number</label>
- <input type="tel" name="number" maxlength="10" placeholder="Enter your number" class="form-control validate-locally" minlength="8" maxlength="10" required>
+ <input type="text" name="number" maxlength="10" placeholder="Enter your number" class="form-control validate-locally" required>
 </div>
   
 
@@ -568,7 +476,9 @@ $(document).on('ready', function() {
 
 </div>
 <div>
-<input type="submit" class="btn pull-right" value="Send Message">
+<input type="submit" id="submit" class="btn pull-right" value="Send Message">
+
+              <p id="loading" style="display: none;padding: 8px 25px;color: #FF5100"> Loading.. </p>
 </div>
 <br><br>  <br><br>
 <!-- Ajax Message -->
@@ -615,7 +525,7 @@ $(document).on('ready', function() {
 <!-- Instagram Feed -->
 
 <!-- Twitter Feed -->
-<div class="col-md-4">
+<div class="col-md-4" >
 <div class="widget twitter-widget">
 <h5 class="header-widget">Twitter Feed</h5>
 <ul>
@@ -650,7 +560,7 @@ $(document).on('ready', function() {
 </tr>
 <tr>
 <td> <a href="Why.php" style="color: #fff">Why Us</a></td>
-<td><a href="Pricing.php" style="color: #fff"> Legal </a></td></tr>
+<td><a href="Pricing.php" style="color: #fff"> Pricing </a></td></tr>
 <tr>
 <td><a href="theme.php" style="color: #fff">Theme</a></td>
 <td> <a href="Media.php" style="color: #fff"> Media </a></td></tr>
@@ -691,13 +601,64 @@ $(document).on('ready', function() {
 
 </footer><!-- / .footer-widgets -->
 
+
+
+
+
 <!-- ========== Scripts ========== -->
+
 
 <!--   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 
 
-<?php include_once 'auth-scripts.php';?>
 
+
+
+<?php include_once 'auth-scripts.php';?>
+<script type="text/javascript">
+  
+  $('#contactform').submit(function(e) {
+   e.preventDefault();
+
+   var form = $('#contactform')[0];
+   var data = new FormData(form);
+
+   $('#submit').css('display', 'none');
+   $('#loading').css('display', 'block');
+       $.ajax({
+           type: "POST",
+           enctype: 'multipart/form-data',
+           url: "contact-form-handler.php",
+           data: data,
+           processData: false,
+           contentType: false,
+           cache: false,
+           timeout: 600000,
+           success: function (res) {
+              console.log(res);
+              if(res == 1) {
+                swal("Thank You", "Your request have been saved", "success");
+                   $('#submit').css('display', 'block');
+                  $('#loading').css('display', 'none');
+                  $('#contactform')[0].reset()
+              }
+              else {
+                swal("Error", "Some Error occured !", "error");
+                  $('#submit').css('display', 'block');
+                  $('#loading').css('display', 'none');
+              }
+            },
+           error: function (e) {
+
+            console.log(e);
+
+
+           }
+       });
+
+});
+
+</script>
 <script src="assets/js/vendor/google-fonts.js"></script>
 <script src="assets/js/vendor/jquery.easing.js"></script>
 <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
@@ -716,8 +677,11 @@ $(document).on('ready', function() {
 <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
 
 <!-- Google Maps -->
+
+
 <!-- Definity JS -->
 <script src="assets/js/main.js"></script>
+
 
 </body>
 

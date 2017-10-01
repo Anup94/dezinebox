@@ -125,10 +125,20 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-             <input type="date"  id="start">
-             <input type="date" id="end">
-
-             <button id="save" onclick="checkTable()">show</button>
+         <div class="row">
+     <div class="input-daterange">
+      <div class="col-md-4">
+       <input type="date"  id="start" class="form-control" />
+      </div>
+      <div class="col-md-4">
+       <input type="date"  id="end" class="form-control" />
+      </div>      
+     </div>
+     <div class="col-md-4">
+      <input type="button" id="save" onclick="checkTable()" value="Search" class="btn btn-info" />
+     </div>
+    </div>
+    <br />
 
                        <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
 

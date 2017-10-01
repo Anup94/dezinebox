@@ -26,7 +26,7 @@
 <body>
 
 <div class="form position" style="">
-  <div class="thumbnail"><img src="http://dezinebox.io/assets/images/logo.png"/></div>
+  <div class="thumbnail"><a href="home.php"><img src="http://dezinebox.io/assets/images/logo.png"/></a></div>
   <form id="register-form" class="register-form" action="validate.php?task=submit_signup" method="post" >
     <input type="text" name="name" placeholder="Name"/>
     <input type="text" name="username" placeholder="Username"/>

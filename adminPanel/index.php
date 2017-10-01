@@ -72,11 +72,11 @@ if(isset($_GET['delpost'])){
         <div class="right_col" role="main">
           <!-- top tiles -->
           <div class="row tile_count">
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+      <!--       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
               <div class="count">2500</div>
               <span class="count_bottom"><i class="green">4% </i> From last Week</span>
-            </div>
+            </div> -->
             <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top blue"><i class="fa fa-twitter"></i> Followers</span>
               <div class="count blue"><?php 
@@ -105,7 +105,7 @@ echo $followers_count;
 
               <span class="count_bottom"><i class="red">DEZINEBOX</i></span>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+          <!--   <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
               <div class="count green">2,500</div>
               <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
@@ -124,17 +124,20 @@ echo $followers_count;
               <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
               <div class="count">7,325</div>
               <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
+            </div> -->
           </div>
           <!-- /top tiles -->
+
+ 
 
           <div class="row">
       
 
               
 
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                 <iframe width="600" height="371" style="max-width: 100%;" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=918190397&amp;format=interactive"></iframe>
+                <div class="col-md-12">
+                  
+                 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=918190397&amp;format=interactive"></iframe>
 
                 </div>
                 
@@ -146,7 +149,7 @@ echo $followers_count;
 
           <div class="row">
 <div class="col-md-12">
- <iframe width="100%" height="371" style="max-width: 100%;" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=675401131&amp;format=interactive"></iframe></div>
+ <iframe width="600" height="371" style="max-width: 100%;" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToNV8fVubEejTab0KjEeii32Yla8pD1X0AEDjFR-c7P0TxcjbIN11vIYjGZAcOxYNMOh4DgYx7SFgU/pubchart?oid=675401131&amp;format=interactive"></iframe></div>
 
           </div><br />
 

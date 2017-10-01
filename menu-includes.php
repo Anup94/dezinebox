@@ -14,11 +14,17 @@
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans ">
   <div class="container">
    
-   <div class="link1">
-		<a href="ecosystem.php">Be our Partner</a> 
-    </div>
+
     <div class="link2">
-		<a href="get-your-box.php">Get your box</a> 
+
+     <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="  text-decoration: none;">Be our Partner<span class="caret"></span></a>
+         <ul class="dropdown-menu">
+         
+            <li><a href="designer.php">DeZine Partner</a></li>
+            <li><a href="productpartner.php">Product Partner</a></li>
+          </ul>
+          </li>
     </div>
     
     
@@ -32,7 +38,7 @@
       </button>
 
       <!-- Logo -->
-      <a class="navbar-brand" href="/home.php"><img src="assets/images/logo.png" style="margin-top: -20px; margin-left: -13%"  alt="DeZinebox"></a>
+      <a class="navbar-brand" href="/home.php"><img src="assets/images/logo.png" style="margin-top: -20px;"  alt="DeZinebox"></a>
     </div><!-- / .navbar-header -->
 
     <!-- Navbar Links -->

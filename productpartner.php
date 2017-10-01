@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once($_SERVER["DOCUMENT_ROOT"]."/login-check.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/classes/db.class.php");
 $dbConnect=new dbConnect();
@@ -33,7 +33,7 @@ if(empty($constTypeArr[$constTypeId])) {
   $constTypeId=NULL;
 }
 ?>
-<?php include_once 'site-initial.php';?>
+
 <html>
 <head>
 

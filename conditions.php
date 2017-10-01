@@ -55,7 +55,7 @@
             <div class="row">
               <h1 class="col-sm-6">Terms & Conditions </h1>
               <ol class="col-sm-6 text-right breadcrumb">
-                <li><a href="index.html">Home</a></li>
+            
               
             
               </ol>
