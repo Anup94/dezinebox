@@ -24,6 +24,7 @@
                    "siteLocation"=>"Site Location",
                         "driveLink"=>"Drive Link",
                    "details"=>"Details",
+                     "boxTypeId"=>"boxTypeId",
                    "price"=>"Price",
            "Paid"=>"Paid",
             "status"=>"Status",
@@ -177,9 +178,9 @@ switch ($row['boxTypeId'])
     case 4:echo "ZEPHYR" ; break;
     case 5:echo "ETHER" ; break;
 }?></td>
-                            <td><?php echo $row['name'];?></td>
-                            <td><?php echo $row['email'];?></td>
-                            <td><?php echo $row['mobile'];?></td>
+                            <td><?php echo $row['fname'];?></td>
+                            <td><?php echo $row['femail'];?></td>
+                            <td><?php echo $row['fmobile'];?></td>
                              <?php foreach ($formEle as $key => $value) {
                      if($value == "Payment Doc"){
                        echo "<td><a href='".$row[$key]."' target='_blank'>Open</a></td>";
@@ -223,9 +224,9 @@ switch ($row['boxTypeId'])
     case 4:echo "ZEPHYR" ; break;
     case 5:echo "ETHER" ; break;
 }?></td>
-                            <td><?php echo $row['name'];?></td>
-                            <td><?php echo $row['email'];?></td>
-                            <td><?php echo $row['mobile'];?></td>
+                            <td><?php echo $row['fname'];?></td>
+                            <td><?php echo $row['femail'];?></td>
+                            <td><?php echo $row['fmobile'];?></td>
                              <?php foreach ($formEle as $key => $value) {
                      if($value == "Payment Doc"){
                        if($row[$key]){

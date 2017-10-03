@@ -1147,11 +1147,12 @@ a {
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
 		  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-		  color:#19476f;
+		  color:#777;
 }
 
 a:hover {
   text-decoration: none;
+    color:#777;
 }
 
 p > a {
@@ -1159,7 +1160,7 @@ p > a {
 }
 
 p > a:visited {
-  color: #1c8cbc;
+  color: #777;
   text-decoration: none;
 }
 

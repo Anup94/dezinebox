@@ -70,7 +70,7 @@ if(empty($constTypeArr[$constTypeId])) {
       </li>
       <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
-        Name of the Enterprise
+        Name of the Enterprise *
           <span class="form-required">
             *
           </span>
@@ -101,7 +101,7 @@ if(empty($constTypeArr[$constTypeId])) {
                                           </li>
        <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
-          E-mail
+          E-mail *
           <span class="form-required">
             *
           </span>
@@ -111,7 +111,7 @@ if(empty($constTypeArr[$constTypeId])) {
         </div>
       </li>
             <li class="form-line" data-type="control_phone" id="id_6">
-        <label class="form-label form-label-top" id="label_6" for="input_6_area"> Phone Number </label>
+        <label class="form-label form-label-top" id="label_6" for="input_6_area"> Phone Number * </label>
         <div id="cid_6" class="form-input-wide jf-required">
           <div data-wrapper-react="true">
             <span class="form-sub-label-container" style="vertical-align:top;">
@@ -136,12 +136,12 @@ if(empty($constTypeArr[$constTypeId])) {
           </span>
         </label>
         <div id="cid_5" class="form-input-wide jf-required">
-          <input type="text"  name="linkedInProfile" class="form-textbox " size="30" value="" required="" >
+          <input type="text"  name="linkedInProfile" class="form-textbox " size="30" value=""  >
         </div>
       </li>
          <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
-        Years of Experience
+        Years of Experience *
           <span class="form-required">
             *
           </span>
@@ -152,7 +152,7 @@ if(empty($constTypeArr[$constTypeId])) {
       </li>
         <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
-        Address
+        Address *
           <span class="form-required">
             *
           </span>
@@ -163,13 +163,13 @@ if(empty($constTypeArr[$constTypeId])) {
       </li>
          <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
-        Website URL
+        Website URL *
           <span class="form-required">
             *
           </span>
         </label>
         <div  class="form-input-wide jf-required">
-          <input type="url"  name="website" class="form-textbox" required="" >
+          <input type="url"  name="website" value="http://" class="form-textbox" required="" >
         </div>
       </li>
          <li class="form-line jf-required" data-type="control_email" id="id_5">
@@ -211,7 +211,7 @@ if(empty($constTypeArr[$constTypeId])) {
           </div>
         </div>
       </li>
-
+<p style="color: #FF5100;text-align: center;">Alternatively you can reach us at  <a href="mailto:partnetship@dezinebox.io" style="display: inline-block;color: #19476f;">partnetship@dezinebox.io".</a> for registration </p>
     </ul>
   </div>
  

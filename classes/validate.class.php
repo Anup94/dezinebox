@@ -816,7 +816,7 @@ if($_GET['oauth_token']){
 			
 		}
 		
-		$formEle=array("selectedArea",
+		$formEle=array("fname","femail","fmobile","selectedArea",
 			"projectType",
 			"plotArea",
 			"siteLocation",
@@ -887,7 +887,7 @@ if($_GET['oauth_token']){
 			
 		}
 		
-		$formEle=array("selectedArea",
+		$formEle=array("fname","email","mobile","selectedArea",
 			"moreDetails",
 			"siteLocation",
 			"driveLink",
@@ -910,7 +910,7 @@ if($_GET['oauth_token']){
 		$enqId=$this->insertObject("interior_enquiries",$newEntry);
 		return $enqId;
 	}
-	function submit_arch_box($input) {
+		function submit_arch_box($input) {
 		$data = new stdClass();
 		$data->enqId=$input->enqId;
 		$data->boxTypeId=$input->boxTypeId;

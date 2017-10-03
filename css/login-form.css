@@ -53,6 +53,15 @@
   color: #EF3B3A;
   text-decoration: none;
 }
+.form .message2 {
+  margin: 15px 0 0;
+  color: #FF5100;
+  font-size: 12px;
+}
+.form .message2 a {
+  color: #EF3B3A;
+  text-decoration: none;
+}
 .form .register-form {
   display: none;
 }

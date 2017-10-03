@@ -150,7 +150,7 @@ include_once 'site-initial.php';?>
                                               </span>
                                             </label>
                                             <div  class="form-input-wide jf-required">
-                                              <input type="url" name="website" class="form-textbox" required>
+                                              <input type="url" name="website" class="form-textbox" value="http://" required>
                                             </div>
                                           </li>
                                              <li class="form-line jf-required" data-type="control_email" id="id_5">
@@ -206,7 +206,7 @@ include_once 'site-initial.php';?>
                                             <div class="form-header-group ">
                                               <div class="header-text httal htvam">
                                                 <h2   class="form-header" >
-                                               <font style="color: #000">Proffessional</font> <font style="color: #FF5100"> Experience </font>
+                                               <font style="color: #000">Professional</font> <font style="color: #FF5100"> Experience </font>
                                                 </h2>
                                               </div>
                                             </div>
@@ -221,7 +221,10 @@ include_once 'site-initial.php';?>
                                               <option value="Interior Deziner">Interior Deziner</option>
                                               <option value="Civil Contractor">Civil Contractor</option>
                                               <option value="Interior Contractor">Interior Contractor</option>
-                                              <option value="3D Visualizer">3D Visualizer</option></select>
+                                              <option value="3D Visualizer">3D Visualizer</option>
+                                                      <option value="Urban Planner ">Urban Planner </option>
+                                              <option value="Landscape Planner ">Landscape Planner </option></select>
+                                    
                                               
                                             </div>
                                           </li>
@@ -316,16 +319,17 @@ include_once 'site-initial.php';?>
                                    
                                 
                               
+                         Alternatively you can reach us at  <a href="mailto:partnetship@dezinebox.io" style="display: inline-block;color: #19476f;">partnetship@dezinebox.io".</a> for registration
                                               </div>
-                                              <br><br><br><br><br><br>
+                                              <br><br><br>
                                             </div>
                                           </li>
 
                               
                                 </ul>
+
                             </div>
                            
-                         
                           
                         
                          </div>
@@ -399,9 +403,10 @@ include_once 'site-initial.php';?>
                   $('#productPartnerForm')[0].reset()
               }
               else {
-                swal("Error", "Some Error occured !", "error");
+                swal("Thank You", "Your request have been saved", "success");
                   $('#submit').css('display', 'block');
                   $('#loading').css('display', 'none');
+                        $('#productPartnerForm')[0].reset()
               }
             },
            error: function (e) {

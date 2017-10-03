@@ -93,51 +93,46 @@ Abhijeet is a Certified Treasury Manager from ICFAI, Hyderabad and holds an MBA 
 
      
 </div>
-<div id="Interior"></div>
-<br><br><br><br><br>
 
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s">
+<br><br><br>
 
 
+</p></div></div></section></div>
 
 
-
-<!-- ========== Footer ========== -->
-
-<!-- ========== Footer Widgets ========== -->
 <footer class="footer-widgets">
+        
 
 
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                
+                
 
-<!-- Copyright -->
-<div class="copyright">
-<div class="container">
-<div class="row">
-
-
-
-
-<div class="widget about-widget">
-
-<ul class="social-links">
-<li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook"></i></a></li>
-<li><a href="https://twitter.com/DezineBox"><i class="fa fa-twitter"></i></a></li>
-<li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram"></i></a></li>
-<li><a href="https://plus.google.com/101485144759189925017"><i class="fa fa-google-plus"></i></a></li>
-<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-</ul>
-</div><!-- / .widget -->
-
-
+             
+                <div class="widget about-widget">
+                 
+                  <ul class="social-links">
+                    <li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/DezineBox"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://plus.google.com/101485144759189925017"><i class="fa fa-google-plus"></i></a></li>
+                    <li><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                </div><!-- / .widget -->
+      
 
 
+          
 
-</div><!-- / .row -->
-</div><!-- / .container -->
-</div><!-- / .copyright -->
+              </div><!-- / .row -->
+            </div><!-- / .container -->
+          </div><!-- / .copyright -->
 
-</footer><!-- / .footer-widgets -->
+        </footer><!-- / .footer-widgets -->
 
 
 <!-- ========== Scripts ========== -->

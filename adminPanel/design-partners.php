@@ -20,6 +20,23 @@ if(mysqli_num_rows($result)>0) {
 		$projects[$row['userId']][]=$row;
 	}
 }
+
+
+   if(isset($_GET['delpost'])){ 
+  define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','dezine');
+
+$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
+
+  $stmt = $db->prepare('DELETE FROM design_partners WHERE userId = :userId') ;
+  $stmt->execute(array(':userId' => $_GET['delpost']));
+  $stmt1 = $db->prepare('DELETE FROM users_type_map WHERE userId = :userId') ;
+  $stmt1->execute(array(':userId' => $_GET['delpost']));
+  header('Location: design-partners.php?action=deleted');
+  exit;
+} 
 ?><!DOCTYPE html>
 <html lang="en">
   
@@ -54,6 +71,16 @@ if(mysqli_num_rows($result)>0) {
       <script type="text/javascript">
         var ids = [];
   var projects= <?php echo json_encode($projects);?>
+  </script>
+    </script>
+      <script language="JavaScript" type="text/javascript">
+  function delpost(userId, title)
+  {
+    if (confirm("Are you sure you want to delete "))
+    {
+      window.location.href = 'design-partners.php?delpost=' + userId;
+    }
+  }
   </script>
   </head>
 
@@ -105,6 +132,7 @@ if(mysqli_num_rows($result)>0) {
                               <th>Website</th>
                               <th>Hear From</th>
                               <th>Projects</th>
+                              <th>Delete</th>
                           </tr>
                       </thead>
 
@@ -141,6 +169,7 @@ if(mysqli_num_rows($result)>0) {
 
                               <?php endif;?>
                             </td>
+                                      <td>  <a href="javascript:delpost('<?php echo $row['userId'];?>')"><button type="button" class="btn btn-info btn-xs">Delete</button></a></td>
                           </tr>
 
 

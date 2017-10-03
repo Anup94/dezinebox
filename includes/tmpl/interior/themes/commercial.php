@@ -2,6 +2,10 @@
   <style>
   h5{
     font-size: 0.8em;
+
+  }
+  .p-content{
+    margin-top:10%;
   }
  </style>
                  <div class="col-lg-3 col-md-4 col-sm-5 fifteenmargin trial "><h4 class="text-caplitalize">ethnic</h4><br/><a href="get-your-box.php?categoryId=<?php echo $categoryId;?>&constTypeId=<?php echo $constTypeId;?>&categoryOption=<?php echo urlencode($categoryOption);?>&subCategoryOption=<?php echo urlencode('Ethnic');?>">

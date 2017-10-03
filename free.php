@@ -56,37 +56,7 @@
         
         <!-- ========== Navigation ========== -->
 
-       <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <!-- Logo -->
-              <a class="navbar-brand" href="home.php"><img src="assets/images/logo.png"  alt="DeZinebox"></a>
-            </div><!-- / .navbar-header -->
-
-            <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-
-                <!-- Home -->
-         <li class="dropdown mega-fw"><a href="home.php"><span class="linea-arrows-slim-left"></span> &nbsp    Go to the Home page</a></li>
-       
-
-
-      
-                  <!-- / .nav .navbar-nav .navbar-right -->
-
-            </div><!--/.navbar-collapse -->
-          </div><!-- / .container -->
-        </nav><!-- / .navbar -->
-
-
+      <?php include_once 'menu-includes.php';?>
 
         <!-- ========== Services ========== -->
 
@@ -94,13 +64,13 @@
             <div class="row section">
 
               <header class="sec-heading">
-              <img src="img/tick.png" style="width:230px;">
+              <img src="img/tick.png" style="width:180px;">
                 <h2>Your Order has been placed.</h2>
-               <h4>DeZineBox.io will contact you shortly.</h4>
+               <h4>We will contact you soon.</h4>
               </header>
               
               <!-- Item 1 -->
-        <br><br> <br><br>
+        <br><br> <br><br>    <br><br> <br><br>    <br><br> 
                 </div>
               </div>
               <!-- Item 2 -->

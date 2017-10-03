@@ -533,7 +533,7 @@ switch ($result->selectedArea)
               } else {
                 ?>
                 <tr>
-                <td colspan="2"><div class="text-center"><button type="button" class="btn-ghost btn-large">Request Quote</button></div></td></tr>
+                <td></td></tr>
                 <?php
               }
       ?>

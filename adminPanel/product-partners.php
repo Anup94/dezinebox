@@ -12,6 +12,22 @@ $users=array();
 if(mysqli_num_rows($result)>0) {
   $users=$result;
 }
+
+   if(isset($_GET['delpost'])){ 
+  define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','dezine');
+
+$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
+
+  $stmt = $db->prepare('DELETE FROM product_partners WHERE userId = :userId') ;
+  $stmt->execute(array(':userId' => $_GET['delpost']));
+  $stmt1 = $db->prepare('DELETE FROM users_type_map WHERE userId = :userId') ;
+  $stmt1->execute(array(':userId' => $_GET['delpost']));
+  header('Location: product-partners.php?action=deleted');
+  exit;
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +62,15 @@ if(mysqli_num_rows($result)>0) {
       <script type="text/javascript">
   var projects=<?php echo json_encode($projects);?>
   </script>
+      <script language="JavaScript" type="text/javascript">
+  function delpost(userId, title)
+  {
+    if (confirm("Are you sure you want to delete "))
+    {
+      window.location.href = 'product-partners.php?delpost=' + userId;
+    }
+  }
+  </script>
   </head>
 
   <body class="nav-md">
@@ -78,7 +103,7 @@ if(mysqli_num_rows($result)>0) {
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                     </ul>
-                    <div class="clearfix"></div>
+                    <div class="clearf ix"></div>
                   </div>
                   <div class="x_content">
                 <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
@@ -96,6 +121,7 @@ if(mysqli_num_rows($result)>0) {
                               <th>Website</th>
                               <th>Catalog</th>
                               <th>Google Drive</th>
+                              <th>Action</th>
                           </tr>
                       </thead>
 
@@ -120,6 +146,7 @@ if(mysqli_num_rows($result)>0) {
                               <?php endif;?>
                             </td>
                             <td><a href="//<?php echo $row['googleDrive'] ?>"> &nbsp &nbsp<?php echo $row['googleDrive'];?></a></td>
+                            <td>  <a href="javascript:delpost('<?php echo $row['userId'];?>')"><button type="button" class="btn btn-info btn-xs">Delete</button></a></td>
                           </tr>
                           <?php
                         }

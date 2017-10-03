@@ -1,4 +1,4 @@
-<form action="get-your-box.php" method="get">
+<form action="validate.php?task=submit_architecture_enquiry" method="get">
 
             <div class="row ws-m">
               <div class="col-md-offset-2 col-md-4">

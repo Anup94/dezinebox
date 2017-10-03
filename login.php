@@ -27,6 +27,17 @@
 
 <div class="form position" style="">
   <div class="thumbnail"><a href="home.php"><img src="http://dezinebox.io/assets/images/logo.png"/></a></div>
+
+
+
+<div id="myDIV" style="display:none">
+<form id="forgot"  action="validate.php?task=forgot" method="post" >
+   <input type="text" name="username" placeholder="Username"/>
+    <input type="email" name="email" placeholder="email address"/>
+    <button id="reg">Submit</button><br><br>
+   <p class="message" onclick="create()">Not registered? <a href="#">Create an account</a></p><br>
+  </form>
+</div>
   <form id="register-form" class="register-form" action="validate.php?task=submit_signup" method="post" >
     <input type="text" name="name" placeholder="Name"/>
     <input type="text" name="username" placeholder="Username"/>
@@ -35,23 +46,27 @@
     <input type="password" name="password" placeholder="password"/>
     
     <button id="reg">create</button>
-    <p class="message">Already registered? <a href="#">Sign In</a></p>
+
+    <p class="message" onclick="create2()">Already registered? <a href="#">Sign In</a></p>
   </form>
   <form id="login-form" class="login-form" action="validate.php?task=login" method="post">
     <input type="text" name="username" placeholder="Username"/>
     <input type="password" name="password" placeholder="password"/>
     <button >login</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
+     
+      <p class="message" onclick="myFunction()">Forgot password?</p>
 
-<br><br></form>
+<br></form>
 
+          
 
-<form method="post" action="validate.php?task=facebook-login" style="display: inline-block;">
+<!-- <form method="post" action="validate.php?task=facebook-login" style="display: inline-block;">
 <button  class="social-signin facebook"> <i class="fa fa-facebook"></i></button></form>
 <form method="post" action="validate.php?task=google-login" style="display: inline-block;"> <a href="validate.php?task=google-login"  ><button class="social-signin google"><i class="fa fa-google-plus"></i></button></a></form>
 <form method="post" action="validate.php?task=twitter-login" style="display: inline-block;"> <a href="validate.php?task=twitter-login" ><button class="social-signin twitter"><i class="fa fa-twitter"  ></i></button> </a>
 
-</form>
+</form> -->
     
 
   
@@ -59,6 +74,34 @@
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="assets/js/pnotify.custom.min.js"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+      var y = document.getElementById("login-form");
+          y.style.display = "none";
+}
+</script>
+<script>
+function create() {
+    var x = document.getElementById("login-form");
+
+        x.style.display = "none";
+
+}
+</script>
+<script>
+function create2() {
+    var x = document.getElementById("myDIV");
+
+        x.style.display = "none";
+
+}
+</script>
 <script>
 
   $('#register-form').submit(function(e){

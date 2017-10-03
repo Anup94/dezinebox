@@ -15,6 +15,22 @@
             
             <div class="row">
             <div class="col-md-offset-3 col-md-6 col-lg-5">
+
+            	 <div class="form-group">
+                  <label for="file-form">Name</label>
+                      <input type="name" class="form-control" name="fname" placeholder="Enter your name" required>    
+        
+                </div>  
+                 <div class="form-group">
+                  <label for="file-form">Email</label>
+                      <input type="name" class="form-control" name="email" placeholder="Enter your email address" required>    
+        
+                </div>  
+                 <div class="form-group">
+                  <label for="file-form">Mobile Number</label>
+                      <input type="name" class="form-control" name="mobile" placeholder="Enter your Mobile number" required>    
+        
+                </div>  
               <div class="form-group">
                   <label for="file-form">Site Address</label>
                       <input type="name" class="form-control" name="siteLocation" placeholder="Input your site full address" required>    
@@ -57,7 +73,7 @@
                 <!-- File Input -->
                <div class="form-group">
                   <label for="file-form">File input (max 5 MB  - prefered zip file)</label>
-                  <input class="form-control" name="file" type="file" id="file-form" accept=".jpg , .TIF , .jpeg , .png , .pdf , .cad, .zip" required>
+                  <input class="form-control" name="file" type="file" id="file-form" accept=".jpg , .TIF , .jpeg , .png , .pdf , .cad, .zip">
         
                 </div>    
                
@@ -65,7 +81,7 @@
                  <div class="form-group">
                
                    <label for="select-form">Share Drive Link</label>
-                  <input type="url" class="form-control" name="driveLink" placeholder="Share your drive link with public access">                  
+                  <input type="url" class="form-control" name="driveLink" value="http://" placeholder="Share your drive link with public access">                  
                 </div>
                 <div class="form-group">
                 <label for="inpt-name-forms">Any Specific Details (max 1000 characters)</label>
@@ -79,7 +95,7 @@
                 
             </div>
 
-
+<br>
    
              <?php 
               $array=array("categoryId","constTypeId","categoryOption","subCategoryOption");
