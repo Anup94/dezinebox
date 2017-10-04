@@ -283,7 +283,7 @@ include_once 'site-initial.php';?>
                                               </span>
                                             </label>
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                              <input type="text"  name="driveLink" class="form-textbox validate[required, Email]" size="30" value="" >
+                                              <input type="text"  name="driveLink" class="form-textbox validate[required, Email]" size="30" value="http://" >
                                             </div>
                                           </li>
                                          

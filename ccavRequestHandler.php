@@ -4,7 +4,6 @@
 </head>
 <body>
 <center>
-
 <?php include('crypto.php') ?>
 <?php
 	error_reporting(0);
@@ -19,6 +18,58 @@
 
 	$encrypted_data=encrypt($merchant_data,$working_key); // Method for encrypting the data.
 
+?>
+
+ <?php
+
+	$amount = '';
+	$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "dezine";
+$conn = new mysqli($servername, $username, $password, $db);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+?>
+
+<?php
+
+	
+	foreach ($_POST as $key => $value){
+		$merchant_data.=$key.'='.urlencode($value).'&';
+	
+		if($key=='amount'){
+
+			$amount = $value;
+
+		}
+		if($key=="order_id")
+		{
+			$order_id=$value;
+		}
+			
+
+
+	}
+	
+			$sql = "UPDATE architecture_enquiries SET price=$amount WHERE enqId=$order_id";
+		
+if ($conn->query($sql) === TRUE) {
+
+} else {
+  
+}
+$sql = "UPDATE interior_enquiries SET price=$amount WHERE enqId=$order_id";
+		
+if ($conn->query($sql) === TRUE) {
+
+} else {
+  
+}
+
+	$encrypted_data=encrypt($merchant_data,$working_key); // Method for encrypting the data.
+		
 ?>
 <form method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"> 
 <?php

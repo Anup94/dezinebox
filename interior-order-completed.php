@@ -494,6 +494,28 @@ switch ($result->selectedArea)
                   
                 ?></label><br><br>
                   <HR>
+                    <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "dezine";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "UPDATE interior_enquiries SET price=$finalPrice WHERE enqId=$enqId";
+
+if ($conn->query($sql) === TRUE) {
+   
+} else {
+
+}
+?>
                  </div></div></div>
                    <div class="col-lg-8">
               </div><!-- / .col-lg-8 -->

@@ -467,13 +467,35 @@ switch ($result->selectedArea)
 //                   }
                   
                 ?></label><br><br>
-                  <HR>
+                  <HR>          <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "dezine";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "UPDATE architecture_enquiries SET price=$finalPrice WHERE enqId=$enqId";
+
+if ($conn->query($sql) === TRUE) {
+   
+} else {
+
+}
+?>
                  </div></div></div>
                    <div class="col-lg-8">
               </div><!-- / .col-lg-8 -->
                <div class="col-lg-4 totals-group">
                 <div class="totals-content">
                 <div class="subtotal-group">
+        
                    <div class="checkout-btn-wrapper" style="margin-top: -50px;">
                    <form method="POST" name="customerData" action="ccavRequestHandler.php">
                         <input type="hidden" name="merchant_id" value="133278"/>
