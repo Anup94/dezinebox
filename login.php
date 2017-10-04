@@ -55,7 +55,7 @@
     <button >login</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
      
-      <p class="message" onclick="myFunction()">Forgot password?</p>
+      <p class="message" onclick="myFunction()" style="cursor: pointer">Forgot password?</p>
 
 <br></form>
 

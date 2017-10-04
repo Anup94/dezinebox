@@ -120,7 +120,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                 <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                    <thead>
                           <tr class="text-uppercase text-nowrap">
-                              <th>Date</th>
+                              <th></th>
                               <th>Name</th>
                               <th>Email</th>
                               <th>Mobile</th>
@@ -128,6 +128,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                               <th>Profession</th>
                                <th>Drive Link</th>
                               <th>Company Name</th>
+                              <th>date</th>
                               <th>Company Address</th>
                               <th>Website</th>
                               <th>Hear From</th>
@@ -151,6 +152,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                             <td><?php echo implode(", ",explode(",", $row['profession']));?></td>
                             <td><a href="//<?php echo $row['driveLink'] ?>"> &nbsp &nbsp<?php echo $row['driveLink'];?></a></td>
                             <td><?php echo $row['companyName'];?></td>
+                            <td><?php echo $row['date'];?></td>
                             <td><?php echo $row['companyAddress'];?></td>
                             <td><a href="//<?php echo $row['website'] ?>"> &nbsp &nbsp<?php echo $row['website'];?></a></td>
                             <td><?php echo $row['hearFrom'];?></td>

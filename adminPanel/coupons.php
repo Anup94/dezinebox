@@ -134,7 +134,7 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
                               ?>
                             </tbody>
                     </table>
-                    <button type="submit"   class="btn btn-primary" >Save</button>
+         
                   </div>
                 </div>
               </div>
