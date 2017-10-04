@@ -25,7 +25,7 @@
 
 
         <!-- Definity CSS -->
-        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/main22.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
 
         <!-- JS -->
@@ -53,16 +53,12 @@
         </div>
 
 
-        
-        <!-- ========== Navigation ========== -->
-
- <?php include_once 'menu-includes.php';?>
-
 
 
 
         <!-- ========== Hero Cover ========== -->
 
+<?php include_once 'menu-includes.php';?>
 
 
         <!-- ========== Services ========== -->
@@ -76,33 +72,14 @@
                 <span class="subheading">Lorem ipsum dolor sit amet, consectetur</span>
               </header> -->
               
-              <!-- Item 1 --><br><br><br>
+           
               <div class="col-lg-12 col-md-12 mb-sm-50" >
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                
-                  <h4>Why Us</h4>
-                  <p style="color: #777"><blockquote style="color: #000;">
-Our one-of-a-kind service allows you to get the design of your dreams and empowers you with the knowledge to go ahead and execute it yourself!  <br><br>
-
-Working together with our product partners and design partners, we provide you with the best options to realise your ideas. If you prefer, we’ll do the execution for you as well!<br><br>
-
-Why deZinebox makes sense:<br><br>
-• Affordable online solution <br>
-• Convenient to execute  <br>
-• Transparent, with no hidden cost or agenda <br>
-• Not bound by geographical constraints <br>
-• Not tied down to a single vendor <br>
-• Can be used for validation  <br>
-• Freedom to customize <br>
-
-
-
- <br></blockquote>
+      <br><br><br>
+           <embed src="input.pdf" width="100%" height="3000px" />
 
 
 
      
-                </div>
               </div>
 
            

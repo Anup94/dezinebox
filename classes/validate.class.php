@@ -90,6 +90,33 @@ class validateClass extends dbConnect {
 			//header('Location:get-your-box.php');
 				return $resp;
 	}
+	function adminlogin($input) {
+		$resp=new resp();
+		if(empty($input) || !isset($input->username) || !isset($input->password)) {
+			$resp->msg="Some fields are missing.";
+			return $resp;
+		}
+		$allowedUserTypes=array($this->const->userTypeId->admin);
+		$query="SELECT u.userId,u.name,u.mobile,u.username,u.email FROM users u
+		LEFT JOIN users_type_map um ON um.userId=u.userId
+		WHERE u.username=".$this->escQuote($input->username)." AND password=Password(".$this->escQuote($input->password).")
+		AND um.userTypeId IN (".implode(",",$allowedUserTypes).")";
+		$this->setQuery($query);
+		$result=$this->conn->query($query);
+		// $resp["query"]=$query;
+		if(mysqli_num_rows($result)==0) {
+			$resp->msg="Invalid login.";
+			
+			return $resp;
+		}
+		$user=$result->fetch_object();
+		$resp->user=$user;
+		$resp->msg="Login successful";
+		$resp->status="1";
+	
+			//header('Location:get-your-box.php');
+				return $resp;
+	}
 	function google_login(){
 		$resp=new resp();
 	// $client_id = ; 
@@ -441,18 +468,11 @@ if($_GET['oauth_token']){
 		$newUser->email=$input->email;
 		$newUser->mobile=$input->mobile;
 		$newUser->tempResetPass="no";
-		//$resp->msg="SignUp successful";
-		//$resp->status="1";
-		//$this->insertObject("users",$newUser);
-		//return $resp;	
+
 
 		$userId=$this->insertObject("users",$newUser);
 
-		// if(!empty($newUser->email)) {
-		// 	mail($newUser->email, 'Thankyou for register', 'Welcome to deZine Box! We�re really happy to have you here. deZine Box is an online architectural and interior design solution that transforms the way you design your spaces. It is one-of-a-kind solution to provide you with design execution capabilities.');
-		// 	$resp->msg="SignUp successful";
-		// 	//return $resp;
-		// }
+	
 
 		require $_SERVER["DOCUMENT_ROOT"].'/PHPMailer/PHPMailerAutoload.php';
 
@@ -535,22 +555,11 @@ if($_GET['oauth_token']){
 		$newDesigner->experience=isset($input->experience)?$input->experience:NULL;
 		$newDesigner->driveLink=isset($input->driveLink)?$input->driveLink:NULL;
 
-		// if(!empty($newUser->email)) {
-		// 	mail($newUser->email, 'Thankyou for registering', 'Welcome to deZine Box! We�re really happy to have you here. deZine Box is an online architectural and interior design solution that transforms the way you design your spaces. It is one-of-a-kind solution to provide you with design execution capabilities.');
-		// }
-
-		// if(!empty($newUser->email)) {
-		// 	mail($newUser->email, 'Thankyou for registering', 'Welcome to deZine Box! We�re really happy to have you here. deZine Box is an online architectural and interior design solution that transforms the way you design your spaces. It is one-of-a-kind solution to provide you with design execution capabilities.');
-		// }
+	
 
 
 		$designerId=$this->insertObject("design_partners",$newDesigner);
 
-		/*$projectNameArr=@$_POST['projectName'];
-		$projectArea=@$_POST['projectArea'];
-		$projectHighLight=@$_POST['projectHighLight'];
-		$projectDesc=@$_POST['projectDesc'];
-		$projectLinkedin=@$_POST['projectLinkedin'];*/
 
 		$projectNameArr=isset($input->projectName)?$input->projectName:'';
 		$projectArea=isset($input->projectArea)?$input->projectArea:'';

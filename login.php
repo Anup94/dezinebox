@@ -61,12 +61,12 @@
 
           
 
-<!-- <form method="post" action="validate.php?task=facebook-login" style="display: inline-block;">
+<form method="post" action="validate.php?task=facebook-login" style="display: inline-block;">
 <button  class="social-signin facebook"> <i class="fa fa-facebook"></i></button></form>
 <form method="post" action="validate.php?task=google-login" style="display: inline-block;"> <a href="validate.php?task=google-login"  ><button class="social-signin google"><i class="fa fa-google-plus"></i></button></a></form>
 <form method="post" action="validate.php?task=twitter-login" style="display: inline-block;"> <a href="validate.php?task=twitter-login" ><button class="social-signin twitter"><i class="fa fa-twitter"  ></i></button> </a>
 
-</form> -->
+</form>
     
 
   

@@ -67,7 +67,7 @@
                 </div>    
                 <div class="form-group">
                    <label for="select-form">Share Drive Link</label>
-                  <input type="url" name="driveLink" class="form-control" id="inpt-name-forms"  placeholder="Share your drive link with public access">                 
+                  <input type="url" name="driveLink" class="form-control" id="inpt-name-forms" value="http://"  placeholder="Share your drive link with public access">                 
                 </div>
                 <div class="form-group" >
                 <label for="txt-forms">Any Specific Details (max 1000 characters)</label>

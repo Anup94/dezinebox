@@ -3,9 +3,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from colorlib.com/polygon/gentelella/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2017 08:19:49 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -37,7 +35,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form id="loginForm" action="validate.php?task=login" method="post">
+            <form id="loginForm" action="validate.php?task=adminlogin" method="post">
           <div class="panel-heading">
                     <img src="/assets/images/logo.png" class="img-responsive"/ style="margin-right: auto; margin-left: auto;">
                 </div><br><br>
@@ -81,6 +79,4 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
   <?php include_once $_SERVER['DOCUMENT_ROOT']."/includes/scripts.php";?>
       <script type="text/javascript" src="js/login.js"></script>
   </body>
-
-<!-- Mirrored from colorlib.com/polygon/gentelella/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2017 08:19:49 GMT -->
 </html>

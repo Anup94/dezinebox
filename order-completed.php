@@ -487,7 +487,7 @@ switch ($result->selectedArea)
 						<input type="hidden" name ="merchant_param1" value="<?php  echo $boxTypeArr[$result->boxTypeId]['boxType'] ?>" />
 						<input type="hidden" name ="merchant_param2" value="a" />
 						<input type="hidden" name ="merchant_param3" id="mp3" value="None"/>
-                        <button type="submit" class="btn checkout-btn">Proceed for Payment</button>
+                        <button type="submit" class="btn checkout-btn">Proceed for Payment <?php echo $finalPrice; ?></button>
                       </form>
                 <!--   <a href="#" class="btn checkout-btn">PROCEED FOR PAYMENT</a> -->
                 </div>
@@ -533,7 +533,7 @@ switch ($result->selectedArea)
               } else {
                 ?>
                 <tr>
-                <td></td></tr>
+                <td ></td></tr>
                 <?php
               }
       ?>

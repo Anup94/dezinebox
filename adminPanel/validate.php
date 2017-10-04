@@ -15,8 +15,8 @@ if(!empty(@$_GET['task'])) {
 	$task=$_GET['task'];
 	// echo $task;
 }
-if($task=="login") {
-	$resp=$validateClass->login($input);
+if($task=="adminlogin") {
+	$resp=$validateClass->adminlogin($input);
 	if(!empty($resp->status)) {
 		$_SESSION["adminSession"]=$resp->user;
 	}

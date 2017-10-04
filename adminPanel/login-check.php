@@ -7,11 +7,16 @@ $dbConnect=new dbConnect();
 if(!empty($_SESSION['adminSession'])) {
 	$adminSession=$_SESSION['adminSession'];
 	if(!empty($adminSession->userId)) {
-		$query="SELECT u.userId,u.name,u.mobile,u.username,u.email FROM #__users u 
+		$query="SELECT u.userId,u.name,u.mobile,u.username,u.email FROM users u 
 		LEFT JOIN users_type_map um 
 		ON um.userId=u.userId WHERE u.userId='".$adminSession->userId."'";
 		$dbConnect->setQuery($query);
 		$result=$dbConnect->conn->query($query);
+
+	foreach ($result as $key => $value){
+		echo $key;
+		echo $value;
+		echo '<br><br>';	}
 		if(mysqli_num_rows($result)==0) {
 			unset($_SESSION['adminSession']);
 			header("Location:login.php");

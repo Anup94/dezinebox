@@ -129,11 +129,11 @@ if(mysqli_num_rows($result)>0) {
 
         <header class="sec-heading"><BR><BR>
           <h2>Select your Box</h2><BR><BR>
-          <form name="archChooseBox" action="free.php" method="post">
+          <form name="archChooseBox" action="validate.php?task=submit_arch_box" method="post">
             <input type="hidden" name="enqId" value="<?php echo $enqId;?>"/>
             <!-- Item 1 -->
 <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:8%; margin-right:2%">     <h4>Terra</h4> <br><div href="payment.html">
-                <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" >
+             <a href="free.php">    <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" >
                   <img src="images/fire.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;"> <br><br><br><br><br><br>
               
                   <div class="p-hover">
@@ -152,13 +152,13 @@ if(mysqli_num_rows($result)>0) {
                     </div>
                   </div>
              
-                </div>     </div>
+                </div>  </a>   </div>
                 <input type="radio" name="boxTypeId" value="3"/ style="display: none;">
               </label>
 
               <!-- Item 2 -->
               <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:2%; margin-right:2%">  <h4>Zephyr</h4><br> <div>
-                <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".6s">
+              <a href="free.php">   <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".6s">
                  <img src="images/space.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;">
                  
                     <br><br><br><br><br><br>
@@ -179,13 +179,13 @@ if(mysqli_num_rows($result)>0) {
                      
                     </div>
                   </div>
-                </div> </div>
+                </div></a> </div>
                 <input type="radio" name="boxTypeId" value="4"/ style="display: none;">
               </label>
 
               <!-- Item 3 -->
               <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:2%; margin-right:2%"> <h4>Ether</h4><br><div>
-                 <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s">
+            <a href="free.php">      <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s">
                   <img src="images/earth.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;">
                   
                    
@@ -200,7 +200,7 @@ if(mysqli_num_rows($result)>0) {
                      
                     </div>
                   </div>
-                </div></div>
+                </div></a></div>
                 <input type="radio" name="boxTypeId" value="5"/ style="display: none;">
               </label>          </form>
          
