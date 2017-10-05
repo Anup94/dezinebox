@@ -72,6 +72,7 @@
 
  <section class="container section">
           <header class="sec-heading">
+            <br><br>
             <h2>Frequently Asked Questions</h2>
             <span class="subheading"></span><br><br>
           </header>

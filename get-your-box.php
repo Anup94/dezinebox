@@ -128,7 +128,7 @@ if(empty($constTypeArr[$constTypeId])) {
 		         }
 		         else
 		         {
-		         	 echo "<h2>Get Your Box</h2><br>";
+		         	 echo "<br><br><h2>Get Your Box</h2><br>";
 
 		         }
 

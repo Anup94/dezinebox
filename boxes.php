@@ -64,7 +64,7 @@
 </header> -->
 <div id="terra"></div>
 <br><br><br><br><br><br>
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
+<div class="ft-item wow fadeInUp"  data-wow-duration="1s">
 <img src="images/fire.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;"> 
 <h1 style="text-align: center;">Terra</h1>
 <p style="color: #777">
@@ -74,7 +74,7 @@ Terra represents founding element Earth out of five elements. This box provides 
 <div id="zephyr"></div>
 <br><br><br><br><br>
 
-<div class="ft-item wow fadeInUp"  data-wow-duration="1s" style="height: 412px;">
+<div class="ft-item wow fadeInUp"  data-wow-duration="1s" >
 
     <img src="images/space.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;">
 <h1 style="text-align: center;">Zephyr</h1>

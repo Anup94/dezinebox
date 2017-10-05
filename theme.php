@@ -30,7 +30,11 @@
 
         <!-- JS -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
+<style>@media only screen and (min-width: 500px) {
+    .thirteen {
+        margin-left: 13%;
+    }
+}</style>
 
 
     </head>
@@ -61,12 +65,12 @@
           <section id="services" class="container ft-cards">
             <div class="row section">
 
-              <header class="sec-heading">
+              <header class="sec-heading"><br><br>
                 <h2>Interior theme & Architecture themes</h2>
       
               </header>
          
-                <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 13%"><h4>Ethnic</h4> <br> 
+                <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item thirteen"><h4>Ethnic</h4> <br> 
 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/ethnic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                  <br><br><br><br><br><br><br>
@@ -105,7 +109,7 @@
               </div>
  
               <!-- Item 4 -->
-              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item" style="margin-left: 13%"> <br>  <h4>Rustic</h4> <br> 
+              <div class="col-lg-3 col-md-6 mb-sm-50 portfolio-item  thirteen" > <br>  <h4>Rustic</h4> <br> 
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".6s" style="background-image: url('images/rustic.jpg'); max-width: 100%; width: auto; height: auto;border: 10px solid #fff;">
                   <br><br><br><br><br><br><br>
                  <div class="p-hover">
@@ -140,7 +144,7 @@
 
               </div>
             </div><!-- / .row -->
-            <div class="col-lg-3 col-md-4 col-sm-5 fifteenmargin trial " style="margin-left: 13%;"><h4 class="text-caplitalize">Traditional</h4><br/><a href="get-your-box.php?categoryId=<?php echo $categoryId;?>&constTypeId=<?php echo $constTypeId;?>&categoryOption=<?php echo urlencode($categoryOption);?>&subCategoryOption=<?php echo urlencode('Traditional');?>">
+            <div class="col-lg-3 col-md-4 col-sm-5 fifteenmargin trial thirteen " ><h4 class="text-caplitalize">Traditional</h4><br/><a href="get-your-box.php?categoryId=<?php echo $categoryId;?>&constTypeId=<?php echo $constTypeId;?>&categoryOption=<?php echo urlencode($categoryOption);?>&subCategoryOption=<?php echo urlencode('Traditional');?>">
                 <div class="ft-item wow fadeInUp p-wrapper hover-default" data-wow-duration="1s" data-wow-delay=".3s" style="background-image: url('images/traditional1.jpg');width: 262px; margin: auto;border: 10px solid #fff;">
                  <br><br><br><br><br><br>
                   

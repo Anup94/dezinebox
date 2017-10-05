@@ -285,7 +285,7 @@ switch ($result->boxTypeId)
              
                <div class="totals-content">
                 <div class="subtotal-group">
-                <h6 style="color: #000">INR <font color="#FF5100"> 
+                <h6 style="color: #000;">INR<font color="#FF5100"> 
 
 
  <?php echo ($result->price);
@@ -304,7 +304,7 @@ switch ($result->selectedArea)
         case '5000+': header('location : /free.php') ; break;
 }?> 
                 </font>  </h6>
-                  <!-- <input type="text" style="width:100px;"  readonly; > -->
+ 
                   <label style="float: right"> <?php 
                 //  $formEle=array("price"=>" ");
                   //foreach ($formEle as $key => $value) {
@@ -586,11 +586,12 @@ if ($conn->query($sql) === TRUE) {
              
                 <div class="widget about-widget">
                   <ul class="social-links">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://www.facebook.com/dezine.box"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/DezineBox"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.linkedin.com/company-beta/17970956/"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="https://www.instagram.com/dezinebox/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://plus.google.com/101485144759189925017"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#"><i class="fa fa-youtube"></i></a></li>
                   </ul>
                 </div><!-- / .widget -->
       

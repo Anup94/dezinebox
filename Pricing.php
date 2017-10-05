@@ -92,7 +92,7 @@ For Terra    – 2 * 5,000 (Base Price of Terra)  = 10,000<br>
 For Zephyr – 2 * 7,500 (Base Price of Zephyr) = 15,000<br><br>
 The other subcategories under Interior - Commercial, Hospitality & Institutional will be charged based on area of the space.<br>The Price will be calculated using a Price Multiplier associated with each area
 The Base price of Terra Box is INR 5,000 & Zephyr Box is INR 7,500<br>
-<img src="assets/images/interior.png">
+<img src="assets/images/interior.png" style="max-width: 100%;">
  </p> 
 </div>
 <div id="Architecture"></div>
@@ -105,7 +105,7 @@ The Base price of Terra Box is INR 5,000 & Zephyr Box is INR 7,500<br>
 In Architecture, all the categories are charged based on area of the space. 
 The Price will be calculated using a Price Multiplier associated with each area
 The Base price of Terra Box is INR 5,000 & Zephyr Box is INR 7,500 <br><br>
-<img src="assets/images/architecture.png"></p> 
+<img src="assets/images/architecture.png" style="max-width: 100%;"></p> 
 
 </div><br><br>
 <p style="color: #777">Please note that, all the prices are excluding taxes.</p>
