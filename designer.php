@@ -46,7 +46,7 @@ include_once 'site-initial.php';?>
 <link type="text/css"  rel="stylesheet" href="assets/styles/theme.css"/> 
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
 <link rel="stylesheet" href="assets/styles/main22.css"> <!-- nav -->
-
+<link href="css/vidbck.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>

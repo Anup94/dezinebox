@@ -133,13 +133,13 @@ if(mysqli_num_rows($result)>0) {
             <input type="hidden" name="enqId" value="<?php echo $enqId;?>"/>
             <!-- Item 1 -->
 <label class="col-lg-4 col-md-6 mb-sm-50 portfolio-item" style="width: 25.5%; margin-left:8%; margin-right:2%">     <h4>Terra</h4> <br><div href="payment.html">
-             <a href="free.php">    <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" >
+            <form name="archChooseBox" action="validate.php?task=submit_arch_box" method="post">    <div class="ft-item wow fadeInUpp-wrapper hover-default" data-wow-duration="1s" >
                   <img src="images/fire.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;"> <br><br><br><br><br><br>
               
                   <div class="p-hover">
                     <div class="p-content">
                    <h5 style="color: #FF5100; text-align:left;">
-
+                          <input type="submit" name="boxTypeId" value="3"/ style="display: none;">
       •    Detailed Drawings <br>
       •    3D Drawing <br>
       •    e-Shopping list  <br>
@@ -152,8 +152,8 @@ if(mysqli_num_rows($result)>0) {
                     </div>
                   </div>
              
-                </div>  </a>   </div>
-                <input type="radio" name="boxTypeId" value="3"/ style="display: none;">
+                </div>    </form>    </div>
+          
               </label>
 
               <!-- Item 2 -->
