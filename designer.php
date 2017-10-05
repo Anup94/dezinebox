@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once($_SERVER["DOCUMENT_ROOT"]."/login-check.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/classes/db.class.php");
 $dbConnect=new dbConnect();
@@ -34,8 +34,6 @@ if(empty($constTypeArr[$constTypeId])) {
 }
 ?>
 
-<?php
-include_once 'site-initial.php';?>
 <html>
 <head>
 
@@ -45,7 +43,7 @@ include_once 'site-initial.php';?>
 <link type="text/css"  rel="stylesheet" href="assets/styles/nova.css" />
 <link type="text/css"  rel="stylesheet" href="assets/styles/theme.css"/> 
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
-<link rel="stylesheet" href="assets/styles/main22.css"> <!-- nav -->
+<link rel="stylesheet" href="assets/styles/main.css"> <!-- nav -->
 <link href="css/vidbck.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
@@ -56,8 +54,10 @@ include_once 'site-initial.php';?>
 
 
 </head>
+
 <body class="supernova">
 <?php include_once 'menu-includes.php';?>
+
 <div class="col-md-6">
 <form class="jotform-form" id="productPartnerForm" name="productPartnerForm" action="validate.php?task=submit_design_partner" enctype="multipart/form-data" method="post">
  

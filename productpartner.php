@@ -46,7 +46,7 @@ if(empty($constTypeArr[$constTypeId])) {
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
-<link rel="stylesheet" href="assets/styles/main22.css"> <!-- nav -->
+<link rel="stylesheet" href="assets/styles/main.css"> <!-- nav -->
 
 
 
