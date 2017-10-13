@@ -86,7 +86,7 @@ if(mysqli_num_rows($result)>0) {
 
         @media only screen and (min-width: 500px) {
     .twentyfive {
-       width: 25.5%; margin-left:8%; margin-right:2%;
+       width: 25.5%; margin-left:5%; margin-right:2%;
     }
 }</style>
 

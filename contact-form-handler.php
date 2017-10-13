@@ -9,13 +9,13 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                   // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                            // Enable SMTP authentication
-$mail->Username = 'srinath.chinchole@qleverlabs.com';          // SMTP username
-$mail->Password = '9867613282'; // SMTP password
+$mail->Username = 'hello@dezinebox.io';          // SMTP username
+$mail->Password = 'dezinebox'; // SMTP password
 $mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                 // TCP port to connect to
 
-$mail->setFrom('contact@dezinebox.io', 'shrinath');
-$mail->addReplyTo('contact@dezinebox.io', 'Rishab Sahay');
+$mail->setFrom('contact@dezinebox.io', 'Dezinebox');
+$mail->addReplyTo('contact@dezinebox.io', 'Dezinebox');
 $mail->addAddress('contact@dezinebox.io');   // Add a recipient
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');

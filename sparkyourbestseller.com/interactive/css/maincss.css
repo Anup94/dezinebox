@@ -1,0 +1,31 @@
+.div1{
+height:500px; 
+width:1350px;}
+.div2{
+height:400px; 
+width:1000px; 
+background-color:#203864;
+margin-left:170px; 
+margin-top:60px; 
+border:thin;   
+border-color:#000000;
+}
+.logo{
+color:#1f4e79;
+}
+.login{
+margin-top:-50px; 
+color:#1f4e79;
+}
+.button{ 
+
+background-color:#1f4e79; 
+height:40px;
+ width:130px;
+  border-radius:7px; 
+  border:none; 
+  color: #FFFFFF;
+   margin-left:1040px; 
+   margin-top:50px;
+}/* CSS Document */
+

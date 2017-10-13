@@ -82,16 +82,16 @@
 
 
 
-                  <strong>Changes to Privacy Policy</strong>
+                  <strong>Changes to privacy policy </strong>
                   <br>
                   In the event Dezinebox modifies this Privacy Policy, the same will be updated on the Website. In case of any material changes to the Policy, the Users will be notified by email (sent to the email address specified in the Userâ€™s account) or by means of a notice on this Website prior to the change becoming effective. The Users are encouraged to periodically review this page for the latest information on its privacy practices. This applies to our Customers, Product Partners & Design Partners.<br><br>
 
-                  <strong>User Consent</strong><br>
+                  <strong>User consent</strong><br>
                   By using our Website and using it on a continued basis, you expressly consent and confirm to Dezinebox collecting, maintaining, using, processing and disclosing your Personal and other Information in accordance with the terms set out in this Privacy Policy. If you do not agree with this privacy policy in its entirety, you must not use this website or products and/or services provided on it. If you have any questions or comments regarding this Privacy Policy, please contact us at contact@Dezinebox.io<br><br>
 
                   By mere use of the Website, you expressly consent to our use and disclosure of your personal information in accordance with this Privacy Policy. <br><br>
 
-                  <strong>COLLECTIONS AND USES OF PERSONAL INFORMATION</strong><br>
+                  <strong>Collections and uses of personal information</strong><br>
                   When you use or register with the website, we may ask for certain Personal Information & Professional Information. <br><br>
 
                   The categories of Personal Information we may request include but not limited to your personal details, your professional title, your company’s name and industry sector, your company’s location (country, state and zip code) and your contact information (email and phone number) & details of your professional experience. <br><br>
@@ -104,17 +104,17 @@
 
                   Our servers automatically record information ("Log Data") created by your use of the Services. Log Data may include information such as your IP address, browser type, operating system, the referring web page, pages visited, location, your mobile carrier, device, search terms, and cookie information. We receive Log Data when you interact with our Services, for example, when you visit our websites, sign into our Services, or interact with our email notifications. We use Log Data to provide our Services and to measure, customize, and improve them, as well as collect and use them in the aggregate. This Policy does not apply to, nor do we take any responsibility for any information that is collected by any third party either using the Website or through any links on the Website or through any of the advertisements.<br><br>
 
-                  <strong>COOKIES</strong>
+                  <strong>Cookies</strong>
                   <br>
                   Cookies are small bits of information that are automatically stored on a person’s web browser in his computer that can be retrieved by this site. Cookies allow web servers to recognize your computer each time you return to our website including the date and time of visits, page view history, time spent at our website, and the websites visited just before and just after our website, verify your registration or password information (in case of registered users) during a particular session so that you do not have to input your password multiple times as you navigate the site and suggest products or services that may interest you. This information is collected on an aggregate basis. None of this information is associated with you as an individual. We might also use other technology to track how you interact with our portal and employ some third party agencies to use the data on our behalf. We might also use this information to display advertising from third party companies. Should you wish to disable these cookies you may do so by changing the setting on your browser. Most browsers will let you decline cookies but if you choose to do this it might affect service on some parts of our website.<br><br>
 
                   <strong>
-                      ADVERTISEMENTS/MARKETING
+                   Advertisements/marketing
                   </strong><br>
 
                   We use Personal Information and other data collected through the website to register you with the website and to otherwise provide you with requested information or services. We may also from time to time use your Personal Information to send you automated email messages or marketing materials regarding our services. These email messages may contain web beacons and other features that help us make sure that you received and were able to open the message. You may opt out of receiving such marketing email messages at any time by clicking on the unsubscribe link in the email.<br><br>
 
-                  <strong>DISCLOSURES OF PERSONAL INFORMATION</strong><br>
+                  <strong>Disclosures of personal information</strong><br>
 
                   As described in the Terms of Use, DEZINEBOX may disclose Personal Information to third parties. The disclosure to third parties would occur in the following circumstances:<br>
 
@@ -124,15 +124,15 @@
 
                   We may disclose Personal Information to the extent necessary or appropriate to government agencies, advisors, and other third parties in order to comply with applicable laws, or if such action is necessary to protect the rights or property of DEZINEBOX or its affiliated companies.<br><br>
 
-                  <strong>PERSONAL DATA SECURITY AND CONFIDENTIALITY</strong><br>
+                  <strong>Personal data security and confidentiality</strong><br>
 
                   We maintain adequate technical and organizational security measures to protect Personal Information from loss, misuse, and unauthorized access, disclosure, alteration, or destruction.<br><br>
 
-                  <strong>PERSONAL DATA ACCESS AND CORRECTION</strong><br>
+                  <strong>Personal data access and correction</strong><br>
 
                   DEZINEBOX will provide access to, update and amend, and/or delete the Personal Information in accordance with applicable laws. You can request access to, and have the opportunity to update and amend your Personal Information, and, you can exercise the other rights acknowledged by applicable data protection legislation, including, for example, objection to and blocking of the processing of your Personal Information, by contacting us at contact@Dezinebox.io. For security reasons, DEZINEBOX reserves the right to take steps to authenticate the identity of the requesting party before providing access to Personal Information in accordance with this section of the Privacy Policy.<br><br>
 
-                  <strong>Referrals</strong>
+                  <strong>Referrals</strong><br>
 
                   If you choose to provide a few referrals to introduce Dezinebox and/or its Website to any other person/ entity, we may ask you to provide such person/ entity’s name and email address. Dezinebox will automatically send such person/ entity an email inviting it or to visit the Dezinebox website. Dezinebox stores this information for the purpose of sending this email and keeping a record of the number of persons / entities so referred by the Users and may send additional emails to the said person / entity in connection with services offered by Dezinebox. Such person/ entity may contact Dezinebox at contact@Dezinebox.io to request that this information be removed from Dezinebox’ database.<br><br>
 
@@ -141,7 +141,7 @@
                   We may display personal testimonials of satisfied customers or positive feedback on our Website or social media or to our customers in addition to other endorsements. If you wish to update or delete your testimonial, you can contact us by email at contact@Dezinebox.io<br><br>
 
                   <strong>
-                      Retention of Data
+                      Retention of data
                   </strong><br>
 
                   We may retain the information about the users as long as the User account is active or as needed to provide services to the User. If the User wishes to cancel its account or requests that Dezinebox no longer uses its information to provide services, the User may contact Dezinebox at contact@Dezinebox.io. Dezinebox will retain and use user information as necessary to comply with its legal obligations, resolve disputes, and enforce its agreements or for other business purposes.<br><br>

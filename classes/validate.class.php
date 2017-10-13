@@ -388,12 +388,12 @@ if($_GET['oauth_token']){
 		$mail->isSMTP();                                   // Set mailer to use SMTP
 		$mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                            // Enable SMTP authentication
-		$mail->Username = 'srinath.chinchole@qleverlabs.com';          // SMTP username
-		$mail->Password = '9867613282'; // SMTP password
+		$mail->Username = 'hello@dezinebox.io';          // SMTP username
+		$mail->Password = 'dezinebox'; // SMTP password
 		$mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
 		$mail->Port = 465;                                 // TCP port to connect to
 
-		$mail->setFrom('srinath.chinchole@qleverlabs.com', 'DeZinebox');
+		$mail->setFrom('hello@dezinebox.io', 'DeZinebox');
 		$mail->addReplyTo($user->email);
 		$mail->addAddress($user->email);   // Add a recipient
 		//$mail->addCC('cc@example.com');
@@ -481,12 +481,12 @@ if($_GET['oauth_token']){
 		$mail->isSMTP();                                   // Set mailer to use SMTP
 		$mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                            // Enable SMTP authentication
-		$mail->Username = 'srinath.chinchole@qleverlabs.com';          // SMTP username
-		$mail->Password = '9867613282'; // SMTP password
+		$mail->Username = 'hello@dezinebox.io';          // SMTP username
+		$mail->Password = 'dezinebox'; // SMTP password
 		$mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
 		$mail->Port = 465;                                 // TCP port to connect to
 
-		$mail->setFrom('srinath.chinchole@qleverlabs.com', 'DeZinebox');
+		$mail->setFrom('hello@dezinebox.io', 'DeZinebox');
 		$mail->addReplyTo($input->email, $input->username);
 		$mail->addAddress($input->email);   // Add a recipient
 		//$mail->addCC('cc@example.com');

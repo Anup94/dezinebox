@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<meta http-equiv="refresh" content="60" >
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/login-form.css">
@@ -39,17 +40,18 @@
   </form>
 </div>
   <form id="register-form" class="register-form" action="validate.php?task=submit_signup" method="post" >
-    <input type="text" name="name" placeholder="Name"/>
-    <input type="text" name="username" placeholder="Username"/>
-    <input type="email" name="email" placeholder="email address"/>
-     <input type="text" name="mobile" placeholder="number"/>
-    <input type="password" name="password" placeholder="password"/>
+    <input type="text" title="Name" name="name" placeholder="Name"/>
+    <input type="email" title="Email Address" name="email" placeholder="Email address"/>
+    <input type="text" title="10 digits mobile no" name="mobile" placeholder="Mobile no"/>
+    <input type="text" title="5-10 characters" name="username" placeholder="Username"/>
+    <input type="password" title="5-10 characters" name="password" placeholder="Password"/>
     
     <button id="reg">create</button>
 
     <p class="message" onclick="create2()">Already registered? <a href="#">Sign In</a></p>
   </form>
   <form id="login-form" class="login-form" action="validate.php?task=login" method="post">
+
     <input type="text" name="username" placeholder="Username"/>
     <input type="password" name="password" placeholder="password"/>
     <button >login</button>

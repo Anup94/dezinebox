@@ -103,8 +103,8 @@ for creative product partners who have unique and quality products in their port
 We would love to recommend them to our esteem customers so that they can purchase them from
 the comfort of their home defying geographical barriers. Thus we will like to act as a growth
 catalyst by providing a global online platform and a strong recommendation to your creative
-products. <br><br>
- "For more information pls contact us at <a href="mailto:partnetship@dezinebox.io" style="display: inline-block;color: #000;">partnetship@dezinebox.io".</a></p> 
+products. <br>
+ "For more information pls contact us at <a href="mailto:partnership@dezinebox.io" style="display: inline-block;color: #000;">partnership@dezinebox.io".</a></p> 
 <a href="productpartner.php" style="color: #FF5100"> Join us as a product partner</a>
 </div>
 <div id="dezinepage"></div>
@@ -120,8 +120,8 @@ To facilitate this, we would like to tie-up with trustworthy &amp; like-minded c
 geographies who like us believe in quality with affordability, transparency, and who have a very
 high commitment levels. They should strive for nothing less than the best to serve the customers.<br><br>
 DeZinebox would take a pride to associate with you and would recommend your services to our
-esteem customers and will share long standing success with you.<br><br> 
- "For more information pls contact us at <a href="mailto:partnetship@dezinebox.io" style="display: inline-block;color: #000;">partnetship@dezinebox.io".</a></p> 
+esteem customers and will share long standing success with you.<br>
+ "For more information pls contact us at <a href="mailto:partnership@dezinebox.io" style="display: inline-block;color: #000;">partnership@dezinebox.io".</a></p> 
 <a href="designer.php" style="color: #FF5100"> Join us as a dezine partner</a>
 </div>
 

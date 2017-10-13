@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+.input {
+	position: relative;
+	float: left;
+    z-index: 1;
+    margin-left: -7px;
+    margin-top: 10px;
+	max-width: 450px;
+/*    max-width: 700px;*/
+	width: calc(120%);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float:left;
+	width: 150%;
+	border: none;
+	border-radius: 0;
+	background: #ffffff;
+	color: #00bdff;
+	font-weight: 400;
+/*	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: 'Abel', sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float:left;
+	width: 100%;
+	color: #00bdff;
+	font-weight: bold;
+	font-size: 70.25%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+.icon {
+	color: #00bdff;
+	font-size: 150%;
+}
+
+.input--nao {
+	overflow: hidden;
+	padding-top: 3.0em;
+}
+
+.input__field--nao {
+	width: 230%;
+	background: transparent;
+	color: #00bdff;
+	font-size: 1.9em;
+}
+
+.input__label--nao {
+	position: absolute;
+	top: 1.6em;
+	font-size: 1.3em;
+	left: 0;
+	display: block;
+	width: 750px;
+	text-align: left;
+	padding: 0em;
+	pointer-events: none;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transition: -webkit-transform 0.2s 0.15s, color 1s;
+	transition: transform 0.2s 0.15s, color 1s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.graphic--nao {
+	stroke: #92989e;
+	pointer-events: none;
+	-webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
+	transition: transform 0.7s, stroke 0.7s;
+	-webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+} 
+
+.input__field--nao:focus + .input__label--nao,
+.input--filled .input__label--nao {
+	color: #00bdff;
+	-webkit-transform: translate3d(0, -1.35em, 0) scale3d(0.75, 0.75, 1);
+	transform: translate3d(0, -1.35em, 0) scale3d(0.75, 0.75, 1);
+}
+
+.input__field--nao:focus ~ .graphic--nao,
+.input--filled .graphic--nao {
+	stroke:white;
+	-webkit-transform: translate3d(-66.6%, 0, 0);
+	transform: translate3d(-66.6%, 0, 0);
+}

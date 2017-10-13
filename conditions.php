@@ -74,29 +74,30 @@
 <p style="color: #999">
 1. All creative dezine is an intellectual property of dezinebox.<br>
 
-2. drawings, specifications, documents, 3D images are property of
+2. Drawings, specifications, documents, 3D images are property of dezinebox 
 
-dezinebox used for that particular project inspite of the execution of
+used for particular project shall not be used for any other project by the client or by any other person 
 
-project or not. <br> This shall not be used for any other project by the client
+3. Once the payment done there won’t be any refund provided by the Dezinebox. There will be just once revision provided to the Dezinebox buyer in case of Zephyr box. Kindly understand the design provided by the Dezinebox is final and even in case of non-approval of design by the Dezinebox buyer there won’t be any revision or refund provided by the Dezinebox. <br>
 
-or by any other person
+4. Every dezinebox will need submission period depending on the nature and magnitude of the project  <br>
 
-3. In case of dezine non approval there will not be any refund. <br>
+5. For every revision there will be time duration of 4-5 working days. That does not include Sunday and public holidays<br>
 
-4. Every dezinebox will need submission period depending on the nature
+6. For Ether box, Dezine Professional will meet the client and will decide the scope of work and deliverables.<br>
 
-of magnitude of the project <br>
+7. There is no cancellation & refund of any dezinebox once the order is placed. <br>
 
-5. For every revision there will be time duration of 4-5 working days. That
+8. Dezinebox does not make any representation or Warranty as to specifics (such as quality, value, saleability, etc.) of the products recommended in drawings and dezines. Dezinebox accepts no liability for any products recommended in the drawing on behalf of Product Partners. Any dispute in this regard needs to settled directly with the Product Partner. <br>
 
-does not include Sunday and public holidays <br>
+9. Dezinebox is not responsible & won’t  guarantee for any non-performance or breach of any contract between Buyers of Dezineboxe’s and a product partner / Dezine Partners. Dezinebox will not mediate or resolve any dispute or disagreement between Buyers of Dezineboxe’s and Product & Dezine Partner. <br>
 
-6. There will not be any hardcopy submission for any dezinebox except
+10. Dezinebox Buyer shall independently agree upon the manner and terms and conditions of delivery, payment, refund, return policy & insurance etc. with the Product Partner that they transact with. <br>
 
-Green Dezinebox. <br> Deziner meeting with client will decide the scope of
+11. Dezinebox does not make any representation or warranty as to the item-specifics (such as legal title, creditworthiness, identity, etc) of any of its Users. Dezine Partners are advised to independently verify the bona fides of any particular User that you choose to deal with on the Website and use your best judgment in that behalf. <br>
 
-work and submission/provision.</p> <br><br><br><br><br>
+
+</p> <br><br><br><br><br>
 
         </section><!-- / .container -->
 

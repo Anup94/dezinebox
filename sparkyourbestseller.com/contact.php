@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js" type="text/javascript"></script>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARekIxa1aemDaBoLMaIe3mczabA7H7dtU"
+    type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?"></script>
+  
+  
+      <link rel="stylesheet" href="csscontact/style.css">
+      <script type="text/javascript">
+        function validateEmail(email) {
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+        }
+
+    </script>
+<script>
+      function enter(){
+        var email = document.getElementById('email').value;
+        if(!(email=='')){
+          if(validateEmail(email)){
+            bootbox.alert({
+                message: "Thank you for getting in touch with us!",
+                backdrop: true,
+                className: 'modal-style',
+                callback: function () {
+                  document.getElementById('contact_form').submit();
+                }
+            });
+          }
+          else{
+            bootbox.alert({
+                message: "Please enter a valid email address.",
+                backdrop: true,
+                className: 'modal-style',
+            });
+          }
+        }
+        else{
+          bootbox.alert({
+              message: "Please enter your email.",
+              backdrop: true,
+              className: 'modal-style',
+          });
+        }
+        
+      }
+        
+      </script>
+      <style type="text/css">
+        .modal-style {
+          font-size: 17px;
+        }
+      </style>
+</head>
+
+<body>
+  <div id='browser'>
+  <div id='browser-bar'>
+    <p style="font-size: 20px">Contact Us</p>
+  </div>
+  <div id='content'>
+    <div id='left' style="background-color: #203864; ">
+      <div id='map' style="height: 465px;">
+        <!-- <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.68542538096574!2d72.83323820717743!3d19.065196999193372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c913ddc8fa33%3A0x9f667d9febc650c9!2sHapp+Coach!5e0!3m2!1sen!2sin!4v1495253850131" frameborder="0" style="border:0" allowfullscreen width="100%"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.597202997182!2d72.83169511490125!3d19.081439487084737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9a753277265%3A0x90a43078580bebae!2sNandanvan+Building!5e0!3m2!1sen!2sin!4v1497211577882" frameborder="0" style="border:0; width: 100%; height: 100%;  " allowfullscreen ></iframe>
+
+
+      </div>
+      <!-- <ul id='location-bar'>
+        <li style="font-size: 18px; background-color: #203864;">
+          B 1A, Nandanvan, Nivas Road, Off Linking Road, Santacruz West, Mumbai- 400054
+        </li>
+
+      </ul> -->
+    </div>
+    <div id='right'>
+      <p style="font-size: 12px">Connect</p>
+      <div id='social' style="font-size: 12px">
+        <a class='social' href="https://www.facebook.com/happcoach/">
+          <span class='entypo-facebook'></span>
+        </a>
+        <a class='social' href="https://twitter.com/HappCoach">
+          <span class='entypo-twitter'></span>
+        </a>
+        <a class='social' href="https://www.linkedin.com/company-beta/13195949/">
+          <span class='entypo-linkedin'></span>
+        </a>
+        <a class='social' href="https://plus.google.com/101688271248784042694">
+          <span class='entypo-gplus'></span>
+        </a>
+        <a class='social' href="https://www.instagram.com/happcoach/">
+          <span class='entypo-instagrem'></span>
+        </a>
+      </div>
+      <form action="sparktest.php" method="post" id="contact_form" style="font-size: 13px">
+        <p>Get in Touch</p>
+        <input id="email" placeholder='Email' type='email' name='email' required>
+        <input id="subject" placeholder='Subject' type='text' name='subject' required>
+        <textarea id="message" placeholder='Message' rows='4' name='message' required></textarea>
+        <input placeholder='Send' type='button' name="SubmitButton" onclick="enter()" value="Submit" style="font-size: 13px; background-color: #203864;">
+      </form>
+      <p class='other entypo-mail' style="color: white;font-size: 15px">
+        <b>reachout@happcoach.com</b>
+      </p>
+      <p class='other entypo-phone' style="color: white;font-size: 15px"><b>(+91) 9819-444-748</b></p>
+    </div>
+  </div>
+
+
+<ul id='location-bar'>
+        <li style="font-size: 18px; background-color: #394141 ;  padding: 1% 0% 1% 0%; text-align: center;">
+          B 1A, Nandanvan, Nivas Road, Off Linking Road, Santacruz West, Mumbai- 400054
+        </li>
+
+      </ul>
+
+</div>
+
+    <script src="jscontact/index.js"></script>
+
+</body>
+</html>

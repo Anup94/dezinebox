@@ -1,0 +1,6 @@
+[0319/215549.396:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\Jarhair\Reports\Dump: The system cannot find the path specified. (0x3)
+[0319/215549.403:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0319/215549.406:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\Jarhair\Reports\Dump: The system cannot find the path specified. (0x3)
+[0320/191641.101:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\Jarhair\Reports\Dump: The system cannot find the path specified. (0x3)
+[0320/191641.122:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0320/191641.125:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\Jarhair\Reports\Dump: The system cannot find the path specified. (0x3)

@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/classes/validate.class.php";
 $validateClass=new validateClass();
 $task="";
 $multiPartTask=array("submit_design_partner","product_partner_submit","submit_architecture_enquiry");
-if(empty($_FILES) && in_array(@$_POST['task'], $multiPartTask)) {
+if(!empty($_FILES) && in_array(@$_POST['task'], $multiPartTask)) {
 	$input=@file_get_contents('php://input');
 } else {
 	$input=json_encode($_POST);

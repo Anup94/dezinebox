@@ -1,0 +1,274 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+}
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 1.25em;
+  }
+}
+
+.form .text-input, .form .textarea, .form .select, .customSelect, .form .label, .form .message, .form .button {
+  padding: 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.form .text-input, .form .textarea, .form .select, .customSelect {
+  font: inherit;
+  line-height: normal;
+  width: 150%;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 0;
+  border-bottom-color: #7EC0E4;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+.form .text-input:placeholder, .form .textarea:placeholder, .form .select:placeholder, .customSelect:placeholder {
+  color: #6789BA;
+}
+.form .text-input:-webkit-autofill, .form .textarea:-webkit-autofill, .form .select:-webkit-autofill, .customSelect:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #14103B inset;
+  -webkit-text-fill-color: white;
+  border-top-color: #14103B;
+  border-left-color: #14103B;
+  border-right-color: #14103B;
+}
+.form .required.text-input, .form .required.textarea, .form .required.select, .required.customSelect, .form [required].text-input, .form [required].textarea, .form [required].select, [required].customSelect {
+  border-bottom-color: #F02A71;
+}
+.form .error.text-input, .form .error.textarea, .form .error.select, .error.customSelect, .error .form .text-input, .form .error .text-input, .error .form .textarea, .form .error .textarea, .error .form .select, .form .error .select, .error .customSelect {
+  border-color: transparent transparent #f02a2a transparent;
+}
+.form .text-input:active, .form .textarea:active, .form .select:active, .customSelect:active, .customSelect.customSelectFocus, .form .text-input:focus, .form .textarea:focus, .form .select:focus, .customSelect:focus {
+  border-color: transparent transparent white transparent;
+}
+
+.form .label, .form .message {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  padding-left: 0;
+}
+
+.form .label {
+  top: 0;
+  left: 0;
+  color: #6789BA;
+}
+.active .form .label, .form .active .label {
+  font-size: 0.75em;
+  padding: 0;
+}
+.focus .form .label, .form .focus .label {
+  color: #7EC0E4;
+}
+.focus:not(.active) .form .label, .form .focus:not(.active) .label {
+  -webkit-transition: font 0.2s ease;
+  transition: font 0.2s ease;
+}
+
+.form .message {
+  bottom: 0;
+  right: 0;
+  color: #f02a2a;
+  font-size: 0.75em;
+  padding: 0;
+  display: none;
+}
+.error .form .message, .form .error .message {
+  display: block;
+}
+
+.form .checkbox-input, .form .option-input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.form .checkbox-input + label, .form .option-input + label {
+  display: inline-block;
+  cursor: pointer;
+  color: #6789BA;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 2em;
+  line-height: 1;
+}
+.form .checkbox-input + label:before, .form .option-input + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid;
+  width: 1em;
+  height: 1em;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.form .checkbox-input + label:after, .form .option-input + label:after {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  border-left: 3px solid #14103B;
+  border-bottom: 3px solid #14103B;
+  width: 0.5em;
+  height: 0.25em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.form .checkbox-input:focus + label, .form .option-input:focus + label, .form .checkbox-input:active + label, .form .option-input:active + label {
+  color: #7EC0E4;
+}
+.form .checkbox-input:checked + label, .form .option-input:checked + label {
+  color: white;
+}
+.form .checkbox-input:checked + label:before, .form .option-input:checked + label:before {
+  box-shadow: inset 0px 0px 0px 0.5em #6789BA;
+  color: #6789BA;
+}
+.form .checkbox-input:checked + label:after, .form .option-input:checked + label:after {
+  color: #6789BA;
+}
+.form .checkbox-input:checked:focus + label:before, .form .option-input:checked:focus + label:before, .form .checkbox-input:checked:active + label:before, .form .option-input:checked:active + label:before {
+  box-shadow: inset 0px 0px 0px 0.5em #7EC0E4;
+  color: #7EC0E4;
+}
+
+.form .option-input + label:before {
+  border-radius: 50%;
+}
+.form .option-input + label:after {
+  top: 1px;
+  left: 1px;
+  width: 1em;
+  height: 1em;
+  box-sizing: border-box;
+  border: 3px solid #14103B;
+  border-radius: 50%;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.form .button {
+  font: inherit;
+  font-size: 1em;
+  line-height: normal;
+  cursor: pointer;
+  background-color: transparent;
+  color: #F02A71;
+  border: 1px solid #F02A71;
+  text-align: center;
+}
+.form .button:hover, .form .button:focus, .form .button:active {
+  color: white;
+  border-color: white;
+}
+.form .button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.form {
+  width:200%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-flex-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.form .field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 40em) {
+  .form .field.half {
+    width: calc(100% - 2em);
+  }
+}
+.form .field.last {
+  margin-left: auto;
+}
+.form .textarea {
+  max-width: 100%;
+  border-right-color: #7EC0E4;
+}
+.form .textarea:active, .form .textarea:focus {
+  border-color: transparent white white transparent;
+}
+.form .button {
+  width: 100%;
+}
+.form .select {
+  text-indent: 0.01px;
+  text-overflow: "" !important;
+}
+.form .select::-ms-expand {
+  display: none;
+}
+.form .checkboxes, .form .options {
+  padding: 0;
+  list-style-type: none;
+}
+.form .checkbox, .form .option {
+  position: relative;
+}
+.form .checkbox + *, .form .option + * {
+  margin-top: 0.5em;
+}
+
+.customSelect:after {
+  content: "";
+  pointer-events: none;
+  width: 1em;
+  height: 1em;
+  border-style: solid;
+  border-color: #6789BA;
+  border-width: 0 1px 1px 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -1em;
+  right: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.customSelect.customSelectFocus:after {
+  border-color: #7EC0E4;
+}
+
+.info {
+  text-align: center;
+  color: white;
+}
+.info a {
+  color: #F02A71;
+  text-decoration: none;
+}

@@ -13,12 +13,11 @@
 </style>
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans ">
   <div class="container">
-   
-
-    <div class="link2">
+  
+    <div class="link1">
 
      <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="  text-decoration: none;">Be our Partner<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="  text-decoration: none;">Be our partner<span class="caret"></span></a>
          <ul class="dropdown-menu">
          
             <li><a href="designer.php">DeZine Partner</a></li>

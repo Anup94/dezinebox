@@ -51,7 +51,11 @@ if(empty($constTypeArr[$constTypeId])) {
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
 
 
-
+<style>
+.form-required{
+  color:#000;
+}
+</style>
 
 </head>
 
@@ -101,7 +105,9 @@ if(empty($constTypeArr[$constTypeId])) {
                                             </div>
                                           </li>
                                             <li class="form-line" data-type="control_phone" id="id_6">
-                                            <label class="form-label form-label-top" id="label_6" for="input_6_area"> Phone Number </label>
+                                            <label class="form-label form-label-top" id="label_6" for="input_6_area"> Phone Number  <span class="form-required">
+                                                *
+                                              </span></label>
                                             <div  class="form-input-wide jf-required">
                                               <div data-wrapper-react="true">
                                                 <span class="form-sub-label-container" style="vertical-align:top;">
@@ -278,9 +284,7 @@ if(empty($constTypeArr[$constTypeId])) {
                                              <li class="form-line jf-required" data-type="control_email" id="id_5">
                                             <label class="form-label form-label-top" id="label_5" for="input_5">
                                            Share your drive
-                                              <span class="form-required">
-                                                *
-                                              </span>
+                                              
                                             </label>
                                             <div id="cid_5" class="form-input-wide jf-required">
                                               <input type="text"  name="driveLink" class="form-textbox validate[required, Email]" size="30" value="http://" >
@@ -290,9 +294,7 @@ if(empty($constTypeArr[$constTypeId])) {
                                           <li class="form-line jf-required" data-type="control_email" id="id_5">
                                             <label class="form-label form-label-top" id="label_5" for="input_5">
                                             Upload a portfolio
-                                              <span class="form-required">
-                                                *
-                                              </span>
+                                             
                                             </label>
                                             <div id="cid_5" class="form-input-wide jf-required">
                                               <input type="file"  name="file" class="form-textbox" size="30" value="" >
@@ -319,7 +321,7 @@ if(empty($constTypeArr[$constTypeId])) {
                                    
                                 
                               
-                         Alternatively you can reach us at  <a href="mailto:partnetship@dezinebox.io" style="display: inline-block;color: #19476f;">partnetship@dezinebox.io".</a> for registration
+                         Alternatively you can reach us at  <a href="mailto:partnership@dezinebox.io" style="display: inline-block;color: #19476f;">"partnership@dezinebox.io" </a> for registration
                                               </div>
                                               <br><br><br>
                                             </div>

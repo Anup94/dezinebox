@@ -1126,7 +1126,7 @@ h4, .ft-tabs .tabs-list li a .tab-group .tab-heading, .testimonials-3col .t-item
 }
 
 h5, .ft-boxed-hover ul li .hover-content .ft-heading, .ft-tabs .tabs-list li a .tab-group .tab-info, .sidebar .comments-widget .widget-item span .widget-comm-title, .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer, .shop-layout-options span {
-  font-size: 1em;
+  font-size: 0.9em;
   letter-spacing: 2px;
 }
 

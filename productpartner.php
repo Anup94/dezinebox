@@ -186,7 +186,7 @@ if(empty($constTypeArr[$constTypeId])) {
      
       <li class="form-line jf-required" data-type="control_email" id="id_5">
         <label class="form-label form-label-top" id="label_5" for="input_5">
-        Product Catalog
+        Product Catalog *
           <span class="form-required">
             *
           </span>
@@ -211,7 +211,7 @@ if(empty($constTypeArr[$constTypeId])) {
           </div>
         </div>
       </li>
-<p style="color: #FF5100;text-align: center;">Alternatively you can reach us at  <a href="mailto:partnetship@dezinebox.io" style="display: inline-block;color: #19476f;">partnetship@dezinebox.io".</a> for registration </p>
+<p style="color: #FF5100;text-align: center;">Alternatively you can reach us at  <a href="mailto:partnership@dezinebox.io" style="display: inline-block;color: #19476f;">partnership@dezinebox.io".</a> for registration </p>
     </ul>
   </div>
  

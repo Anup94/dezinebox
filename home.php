@@ -130,7 +130,7 @@ body, html {
           </div>
                     
                     <div class="polina1be">
-            <a href="ecosystem.php"> <p style="font-family: 'Poppins', sans-serif;">Be Our Partner Now..</p> </a>
+            <a href="ecosystem.php" > <p style="font-family: 'Poppins', sans-serif;">Be Our Partner Now..</p> </a>
           </div>
                       
                     <div class="polina1">
@@ -155,10 +155,10 @@ body, html {
               <img src="assets/images/home/4.png" style="width:100%;">
         
                   <div class="polina6">
-            <a href="Interior.php" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
+            <a href="Interior.pdf" title="Interior" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
           </div>
                     <div class="polina7">
-            <a href="Architecture.php" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
+            <a href="Architecture.pdf" title="Architecture" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>
           </div>
                     <div class="polina8">
             <a href="Interior.pdf" target="_blank"> <p style="font-family: 'Poppins', sans-serif;">refer sample..</p> </a>

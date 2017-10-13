@@ -17,22 +17,22 @@
             <div class="col-md-offset-3 col-md-6 col-lg-5">
 
             	 <div class="form-group">
-                  <label for="file-form">Name</label>
+                  <label for="file-form">Name *</label>
                       <input type="name" class="form-control" name="fname" placeholder="Enter your name" required>    
         
                 </div>  
                  <div class="form-group">
-                  <label for="file-form">Email</label>
+                  <label for="file-form">Email *</label>
                       <input type="name" class="form-control" name="email" placeholder="Enter your email address" required>    
         
                 </div>  
                  <div class="form-group">
-                  <label for="file-form">Mobile Number</label>
+                  <label for="file-form">Mobile Number *</label>
                       <input type="name" class="form-control" name="mobile" placeholder="Enter your Mobile number" required>    
         
                 </div>  
               <div class="form-group">
-                  <label for="file-form">Site Address</label>
+                  <label for="file-form">Site Address *</label>
                       <input type="name" class="form-control" name="siteLocation" placeholder="Input your site full address" required>    
         
                 </div>  
@@ -84,7 +84,7 @@
                   <input type="url" class="form-control" name="driveLink" value="http://" placeholder="Share your drive link with public access">                  
                 </div>
                 <div class="form-group">
-                <label for="inpt-name-forms">Any Specific Details (max 1000 characters)</label>
+                <label for="inpt-name-forms">Any Specific Details (max 1000 characters) *</label>
                  <textarea class="form-control" name="specificDetails" id="txt-forms" rows="3" placeholder="Colors , Fabrics , Textures , Patterns  preferences . " maxlength="500" required></textarea>               
                 </div>
 

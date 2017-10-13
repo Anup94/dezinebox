@@ -87,10 +87,8 @@ Terra represents founding element Earth out of five elements. This box provides 
  <img src="images/earth.png" style="width: 55px; height: 55px; margin-left: auto;margin-right: auto;display: block;">
 <h1 style="text-align: center;">Ether</h1>
 <p style="color: #777"><br><br><br>Ether represents the boundless space element.  This box provides offline traditional consultancy services to the end user. If you wish to have the personalize experience of getting your home designed by the professional, then this box is for you. Our professional Design Partners will personally execute your project considering your each and every requirement. Their experience and expertise glides you through this otherwise tedious process effortlessly. </p> 
-<p style="color: #777"><br><br><br>Zephyr represents air element. In addition to what Terra provides this box gives a revision of design if you are not satisfied with one option. This box also is self explanatory and assists you to execute the design at your own pace.  </p> 
-<br><br>
-                      <p style="color: #777">Please refer to:-  <br>
-                        <a href="http://dezinebox.io/boxes.php"> http://dezinebox.io/boxes.php </a></p>
+
+
 </div>
 
 </div><!-- / .row --><br><br><br>
