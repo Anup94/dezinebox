@@ -55,6 +55,22 @@ if(empty($constTypeArr[$constTypeId])) {
 .form-required{
   color:#000;
 }
+@media (max-width: 400px)
+{
+  .navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 20px;
+}
+.link1 {
+    width: 21%;
+    float: right;
+    margin: 2% 0 0 0;
+    font-size: 1.2em;
+    text-align: center;
+    display: none;
+}
 </style>
 
 </head>

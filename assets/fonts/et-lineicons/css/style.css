@@ -33,7 +33,7 @@
 	
 	float:right;
 	margin:2% 0 0 0;
-	font-size:1.8em;
+	font-size:1.3em;
 	text-align:center;
 	display:block;
 	list-style: none;
@@ -43,7 +43,7 @@
 
 	float:right;
 	margin:2% 11px 0 0;
-	font-size:1.8em;
+	font-size:1.3em;
 	text-align:center;
 	display:block;	
 	list-style: none;
@@ -55,8 +55,8 @@
 }
 .navbar-toggle
  {
-    margin-top: 20px;
-    margin-right: -23%;
+    margin-top: 18px;
+    margin-right: -28%;
 	display: block;
 }
 .p-content
@@ -467,6 +467,28 @@
 .et-wine:before {
 	content: "\e663";
 }
+@media only screen and (max-width:1030px)
+{
+.link1 {
+    float: right;
+    margin: 2% 38px 0 0;
+    font-size: 1.3em;
+    text-align: center;
+    display: block;
+    list-style: none;
+}
+.navbar-toggle {
+    margin-top: 18px;
+    margin-right: -34%;
+    display: block;
+}
+.polina9 {
+    position: absolute;
+    bottom: 8%;
+    right: 4%;
+    display: block;
+}
+}
 
 @media only screen and (max-width:400px)
 {
@@ -499,6 +521,16 @@
 {
 	margin-left:5%;
 	display:block;	
+}
+
+}
+@media only screen and (max-width:320px)
+{
+.polina9 {
+    position: absolute;
+    bottom: 8%;
+    right: 1%;
+    display: block;
 }
 
 }

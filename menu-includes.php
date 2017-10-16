@@ -13,6 +13,8 @@
 </style>
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans ">
   <div class="container">
+
+
   
     <div class="link1">
 
@@ -24,6 +26,11 @@
             <li><a href="productpartner.php">Product Partner</a></li>
           </ul>
           </li>
+    </div>
+    <div class="link2">
+
+      <a href="http://localhost/get-your-box.php"><p>Get Your Box</p></a>
+
     </div>
     
     

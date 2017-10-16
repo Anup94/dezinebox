@@ -48,8 +48,24 @@ if(empty($constTypeArr[$constTypeId])) {
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">  <!-- nav -->
 <link rel="stylesheet" href="assets/styles/main22.css"> <!-- nav -->
 
-
-
+<style>
+@media (max-width: 400px)
+{
+  .navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 50px;
+}
+.link1 {
+    width: 21%;
+    float: right;
+    margin: 2% 0 0 0;
+    font-size: 1.2em;
+    text-align: center;
+    display: none;
+}
+</style>
 
 
 </head>
