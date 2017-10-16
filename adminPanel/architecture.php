@@ -330,16 +330,7 @@ switch ($row['boxTypeId'])
     <script src="../build/js/custom.min.js"></script>
     <script type="text/javascript" src="js/custom/date.js"></script>
 <!-- Google Analytics -->
-                <script type="text/javascript">
                 
-                var index = <?php echo $index ?>;
-                for(var i=1; i<=index; i++){
-                  var dateHtml = $('#date'+i).html();
-                  $('#date'+i).html(moment(dateHtml).format('MMMM Do YYYY, h:mm:ss a'));
-                }
-
-              </script>
-
   </body>
 
 
