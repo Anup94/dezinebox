@@ -192,7 +192,7 @@ if(empty($constTypeArr[$constTypeId])) {
           </span>
         </label>
         <div id="cid_5" class="form-input-wide jf-required">
-          <input type="file"  name="catalog" class="form-textbox" size="30" value="" >
+          <input type="file"  name="catalog" class="form-textbox" size="30" value="" required>
         </div>
       </li>
           <li class="form-line jf-required" >

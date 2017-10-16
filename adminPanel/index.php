@@ -244,15 +244,7 @@ echo $followers_count;
 		    echo $e->getMessage();
 		}
 	?>
-
-                      
-
-                     
-                   
-
-                      
-
-                   
+  
                     </div>
                   </div>
                 </div>

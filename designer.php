@@ -179,13 +179,13 @@ if(empty($constTypeArr[$constTypeId])) {
                                               </span>
                                             </label>
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                              <input type="text"  name="experience" class="form-textbox" size="30" value="" >
+                                              <input type="text"  name="experience" class="form-textbox" size="30" value="" required>
                                             </div>
                                           </li>
                                               <li class="form-line jf-required" >
                                         
                                             <div id="cid_5" class="form-input-wide jf-required">
-                                        <select class="form-control text-height form_group_data" mandatory="true" error_message="Please select" name="hearFrom" id="user_hear_from"><option value="">How did you hear about us</option>
+                                        <select class="form-control text-height form_group_data" mandatory="true" error_message="Please select" name="hearFrom" id="user_hear_from"><option value="" required>How did you hear about us *</option>
                                               <option value="Facebook">Facebook</option>
                                               <option value="Google">Google</option>
                                               <option value="Friends &amp; Family">Friends &amp; Family</option>
@@ -198,7 +198,7 @@ if(empty($constTypeArr[$constTypeId])) {
                                                  
                                 <a href="#tab-2" role="tab" data-toggle="tab">
 
-<button class="btn-ghost" style="display: block; margin: 0 auto;">Next</button></a><br>
+<button type="submit" class="btn-ghost" style="display: block; margin: 0 auto;">Next</button></a><br>
                                               <br><br><br><br>
                                               </div>
                                             </div>

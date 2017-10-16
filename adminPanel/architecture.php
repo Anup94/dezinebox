@@ -1,3 +1,4 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
 <?php
     require_once $_SERVER["DOCUMENT_ROOT"].'/initial-includes.php';
     require_once $_SERVER["DOCUMENT_ROOT"].'/admin/login-check.php';
@@ -163,13 +164,15 @@ $db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
 
 
                           <tbody>
-<?php $index=1; foreach ($users as $row) 
+<?php $index=0; foreach ($users as $row) 
+//$index++;
                           if($row['Paid'] == "YES"){
+                            $index++;
                 ?>
                 
-                          <tr id= "<?php echo $index++ ?>x" style="background-color:#7fdd7f;">
+                          <tr id= "<?php echo $index ?>x" style="background-color:#7fdd7f;">
                          
-                            <td ><?php echo $row['entryTime'];?></td>
+                            <td id= "date<?php echo $index ?>"><?php echo $row['entryTime'];?></td>
                             <td><?php echo $row['enqId'];?></td>
                                <td><?php
 switch ($row['boxTypeId'])
@@ -200,6 +203,7 @@ switch ($row['boxTypeId'])
                                          }
 
                      else{
+
                                   echo "<td>".$row[$key]."</td>";
                      }
                                 }
@@ -210,12 +214,13 @@ switch ($row['boxTypeId'])
                 
                           <?php
                 }else{
+                  $index++;
                   ?>
                   
                   
-                  <tr id= "<?php echo $index++ ?>x">
+                  <tr id= "<?php echo $index?>x">
                     
-                  <td><?php echo $row['entryTime'];?></td>
+                  <td id= "date<?php echo $index ?>"><?php echo  $row['entryTime'];?></td>
                             <td><?php echo $row['enqId'];?></td>
                              <td><?php
 switch ($row['boxTypeId'])
@@ -261,7 +266,7 @@ switch ($row['boxTypeId'])
                   
                   
                   <?php
-                  
+                 
                 }
                         
               
@@ -325,7 +330,15 @@ switch ($row['boxTypeId'])
     <script src="../build/js/custom.min.js"></script>
     <script type="text/javascript" src="js/custom/date.js"></script>
 <!-- Google Analytics -->
+                <script type="text/javascript">
+                
+                var index = <?php echo $index ?>;
+                for(var i=1; i<=index; i++){
+                  var dateHtml = $('#date'+i).html();
+                  $('#date'+i).html(moment(dateHtml).format('MMMM Do YYYY, h:mm:ss a'));
+                }
 
+              </script>
 
   </body>
 

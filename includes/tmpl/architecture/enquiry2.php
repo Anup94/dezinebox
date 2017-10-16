@@ -17,12 +17,12 @@
                 </div>  
                  <div class="form-group">
                   <label for="file-form">Email *</label>
-                      <input type="name" class="form-control" name="femail" placeholder="Enter your email address" required>    
+                      <input type="email" class="form-control" name="femail" placeholder="Enter your email address" required>    
         
                 </div>  
                  <div class="form-group">
                   <label for="file-form">Mobile Number *</label>
-                      <input type="name" class="form-control" name="fmobile" placeholder="Enter your Mobile number" required>    
+                      <input type="tel" maxlength="12" minlength="8" class="form-control" name="fmobile" placeholder="Enter your Mobile number" required>    
         
                 </div>  
         
@@ -66,12 +66,12 @@
         
                 </div>    
                 <div class="form-group">
-                   <label for="">Share Drive Link</label>
-                  <input type="url" name="driveLink" class="form-control" id="inpt-name-forms" value="http://"  placeholder="Share your drive link with public access">                 
+                   <label for="txt-forms">Share Drive Link</label>
+                  <input type="text" name="driveLink" class="form-control" id="inpt-name-forms" value="http://"  placeholder="Share your drive link with public access">                 
                 </div>
                 <div class="form-group" >
                 <label for="txt-forms">Any Specific Details (max 1000 characters) *</label>
-                  <textarea class="form-control" name="details" required  rows="3" placeholder="Cultural Influence , Specific Style , Material & texture preference " maxlength="500"></textarea>
+                  <textarea class="form-control" name="details" rows="3" placeholder="Cultural Influence , Specific Style , Material & texture preference " maxlength="500" required ></textarea>
                   
                 </div>  
                 <button class="btn-ghost" type="submit">NEXT</button>             
